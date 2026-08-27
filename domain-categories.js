@@ -92,6 +92,8 @@ const CATEGORY_MAP = {
   other: 'General & Other',
   generalist: 'General & Other',
   'skilled-trades-construction': 'General & Other',
+  'Project Fenrir': 'General & Other',
+  'Project Silver': 'General & Other',
 };
 
 function mapDomain(raw, source) {

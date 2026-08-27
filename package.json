@@ -2,9 +2,9 @@
   "name": "ai-training-gigs",
   "private": true,
   "version": "1.0.0",
-  "description": "A single-page hub aggregating freelance AI-training job listings from Mercor, DataAnnotation, Turing, Meridial, and Micro1.",
+  "description": "A single-page hub aggregating freelance AI-training job listings from Mercor, DataAnnotation, Turing, Meridial, Micro1, and AfterQuery.",
   "scripts": {
-    "generate": "node generate-jobs.js && node generate-dataannotation-jobs.js && node generate-turing-jobs.js && node generate-meridial-jobs.js && node generate-micro1-jobs.js",
+    "generate": "node generate-jobs.js && node generate-dataannotation-jobs.js && node generate-turing-jobs.js && node generate-meridial-jobs.js && node generate-micro1-jobs.js && node generate-afterquery-jobs.js",
     "build": "npm run generate && node build.js"
   },
   "engines": {
