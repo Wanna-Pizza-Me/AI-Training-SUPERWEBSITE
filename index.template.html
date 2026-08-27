@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI Training Gigs</title>
+<meta name="description" content="A single, fast-loading hub for open freelance AI training jobs from Mercor, DataAnnotation, Turing, Meridial, and other leading platforms. Filter by company and pay, apply in one click.">
+<meta name="robots" content="index,follow">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI Training Gigs">
+<meta property="og:description" content="A single, fast-loading hub for open freelance AI training jobs from Mercor, DataAnnotation, Turing, Meridial, and other leading platforms.">
+<meta name="twitter:card" content="summary">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg: #FFFFFF;
+    --surface: #FFFFFF;
+    --ink: #132522;
+    --muted: #5B6E69;
+    --muted-2: #8CA09A;
+    --line: #DCEAE6;
+    --mercor: #0C8C82;
+    --mercor-tint: #E1F5F2;
+    --turing: #A6337B;
+    --turing-tint: #F7E8F1;
+    --meridial: #B5790A;
+    --meridial-tint: #FBF0DC;
+    --dataannotation: #2461C7;
+    --dataannotation-tint: #E7EFFC;
+    --focus: #0C8C82;
+    --shadow: 0 1px 2px rgba(15,35,32,.04), 0 8px 22px rgba(15,35,32,.05);
+    --shadow-hover: 0 6px 14px rgba(15,35,32,.07), 0 18px 36px rgba(15,35,32,.10);
+    --chevron-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="%235B6E69" stroke-width="3"><path d="m6 9 6 6 6-6"/></svg>');
+  }
+
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg: #0D1615;
+      --surface: #16211F;
+      --ink: #E9F4F1;
+      --muted: #9DB3AD;
+      --muted-2: #6D827C;
+      --line: #253431;
+      --mercor: #3FD9C9;
+      --mercor-tint: #113230;
+      --turing: #F08FC0;
+      --turing-tint: #391C2C;
+      --meridial: #F0B429;
+      --meridial-tint: #3A2C0E;
+      --dataannotation: #6FA8FF;
+      --dataannotation-tint: #16233A;
+      --focus: #3FD9C9;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 22px rgba(0,0,0,.28);
+      --shadow-hover: 0 6px 14px rgba(0,0,0,.32), 0 18px 36px rgba(0,0,0,.36);
+      --chevron-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="%239DB3AD" stroke-width="3"><path d="m6 9 6 6 6-6"/></svg>');
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg: #0D1615;
+    --surface: #16211F;
+    --ink: #E9F4F1;
+    --muted: #9DB3AD;
+    --muted-2: #6D827C;
+    --line: #253431;
+    --mercor: #3FD9C9;
+    --mercor-tint: #113230;
+    --turing: #F08FC0;
+    --turing-tint: #391C2C;
+    --meridial: #F0B429;
+    --meridial-tint: #3A2C0E;
+    --dataannotation: #6FA8FF;
+    --dataannotation-tint: #16233A;
+    --focus: #3FD9C9;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 22px rgba(0,0,0,.28);
+    --shadow-hover: 0 6px 14px rgba(0,0,0,.32), 0 18px 36px rgba(0,0,0,.36);
+    --chevron-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="%239DB3AD" stroke-width="3"><path d="m6 9 6 6 6-6"/></svg>');
+  }
+
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    background-color:var(--bg);
+    background-image:
+      radial-gradient(circle at 4% 4%, var(--mercor-tint), transparent 32%),
+      radial-gradient(circle at 97% 8%, var(--dataannotation-tint), transparent 34%),
+      radial-gradient(circle at 95% 97%, var(--turing-tint), transparent 34%),
+      radial-gradient(circle at 3% 96%, var(--meridial-tint), transparent 32%);
+    background-attachment:fixed;
+    color:var(--ink);
+    font-family:"Plus Jakarta Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  ::selection{ background: var(--mercor-tint); color: var(--ink); }
+
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+
+  /* ---------- Header ---------- */
+  header.site{ position:relative; padding:20px 0 0; overflow:hidden; }
+  .corner-deco{ position:absolute; width:220px; height:220px; pointer-events:none; z-index:0; }
+  .corner-deco.tl{ top:-20px; left:-20px; }
+  .corner-deco.br{ width:160px; height:160px; bottom:-10px; right:-10px; transform:rotate(180deg); }
+  header.site > *:not(.corner-deco){ position:relative; z-index:1; }
+  .topbar{ display:flex;align-items:center;justify-content:space-between;gap:16px; }
+  .brand{
+    display:flex;align-items:center;gap:9px;
+    font-weight:800; font-size:17px; letter-spacing:-0.01em;
+  }
+  .brand .mark{
+    width:11px;height:11px;border-radius:4px;
+    background:linear-gradient(135deg, var(--mercor), var(--dataannotation) 35%, var(--turing) 65%, var(--meridial));
+    flex:none;
+  }
+  .updated{ font-size:13px;color:var(--muted); }
+
+  /* ---------- Hero ---------- */
+  .hero{ padding:52px 0 28px; }
+  .hero h1{
+    font-weight:800;
+    font-size:clamp(32px,5vw,50px);
+    line-height:1.08;
+    letter-spacing:-0.02em;
+    margin:0 0 16px;
+    max-width:16ch;
+    text-wrap:balance;
+  }
+  .hero h1 .hl{
+    background:linear-gradient(180deg,transparent 60%, var(--mercor-tint) 60%);
+  }
+  .hero p{
+    font-size:17px;
+    color:var(--muted);
+    max-width:52ch;
+    margin:0 0 28px;
+  }
+  .stat-row{
+    display:flex;gap:28px;flex-wrap:wrap;
+    padding-top:8px;border-top:1px solid var(--line);
+  }
+  .stat{padding-top:16px;}
+  .stat b{display:block;font-size:26px;font-weight:800;letter-spacing:-0.01em;font-variant-numeric:tabular-nums;}
+  .stat span{font-size:13px;color:var(--muted-2);}
+
+  /* ---------- Controls ---------- */
+  .controls{
+    position:sticky;top:0;z-index:20;
+    background:color-mix(in srgb, var(--bg) 92%, transparent);
+    backdrop-filter:saturate(180%) blur(10px);
+    border-bottom:1px solid var(--line);
+    padding:14px 0;
+    margin-top:36px;
+  }
+  .controls-inner{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+  .search{
+    flex:1 1 240px;
+    display:flex;align-items:center;gap:8px;
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:10px 14px;
+  }
+  .search input{
+    border:none;outline:none;background:none;
+    font-size:15px;color:var(--ink);width:100%;
+    font-family:inherit;
+  }
+  .search svg{flex:none;color:var(--muted);}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;align-items:center;}
+  .chip{
+    border:1px solid var(--line);
+    background:var(--surface);
+    color:var(--ink);
+    font-size:13.5px;
+    font-weight:600;
+    padding:9px 15px;
+    border-radius:999px;
+    cursor:pointer;
+    transition:background .15s ease, border-color .15s ease, color .15s ease;
+    font-family:inherit;
+  }
+  .chip:hover{border-color:var(--mercor);}
+  .chip.active{
+    background:var(--ink);
+    border-color:var(--ink);
+    color:var(--bg);
+  }
+  .domain-select{
+    font-family:inherit; font-weight:600; font-size:13.5px; color:var(--ink);
+    background:var(--surface);
+    border:1px solid var(--line); border-radius:999px;
+    padding:9px 30px 9px 15px;
+    appearance:none;
+    background-image:var(--chevron-icon);
+    background-repeat:no-repeat;
+    background-position:right 14px center;
+    cursor:pointer;
+  }
+  .domain-select:focus{ outline:none; border-color:var(--mercor); }
+  .domain-select:disabled{ opacity:.5; cursor:not-allowed; }
+
+  /* ---------- Grid ---------- */
+  main{padding:32px 0 20px;}
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+  }
+  @media (max-width:920px){ .grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:620px){ .grid{grid-template-columns:1fr;} }
+
+  .card{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-top:4px solid var(--accent, var(--mercor));
+    border-radius:18px;
+    padding:20px 22px 22px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    text-decoration:none;
+    color:var(--ink);
+    box-shadow:var(--shadow);
+    transition:transform .16s ease, box-shadow .16s ease, border-color .16s ease;
+  }
+  .card:hover{
+    transform:translateY(-3px);
+    box-shadow:var(--shadow-hover);
+  }
+  .card:focus-visible{
+    outline:3px solid var(--focus);
+    outline-offset:2px;
+  }
+  .card-label{
+    display:flex;align-items:center;gap:6px;flex-wrap:wrap;
+    font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--accent, var(--mercor));
+  }
+  .card-label .dom{ color:var(--muted-2); font-weight:600; text-transform:none; letter-spacing:0; }
+  .card-label .sep{ color:var(--line); }
+  .card h3{
+    margin:0;
+    font-size:18px;
+    font-weight:700;
+    line-height:1.3;
+    letter-spacing:-0.01em;
+  }
+  .card-desc{
+    font-size:14px;color:var(--muted);margin:0;flex:1;
+  }
+  .card-foot{
+    display:flex;align-items:center;justify-content:space-between;gap:10px;
+    padding-top:12px;border-top:1px solid var(--line);
+    font-size:13.5px;
+  }
+  .pay{
+    font-weight:800;
+    color:var(--ink);
+    font-size:15px;
+  }
+  .tag{
+    font-size:11.5px; color:var(--muted-2); font-weight:600;
+  }
+  .apply-row{
+    display:flex;align-items:center;justify-content:flex-end;gap:6px;
+    font-weight:700;color:var(--accent, var(--mercor));font-size:13.5px;
+  }
+  .apply-row svg{transition:transform .15s ease;}
+  .card:hover .apply-row svg{transform:translate(2px,-2px);}
+
+  .empty{
+    display:none;
+    text-align:center;
+    padding:60px 20px;
+    color:var(--muted);
+  }
+  .empty.show{display:block;}
+
+  /* ---------- Footer ---------- */
+  footer{
+    position:relative;
+    margin-top:56px;
+    border-top:1px solid var(--line);
+    padding:28px 0 40px;
+    font-size:13px;
+    color:var(--muted-2);
+  }
+  footer > *:not(.corner-deco){ position:relative; z-index:1; }
+  footer .foot-row{
+    display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  }
+  footer .credit{
+    margin-top:16px; padding-top:16px; border-top:1px solid var(--line);
+    font-size:12.5px; color:var(--muted-2);
+  }
+  footer .credit a{
+    color:var(--mercor); font-weight:600; text-decoration:none;
+  }
+  footer .credit a:hover{ text-decoration:underline; }
+
+  /* ---------- Back to top ---------- */
+  .to-top{
+    position:fixed; right:22px; bottom:22px; z-index:30;
+    width:44px; height:44px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    background:var(--ink); color:var(--bg);
+    border:none; cursor:pointer;
+    box-shadow:var(--shadow-hover);
+    opacity:0; transform:translateY(8px); pointer-events:none;
+    transition:opacity .18s ease, transform .18s ease;
+  }
+  .to-top.show{ opacity:1; transform:translateY(0); pointer-events:auto; }
+  .to-top:hover{ opacity:.85; }
+  .to-top:focus-visible{ outline:3px solid var(--focus); outline-offset:2px; }
+
+  @media (prefers-reduced-motion: reduce){
+    *{transition:none !important;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site wrap">
+  <svg class="corner-deco tl" viewBox="0 0 220 220" fill="none" aria-hidden="true">
+    <g stroke="var(--mercor)" stroke-width="1.3" opacity="0.3">
+      <path d="M16 16h32v32h-32z"/>
+      <path d="M48 32h24"/>
+      <path d="M72 20v24"/>
+      <circle cx="72" cy="20" r="2.2" fill="var(--mercor)"/>
+      <path d="M32 48v28"/>
+      <circle cx="32" cy="76" r="2.2" fill="var(--mercor)"/>
+      <path d="M72 44h36v36h-36z"/>
+      <path d="M108 62h28"/>
+      <circle cx="136" cy="62" r="2.2" fill="var(--mercor)"/>
+      <path d="M90 80v24"/>
+      <circle cx="90" cy="104" r="2.2" fill="var(--mercor)"/>
+    </g>
+    <g stroke="var(--dataannotation)" stroke-width="1.3" opacity="0.22">
+      <path d="M128 16h24v24h-24z"/>
+      <path d="M140 40v20"/>
+      <circle cx="140" cy="60" r="2.2" fill="var(--dataannotation)"/>
+    </g>
+  </svg>
+  <div class="topbar">
+    <div class="brand"><span class="mark"></span> AI&nbsp;Training&nbsp;Gigs</div>
+    <div class="updated" id="updatedLabel">Listings refreshed manually</div>
+  </div>
+
+  <div class="hero">
+    <h1>Every open <span class="hl">AI&nbsp;training</span> gig, in one clean list.</h1>
+    <p>Freelance and contract roles pulled from Mercor, DataAnnotation, Turing, Meridial, and other AI‑training platforms — pay rate up front, one click to the real application page.</p>
+    <div class="stat-row" id="statRow">
+      <div class="stat"><b id="statTotal">0</b><span>open roles listed</span></div>
+      <div class="stat"><b id="statCompanies">0</b><span>companies</span></div>
+      <div class="stat"><b id="statPay">—</b><span>highest listed rate</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="wrap controls-inner">
+    <label class="search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input type="text" id="searchInput" placeholder="Search by title or keyword…" aria-label="Search jobs">
+    </label>
+    <div class="chips" id="companyChips" role="group" aria-label="Filter by company"></div>
+    <select class="domain-select" id="domainSelect" aria-label="Filter by domain">
+      <option value="All">All domains</option>
+    </select>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="grid" id="jobGrid"></div>
+  <div class="empty" id="emptyState">No roles match that search — try a different keyword or clear the filter.</div>
+</main>
+
+<footer class="wrap">
+  <svg class="corner-deco br" viewBox="0 0 220 220" fill="none" aria-hidden="true">
+    <g stroke="var(--turing)" stroke-width="1.3" opacity="0.26">
+      <path d="M16 16h32v32h-32z"/>
+      <path d="M48 32h24"/>
+      <path d="M72 20v24"/>
+      <circle cx="72" cy="20" r="2.2" fill="var(--turing)"/>
+      <path d="M72 44h36v36h-36z"/>
+      <path d="M108 62h28"/>
+      <circle cx="136" cy="62" r="2.2" fill="var(--turing)"/>
+      <path d="M32 48v28"/>
+      <circle cx="32" cy="76" r="2.2" fill="var(--turing)"/>
+    </g>
+  </svg>
+  <div class="foot-row">
+    <span>Independent listings aggregator. Not affiliated with Mercor, DataAnnotation, Turing, Meridial, or any listed company. Pay and availability set by each company and may change without notice.</span>
+    <span>Application links may include a referral code.</span>
+  </div>
+  <div class="credit">Created by Chaney Lovellette using Claude Code · <a href="https://www.linkedin.com/in/contractinnovator/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+</footer>
+
+<button class="to-top" id="toTopBtn" type="button" aria-label="Scroll to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+</button>
+
+<script>
+/* =========================================================================
+   REFERRAL CONFIG
+   Each company needs its own entry: a referral code AND the query-param
+   name that company's apply links expect it under. A company with no entry
+   here gets a plain apply link — never guess a param name or reuse another
+   company's code, since that produces a broken or meaningless link.
+   ========================================================================= */
+const REFERRAL_CONFIG = {
+  "Mercor": { code: "f1dabb81-9bfa-8107-8949-b13e8fa24444", param: "referralCode" },
+  "DataAnnotation": { code: "YOWWl4I", param: "worker_src" },
+  // "Turing": { code: "YOUR_TURING_CODE", param: "ref" },
+};
+
+function buildApplyUrl(job){
+  try{
+    const url = new URL(job.url);
+    const cfg = REFERRAL_CONFIG[job.company];
+    if (cfg && cfg.code){
+      url.searchParams.set(cfg.param, cfg.code);
+    }
+    return url.toString();
+  }catch(e){
+    return job.url;
+  }
+}
+
+/* =========================================================================
+   JOB DATA
+   Every company's listings are machine-curated from its own public listings
+   API (top listings per domain/role group, newest or most-hired first).
+   Meridial is filtered to US/Canada plus English World Wide - Remote roles.
+   Regenerated by generate-jobs.js + generate-dataannotation-jobs.js +
+   generate-turing-jobs.js + generate-meridial-jobs.js + build.js.
+   ========================================================================= */
+const MERCOR_JOBS = {{MERCOR_JOBS_JSON}};
+const DATAANNOTATION_JOBS = {{DATAANNOTATION_JOBS_JSON}};
+const TURING_JOBS = {{TURING_JOBS_JSON}};
+const MERIDIAL_JOBS = {{MERIDIAL_JOBS_JSON}};
+const GENERATED_AT = "{{GENERATED_AT_ISO}}";
+
+const JOBS = [...MERCOR_JOBS, ...DATAANNOTATION_JOBS, ...TURING_JOBS, ...MERIDIAL_JOBS];
+
+/* ---------------------------------------------------------------------- */
+
+const grid = document.getElementById('jobGrid');
+const chipsWrap = document.getElementById('companyChips');
+const domainSelect = document.getElementById('domainSelect');
+const searchInput = document.getElementById('searchInput');
+const emptyState = document.getElementById('emptyState');
+
+let activeCompany = "All";
+let activeDomain = "All";
+
+const ACCENTS = { Mercor: "var(--mercor)", DataAnnotation: "var(--dataannotation)", Turing: "var(--turing)", Meridial: "var(--meridial)" };
+function accentVar(company){
+  return ACCENTS[company] || "var(--mercor)";
+}
+
+function renderStats(){
+  document.getElementById('statTotal').textContent = JOBS.length;
+  const companies = new Set(JOBS.map(j=>j.company));
+  document.getElementById('statCompanies').textContent = companies.size;
+  const hourlyRates = JOBS.filter(j => j.pay.includes('/hr')).map(j=>{
+    const m = j.pay.match(/\$([\d,]+)/g);
+    if(!m) return 0;
+    return Math.max(...m.map(x=>parseInt(x.replace(/[$,]/g,''),10)));
+  });
+  const maxRate = Math.max(...hourlyRates, 0);
+  document.getElementById('statPay').textContent = maxRate ? ('$' + maxRate.toLocaleString() + '/hr') : '—';
+}
+
+function renderChips(){
+  const companies = ["All", ...new Set(JOBS.map(j=>j.company))];
+  chipsWrap.innerHTML = companies.map(c =>
+    `<button class="chip${c===activeCompany?' active':''}" data-company="${c}">${c}</button>`
+  ).join('');
+  chipsWrap.querySelectorAll('.chip').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      activeCompany = btn.dataset.company;
+      renderChips();
+      renderDomains();
+      renderGrid();
+    });
+  });
+}
+
+function renderDomains(){
+  const relevant = activeCompany === "All" ? JOBS : JOBS.filter(j => j.company === activeCompany);
+  const domains = ["All", ...new Set(relevant.map(j=>j.domain).filter(Boolean))].sort((a,b)=> a==="All" ? -1 : b==="All" ? 1 : a.localeCompare(b));
+  if (!domains.includes(activeDomain)) activeDomain = "All";
+  domainSelect.innerHTML = domains.map(d => `<option value="${d}"${d===activeDomain?' selected':''}>${d === "All" ? "All domains" : d}</option>`).join('');
+}
+
+domainSelect.addEventListener('change', ()=>{
+  activeDomain = domainSelect.value;
+  renderGrid();
+});
+
+function escapeHtml(s){
+  return String(s).replace(/[&<>]/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;' }[c]));
+}
+
+function cardHTML(job){
+  const applyUrl = buildApplyUrl(job);
+  const accent = accentVar(job.company);
+  const company = escapeHtml(job.company);
+  const domain = escapeHtml(job.domain);
+  const title = escapeHtml(job.title);
+  const blurb = escapeHtml(job.blurb);
+  const pay = escapeHtml(job.pay);
+  const tag = escapeHtml(job.tag);
+  return `
+    <a class="card" style="--accent:${accent}" href="${applyUrl}" target="_blank" rel="noopener noreferrer sponsored">
+      <div class="card-label">
+        <span>${company}</span>
+        ${domain ? `<span class="sep">·</span><span class="dom">${domain}</span>` : ''}
+      </div>
+      <h3>${title}</h3>
+      <p class="card-desc">${blurb}</p>
+      <div class="card-foot">
+        <div>
+          <div class="pay">${pay}</div>
+          <div class="tag">${tag}</div>
+        </div>
+        <div class="apply-row">Apply
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </div>
+      </div>
+    </a>`;
+}
+
+function renderGrid(){
+  const q = searchInput.value.trim().toLowerCase();
+  const filtered = JOBS.filter(j=>{
+    const matchesCompany = activeCompany === "All" || j.company === activeCompany;
+    const matchesDomain = activeDomain === "All" || j.domain === activeDomain;
+    const matchesQuery = !q || (j.title + " " + j.blurb + " " + j.company).toLowerCase().includes(q);
+    return matchesCompany && matchesDomain && matchesQuery;
+  });
+
+  grid.innerHTML = filtered.map(cardHTML).join('');
+  emptyState.classList.toggle('show', filtered.length === 0);
+}
+
+searchInput.addEventListener('input', renderGrid);
+
+renderStats();
+renderChips();
+renderDomains();
+renderGrid();
+
+function updatedLabel(){
+  const d = new Date(GENERATED_AT);
+  document.getElementById('updatedLabel').textContent =
+    "Listings snapshot: " + d.toLocaleDateString('en-US', { month:'long', day:'numeric', year:'numeric' });
+}
+updatedLabel();
+
+const toTopBtn = document.getElementById('toTopBtn');
+window.addEventListener('scroll', () => {
+  toTopBtn.classList.toggle('show', window.scrollY > 600);
+}, { passive: true });
+toTopBtn.addEventListener('click', () => {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+});
+</script>
+
+</body>
+</html>
