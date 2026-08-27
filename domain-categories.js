@@ -23,12 +23,19 @@ const CATEGORY_MAP = {
   'Other Engineering': 'Software & Data',
   'Engineering & Technology': 'Software & Data',
   Engineering: 'Software & Data',
+  'software-engineering': 'Software & Data',
+  'ai-machine-learning': 'Software & Data',
+  'data-analysis': 'Software & Data',
+  robotics: 'Software & Data',
+  'applied-engineering': 'Software & Data',
+  cybersecurity: 'Software & Data',
 
   // Science & STEM
   'Life, Physical, and Social Science': 'Science & STEM',
   Sciences: 'Science & STEM',
   Science: 'Science & STEM',
   STEM: 'Science & STEM',
+  'sciences-research': 'Science & STEM',
 
   // Business & Finance
   'Business Operations': 'Business & Finance',
@@ -38,11 +45,15 @@ const CATEGORY_MAP = {
   'Finance & Mathematics': 'Business & Finance',
   Accounting: 'Business & Finance',
   Analyst: 'Business & Finance',
+  'business-operations': 'Business & Finance',
+  finance: 'Business & Finance',
+  'sales-marketing': 'Business & Finance',
 
   // Legal
   Law: 'Legal',
   'Legal & Law Services': 'Legal',
   Legal: 'Legal',
+  law: 'Legal',
 
   // Medical & Healthcare
   Medicine: 'Medical & Healthcare',
@@ -50,6 +61,7 @@ const CATEGORY_MAP = {
   Medical: 'Medical & Healthcare',
   'Healthcare Ops': 'Medical & Healthcare',
   'Medical/Healthcare': 'Medical & Healthcare',
+  medicine: 'Medical & Healthcare',
 
   // Language & Writing
   'Language and Audio': 'Language & Writing',
@@ -59,11 +71,14 @@ const CATEGORY_MAP = {
   'Media & Communication': 'Language & Writing',
   Humanities: 'Language & Writing',
   'Humanities & Interdisciplinary Studies': 'Language & Writing',
+  'language-audio': 'Language & Writing',
+  humanities: 'Language & Writing',
 
   // Design & Creative
   'Arts & Design': 'Design & Creative',
   'Creative & Multi-Media': 'Design & Creative',
   Design: 'Design & Creative',
+  'arts-design': 'Design & Creative',
 
   // General & Other
   Miscellaneous: 'General & Other',
@@ -74,6 +89,9 @@ const CATEGORY_MAP = {
   'Customer Service': 'General & Other',
   'Delivery Advisor': 'General & Other',
   'The Agency: Worldwide Sharing': 'General & Other',
+  other: 'General & Other',
+  generalist: 'General & Other',
+  'skilled-trades-construction': 'General & Other',
 };
 
 function mapDomain(raw, source) {

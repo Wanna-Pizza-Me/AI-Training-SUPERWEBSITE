@@ -1,6 +1,6 @@
 // Stitches index.template.html + jobs-mercor.json + jobs-dataannotation.json
-// + jobs-turing.json + jobs-meridial.json into index.html.
-// Run the four generate-*.js scripts first to refresh the data, then: node build.js
+// + jobs-turing.json + jobs-meridial.json + jobs-micro1.json into index.html.
+// Run the five generate-*.js scripts first to refresh the data, then: node build.js
 
 const fs = require('fs');
 const path = require('path');
@@ -11,6 +11,7 @@ const mercorJobs = JSON.parse(fs.readFileSync(path.join(dir, 'jobs-mercor.json')
 const dataannotationJobs = JSON.parse(fs.readFileSync(path.join(dir, 'jobs-dataannotation.json'), 'utf8'));
 const turingJobs = JSON.parse(fs.readFileSync(path.join(dir, 'jobs-turing.json'), 'utf8'));
 const meridialJobs = JSON.parse(fs.readFileSync(path.join(dir, 'jobs-meridial.json'), 'utf8'));
+const micro1Jobs = JSON.parse(fs.readFileSync(path.join(dir, 'jobs-micro1.json'), 'utf8'));
 
 const now = new Date();
 
@@ -29,7 +30,8 @@ const out = template
   .replace('{{DATAANNOTATION_JOBS_JSON}}', () => embed(JSON.stringify(dataannotationJobs)))
   .replace('{{TURING_JOBS_JSON}}', () => embed(JSON.stringify(turingJobs)))
   .replace('{{MERIDIAL_JOBS_JSON}}', () => embed(JSON.stringify(meridialJobs)))
+  .replace('{{MICRO1_JOBS_JSON}}', () => embed(JSON.stringify(micro1Jobs)))
   .replace('{{GENERATED_AT_ISO}}', () => now.toISOString());
 
 fs.writeFileSync(path.join(dir, 'index.html'), out);
-console.log(`Built index.html — ${mercorJobs.length} Mercor + ${dataannotationJobs.length} DataAnnotation + ${turingJobs.length} Turing + ${meridialJobs.length} Meridial listings, generated ${now.toISOString()}`);
+console.log(`Built index.html — ${mercorJobs.length} Mercor + ${dataannotationJobs.length} DataAnnotation + ${turingJobs.length} Turing + ${meridialJobs.length} Meridial + ${micro1Jobs.length} Micro1 listings, generated ${now.toISOString()}`);
