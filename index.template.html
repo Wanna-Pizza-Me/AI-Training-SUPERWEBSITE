@@ -5,12 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>One AI Trainer</title>
 <meta name="description" content="A single, fast-loading hub for open freelance AI training jobs from Mercor, DataAnnotation, Turing, Meridial, Micro1, AfterQuery, and other leading platforms. Filter by company and pay, apply in one click.">
-<meta name="robots" content="index,follow">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="{{SITE_URL}}/">
+<meta name="theme-color" content="#0C8C82">
 
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="One AI Trainer">
 <meta property="og:title" content="One AI Trainer">
 <meta property="og:description" content="A single, fast-loading hub for open freelance AI training jobs from Mercor, DataAnnotation, Turing, Meridial, Micro1, AfterQuery, and other leading platforms.">
+<meta property="og:url" content="{{SITE_URL}}/">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="One AI Trainer">
+<meta name="twitter:description" content="A single, fast-loading hub for open freelance AI training jobs from Mercor, DataAnnotation, Turing, Meridial, Micro1, AfterQuery, and other leading platforms.">
+
+<!--
+  {{JOBS_TOTAL}} freelance AI-training listings, aggregated live from Mercor,
+  DataAnnotation, Turing, Meridial, Micro1, and AfterQuery. Refreshed daily.
+  Full listing text is server-rendered below (see #jobGrid) so it's readable
+  without executing JavaScript.
+-->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -367,11 +380,10 @@
 
   <div class="hero">
     <h1>Every open <span class="hl">AI&nbsp;training</span> gig, in one clean list.</h1>
-    <p>Freelance and contract roles pulled from Mercor, DataAnnotation, Turing, Meridial, Micro1, AfterQuery, and other AI‑training platforms — pay rate up front, one click to the real application page.</p>
+    <p>Freelance and contract roles pulled from Mercor, Turing, and other AI‑training platforms — pay rate up front, one click to the real application page.</p>
     <div class="stat-row" id="statRow">
       <div class="stat"><b id="statTotal">0</b><span>open roles listed</span></div>
       <div class="stat"><b id="statCompanies">0</b><span>companies</span></div>
-      <div class="stat"><b id="statPay">—</b><span>highest listed rate</span></div>
     </div>
   </div>
 </header>
@@ -390,7 +402,7 @@
 </div>
 
 <main class="wrap">
-  <div class="grid" id="jobGrid"></div>
+  <div class="grid" id="jobGrid">{{JOB_CARDS_HTML}}</div>
   <div class="empty" id="emptyState">No roles match that search — try a different keyword or clear the filter.</div>
 </main>
 
@@ -426,13 +438,10 @@
    name that company's apply links expect it under. A company with no entry
    here gets a plain apply link — never guess a param name or reuse another
    company's code, since that produces a broken or meaningless link.
+   Lives in referral-config.json so build.js can reuse the exact same data
+   when server-rendering the initial card grid (see JOB_CARDS_HTML below).
    ========================================================================= */
-const REFERRAL_CONFIG = {
-  "Mercor": { code: "f1dabb81-9bfa-8107-8949-b13e8fa24444", param: "referralCode" },
-  "DataAnnotation": { code: "YOWWl4I", param: "worker_src" },
-  "AfterQuery": { code: "hscGOrDJRVeX6mvHFLTxcSQkw7m2", param: "ref" },
-  // "Turing": { code: "YOUR_TURING_CODE", param: "ref" },
-};
+const REFERRAL_CONFIG = {{REFERRAL_CONFIG_JSON}};
 
 function buildApplyUrl(job){
   try{
@@ -488,13 +497,6 @@ function renderStats(){
   document.getElementById('statTotal').textContent = JOBS.length;
   const companies = new Set(JOBS.map(j=>j.company));
   document.getElementById('statCompanies').textContent = companies.size;
-  const hourlyRates = JOBS.filter(j => j.pay.includes('/hr')).map(j=>{
-    const m = j.pay.match(/\$([\d,]+)/g);
-    if(!m) return 0;
-    return Math.max(...m.map(x=>parseInt(x.replace(/[$,]/g,''),10)));
-  });
-  const maxRate = Math.max(...hourlyRates, 0);
-  document.getElementById('statPay').textContent = maxRate ? ('$' + maxRate.toLocaleString() + '/hr') : '—';
 }
 
 function renderChips(){

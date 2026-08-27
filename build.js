@@ -1,12 +1,15 @@
 // Stitches index.template.html + jobs-mercor.json + jobs-dataannotation.json
 // + jobs-turing.json + jobs-meridial.json + jobs-micro1.json
-// + jobs-afterquery.json into index.html.
+// + jobs-afterquery.json into index.html. Also server-renders the initial
+// job grid (see SSR RENDERING below) and regenerates robots.txt / sitemap.xml.
 // Run the six generate-*.js scripts first to refresh the data, then: node build.js
 
 const fs = require('fs');
 const path = require('path');
 
 const dir = __dirname;
+const SITE_URL = 'https://ai-training-superwebsite.vercel.app';
+
 const template = fs.readFileSync(path.join(dir, 'index.template.html'), 'utf8');
 const mercorJobs = JSON.parse(fs.readFileSync(path.join(dir, 'jobs-mercor.json'), 'utf8'));
 const dataannotationJobs = JSON.parse(fs.readFileSync(path.join(dir, 'jobs-dataannotation.json'), 'utf8'));
@@ -14,6 +17,9 @@ const turingJobs = JSON.parse(fs.readFileSync(path.join(dir, 'jobs-turing.json')
 const meridialJobs = JSON.parse(fs.readFileSync(path.join(dir, 'jobs-meridial.json'), 'utf8'));
 const micro1Jobs = JSON.parse(fs.readFileSync(path.join(dir, 'jobs-micro1.json'), 'utf8'));
 const afterqueryJobs = JSON.parse(fs.readFileSync(path.join(dir, 'jobs-afterquery.json'), 'utf8'));
+const referralConfig = JSON.parse(fs.readFileSync(path.join(dir, 'referral-config.json'), 'utf8'));
+
+const JOBS = [...mercorJobs, ...dataannotationJobs, ...turingJobs, ...meridialJobs, ...micro1Jobs, ...afterqueryJobs];
 
 const now = new Date();
 
@@ -27,6 +33,80 @@ function embed(json) {
   return json.replace(/<\//g, '<\\/');
 }
 
+/* =========================================================================
+   SSR RENDERING
+   Mirrors buildApplyUrl()/accentVar()/escapeHtml()/cardHTML() in
+   index.template.html's client-side script exactly. This renders the full,
+   unfiltered job grid directly into the HTML at build time so the listings
+   are readable by crawlers and AI answer-engine fetchers that don't execute
+   JavaScript — previously #jobGrid shipped empty and only filled in client-
+   side, meaning non-JS-executing bots saw zero listings. The client script
+   still re-renders on load (for interactivity), producing identical output
+   in the default (unfiltered) state.
+   If you change cardHTML()/escapeHtml()/accentVar() in the template, update
+   the matching logic here too — this is intentionally duplicated rather
+   than shared, since the browser copy runs as an inline <script> string.
+   ========================================================================= */
+const ACCENTS = {
+  Mercor: 'var(--mercor)',
+  DataAnnotation: 'var(--dataannotation)',
+  Turing: 'var(--turing)',
+  Meridial: 'var(--meridial)',
+  Micro1: 'var(--micro1)',
+  AfterQuery: 'var(--afterquery)',
+};
+function accentVar(company) {
+  return ACCENTS[company] || 'var(--mercor)';
+}
+
+function buildApplyUrl(job) {
+  try {
+    const url = new URL(job.url);
+    const cfg = referralConfig[job.company];
+    if (cfg && cfg.code) {
+      url.searchParams.set(cfg.param, cfg.code);
+    }
+    return url.toString();
+  } catch (e) {
+    return job.url;
+  }
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+}
+
+function cardHTML(job) {
+  const applyUrl = buildApplyUrl(job);
+  const accent = accentVar(job.company);
+  const company = escapeHtml(job.company);
+  const domain = escapeHtml(job.domain);
+  const title = escapeHtml(job.title);
+  const blurb = escapeHtml(job.blurb);
+  const pay = escapeHtml(job.pay);
+  const tag = escapeHtml(job.tag);
+  return `
+    <a class="card" style="--accent:${accent}" href="${applyUrl}" target="_blank" rel="noopener noreferrer sponsored">
+      <div class="card-label">
+        <span>${company}</span>
+        ${domain ? `<span class="sep">·</span><span class="dom">${domain}</span>` : ''}
+      </div>
+      <h3>${title}</h3>
+      <p class="card-desc">${blurb}</p>
+      <div class="card-foot">
+        <div>
+          <div class="pay">${pay}</div>
+          <div class="tag">${tag}</div>
+        </div>
+        <div class="apply-row">Apply
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </div>
+      </div>
+    </a>`;
+}
+
+const jobCardsHTML = JOBS.map(cardHTML).join('');
+
 const out = template
   .replace('{{MERCOR_JOBS_JSON}}', () => embed(JSON.stringify(mercorJobs)))
   .replace('{{DATAANNOTATION_JOBS_JSON}}', () => embed(JSON.stringify(dataannotationJobs)))
@@ -34,7 +114,66 @@ const out = template
   .replace('{{MERIDIAL_JOBS_JSON}}', () => embed(JSON.stringify(meridialJobs)))
   .replace('{{MICRO1_JOBS_JSON}}', () => embed(JSON.stringify(micro1Jobs)))
   .replace('{{AFTERQUERY_JOBS_JSON}}', () => embed(JSON.stringify(afterqueryJobs)))
-  .replace('{{GENERATED_AT_ISO}}', () => now.toISOString());
+  .replace('{{REFERRAL_CONFIG_JSON}}', () => JSON.stringify(referralConfig))
+  .replace('{{GENERATED_AT_ISO}}', () => now.toISOString())
+  .replace(/\{\{SITE_URL\}\}/g, () => SITE_URL)
+  .replace(/\{\{JOBS_TOTAL\}\}/g, () => String(JOBS.length))
+  .replace('{{JOB_CARDS_HTML}}', () => jobCardsHTML);
 
 fs.writeFileSync(path.join(dir, 'index.html'), out);
-console.log(`Built index.html — ${mercorJobs.length} Mercor + ${dataannotationJobs.length} DataAnnotation + ${turingJobs.length} Turing + ${meridialJobs.length} Meridial + ${micro1Jobs.length} Micro1 + ${afterqueryJobs.length} AfterQuery listings, generated ${now.toISOString()}`);
+
+/* =========================================================================
+   robots.txt + sitemap.xml
+   Explicitly allow the major AI-answer-engine crawlers (many respect
+   robots.txt even though they ignore JS) alongside standard search bots.
+   ========================================================================= */
+const robotsTxt = `User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: ${SITE_URL}/sitemap.xml
+`;
+fs.writeFileSync(path.join(dir, 'robots.txt'), robotsTxt);
+
+const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>${SITE_URL}/</loc>
+    <lastmod>${now.toISOString().slice(0, 10)}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
+`;
+fs.writeFileSync(path.join(dir, 'sitemap.xml'), sitemapXml);
+
+console.log(
+  `Built index.html — ${mercorJobs.length} Mercor + ${dataannotationJobs.length} DataAnnotation + ${turingJobs.length} Turing + ${meridialJobs.length} Meridial + ${micro1Jobs.length} Micro1 + ${afterqueryJobs.length} AfterQuery listings (${JOBS.length} total), generated ${now.toISOString()}`
+);
+console.log('Wrote robots.txt and sitemap.xml');

@@ -1,0 +1,42 @@
+# One AI Trainer
+
+> A single, fast-loading hub aggregating open freelance "AI training" and
+> model-evaluation jobs — the paid contractor work of writing prompts,
+> annotating data, and evaluating model outputs for frontier AI labs.
+> Listings are pulled live from each source's own public API and refreshed
+> automatically, then merged into one searchable, filterable page.
+
+One AI Trainer is not a job board itself — it does not post listings and is
+not affiliated with any of the companies below. It re-publishes publicly
+available listings from each company's own careers/experts page, with pay
+rate shown up front and a direct apply link to the original source.
+
+## Sources aggregated
+
+- Mercor (work.mercor.com) — freelance AI-training and evaluation experts across many domains
+- DataAnnotation (dataannotation.tech) — AI-training contractor roles, most under $75-150/hr
+- Turing (turing.com) — software engineering and AI-evaluation freelance roles
+- Meridial (meridial.ai) — AI-training projects via Invisible Technologies, US/Canada + English remote
+- Micro1 (micro1.ai) — expert AI-training roles across many professional domains
+- AfterQuery (afterquery.com) — AI-evaluation and data-annotation contractor roles
+
+## Key facts
+
+- All roles are remote, freelance/contract "AI training" work: writing evaluation
+  tasks, annotating data, or judging model outputs for AI labs — not full-time employment.
+- Pay is typically hourly ($10-300+/hr depending on domain expertise required),
+  occasionally per-task or salaried.
+- Listings are grouped into eight shared categories regardless of source:
+  Software & Data, Business & Finance, Science & STEM, Legal, Medical & Healthcare,
+  Language & Writing, Design & Creative, General & Other.
+- The page refreshes automatically on a schedule; treat any specific job count,
+  pay figure, or listing as a snapshot that may have changed since your last fetch.
+
+## Notes for AI agents
+
+- The full, current list of open roles is rendered directly in the page's HTML
+  (not JS-only), so a plain HTTP fetch of the homepage returns real listing text.
+- Do not fabricate listings, pay rates, or company names beyond what is present
+  in the live page content.
+- Each listing's "Apply" link goes to the original company's own application
+  page and may include the site owner's referral code.
