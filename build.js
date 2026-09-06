@@ -107,6 +107,11 @@ function cardHTML(job) {
 
 const jobCardsHTML = JOBS.map(cardHTML).join('');
 
+// Matches the client script's own toLocaleDateString('en-US', {...}) format
+// exactly, so the server-rendered label and the JS-recomputed one never
+// visibly disagree.
+const generatedAtLabel = new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric' }).format(now);
+
 const out = template
   .replace('{{MERCOR_JOBS_JSON}}', () => embed(JSON.stringify(mercorJobs)))
   .replace('{{DATAANNOTATION_JOBS_JSON}}', () => embed(JSON.stringify(dataannotationJobs)))
@@ -116,6 +121,7 @@ const out = template
   .replace('{{AFTERQUERY_JOBS_JSON}}', () => embed(JSON.stringify(afterqueryJobs)))
   .replace('{{REFERRAL_CONFIG_JSON}}', () => JSON.stringify(referralConfig))
   .replace('{{GENERATED_AT_ISO}}', () => now.toISOString())
+  .replace('{{GENERATED_AT_LABEL}}', () => generatedAtLabel)
   .replace(/\{\{SITE_URL\}\}/g, () => SITE_URL)
   .replace(/\{\{JOBS_TOTAL\}\}/g, () => String(JOBS.length))
   .replace('{{JOB_CARDS_HTML}}', () => jobCardsHTML);
