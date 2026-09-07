@@ -26,6 +26,21 @@ the steps below.
 `build.js` prints a `STALE DATA WARNING` for any source that hasn't
 refreshed in more than 2 days, so this won't go unnoticed again.
 
+## The daily reminder
+
+A scheduled agent runs every morning at 8:00 AM America/Chicago and does
+two things, without touching the challenge:
+
+- checks whether `experts.afterquery.com/api/jobs/listings` answers a plain
+  request again (if it ever does, the daily build resumes on its own and
+  this whole file becomes unnecessary), and
+- checks how long ago `jobs-afterquery.json` was last committed.
+
+It only messages you if the API is reachable again, or if the data is 3+
+days stale. Otherwise it stays quiet. Routine id
+`trig_013vZb58BXPTyrsVn22JRtVm` — findable under scheduled routines if you
+ever want to change the time or turn it off.
+
 ## Steps
 
 1. Open this in a normal browser:

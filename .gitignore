@@ -2,3 +2,4 @@ node_modules/
 .vercel/
 afterquery-raw.json
 afterquery-post.txt
+AFTERQUERY-EMAIL-DRAFT.md
