@@ -6,6 +6,7 @@
 const fs = require('fs');
 const path = require('path');
 const { mapDomain } = require('./domain-categories');
+const { normalizePosted } = require('./posted-date');
 
 const API_URL = 'https://aws.api.mercor.com/work/listings-explore-page';
 const PER_DOMAIN_CAP = 8;
@@ -84,6 +85,7 @@ async function main() {
     blurb: cleanBlurb(l.description || ''),
     url: `https://work.mercor.com/jobs/${l.listingId}/${slugify(l.title)}`,
     domain: mapDomain(l.listingDomain, 'Mercor'),
+    posted: normalizePosted(l.postedAt || l.createdAt),
   }));
 
   const outPath = path.join(__dirname, 'jobs-mercor.json');

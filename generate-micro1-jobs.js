@@ -11,6 +11,7 @@
 const fs = require('fs');
 const path = require('path');
 const { mapDomain } = require('./domain-categories');
+const { normalizePosted } = require('./posted-date');
 
 const REFERRAL_CODE = '02b9d485-f559-40d2-981d-caca8ba2a435';
 const API_URL = `https://prod-api.micro1.ai/api/v1/job/portal/referral/${REFERRAL_CODE}/jobs`;
@@ -70,6 +71,7 @@ async function main() {
     blurb: blurbFromSkills(j.skills),
     url: j.apply_url,
     domain: mapDomain(j.domain_slug, 'Micro1'),
+    posted: normalizePosted(j.date_posted),
   }));
 
   const outPath = path.join(__dirname, 'jobs-micro1.json');

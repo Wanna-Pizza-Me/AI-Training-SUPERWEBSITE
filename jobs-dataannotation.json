@@ -6,7 +6,8 @@
     "tag": "312 hired recently",
     "blurb": "The newest models can vibe-code a whole feature in minutes. Someone has to check whether that code actually works, and that someone is you.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_software-engineer&utm_role=software-engineer&projects=PROG_SA",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -15,7 +16,8 @@
     "tag": "452 hired recently",
     "blurb": "Most of what models get wrong isn't specialist knowledge. It's careful reading, clear writing, and common-sense judgment, and that's exactly what this role supplies.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_generalist&utm_role=generalist",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -24,7 +26,8 @@
     "tag": "92 hired recently",
     "blurb": "The newest models can spin up a full analysis in minutes — load the data, pick a method, produce charts and a confident conclusion.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_data-scientist&utm_role=data-scientist&projects=DS_SA",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -33,7 +36,8 @@
     "tag": "67 hired recently",
     "blurb": "Models can build a three-statement model that looks clean and still get the mechanics wrong: a balance sheet that doesn't balance, working capital that flows the wrong way, a circular…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_finance-expert&utm_role=finance-expert&projects=FIN_SA",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -42,7 +46,8 @@
     "tag": "24 hired recently",
     "blurb": "Ask a model a tax question and it answers with authority, then applies a code section that changed last year, misses a phaseout, treats an S corp like a partnership, and forgets that state…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_tax-accountant&utm_role=tax-accountant&projects=ACC_SA",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -51,7 +56,8 @@
     "tag": "30 hired recently",
     "blurb": "Ask a model to close the books and it produces entries that foot perfectly and still misstate the result: a lease booked the old way, revenue recognized a quarter early, an intercompany…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_corporate-accountant&utm_role=corporate-accountant&projects=ACC_SA",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -60,7 +66,8 @@
     "tag": "77 hired recently",
     "blurb": "Models produce fluent legal analysis that is often subtly wrong: invented citations, misapplied precedent, and jurisdictional confusion.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_legal-expert&utm_role=legal-expert&projects=LAW",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -69,7 +76,8 @@
     "tag": "44 hired recently",
     "blurb": "Models produce fluent legal analysis that is often subtly wrong: invented citations, misapplied precedent, and jurisdictional confusion.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_attorney&utm_role=attorney&projects=LAW",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -78,7 +86,8 @@
     "tag": "22 hired recently",
     "blurb": "A model will draft a cite-check that looks airtight and still miss that the case was overruled, point to the wrong treatment, and quietly invent a pin cite.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_paralegal&utm_role=paralegal&projects=LAW",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -87,7 +96,8 @@
     "tag": "48 hired recently",
     "blurb": "Models answer health questions in a confident, authoritative voice and still get the clinical details wrong: a contraindication they skip, guidance that ignores comorbidities, advice that…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_medical-expert&utm_role=medical-expert&projects=MED",
-    "domain": "Medical & Healthcare"
+    "domain": "Medical & Healthcare",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -96,7 +106,8 @@
     "tag": "63 hired recently",
     "blurb": "Medical questions are where model mistakes matter most: outdated guidance, missed contraindications, and confident answers that no clinician would sign off on.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_physician&utm_role=physician&projects=MED",
-    "domain": "Medical & Healthcare"
+    "domain": "Medical & Healthcare",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -105,7 +116,8 @@
     "tag": "34 hired recently",
     "blurb": "Models sound confident and still get bedside care wrong: a dose no nurse would give, a triage order that buries the sickest patient, discharge teaching that misses the one thing keeping…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_nurse&utm_role=nurse&projects=MED",
-    "domain": "Medical & Healthcare"
+    "domain": "Medical & Healthcare",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -114,7 +126,8 @@
     "tag": "48 hired recently",
     "blurb": "Models handle textbook finance fine and fall apart on the real thing: mispriced risk, subtly wrong derivations, and models that ignore market microstructure.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_quantitative-analyst&utm_role=quantitative-analyst&projects=FIN_SA",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -123,7 +136,8 @@
     "tag": "34 hired recently",
     "blurb": "Models can recommend a portfolio that reads well and quietly breaks every rule that matters: concentrated bets dressed as diversification, a Sharpe ratio computed on overlapping exposures,…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_portfolio-manager&utm_role=portfolio-manager&projects=FIN_SA",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -132,7 +146,8 @@
     "tag": "71 hired recently",
     "blurb": "Models struggle with the practical side of healthcare: billing codes, insurance workflows, scheduling, and the administrative details that keep clinics running.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_healthcare-operations&utm_role=healthcare-operations&projects=HCO_SA",
-    "domain": "Medical & Healthcare"
+    "domain": "Medical & Healthcare",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -141,7 +156,8 @@
     "tag": "41 hired recently",
     "blurb": "Models will hand you code that looks secure and quietly ships a hardcoded secret, a broken auth check, or an injection the linter never flags.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_cybersecurity-expert&utm_role=cybersecurity-expert&projects=PROG_SA",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -150,7 +166,8 @@
     "tag": "108 hired recently",
     "blurb": "Models ship UI that renders in the demo and breaks everywhere else: state that desyncs on the second render, an accessibility tree no screen reader can follow, a layout that collapses the…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_frontend-engineer&utm_role=frontend-engineer&projects=PROG_SA",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -159,7 +176,8 @@
     "tag": "84 hired recently",
     "blurb": "A model will hand you a pipeline and an infrastructure change that apply cleanly and quietly leave a security group open to the world, a state file that will corrupt on the next run, and a…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_devops-engineer&utm_role=devops-engineer&projects=PROG_SA",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -168,7 +186,8 @@
     "tag": "28 hired recently",
     "blurb": "Models can generate a slick-looking screen and completely miss the point: the flow that adds three needless steps, the hierarchy that buries the one action that matters, the contrast that…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_designer&utm_role=designer",
-    "domain": "Design & Creative"
+    "domain": "Design & Creative",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -177,7 +196,8 @@
     "tag": "121 hired recently",
     "blurb": "Models write backend code that passes the happy-path test and falls over on everything else: the race condition under load, the N+1 that melts the database, the API contract that breaks…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_backend-engineer&utm_role=backend-engineer&projects=PROG_SA",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -186,7 +206,8 @@
     "tag": "96 hired recently",
     "blurb": "Models are surprisingly bad at reasoning about themselves: training dynamics, evaluation design, data pipelines, and deployment trade-offs.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_machine-learning-engineer&utm_role=machine-learning-engineer&projects=PROG_SA",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -195,7 +216,8 @@
     "tag": "31 hired recently",
     "blurb": "Models routinely propose impossible mechanisms, unsafe procedures, and syntheses that no bench chemist would attempt.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_chemist&utm_role=chemist&projects=CHEM",
-    "domain": "Science & STEM"
+    "domain": "Science & STEM",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -204,7 +226,8 @@
     "tag": "39 hired recently",
     "blurb": "Models can recite physics and still get it wrong: dimensional errors, misapplied approximations, and derivations that skip the step where the physics actually happens.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_physicist&utm_role=physicist&projects=PHYSICS",
-    "domain": "Science & STEM"
+    "domain": "Science & STEM",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -213,7 +236,8 @@
     "tag": "20 hired recently",
     "blurb": "A model will answer a compliance question with confidence and still point you toward a HIPAA violation: a disclosure with no authorization, a retention rule from the wrong state, a Stark or…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_healthcare-compliance-specialist&utm_role=healthcare-compliance-specialist&projects=HCO_SA",
-    "domain": "Medical & Healthcare"
+    "domain": "Medical & Healthcare",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -222,7 +246,8 @@
     "tag": "77 hired recently",
     "blurb": "Japanese exposes AI quickly: it mishandles keigo, mixing polite, humble, and honorific speech in ways that would embarrass a real speaker, and it fumbles counters and particles.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_japanese-expert&utm_role=japanese-expert&projects=JP",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -231,7 +256,8 @@
     "tag": "143 hired recently",
     "blurb": "AI can string together grammatical Mandarin and still read as foreign: it fumbles measure words, reaches for stiff textbook phrasing, and drops idioms like chengyu at the wrong pitch.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_chinese-expert&utm_role=chinese-expert&projects=CN",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -240,7 +266,8 @@
     "tag": "61 hired recently",
     "blurb": "Thai gives AI little room: words run together without spaces, tone carries meaning, and the politeness particles shift with who is speaking.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_thai-expert&utm_role=thai-expert&projects=TH",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -249,7 +276,8 @@
     "tag": "88 hired recently",
     "blurb": "Vietnamese is unforgiving of the small errors AI makes constantly: it drops or misplaces the tone diacritics that change a word entirely, and it stumbles over the pronoun system, where the…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_vietnamese-expert&utm_role=vietnamese-expert&projects=VI",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -258,7 +286,8 @@
     "tag": "69 hired recently",
     "blurb": "Korean punishes the mistakes AI loves to make: it mixes speech levels, sliding between formal and casual within a single exchange, and drops or misplaces the particles that carry meaning.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_korean-expert&utm_role=korean-expert&projects=KR",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -267,7 +296,8 @@
     "tag": "141 hired recently",
     "blurb": "Frontier models still fail at rigorous multi-step mathematics: invalid derivations, unjustified leaps, and confidently wrong final answers. Automated checks can't grade a proof. You can.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_mathematician&utm_role=mathematician&projects=MATH",
-    "domain": "Science & STEM"
+    "domain": "Science & STEM",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -276,7 +306,8 @@
     "tag": "58 hired recently",
     "blurb": "Models produce confident accounting answers that fail on the details: misapplied standards, broken reconciliations, and journal entries that don't balance.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_accountant&utm_role=accountant&projects=ACC_SA",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -285,7 +316,8 @@
     "tag": "312 hired recently",
     "blurb": "Automated metrics can't judge whether Spanish text actually sounds right: tone, idiom, cultural nuance, and the thousand small choices a native speaker makes without thinking.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_spanish-expert&utm_role=spanish-expert&projects=ES",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -294,7 +326,8 @@
     "tag": "148 hired recently",
     "blurb": "Models can scaffold a whole app in one shot: front end, API, and database, all of it looking right. Then the state goes stale, the endpoint leaks data, and the migration bricks production.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_full-stack-engineer&utm_role=full-stack-engineer&projects=PROG_SA",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -303,7 +336,8 @@
     "tag": "44 hired recently",
     "blurb": "Models blur the line between what's established, what's contested, and what's simply made up in the life sciences, and they cite papers that don't exist.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_biologist&utm_role=biologist&projects=BIO",
-    "domain": "Science & STEM"
+    "domain": "Science & STEM",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -312,7 +346,8 @@
     "tag": "34 hired recently",
     "blurb": "Models assign codes that look right and bill wrong: an ICD-10-CM code one notch short on specificity, a CPT modifier that changes the whole claim, an NCCI edit ignored, an E&M level the…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_medical-coder&utm_role=medical-coder&projects=HCO_SA",
-    "domain": "Medical & Healthcare"
+    "domain": "Medical & Healthcare",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -321,7 +356,8 @@
     "tag": "33 hired recently",
     "blurb": "Models can describe an exploit chain in confident detail and miss that step three never actually works, the payload gets filtered, or the whole path assumes a misconfiguration no real…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_penetration-tester&utm_role=penetration-tester&projects=PROG_SA",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -330,7 +366,8 @@
     "tag": "288 hired recently",
     "blurb": "Automated metrics can't judge whether Hindi text actually sounds right: tone, idiom, cultural nuance, and the thousand small choices a native speaker makes without thinking.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_hindi-expert&utm_role=hindi-expert&projects=HI",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -339,7 +376,8 @@
     "tag": "31 hired recently",
     "blurb": "Ask a model to brief a motion and it hands back something that reads like a real filing, then cites three cases that do not exist and misstates the standard of review on a fourth.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_litigation-attorney&utm_role=litigation-attorney&projects=LAW",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -348,7 +386,8 @@
     "tag": "27 hired recently",
     "blurb": "Ask a model to plan an audit and it produces a tidy program, then sets materiality by feel, accepts a management assertion as if it were evidence, and designs a sample that would never…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_auditor&utm_role=auditor&projects=ACC_SA",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -357,7 +396,8 @@
     "tag": "22 hired recently",
     "blurb": "Models describe the revenue cycle in clean theory and miss the mechanics that decide whether a claim pays: the real reason behind a CARC or RARC denial code, a payer rule that overrides the…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_revenue-cycle-analyst&utm_role=revenue-cycle-analyst&projects=HCO_SA",
-    "domain": "Medical & Healthcare"
+    "domain": "Medical & Healthcare",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -366,7 +406,8 @@
     "tag": "27 hired recently",
     "blurb": "During an incident, models love a tidy story: one root cause, a clean timeline, a confident containment plan.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_incident-responder&utm_role=incident-responder&projects=PROG_SA",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -375,7 +416,8 @@
     "tag": "176 hired recently",
     "blurb": "Automated metrics can't judge whether Portuguese text actually sounds right: tone, idiom, cultural nuance, and the thousand small choices a native speaker makes without thinking.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_portuguese-expert&utm_role=portuguese-expert&projects=PT",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -384,7 +426,8 @@
     "tag": "29 hired recently",
     "blurb": "Models write a pitch deck's worth of confident deal analysis and miss what a deal team lives on: a comps set stuffed with the wrong peers, an accretion/dilution model that ignores the…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_investment-banker&utm_role=investment-banker&projects=FIN_SA",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -393,7 +436,8 @@
     "tag": "28 hired recently",
     "blurb": "Hand a model a merger agreement and it summarizes it fluently, then misses that the indemnification cap swallows the escrow, that a closing condition has no matching covenant, and that the…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_corporate-attorney&utm_role=corporate-attorney&projects=LAW",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -402,7 +446,8 @@
     "tag": "24 hired recently",
     "blurb": "Models sound reassuring and still get bedside care wrong: a dosing detail that no nurse would administer, a triage order that buries the sickest patient, discharge teaching that misses the…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_registered-nurse&utm_role=registered-nurse&projects=MED",
-    "domain": "Medical & Healthcare"
+    "domain": "Medical & Healthcare",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -411,7 +456,8 @@
     "tag": "26 hired recently",
     "blurb": "A model will design an audit approach that reads well and would never survive review: a sample that tests the wrong assertion, a control it calls effective without evidence, a materiality…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_public-accountant&utm_role=public-accountant&projects=ACC_SA",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -420,7 +466,8 @@
     "tag": "24 hired recently",
     "blurb": "Models are great at spotting the textbook SQL injection and blind to the flaw that only shows up in your architecture: the trust boundary drawn in the wrong place, the deserialization no…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_application-security-engineer&utm_role=application-security-engineer&projects=PROG_SA",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -429,7 +476,8 @@
     "tag": "154 hired recently",
     "blurb": "Automated metrics can't judge whether Arabic text actually sounds right: tone, idiom, cultural nuance, and the thousand small choices a native speaker makes without thinking.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_arabic-expert&utm_role=arabic-expert&projects=AR",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -438,7 +486,8 @@
     "tag": "26 hired recently",
     "blurb": "Models build an LBO that returns a tidy IRR and skip the parts that make or break a deal: a debt schedule that ignores the covenants, an entry multiple with no exit story, diligence that…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_private-equity-associate&utm_role=private-equity-associate&projects=FIN_SA",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -447,7 +496,8 @@
     "tag": "26 hired recently",
     "blurb": "Ask a model about a regulatory obligation and it answers with confidence, then cites a rule that was superseded two years ago, blurs the line between binding regulation and informal…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_compliance-officer&utm_role=compliance-officer&projects=LAW",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -456,7 +506,8 @@
     "tag": "19 hired recently",
     "blurb": "Models recite cardiology confidently and still miss what matters: an outdated guideline threshold, a misread rhythm strip, an anticoagulation choice that ignores a clear contraindication.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_cardiologist&utm_role=cardiologist&projects=MED",
-    "domain": "Medical & Healthcare"
+    "domain": "Medical & Healthcare",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -465,7 +516,8 @@
     "tag": "26 hired recently",
     "blurb": "Ask a model to build a forecast and it returns a clean-looking model whose drivers do not connect, whose assumptions defy the business, and whose variance bridge does not tie to actuals.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_fpa-analyst&utm_role=fpa-analyst&projects=ACC_SA",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -474,7 +526,8 @@
     "tag": "19 hired recently",
     "blurb": "Models explain managed care in tidy theory and miss the mechanics that decide coverage: a benefit rule that overrides the general one, a prior-auth requirement waived in the contract, a…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_managed-care-analyst&utm_role=managed-care-analyst&projects=HCO_SA",
-    "domain": "Medical & Healthcare"
+    "domain": "Medical & Healthcare",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -483,7 +536,8 @@
     "tag": "25 hired recently",
     "blurb": "Models approve a borrower that any underwriter would flag: cash-flow coverage computed off the wrong line, covenants that don't bite, a rating that ignores where we are in the cycle.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_credit-analyst&utm_role=credit-analyst&projects=FIN_SA",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -492,7 +546,8 @@
     "tag": "18 hired recently",
     "blurb": "Models produce documentation that reads well and fails on integrity: a note that does not support the code billed, a missed query opportunity, a present-on-admission indicator that shifts…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_clinical-documentation-specialist&utm_role=clinical-documentation-specialist&projects=HCO_SA",
-    "domain": "Medical & Healthcare"
+    "domain": "Medical & Healthcare",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -501,7 +556,8 @@
     "tag": "132 hired recently",
     "blurb": "Automated metrics can't judge whether Indonesian text actually sounds right: tone, idiom, cultural nuance, and the thousand small choices a native speaker makes without thinking.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_indonesian-expert&utm_role=indonesian-expert&projects=IN",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -510,7 +566,8 @@
     "tag": "24 hired recently",
     "blurb": "Models give financial advice that sounds reassuring and quietly ignores the client: a tax-blind withdrawal plan, an allocation that forgets the time horizon, an estate suggestion that would…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_wealth-manager&utm_role=wealth-manager&projects=FIN_SA",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -519,7 +576,8 @@
     "tag": "22 hired recently",
     "blurb": "Give a model a contract to redline and it produces clean-looking edits that quietly leave an obligation with no trigger, a defined term used two different ways, and a cross-reference…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_contract-manager&utm_role=contract-manager&projects=LAW",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -528,7 +586,8 @@
     "tag": "21 hired recently",
     "blurb": "Hand a model a revenue arrangement and it writes a confident memo, then misapplies the ASC 606 steps, parks a lease in the wrong place under ASC 842, drops a required disclosure, and…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_financial-reporting-manager&utm_role=financial-reporting-manager&projects=ACC_SA",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -537,7 +596,8 @@
     "tag": "121 hired recently",
     "blurb": "Automated metrics can't judge whether Turkish text actually sounds right: tone, idiom, cultural nuance, and the thousand small choices a native speaker makes without thinking.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_turkish-expert&utm_role=turkish-expert&projects=TR",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -546,7 +606,8 @@
     "tag": "23 hired recently",
     "blurb": "Models write an equity note that sounds like the sell side and falls apart under a covering analyst's read: an estimate that ignores guidance, a target price with no bridge from the model,…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_equity-research-analyst&utm_role=equity-research-analyst&projects=FIN_SA",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -555,7 +616,8 @@
     "tag": "17 hired recently",
     "blurb": "Ask a model to assess patentability and it reasons smoothly, then treats an abstract idea as eligible subject matter, waves past the closest prior art, and construes a claim in a way no…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_ip-attorney&utm_role=ip-attorney&projects=LAW",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -564,7 +626,8 @@
     "tag": "98 hired recently",
     "blurb": "AI writes fluent-looking French that still slips on what natives feel automatically: it mishandles tu and vous, forces gender agreement in odd places, and reaches for wording that sounds…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_french-expert&utm_role=french-expert&projects=FR",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -573,7 +636,8 @@
     "tag": "22 hired recently",
     "blurb": "Models reach for an actuarial answer and fumble the long-tail math: a reserve that ignores development, mortality assumptions applied to the wrong cohort, discounting that quietly breaks…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_actuary&utm_role=actuary&projects=FIN_SA",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -582,7 +646,8 @@
     "tag": "91 hired recently",
     "blurb": "German gives AI plenty to get wrong: it botches case endings, builds compound nouns no one would actually say, and misses when du should be Sie.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_german-expert&utm_role=german-expert&projects=DE",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -591,7 +656,8 @@
     "tag": "21 hired recently",
     "blurb": "Models love a founder's story and can't tell a real market from a rounded-up one: a TAM built by multiplying optimism, traction metrics that don't cohort, a moat that's really just a…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_venture-capitalist&utm_role=venture-capitalist&projects=FIN_SA",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -600,7 +666,8 @@
     "tag": "20 hired recently",
     "blurb": "Models bind a risk no underwriter would touch: a premium that ignores the loss history, exclusions that don't match the exposure, a claim decision that misreads the policy language.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_insurance-underwriter&utm_role=insurance-underwriter&projects=FIN_SA",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -609,7 +676,8 @@
     "tag": "84 hired recently",
     "blurb": "AI produces textbook Italian that still feels off: it forces gender and number agreement mechanically, misses the formal Lei, and leans on wording that sounds translated rather than said.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_italian-expert&utm_role=italian-expert&projects=IT",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -618,7 +686,8 @@
     "tag": "19 hired recently",
     "blurb": "Models talk about markets like a textbook and trade like they've never been filled: a strategy that ignores the bid-ask, a hedge that's wrong by a Greek, position sizing with no respect for…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_trader&utm_role=trader&projects=FIN_SA",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -627,7 +696,8 @@
     "tag": "18 hired recently",
     "blurb": "Models manage cash on paper and miss what keeps a company solvent: a liquidity forecast that ignores timing, an FX hedge that leaves the real exposure open, a funding plan that assumes the…",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_treasury-analyst&utm_role=treasury-analyst&projects=FIN_SA",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -636,7 +706,8 @@
     "tag": "72 hired recently",
     "blurb": "Russian trips AI on structure it cannot fake: six cases, verb aspect, and agreement that has to hold across a whole sentence.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_russian-expert&utm_role=russian-expert&projects=RU",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -645,7 +716,8 @@
     "tag": "58 hired recently",
     "blurb": "Tagalog trips AI on the verb focus system and on the po and opo markers that carry respect.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_tagalog-expert&utm_role=tagalog-expert&projects=TL",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -654,7 +726,8 @@
     "tag": "55 hired recently",
     "blurb": "Bengali catches AI on the you it chooses: tui, tumi, and apni each carry a different closeness, and the model picks wrong.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_bengali-expert&utm_role=bengali-expert&projects=BN",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -663,7 +736,8 @@
     "tag": "53 hired recently",
     "blurb": "Polish gives AI a lot to break: seven cases, verb aspect, and agreement that must stay consistent across the sentence.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_polish-expert&utm_role=polish-expert&projects=PL",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -672,7 +746,8 @@
     "tag": "48 hired recently",
     "blurb": "Tamil catches AI on its split between everyday spoken forms and formal literary Tamil: the model mixes the two, producing text no one would say aloud or write in earnest.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_tamil-expert&utm_role=tamil-expert&projects=TA",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -681,7 +756,8 @@
     "tag": "48 hired recently",
     "blurb": "Hebrew exposes AI through grammatical gender: verbs and adjectives agree with the person addressed, and the model routinely gets it wrong.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_hebrew-expert&utm_role=hebrew-expert&projects=HE",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -690,7 +766,8 @@
     "tag": "47 hired recently",
     "blurb": "Malay trips AI on register: formal written Malay and everyday colloquial speech pull in different directions, and the model blends them awkwardly.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_malay-expert&utm_role=malay-expert&projects=MS",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -699,7 +776,8 @@
     "tag": "44 hired recently",
     "blurb": "Dutch catches AI on word order and on the je versus u choice that sets the tone of a sentence.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_dutch-expert&utm_role=dutch-expert&projects=NL",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": null
   },
   {
     "company": "DataAnnotation",
@@ -708,6 +786,7 @@
     "tag": "41 hired recently",
     "blurb": "Ukrainian gives AI structure it cannot fake: cases, verb aspect, and agreement that must hold across the sentence, plus the ty and vy distinction.",
     "url": "https://app.dataannotation.tech/worker_signup?worker_src=ai_jobs&utm_source=webflow_jobby&utm_medium=web&utm_campaign=ai_training_jobs&utm_content=role_bottom_ukrainian-expert&utm_role=ukrainian-expert&projects=UK",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": null
   }
 ]

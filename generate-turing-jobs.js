@@ -6,6 +6,7 @@
 const fs = require('fs');
 const path = require('path');
 const { mapDomain } = require('./domain-categories');
+const { normalizePosted } = require('./posted-date');
 
 const API_URL = 'https://work.turing.com/api/jobs/all';
 const PER_GROUP_CAP = 8;
@@ -45,6 +46,7 @@ async function main() {
     blurb: j.oneLinerDescription || '',
     url: `https://work.turing.com/jobs?jobId=${j.id}`,
     domain: mapDomain(j.roleGroup, 'Turing'),
+    posted: normalizePosted(j.createdDate),
   }));
 
   const outPath = path.join(__dirname, 'jobs-turing.json');

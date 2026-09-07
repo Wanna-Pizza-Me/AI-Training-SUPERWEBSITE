@@ -6,6 +6,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { relativeAge } = require('./posted-date');
 
 const dir = __dirname;
 const SITE_URL = 'https://ai-training-superwebsite.vercel.app';
@@ -142,11 +143,16 @@ function cardHTML(job) {
   const blurb = escapeHtml(job.blurb);
   const pay = escapeHtml(job.pay);
   const tag = escapeHtml(job.tag);
+  // null for the sources that expose no posting date (DataAnnotation), in
+  // which case the element is omitted rather than rendered empty.
+  const rawAge = relativeAge(job.posted, now);
+  const age = rawAge ? escapeHtml(rawAge) : '';
   return `
     <a class="card" style="--accent:${accent}" href="${applyUrl}" target="_blank" rel="noopener noreferrer sponsored">
       <div class="card-label">
         <span>${company}</span>
         ${domain ? `<span class="sep">·</span><span class="dom">${domain}</span>` : ''}
+        ${age ? `<span class="sep">·</span><span class="age">${age}</span>` : ''}
       </div>
       <h3>${title}</h3>
       <p class="card-desc">${blurb}</p>
@@ -241,3 +247,18 @@ console.log(
   `Built index.html — ${mercorJobs.length} Mercor + ${dataannotationJobs.length} DataAnnotation + ${turingJobs.length} Turing + ${meridialJobs.length} Meridial + ${micro1Jobs.length} Micro1 + ${afterqueryJobs.length} AfterQuery listings (${JOBS.length} total), generated ${now.toISOString()}`
 );
 console.log('Wrote robots.txt and sitemap.xml');
+
+// Date coverage drives the "Most recent" sort — undated listings always sort
+// last, so a source silently losing its date field would quietly sink all of
+// its listings. Make that visible in the build log.
+const datedBySource = {};
+for (const j of JOBS) {
+  const s = (datedBySource[j.company] ||= { dated: 0, total: 0 });
+  s.total++;
+  if (j.posted) s.dated++;
+}
+const totalDated = JOBS.filter(j => j.posted).length;
+console.log(
+  `Posting dates: ${totalDated}/${JOBS.length} listings — ` +
+    Object.entries(datedBySource).map(([c, s]) => `${c} ${s.dated}/${s.total}`).join(', ')
+);

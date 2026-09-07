@@ -1,21 +1,133 @@
 [
   {
     "company": "Micro1",
+    "title": "Aerodynamics Expert",
+    "pay": "$80–$130/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in Python, Aerodynamics.",
+    "url": "https://jobs.micro1.ai/post/d55f38c6-6fa4-420a-a184-cb4130eb5fcf?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "General & Other",
+    "posted": "2026-09-07T18:45:06.000Z"
+  },
+  {
+    "company": "Micro1",
+    "title": "Materials Science Expert",
+    "pay": "$80–$130/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in Python, Materials Science.",
+    "url": "https://jobs.micro1.ai/post/ee7c4e95-fa17-410c-a0a9-5d05155a5405?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "General & Other",
+    "posted": "2026-09-07T18:41:56.000Z"
+  },
+  {
+    "company": "Micro1",
+    "title": "Circuit Design Expert",
+    "pay": "$80–$130/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in Python, Circuit Design.",
+    "url": "https://jobs.micro1.ai/post/40ed9a70-5415-4571-9f7b-6840f0db924a?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "General & Other",
+    "posted": "2026-09-07T18:35:56.000Z"
+  },
+  {
+    "company": "Micro1",
+    "title": "Mechanical Engineering Expert",
+    "pay": "$80–$130/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in Python, Mechanical Engineering.",
+    "url": "https://jobs.micro1.ai/post/9ece7cf2-3d00-497e-ab11-4793d1858646?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "General & Other",
+    "posted": "2026-09-07T18:30:44.000Z"
+  },
+  {
+    "company": "Micro1",
+    "title": "Physics Expert (AMO / Optical Properties of Materials)\t\t",
+    "pay": "$100–$200/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in Physics, ab initio configuration interaction for polarizability, atomic-structure calculations for Yb-171 / Yb-174, sigma vs pi transition identification.",
+    "url": "https://jobs.micro1.ai/post/1e8c2077-7a9d-4a91-adcd-f96404dc8226?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Science & STEM",
+    "posted": "2026-09-07T15:54:02.000Z"
+  },
+  {
+    "company": "Micro1",
+    "title": "Mandarin Transcription Expert",
+    "pay": "$20–$30/hr",
+    "tag": "10 openings",
+    "blurb": "Looking for expertise in Audio Transcription, Attention to detail, AI Training.",
+    "url": "https://jobs.micro1.ai/post/8dea9829-e259-4841-befd-9a52edb8a9f5?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Language & Writing",
+    "posted": "2026-09-07T15:17:20.000Z"
+  },
+  {
+    "company": "Micro1",
+    "title": "Dutch Transcription Expert",
+    "pay": "$25–$30/hr",
+    "tag": "10 openings",
+    "blurb": "Looking for expertise in Audio Transcription, Attention to detail, AI Training.",
+    "url": "https://jobs.micro1.ai/post/1949adfa-dfb9-405f-939c-fd531e11c31c?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Language & Writing",
+    "posted": "2026-09-07T15:12:21.000Z"
+  },
+  {
+    "company": "Micro1",
+    "title": "Cantonese Transcription Expert",
+    "pay": "$20–$35/hr",
+    "tag": "1 opening",
+    "blurb": "Looking for expertise in Audio Transcription, Attention to details, AI Training.",
+    "url": "https://jobs.micro1.ai/post/361f9b97-4179-4631-a026-514efee334bc?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Language & Writing",
+    "posted": "2026-09-07T15:05:10.000Z"
+  },
+  {
+    "company": "Micro1",
+    "title": "Software Engineer",
+    "pay": "$50–$100/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in Python3, JAVA, Rust, Algorithms.",
+    "url": "https://jobs.micro1.ai/post/d98ab3b0-dfc2-43d6-986a-e75b0d4c35f9?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Software & Data",
+    "posted": "2026-09-07T15:03:44.000Z"
+  },
+  {
+    "company": "Micro1",
+    "title": "GitHub Contributor",
+    "pay": "$50–$150/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in Python3, JAVA, Rust, Algorithms.",
+    "url": "https://jobs.micro1.ai/post/52829d52-bcb5-4c84-a2e7-a5b3dc73bf15?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Software & Data",
+    "posted": "2026-09-07T14:55:28.000Z"
+  },
+  {
+    "company": "Micro1",
+    "title": "CFD Engineer",
+    "pay": "$50–$150/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in CFD engineering, Aerodynamics, fluid-dynamics.",
+    "url": "https://jobs.micro1.ai/post/a5de9ba8-ba95-4737-b985-327e48c2b8d9?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Software & Data",
+    "posted": "2026-09-07T10:56:30.000Z"
+  },
+  {
+    "company": "Micro1",
     "title": "Video Data Collector (Smartphone)",
     "pay": "$8–$17/hr",
     "tag": "100 openings",
     "blurb": "Looking for expertise in video recording, data collection, metadata management, attention to detail.",
     "url": "https://jobs.micro1.ai/post/a4e8f813-f908-4433-8cf7-d06f878c82fa?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-09-06T21:10:39.000Z"
   },
   {
     "company": "Micro1",
     "title": "Attorney",
-    "pay": "$90–$130/hr",
+    "pay": "$90–$110/hr",
     "tag": "High demand",
     "blurb": "Looking for expertise in Contract Drafting, Technology Transactions, Contract Negotiation, Contract Redlining.",
     "url": "https://jobs.micro1.ai/post/c9a1355a-74bc-4300-8c68-b88c5a88803f?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-09-06T20:40:14.000Z"
   },
   {
     "company": "Micro1",
@@ -24,7 +136,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in video annotation, data labeling, attention to detail, written communication.",
     "url": "https://jobs.micro1.ai/post/7dbb09e4-d2d9-4138-ba02-f8a1bc6a71a5?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-09-05T00:51:56.000Z"
   },
   {
     "company": "Micro1",
@@ -33,7 +146,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in data annotation, critical thinking, attention to detail, written and verbal communication.",
     "url": "https://jobs.micro1.ai/post/8b1146d2-f854-4461-83e0-4c4bbde847e7?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-09-05T00:29:54.000Z"
   },
   {
     "company": "Micro1",
@@ -42,7 +156,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Operations, CRM Ownership, Revenue Tools Beyond the CRM, Operational Judgment and Policy Conflicts.",
     "url": "https://jobs.micro1.ai/post/cd222383-2114-4280-940c-79d0a1e75ee0?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-09-04T19:37:25.000Z"
   },
   {
     "company": "Micro1",
@@ -51,7 +166,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Operations, Conflicting Policy Arbitration, CRM Ownership and Data Model, Compliance-Constrained Operations Design.",
     "url": "https://jobs.micro1.ai/post/678df5e9-a43e-4dad-adbb-5ee13c42ec48?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-09-04T19:37:20.000Z"
   },
   {
     "company": "Micro1",
@@ -60,7 +176,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in video recording, attention to detail.",
     "url": "https://jobs.micro1.ai/post/0f2c4f59-00c6-4296-a9dc-fb7b93efd31b?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-09-04T11:31:32.000Z"
   },
   {
     "company": "Micro1",
@@ -69,7 +186,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in 360° Video Recording, Camera Mounts, Video Upload, Equipment Handling.",
     "url": "https://jobs.micro1.ai/post/9d57fd44-b189-41ca-a0d4-2fe3903eec41?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-09-03T16:46:59.000Z"
   },
   {
     "company": "Micro1",
@@ -78,7 +196,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in AutoCAD, AutoDesk, Fusion 360, FreeCAD.",
     "url": "https://jobs.micro1.ai/post/f5e8360f-b6b5-4674-9b5d-798082e223ec?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-09-03T15:35:20.000Z"
   },
   {
     "company": "Micro1",
@@ -87,7 +206,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in CPA, Income Tax Prep, Income Tax Filing, Communication.",
     "url": "https://jobs.micro1.ai/post/c441bd91-0d44-4a92-89bc-befbf215d89f?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-09-03T14:54:48.000Z"
   },
   {
     "company": "Micro1",
@@ -96,7 +216,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in video recording, attention to detail, camera setup.",
     "url": "https://jobs.micro1.ai/post/04955b6f-5026-498a-8143-5ec852cbd526?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-09-03T10:34:57.000Z"
   },
   {
     "company": "Micro1",
@@ -105,7 +226,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Financial Reporting, Audit Procedures, Financial Modeling, Tax Compliance.",
     "url": "https://jobs.micro1.ai/post/c946b7ad-f8f6-4378-9ce6-ce836760af89?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-09-03T05:11:35.000Z"
   },
   {
     "company": "Micro1",
@@ -114,7 +236,8 @@
     "tag": "15 openings",
     "blurb": "Looking for expertise in Product Management, PRDs & Product Specs, Roadmap Prioritization, Product Discovery.",
     "url": "https://jobs.micro1.ai/post/2b9000cd-9104-4b1e-afce-1358372d7c0a?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-09-03T04:30:43.000Z"
   },
   {
     "company": "Micro1",
@@ -123,7 +246,8 @@
     "tag": "15 openings",
     "blurb": "Looking for expertise in Software Engineering, System Design, Code Review, Automation Testing.",
     "url": "https://jobs.micro1.ai/post/3aa4725e-1c37-488a-b848-75489cf1e0ce?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-09-03T04:18:33.000Z"
   },
   {
     "company": "Micro1",
@@ -132,7 +256,8 @@
     "tag": "15 openings",
     "blurb": "Looking for expertise in Technical Writing, Developer Documentation, API Documentation, Information Architecture for Docs.",
     "url": "https://jobs.micro1.ai/post/9ef74457-f1e1-487a-8583-def78112ce46?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-09-03T04:13:17.000Z"
   },
   {
     "company": "Micro1",
@@ -141,7 +266,8 @@
     "tag": "15 openings",
     "blurb": "Looking for expertise in UX Design, User Research, Usability Testing, Heuristic.",
     "url": "https://jobs.micro1.ai/post/3aed5e7a-de88-49c1-8399-0e071c53a3b7?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-09-03T04:02:16.000Z"
   },
   {
     "company": "Micro1",
@@ -150,7 +276,8 @@
     "tag": "15 openings",
     "blurb": "Looking for expertise in Product design, Design Strategy, Prototyping (Figma), Design Rationale.",
     "url": "https://jobs.micro1.ai/post/7d9f7b38-5448-42e9-bf19-2ad2f03a570d?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-09-03T04:02:13.000Z"
   },
   {
     "company": "Micro1",
@@ -159,7 +286,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in JavaScript, Typescript, React, Component Architecture.",
     "url": "https://jobs.micro1.ai/post/e473c308-0568-43aa-9e07-7349fcec0893?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-09-03T04:02:01.000Z"
   },
   {
     "company": "Micro1",
@@ -168,7 +296,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in UI Design, Typography, Color & Layout, Design Systems.",
     "url": "https://jobs.micro1.ai/post/e9f0e202-f0a7-4b07-8167-2ca28cf5946b?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-09-03T04:01:53.000Z"
   },
   {
     "company": "Micro1",
@@ -177,7 +306,8 @@
     "tag": "15 openings",
     "blurb": "Looking for expertise in Product Design, UX Design & User Research, UI/Visual Design, Design Systems (Figma).",
     "url": "https://jobs.micro1.ai/post/390ce816-fe12-4667-adbd-764cb32d3170?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-09-03T03:46:24.000Z"
   },
   {
     "company": "Micro1",
@@ -186,7 +316,8 @@
     "tag": "15 openings",
     "blurb": "Looking for expertise in Product Marketing, Positioning & Messaging, Go-To-Market Strategy, Competitive Analysis.",
     "url": "https://jobs.micro1.ai/post/ae9dce2c-e355-4a2b-a3b5-b4ec3d5906bd?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-09-03T03:35:12.000Z"
   },
   {
     "company": "Micro1",
@@ -195,7 +326,8 @@
     "tag": "15 openings",
     "blurb": "Looking for expertise in Business Analysis, Requirements Gathering, Quantitative & Qualitative Research, Data Analysis (Excel/SQL a plus).",
     "url": "https://jobs.micro1.ai/post/088e7d1f-9f9e-4941-99ac-b28f551c9715?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-09-03T03:24:55.000Z"
   },
   {
     "company": "Micro1",
@@ -204,7 +336,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Clinical reasoning, Clinical risk assessment, Intervention judgment, Risk formulation.",
     "url": "https://jobs.micro1.ai/post/afddf4b4-2a89-4848-9826-708eff6a3c7c?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Medical & Healthcare"
+    "domain": "Medical & Healthcare",
+    "posted": "2026-09-02T08:28:43.000Z"
   },
   {
     "company": "Micro1",
@@ -213,16 +346,18 @@
     "tag": "10 openings",
     "blurb": "Looking for expertise in analytical listening, music theory knowledge, audio annotation, attention to detail.",
     "url": "https://jobs.micro1.ai/post/43067af3-efeb-435d-aeb9-6d1de8c2af0a?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-09-02T07:41:47.000Z"
   },
   {
     "company": "Micro1",
     "title": "STEM Expert",
-    "pay": "$50–$100/hr",
+    "pay": "$80–$130/hr",
     "tag": "High demand",
     "blurb": "Looking for expertise in Biology.",
     "url": "https://jobs.micro1.ai/post/46d40ceb-c9b5-4b76-a595-6d74ecf7107e?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-09-01T23:06:41.000Z"
   },
   {
     "company": "Micro1",
@@ -231,7 +366,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Clinical reasoning, Clinical risk assessment, Severity staging, Intervention judgment.",
     "url": "https://jobs.micro1.ai/post/4537e9e8-68fc-40c5-bb2d-53de5b5f6eee?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Medical & Healthcare"
+    "domain": "Medical & Healthcare",
+    "posted": "2026-09-01T21:15:18.000Z"
   },
   {
     "company": "Micro1",
@@ -240,7 +376,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Video Capturing, IMU (Inertial Measurement Unit), Attention to Detail.",
     "url": "https://jobs.micro1.ai/post/204600bf-1abe-4ab0-a474-cd2264999149?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-09-01T18:39:33.000Z"
   },
   {
     "company": "Micro1",
@@ -249,7 +386,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Clinical reasoning, Child/Adolescent Clinical Safety expertise, Clinical risk assessment, Severity staging.",
     "url": "https://jobs.micro1.ai/post/b13e34d0-d672-42bf-9a5d-b783311f2601?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Medical & Healthcare"
+    "domain": "Medical & Healthcare",
+    "posted": "2026-09-01T18:23:03.000Z"
   },
   {
     "company": "Micro1",
@@ -258,7 +396,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Clinical reasoning, Child/Adolescent Clinical Safety expertise, Clinical risk assessment, Severity staging.",
     "url": "https://jobs.micro1.ai/post/aeda6c13-c58d-4e11-bf6a-edcb9fdf65c2?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Medical & Healthcare"
+    "domain": "Medical & Healthcare",
+    "posted": "2026-09-01T17:05:36.000Z"
   },
   {
     "company": "Micro1",
@@ -267,7 +406,8 @@
     "tag": "1 opening",
     "blurb": "Looking for expertise in PostgreSQL, AWS RDS, High-availability structures, Large-scale databases.",
     "url": "https://jobs.micro1.ai/post/ba5cfa19-1fa9-4e01-a416-f9da4c3e2628?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-31T16:19:41.000Z"
   },
   {
     "company": "Micro1",
@@ -276,7 +416,8 @@
     "tag": "2 openings",
     "blurb": "Looking for expertise in C#, .NET, MySQL.",
     "url": "https://jobs.micro1.ai/post/f55c5e8b-d0e2-427c-b84f-7642e66e263f?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-31T07:22:59.000Z"
   },
   {
     "company": "Micro1",
@@ -285,7 +426,8 @@
     "tag": "35 openings",
     "blurb": "Looking for expertise in Python, Machine Learning, MongoDB.",
     "url": "https://jobs.micro1.ai/post/3751d160-6ea1-45e9-8c40-7af439059844?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-31T07:21:39.000Z"
   },
   {
     "company": "Micro1",
@@ -294,7 +436,8 @@
     "tag": "1 opening",
     "blurb": "Looking for expertise in Venture Financings, Corporate Governance, Equity Administration, Transaction Execution.",
     "url": "https://jobs.micro1.ai/post/c23e27f9-f0a5-4165-9f1c-255f78da2a79?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-29T13:10:20.000Z"
   },
   {
     "company": "Micro1",
@@ -303,7 +446,8 @@
     "tag": "30 openings",
     "blurb": "Looking for expertise in video annotation tools, attention to detail, english reading and writing, quality assurance.",
     "url": "https://jobs.micro1.ai/post/f6d12b67-cb6d-4561-9659-a2da145b95fb?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-29T11:39:02.000Z"
   },
   {
     "company": "Micro1",
@@ -312,7 +456,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Naval domain depth, Classified-environment fluency, Stakeholder navigation, Analytical judgment.",
     "url": "https://jobs.micro1.ai/post/a051bb56-cde2-4f5c-bbbe-a7d52e7506db?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-28T17:16:42.000Z"
   },
   {
     "company": "Micro1",
@@ -321,7 +466,8 @@
     "tag": "10 openings",
     "blurb": "Looking for expertise in tamil language proficiency, audio transcription, linguistic annotation, attention to detail.",
     "url": "https://jobs.micro1.ai/post/9c3be41a-3d6d-4a1e-a917-5234b2b19c14?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-27T15:14:56.000Z"
   },
   {
     "company": "Micro1",
@@ -330,7 +476,8 @@
     "tag": "10 openings",
     "blurb": "Looking for expertise in telugu language proficiency, transcription, linguistic annotation, editing and proofreading.",
     "url": "https://jobs.micro1.ai/post/d49df3cc-52f9-4da6-9c84-a4f9ddb6c553?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-27T15:11:32.000Z"
   },
   {
     "company": "Micro1",
@@ -339,7 +486,8 @@
     "tag": "10 openings",
     "blurb": "Looking for expertise in german language proficiency, audio transcription, attention to detail, linguistic annotation.",
     "url": "https://jobs.micro1.ai/post/eb959833-f2b5-4401-95e0-cb698f0f199f?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-27T15:06:42.000Z"
   },
   {
     "company": "Micro1",
@@ -348,7 +496,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Financial Modeling, Valuation, Investment Analysis, Due Diligence.",
     "url": "https://jobs.micro1.ai/post/3b1f3a6f-51b3-4622-8baa-28b88e58f3d4?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-27T15:02:02.000Z"
   },
   {
     "company": "Micro1",
@@ -357,7 +506,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Business Strategy, Problem Solving, Business Analysis, Market Research.",
     "url": "https://jobs.micro1.ai/post/d3fbfdeb-eb0e-44b1-80a3-20b0baa07bf5?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-27T14:53:22.000Z"
   },
   {
     "company": "Micro1",
@@ -366,7 +516,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Writing, Editing, Copyediting, Journalism.",
     "url": "https://jobs.micro1.ai/post/44bc2206-7fb7-4711-9daa-9328de14eda2?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-27T09:37:55.000Z"
   },
   {
     "company": "Micro1",
@@ -375,7 +526,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Legal Research, Legal Writing, Contract Law, Contract Drafting.",
     "url": "https://jobs.micro1.ai/post/cffadbd5-0477-400e-a386-6bba54ffa150?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-27T09:37:01.000Z"
   },
   {
     "company": "Micro1",
@@ -384,7 +536,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in System Design, Code Review, Debugging, Algorithms.",
     "url": "https://jobs.micro1.ai/post/3d79ba82-926b-48c0-9d15-8791a364ea81?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-27T09:35:46.000Z"
   },
   {
     "company": "Micro1",
@@ -393,7 +546,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Python, Machine Learning, Statistics, Data Analysis.",
     "url": "https://jobs.micro1.ai/post/dc71a0c0-527b-474b-96e3-022c63e7012d?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-27T09:34:08.000Z"
   },
   {
     "company": "Micro1",
@@ -402,7 +556,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Research, Academic Writing, Critical Analysis, Data Analysis.",
     "url": "https://jobs.micro1.ai/post/ba8b8566-e3ac-49b4-8fd3-f7208f609a06?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
+    "domain": "Science & STEM",
+    "posted": "2026-08-27T09:33:39.000Z"
   },
   {
     "company": "Micro1",
@@ -411,7 +566,8 @@
     "tag": "30 openings",
     "blurb": "Looking for expertise in Typography, layout & grid systems, Brand & template systems, Adobe/Figma production flow.",
     "url": "https://jobs.micro1.ai/post/22bec98f-7484-42b4-af15-17e033f0136f?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Design & Creative"
+    "domain": "Design & Creative",
+    "posted": "2026-08-26T20:44:01.000Z"
   },
   {
     "company": "Micro1",
@@ -420,7 +576,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in AutoCAD, CAD, Python, RTL.",
     "url": "https://jobs.micro1.ai/post/5f50767b-8275-4f5a-8861-08e895e0d1e2?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-26T18:13:46.000Z"
   },
   {
     "company": "Micro1",
@@ -429,7 +586,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in MusicXML.",
     "url": "https://jobs.micro1.ai/post/8a0ef31d-212b-49e4-ba4a-6075436f5f6b?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-26T17:57:20.000Z"
   },
   {
     "company": "Micro1",
@@ -438,7 +596,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in US Law, Legal drafting, Litigation mastery, Case theory application.",
     "url": "https://jobs.micro1.ai/post/c5772db7-51b9-4a96-8f7d-6afbdf7b7f85?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-26T10:56:34.000Z"
   },
   {
     "company": "Micro1",
@@ -447,7 +606,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in US Law, Legal drafting, Litigation mastery, Case theory application.",
     "url": "https://jobs.micro1.ai/post/02a97913-db10-4060-a35f-113c69637d1a?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-26T10:51:21.000Z"
   },
   {
     "company": "Micro1",
@@ -456,7 +616,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in US Law, Legal drafting, Litigation mastery, Case theory application.",
     "url": "https://jobs.micro1.ai/post/9dd9c76c-51d7-4e19-81fd-3b3c093edef2?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-26T10:51:11.000Z"
   },
   {
     "company": "Micro1",
@@ -465,7 +626,8 @@
     "tag": "1 opening",
     "blurb": "Looking for expertise in Product Ownership & Execution, Data-Driven Product Management, Scope Triage & Prioritization, Speed.",
     "url": "https://jobs.micro1.ai/post/01f86047-2c74-46bb-a6fc-a00e1be3dd5b?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-25T23:02:27.000Z"
   },
   {
     "company": "Micro1",
@@ -474,7 +636,8 @@
     "tag": "1 opening",
     "blurb": "Looking for expertise in Python, LLMs, RAG, AWS.",
     "url": "https://jobs.micro1.ai/post/d1faea65-4f6a-4bfb-8616-fbfbdd997474?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-25T13:50:27.000Z"
   },
   {
     "company": "Micro1",
@@ -483,7 +646,8 @@
     "tag": "1 opening",
     "blurb": "Looking for expertise in Python, LLM Systems, Data Pipelines, Distributed Systems.",
     "url": "https://jobs.micro1.ai/post/c4289f4e-1884-4dd0-bdae-af3757d84daf?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-25T13:42:50.000Z"
   },
   {
     "company": "Micro1",
@@ -492,7 +656,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Full-cycle recruiting, Clearance fluency, Cleared sourcing, Military/veteran translation.",
     "url": "https://jobs.micro1.ai/post/80077f82-8234-4285-a1d6-332e6d4fa985?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-25T13:13:02.000Z"
   },
   {
     "company": "Micro1",
@@ -501,7 +666,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in clinical psychology, psychiatry, military and veteran mental health expertise, trauma and ptsd assessment.",
     "url": "https://jobs.micro1.ai/post/cdb8b25d-0be7-41c3-87d6-241592b9fc41?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
+    "domain": "Science & STEM",
+    "posted": "2026-08-25T10:24:10.000Z"
   },
   {
     "company": "Micro1",
@@ -510,7 +676,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in child development expertise, developmental psychology.",
     "url": "https://jobs.micro1.ai/post/dcb0b1e6-a6a0-4cdc-9ab8-82ef4bb34479?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
+    "domain": "Science & STEM",
+    "posted": "2026-08-25T10:13:30.000Z"
   },
   {
     "company": "Micro1",
@@ -519,7 +686,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Data Analytics & Business Intelligence, CRM Administration & Optimization, Sales Operations & Pipeline Management, Forecasting & Data Modeling.",
     "url": "https://jobs.micro1.ai/post/2752b340-47ec-4cfa-8197-999460c07a6e?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-25T10:03:54.000Z"
   },
   {
     "company": "Micro1",
@@ -528,7 +696,8 @@
     "tag": "100 openings",
     "blurb": "Looking for expertise in video editing, adobe premiere pro, after effects, final cut pro.",
     "url": "https://jobs.micro1.ai/post/c4e4ac18-a3aa-47ba-8229-d6611085afc6?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Design & Creative"
+    "domain": "Design & Creative",
+    "posted": "2026-08-25T06:32:59.000Z"
   },
   {
     "company": "Micro1",
@@ -537,7 +706,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in US Law, Legal drafting, Litigation mastery, Case theory application.",
     "url": "https://jobs.micro1.ai/post/7c500d8e-c9bc-4778-b05e-258eff240a96?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-24T17:54:54.000Z"
   },
   {
     "company": "Micro1",
@@ -546,7 +716,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Litigation strategy, Adversarial reasoning, Case team direction, US Law.",
     "url": "https://jobs.micro1.ai/post/1db87d5e-46ee-4415-a54b-74dbd9cc47e5?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-24T16:48:45.000Z"
   },
   {
     "company": "Micro1",
@@ -555,7 +726,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Python3, JAVA, Rust, Algorithms.",
     "url": "https://jobs.micro1.ai/post/ca549605-be95-4fe1-b995-40794422b4a5?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-24T14:55:33.000Z"
   },
   {
     "company": "Micro1",
@@ -564,7 +736,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Python3, JAVA, Rust, Algorithms.",
     "url": "https://jobs.micro1.ai/post/34d6161d-1708-44c3-b8e9-37bc6ff8f365?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-24T14:54:57.000Z"
   },
   {
     "company": "Micro1",
@@ -573,7 +746,8 @@
     "tag": "30 openings",
     "blurb": "Looking for expertise in Kubernetes, Terraform, CI/CD, Python.",
     "url": "https://jobs.micro1.ai/post/cfd16a5b-8927-4380-8044-8b758b869494?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-22T10:31:15.000Z"
   },
   {
     "company": "Micro1",
@@ -582,7 +756,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Contract Drafting, Technology Transactions, Contract Negotiation, Contract Redlining.",
     "url": "https://jobs.micro1.ai/post/5cc51613-fc8a-451f-8453-40fc4cb4d230?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-21T21:23:21.000Z"
   },
   {
     "company": "Micro1",
@@ -591,16 +766,8 @@
     "tag": "1 opening",
     "blurb": "Looking for expertise in Payroll, Accounts Payable, Payroll Taxes.",
     "url": "https://jobs.micro1.ai/post/6a1e407f-b300-4234-835f-0e6c7594f496?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
-  },
-  {
-    "company": "Micro1",
-    "title": "Product Management Expert",
-    "pay": "$60–$100/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Deck craft, Rubric fidelity, Product reasoning, Technical writing.",
-    "url": "https://jobs.micro1.ai/post/93bc914c-9b53-4f91-b02b-a0b4ccfddcc6?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-21T20:21:28.000Z"
   },
   {
     "company": "Micro1",
@@ -609,7 +776,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Research & source triangulation, Attention to detail, Written precision, Self-direction & reliability.",
     "url": "https://jobs.micro1.ai/post/97da7176-3c19-4443-bde5-3dceb56929e9?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Medical & Healthcare"
+    "domain": "Medical & Healthcare",
+    "posted": "2026-08-21T17:35:19.000Z"
   },
   {
     "company": "Micro1",
@@ -618,7 +786,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Research & source triangulation, Attention to detail, Written precision, Self-direction & reliability.",
     "url": "https://jobs.micro1.ai/post/3bacf249-7ec7-422c-acd0-377ae375f830?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-21T17:05:20.000Z"
   },
   {
     "company": "Micro1",
@@ -627,7 +796,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in immigration law expertise, legal writing, document review, case management software.",
     "url": "https://jobs.micro1.ai/post/c521a888-16fc-4d97-83de-ea601e01fec8?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-21T16:35:44.000Z"
   },
   {
     "company": "Micro1",
@@ -636,7 +806,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in family law expertise, legal research, legal writing, case analysis.",
     "url": "https://jobs.micro1.ai/post/bd70678c-f7bd-4c23-959d-9b5cd6748410?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-21T16:35:41.000Z"
   },
   {
     "company": "Micro1",
@@ -645,7 +816,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in m&a, drafting contracts, private equity, remote collaboration.",
     "url": "https://jobs.micro1.ai/post/4b2e063b-ad86-429f-a54a-c50e0dd99b8c?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-21T16:27:10.000Z"
   },
   {
     "company": "Micro1",
@@ -654,7 +826,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Mergers & Acquisitions, Corporate law, Commerical Litigation, attention to detail.",
     "url": "https://jobs.micro1.ai/post/fa297c7f-e5d5-4e52-a4ad-ec74c4763e17?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-21T16:26:18.000Z"
   },
   {
     "company": "Micro1",
@@ -663,7 +836,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Mergers & Acquisitions (M&A), Corporate law, litigation, multidisciplinary teamwork.",
     "url": "https://jobs.micro1.ai/post/78a9efa0-b074-4dd8-9e3e-c0cd5675c74a?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-21T16:26:16.000Z"
   },
   {
     "company": "Micro1",
@@ -672,7 +846,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in legal analysis, legal research, legal drafting, written communication.",
     "url": "https://jobs.micro1.ai/post/6d7b9372-c7ad-4ea6-a017-95e6e80a33a5?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-21T15:54:29.000Z"
   },
   {
     "company": "Micro1",
@@ -681,7 +856,8 @@
     "tag": "10 openings",
     "blurb": "Looking for expertise in Graphic Design, UI/UX Design, Typography, Figma.",
     "url": "https://jobs.micro1.ai/post/32d47282-866f-420c-8d11-eb243aae997d?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Design & Creative"
+    "domain": "Design & Creative",
+    "posted": "2026-08-21T10:07:12.000Z"
   },
   {
     "company": "Micro1",
@@ -690,7 +866,8 @@
     "tag": "10 openings",
     "blurb": "Looking for expertise in Communication, Empathy, Problem Solving, CRM Software.",
     "url": "https://jobs.micro1.ai/post/58347acf-d921-40a6-9ea4-0794c052287f?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-21T09:43:28.000Z"
   },
   {
     "company": "Micro1",
@@ -699,7 +876,8 @@
     "tag": "10 openings",
     "blurb": "Looking for expertise in Systems Analysis, Requirements Gathering, SQL, Business Process Modeling.",
     "url": "https://jobs.micro1.ai/post/b2cc3177-145f-4650-8b34-4ead88335564?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-21T09:15:28.000Z"
   },
   {
     "company": "Micro1",
@@ -708,7 +886,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in In-house Counsel Experience, Contract Drafting, Deal Negotiation, Technology Transactions.",
     "url": "https://jobs.micro1.ai/post/e2cd73b6-d326-4c42-b929-d66d6015b564?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-20T23:14:49.000Z"
   },
   {
     "company": "Micro1",
@@ -717,7 +896,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Contract Negotiations, Contract Drafting, Contract Redlining, Mergers and Acquisitions.",
     "url": "https://jobs.micro1.ai/post/0a00cd75-d0bf-40fc-8364-f4e3a40b836e?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-20T23:07:16.000Z"
   },
   {
     "company": "Micro1",
@@ -726,7 +906,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Fund Management, Fund Formation, Contract Redlining, Contract Negotiations.",
     "url": "https://jobs.micro1.ai/post/7a5153bb-963c-4da6-82a8-a5f20253bf14?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-20T23:05:02.000Z"
   },
   {
     "company": "Micro1",
@@ -735,7 +916,8 @@
     "tag": "4000 openings",
     "blurb": "Looking for expertise in Household Task, Attention to detail, Video Recording, Smartphone.",
     "url": "https://jobs.micro1.ai/post/8944ed79-063d-43e2-a244-bd3185fbfb43?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-20T19:47:23.000Z"
   },
   {
     "company": "Micro1",
@@ -744,7 +926,8 @@
     "tag": "1000 openings",
     "blurb": "Looking for expertise in Captura de Vídeo, Atenção a Detalhes, Taréfas Domésticas.",
     "url": "https://jobs.micro1.ai/post/15313f3d-5600-4d96-b45f-b8dfafbee976?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-20T19:47:13.000Z"
   },
   {
     "company": "Micro1",
@@ -753,7 +936,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in JAVA, Spring Boot, Microservices.",
     "url": "https://jobs.micro1.ai/post/2635948c-eb96-440d-8e4d-b32b8af0a25d?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-20T15:26:22.000Z"
   },
   {
     "company": "Micro1",
@@ -762,7 +946,8 @@
     "tag": "1 opening",
     "blurb": "Looking for expertise in 3D Animation (3D only), CGI/VFX, Blender, Maya.",
     "url": "https://jobs.micro1.ai/post/10f755ec-2212-42de-b0f4-47ef7ae0bd18?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-20T07:01:30.000Z"
   },
   {
     "company": "Micro1",
@@ -771,7 +956,8 @@
     "tag": "1 opening",
     "blurb": "Looking for expertise in Avid Media Composer, Professional Video Editing, Broadcast/Film Workflows, Media & Project Management.",
     "url": "https://jobs.micro1.ai/post/8afd8c08-4f6f-4d96-9a1e-19c532c48e91?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-20T06:56:35.000Z"
   },
   {
     "company": "Micro1",
@@ -780,7 +966,8 @@
     "tag": "1 opening",
     "blurb": "Looking for expertise in Final Cut Pro, Professional Video Editing, macOS Editing Workflows, Video Post-Production & Delivery.",
     "url": "https://jobs.micro1.ai/post/7c662ce4-ccf8-4cae-b71d-f904a5ca171e?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-20T06:50:03.000Z"
   },
   {
     "company": "Micro1",
@@ -789,7 +976,8 @@
     "tag": "1 opening",
     "blurb": "Looking for expertise in DaVinci Resolve, Video Editing, Color Correction & Grading, Audiovisual Post-Production.",
     "url": "https://jobs.micro1.ai/post/7215c6e9-6f35-4cf8-86b2-afccebe3722f?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-20T06:40:47.000Z"
   },
   {
     "company": "Micro1",
@@ -798,7 +986,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Adobe Premiere Pro, Adobe After Effects, Motion Graphics y Compositing, Professional Video Editing.",
     "url": "https://jobs.micro1.ai/post/60d397a2-fa5a-4a90-afd0-4ce1b5223472?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-20T00:48:10.000Z"
   },
   {
     "company": "Micro1",
@@ -807,7 +996,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Contract Redlining, Contract Drafting, Contract Review, Technology Transactions.",
     "url": "https://jobs.micro1.ai/post/b97e5024-93da-4f54-bf63-4b42230d729a?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-19T18:24:48.000Z"
   },
   {
     "company": "Micro1",
@@ -816,7 +1006,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in PII, Attention to Detail, Document Review, Spot Checks.",
     "url": "https://jobs.micro1.ai/post/7a01eddd-bc92-4e27-b90f-404fa393c5d8?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-19T14:26:49.000Z"
   },
   {
     "company": "Micro1",
@@ -825,7 +1016,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Inpatient Quality, Quality Assurance, Medical Auditing, Hospitalist.",
     "url": "https://jobs.micro1.ai/post/8ff94e02-56a8-4fd2-a626-40e283ad0297?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Medical & Healthcare"
+    "domain": "Medical & Healthcare",
+    "posted": "2026-08-19T00:47:38.000Z"
   },
   {
     "company": "Micro1",
@@ -834,7 +1026,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in FHIR Records, History of Present Illness, Past Medical History, Rubric.",
     "url": "https://jobs.micro1.ai/post/ca9b762b-356d-41a7-be51-80b14a5a5dbb?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Medical & Healthcare"
+    "domain": "Medical & Healthcare",
+    "posted": "2026-08-18T23:35:43.000Z"
   },
   {
     "company": "Micro1",
@@ -843,7 +1036,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Selfies, Video Recordings, Attention to Detail, Follow Instructions.",
     "url": "https://jobs.micro1.ai/post/5117b4ab-ad3d-467a-80a0-2a993db4cee2?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-18T19:48:18.000Z"
   },
   {
     "company": "Micro1",
@@ -852,7 +1046,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Negotiation, Prospecting, Closing, Partnerships.",
     "url": "https://jobs.micro1.ai/post/2307c83e-6405-4556-bb5b-c8bb7c054f39?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-18T19:12:39.000Z"
   },
   {
     "company": "Micro1",
@@ -861,7 +1056,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in autodesk fusion 360, parametric cad modeling, solidworks, inventor.",
     "url": "https://jobs.micro1.ai/post/312e301c-1205-4c94-86b2-22508af661e4?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-18T16:40:16.000Z"
   },
   {
     "company": "Micro1",
@@ -870,7 +1066,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in autodesk inventor, parametric 3d cad modeling, gd&t (asme y14.5), design for manufacturability (dfm).",
     "url": "https://jobs.micro1.ai/post/dde63eb1-e882-4bb9-a4d0-0eac336717ef?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-18T16:36:42.000Z"
   },
   {
     "company": "Micro1",
@@ -879,7 +1076,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in solidworks, parametric-cad-modeling, gd&t, dfm.",
     "url": "https://jobs.micro1.ai/post/ee4322d7-181e-4124-bdcb-4c16eac3dac0?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-18T16:36:40.000Z"
   },
   {
     "company": "Micro1",
@@ -888,7 +1086,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in FreeCAD, Parametric CAD modeling, Mechanical Design, 3D CAD Modeling.",
     "url": "https://jobs.micro1.ai/post/dfe89be3-0fe9-4f7a-9a50-d43b4af0a6b3?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-18T16:35:07.000Z"
   },
   {
     "company": "Micro1",
@@ -897,7 +1096,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in FreeCAD, Python, Parametric Modeling, CAD Validation.",
     "url": "https://jobs.micro1.ai/post/639d0bef-8e58-4851-a425-3a6402af0819?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-18T16:35:05.000Z"
   },
   {
     "company": "Micro1",
@@ -906,7 +1106,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in FreeCAD, Parametric CAD Modeling, Python Scripting, Mechanical Engineering.",
     "url": "https://jobs.micro1.ai/post/a6bcbb90-3554-45c9-90b7-56933f1afbf1?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-18T16:35:03.000Z"
   },
   {
     "company": "Micro1",
@@ -915,7 +1116,8 @@
     "tag": "4 openings",
     "blurb": "Looking for expertise in Reporting, SQL, Snowflake, QA.",
     "url": "https://jobs.micro1.ai/post/e20cc342-c0d2-4d56-983f-cf9b0ae72772?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-18T13:06:37.000Z"
   },
   {
     "company": "Micro1",
@@ -924,7 +1126,8 @@
     "tag": "4 openings",
     "blurb": "Looking for expertise in CI/CD, Scripting, Python, REST API.",
     "url": "https://jobs.micro1.ai/post/fa3908ed-a728-492b-a597-83c0adaa5026?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-18T12:56:13.000Z"
   },
   {
     "company": "Micro1",
@@ -933,7 +1136,8 @@
     "tag": "1 opening",
     "blurb": "Looking for expertise in Python, LLM Systems, Data Pipelines, Distributed Systems.",
     "url": "https://jobs.micro1.ai/post/9002a281-84ef-40ed-8ee3-be985a754ced?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-18T10:31:12.000Z"
   },
   {
     "company": "Micro1",
@@ -942,7 +1146,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Robotics Data, Robot Perception, Schema Design, Robotics R&D.",
     "url": "https://jobs.micro1.ai/post/ab3d9699-ffc4-436c-8b27-cdc2b9143323?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-18T09:29:05.000Z"
   },
   {
     "company": "Micro1",
@@ -951,7 +1156,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Leadership & Team Management, Data Operations, Human Data.",
     "url": "https://jobs.micro1.ai/post/09b4c27c-ee51-4785-9a53-2fbb93c7dd7a?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-18T09:13:53.000Z"
   },
   {
     "company": "Micro1",
@@ -960,7 +1166,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Economics and Accounting, Law and Government, Taxation, Financial Statements.",
     "url": "https://jobs.micro1.ai/post/761c88b6-14e7-4ee5-b84c-efd10190ebce?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-18T05:11:34.000Z"
   },
   {
     "company": "Micro1",
@@ -969,7 +1176,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Venture Financings, Corporate Governance, Equity Administration, Transaction Execution.",
     "url": "https://jobs.micro1.ai/post/04ac5d10-6bf2-4268-a615-2ff58c15d58b?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-17T21:10:18.000Z"
   },
   {
     "company": "Micro1",
@@ -978,7 +1186,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Commercial Contracting, Data Licensing, Contract Negotiation, Legal Judgement.",
     "url": "https://jobs.micro1.ai/post/38481bd0-e7ac-459a-9aa3-841aca95ca0d?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-17T20:22:45.000Z"
   },
   {
     "company": "Micro1",
@@ -987,7 +1196,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in legal analysis, legal research, legal drafting, written communication.",
     "url": "https://jobs.micro1.ai/post/c955d596-4b9c-4702-a134-74763c47c624?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-17T20:14:01.000Z"
   },
   {
     "company": "Micro1",
@@ -996,7 +1206,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in microsoft excel, microsoft powerpoint, microsoft word, business documentation.",
     "url": "https://jobs.micro1.ai/post/45a1141b-b504-4446-8e1f-e4bfefa07d4a?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-17T14:49:17.000Z"
   },
   {
     "company": "Micro1",
@@ -1005,7 +1216,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in english (b2+), attention to detail, written communication, verbal communication.",
     "url": "https://jobs.micro1.ai/post/f8f1211f-ba15-4718-96a1-591ddf115111?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-17T14:33:38.000Z"
   },
   {
     "company": "Micro1",
@@ -1014,7 +1226,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Prioritazion and triage under pressure, handle multiple channels, clear communication, APCA or NENA.",
     "url": "https://jobs.micro1.ai/post/39da1eed-e69d-4ddc-b347-c28a2c43828f?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-16T05:22:38.000Z"
   },
   {
     "company": "Micro1",
@@ -1023,7 +1236,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in hardware/software troubleshooting, networking knowledge tcp/ip, VPN, DNS.",
     "url": "https://jobs.micro1.ai/post/d8e034e6-dac0-443b-8ae4-552f239cdca4?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-15T21:19:51.000Z"
   },
   {
     "company": "Micro1",
@@ -1032,7 +1246,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Smartphone, Video Recording, Attention to detail, Household Task.",
     "url": "https://jobs.micro1.ai/post/de83ff2f-bdd2-4862-aff9-7158cd327038?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-15T16:19:05.000Z"
   },
   {
     "company": "Micro1",
@@ -1041,7 +1256,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Smartphone, Video Recording, Attention to detail.",
     "url": "https://jobs.micro1.ai/post/a1ecbac3-a024-4732-bce7-7ac2e447571d?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-15T16:18:56.000Z"
   },
   {
     "company": "Micro1",
@@ -1050,7 +1266,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in IT Strategy, Systems Architecture, Team Leadership, Vendor Management.",
     "url": "https://jobs.micro1.ai/post/1a90eb63-30e8-4c77-9996-94dc4b02d909?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-15T07:43:31.000Z"
   },
   {
     "company": "Micro1",
@@ -1059,7 +1276,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Financial Reporting, GAAP/IFRS, Audit Procedures, Excel/Financial Modeling.",
     "url": "https://jobs.micro1.ai/post/473cffff-4779-4826-840d-f8b6ae4b3c63?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-15T07:31:51.000Z"
   },
   {
     "company": "Micro1",
@@ -1068,7 +1286,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Contract Review, Legal Research, Regulatory Compliance, Legal Writing.",
     "url": "https://jobs.micro1.ai/post/6fc6311d-f159-46ad-90c9-df1c42c9765b?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-15T07:20:18.000Z"
   },
   {
     "company": "Micro1",
@@ -1077,7 +1296,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Python, JavaScript, JAVA, Node.js.",
     "url": "https://jobs.micro1.ai/post/92b81bda-6c3f-42c1-9cad-9e3cdb911ad9?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-15T07:04:24.000Z"
   },
   {
     "company": "Micro1",
@@ -1086,7 +1306,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in video annotation, attention to detail, written communication, quality assurance.",
     "url": "https://jobs.micro1.ai/post/5afb4a1f-dc54-4459-b365-75b3b239ee19?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Design & Creative"
+    "domain": "Design & Creative",
+    "posted": "2026-08-14T19:24:33.000Z"
   },
   {
     "company": "Micro1",
@@ -1095,7 +1316,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Production mastery, Production documentation, Multi-constraint judgment, Vendor & Crew Coordination.",
     "url": "https://jobs.micro1.ai/post/b796c424-8d31-4dab-bf32-47e518e697c9?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Design & Creative"
+    "domain": "Design & Creative",
+    "posted": "2026-08-14T15:03:23.000Z"
   },
   {
     "company": "Micro1",
@@ -1104,7 +1326,8 @@
     "tag": "10 openings",
     "blurb": "Looking for expertise in us tax law interpretation, irs regulation analysis, legal document review, structured written communication.",
     "url": "https://jobs.micro1.ai/post/6ec0826e-f15e-413c-a41a-8dacd7fb0d85?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-14T10:05:42.000Z"
   },
   {
     "company": "Micro1",
@@ -1113,7 +1336,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in professional writing, editing, content review, attention to detail.",
     "url": "https://jobs.micro1.ai/post/562b711a-a95e-428f-97d4-d679529893d0?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-14T09:03:50.000Z"
   },
   {
     "company": "Micro1",
@@ -1122,7 +1346,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in video annotation, attention to detail, written communication, quality assurance.",
     "url": "https://jobs.micro1.ai/post/69fef3d7-ebd4-4f86-8aae-74b80c7a9035?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Design & Creative"
+    "domain": "Design & Creative",
+    "posted": "2026-08-14T03:17:27.000Z"
   },
   {
     "company": "Micro1",
@@ -1131,7 +1356,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in english b2+, attention to detail, written communication, verbal communication.",
     "url": "https://jobs.micro1.ai/post/382cf385-16da-4536-8a32-95947e0197a7?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-14T01:51:25.000Z"
   },
   {
     "company": "Micro1",
@@ -1140,7 +1366,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in English b2+, attention to detail, written communication, verbal communication.",
     "url": "https://jobs.micro1.ai/post/5707c314-da3f-4736-ac12-dfe66421dc45?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-14T01:46:32.000Z"
   },
   {
     "company": "Micro1",
@@ -1149,7 +1376,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Prioritization and triage of requests under pressure, Clear, concise communication (radio/phone/chat), Handling multiple channels simultaneously (multitasking).",
     "url": "https://jobs.micro1.ai/post/99692550-06ea-4624-a322-f2d6b4355c43?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-13T23:09:44.000Z"
   },
   {
     "company": "Micro1",
@@ -1158,7 +1386,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in english (b2+), attention to detail, written communication, verbal communication.",
     "url": "https://jobs.micro1.ai/post/6ae61a82-e891-46b2-ab5a-1496e25265b9?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-13T21:44:48.000Z"
   },
   {
     "company": "Micro1",
@@ -1167,7 +1396,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in english (b2+), attention to detail, written communication, verbal communication.",
     "url": "https://jobs.micro1.ai/post/c732f04d-3d0e-410f-ba42-781cd9f09915?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-13T21:44:44.000Z"
   },
   {
     "company": "Micro1",
@@ -1176,7 +1406,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in english (b2+), attention to detail, written communication, verbal communication.",
     "url": "https://jobs.micro1.ai/post/28d9685a-7802-4179-933e-ad510bc60938?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-13T21:44:41.000Z"
   },
   {
     "company": "Micro1",
@@ -1185,7 +1416,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in english (b2+), attention to detail, written communication, verbal communication.",
     "url": "https://jobs.micro1.ai/post/eff6f38f-dfab-4333-9e4c-a5610de93e84?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-13T21:44:39.000Z"
   },
   {
     "company": "Micro1",
@@ -1194,7 +1426,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in english (b2+), attention to detail, written communication, verbal communication.",
     "url": "https://jobs.micro1.ai/post/84921e4c-7944-46ae-bbc2-c49c7d3ab642?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-13T21:44:37.000Z"
   },
   {
     "company": "Micro1",
@@ -1203,7 +1436,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in english (b2+), attention to detail, written communication, verbal communication.",
     "url": "https://jobs.micro1.ai/post/bc12ec0b-3bc8-449a-b09e-4122eadce55a?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-13T21:44:24.000Z"
   },
   {
     "company": "Micro1",
@@ -1212,7 +1446,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in english (b2+), attention to detail, written communication, verbal communication.",
     "url": "https://jobs.micro1.ai/post/961df5fb-620c-4443-a3af-86bc225da2cd?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-13T21:44:19.000Z"
   },
   {
     "company": "Micro1",
@@ -1221,7 +1456,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in english (b2+), attention to detail, written communication, verbal communication.",
     "url": "https://jobs.micro1.ai/post/5c02f61b-b2b2-46a6-a058-26a1f6e64cf7?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-13T21:09:05.000Z"
   },
   {
     "company": "Micro1",
@@ -1230,7 +1466,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Contract Drafting, Redlining, Contract Negotiation, Contract Review.",
     "url": "https://jobs.micro1.ai/post/d866e9e9-6de8-41f1-8d33-77616b95b099?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-13T20:49:45.000Z"
   },
   {
     "company": "Micro1",
@@ -1239,7 +1476,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Typography & layout craft, Template-system fluency, Style inference & reapplication, Visual rubric authoring.",
     "url": "https://jobs.micro1.ai/post/0faef422-476d-482f-827f-d6a3c18d59b9?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Design & Creative"
+    "domain": "Design & Creative",
+    "posted": "2026-08-13T19:39:38.000Z"
   },
   {
     "company": "Micro1",
@@ -1248,7 +1486,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Structured thinking, Executive deck craft, Data modeling, Deck & Modeling Mastery.",
     "url": "https://jobs.micro1.ai/post/6610990f-f450-4f11-af17-51861c4bb7ba?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-13T18:57:49.000Z"
   },
   {
     "company": "Micro1",
@@ -1257,7 +1496,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Methodological rigor, Rubric fidelity, Experimental reasoning, Protocol fidelity.",
     "url": "https://jobs.micro1.ai/post/1bd14149-1bcc-40ae-a6c0-979fc1264f00?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
+    "domain": "Science & STEM",
+    "posted": "2026-08-13T18:14:10.000Z"
   },
   {
     "company": "Micro1",
@@ -1266,7 +1506,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Methodological rigor, Source synthesis, Rubric fidelity, Data interpretation.",
     "url": "https://jobs.micro1.ai/post/704d5a5c-af37-495c-8d36-f4e8088dd535?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
+    "domain": "Science & STEM",
+    "posted": "2026-08-13T18:13:00.000Z"
   },
   {
     "company": "Micro1",
@@ -1275,7 +1516,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Methodological rigor, Source synthesis, Rubric fidelity, Research mastery.",
     "url": "https://jobs.micro1.ai/post/84e484fd-bd1c-4432-b762-43a0759f1c6f?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
+    "domain": "Science & STEM",
+    "posted": "2026-08-13T18:11:27.000Z"
   },
   {
     "company": "Micro1",
@@ -1284,7 +1526,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Precision writing, Source synthesis, Audience calibration, Technical Writing.",
     "url": "https://jobs.micro1.ai/post/5a3a0fe9-c364-421f-a8fe-64c66dc5dd67?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-13T18:10:26.000Z"
   },
   {
     "company": "Micro1",
@@ -1293,7 +1536,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Financial modeling, Variance analysis, Numerical precision, Financial Management.",
     "url": "https://jobs.micro1.ai/post/026d98c3-5254-4bc8-8cf6-a2ee388e2afa?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-13T18:09:33.000Z"
   },
   {
     "company": "Micro1",
@@ -1302,7 +1546,8 @@
     "tag": "1 opening",
     "blurb": "Looking for expertise in Editor, Writer.",
     "url": "https://jobs.micro1.ai/post/c027a27e-3d6f-422b-9f6f-b8086e73182a?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-13T18:06:21.000Z"
   },
   {
     "company": "Micro1",
@@ -1311,7 +1556,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in CPA, Income Tax Prep, Income Tax Filing, Communication.",
     "url": "https://jobs.micro1.ai/post/f4e88f01-cae4-4444-9b5e-ccaf0ee36695?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-13T17:46:05.000Z"
   },
   {
     "company": "Micro1",
@@ -1320,7 +1566,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Personal Identifiable Information, Document Review, Attention to Detail, Spot-Checks.",
     "url": "https://jobs.micro1.ai/post/12c44b79-e4a2-40af-af84-f633c4723452?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-13T14:29:18.000Z"
   },
   {
     "company": "Micro1",
@@ -1329,7 +1576,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in communication.",
     "url": "https://jobs.micro1.ai/post/e530d788-289c-479a-a938-0576ef985f06?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-13T11:44:29.000Z"
   },
   {
     "company": "Micro1",
@@ -1338,7 +1586,8 @@
     "tag": "High demand",
     "blurb": "",
     "url": "https://jobs.micro1.ai/post/aae4e860-c280-40ae-9493-0ac9e6f44ad3?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-13T11:27:21.000Z"
   },
   {
     "company": "Micro1",
@@ -1347,7 +1596,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Python3, JAVA, Rust, Algorithms.",
     "url": "https://jobs.micro1.ai/post/90f5054a-e91e-403d-8733-c350ab619e44?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-13T06:52:33.000Z"
   },
   {
     "company": "Micro1",
@@ -1356,7 +1606,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Designing evaluation rubrics, Writing clear, measurable task prompts, Basic pedagogical knowledge (Bloom's taxonomy.",
     "url": "https://jobs.micro1.ai/post/da800305-df20-4640-b1a3-5e55cf8908bf?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-12T19:24:18.000Z"
   },
   {
     "company": "Micro1",
@@ -1365,7 +1616,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Drafting and reviewing legal documents, Basic legal research, Identifying risks/problematic clauses (contract review), Handling confidentiality and conflicts of interest.",
     "url": "https://jobs.micro1.ai/post/eaa83a0e-98b5-4740-a5c0-593c8dce1981?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-12T19:19:07.000Z"
   },
   {
     "company": "Micro1",
@@ -1374,7 +1626,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in B2B lead prospecting and qualification, Communicating a technical value proposition to non-technical buyers, Objection handling, knowledge in technical and scientific materials.",
     "url": "https://jobs.micro1.ai/post/d76706f1-781c-4bb7-a165-42ec90df1803?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-12T19:18:54.000Z"
   },
   {
     "company": "Micro1",
@@ -1383,7 +1636,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Sales Mastery, Market judgment, Compliance sensitivity, Client documentation.",
     "url": "https://jobs.micro1.ai/post/2a48f573-e9f8-4374-96c2-f382890ad612?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-12T19:16:43.000Z"
   },
   {
     "company": "Micro1",
@@ -1392,7 +1646,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Test setup, Data interpretation, Failure diagnosis.",
     "url": "https://jobs.micro1.ai/post/9b9ac9bf-b432-4f3f-bbd5-15dcf93f1833?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-12T19:16:34.000Z"
   },
   {
     "company": "Micro1",
@@ -1401,7 +1656,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Code compliance, Civil Engineering, Technical documentation, Constraint reasoning.",
     "url": "https://jobs.micro1.ai/post/22914efb-135e-4c9f-a821-bfd0f22a9d77?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-12T19:16:21.000Z"
   },
   {
     "company": "Micro1",
@@ -1410,7 +1666,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in B2B lead prospecting and qualification, Communicating a technical value proposition to non-technical buyers, Objection handling, Basic technical product knowledge.",
     "url": "https://jobs.micro1.ai/post/81de2a22-213d-4ca2-9f78-32994f3cf3ff?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-12T19:10:00.000Z"
   },
   {
     "company": "Micro1",
@@ -1419,7 +1676,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Document-based research, Source verification / fact-checking, Synthesizing lengthy documents, Narrative structure (lead.",
     "url": "https://jobs.micro1.ai/post/253c4986-5b7d-4649-b694-371af5cfd9b7?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-12T19:04:16.000Z"
   },
   {
     "company": "Micro1",
@@ -1428,7 +1686,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in ERP usage at a user level, Basic demand forecasting/planning, Supplier evaluation (scorecards), Intermediate Excel for supply chain reporting.",
     "url": "https://jobs.micro1.ai/post/54916314-4db6-4e38-9f19-90451fdf6e71?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-12T18:58:45.000Z"
   },
   {
     "company": "Micro1",
@@ -1437,7 +1696,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Team Management, vendor management, SLA, Conflict resolution and decision-making.",
     "url": "https://jobs.micro1.ai/post/e199e7e8-1c72-4a65-9416-f9b2e80e92eb?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-12T18:52:29.000Z"
   },
   {
     "company": "Micro1",
@@ -1446,7 +1706,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in 3D CAD modeling, interpreting technical drawings, Conceptual understanding of stress analysis/FEA, Technical documentation (specs.",
     "url": "https://jobs.micro1.ai/post/c8295d22-7ee9-4b07-87fa-077c41919bbf?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-12T18:52:22.000Z"
   },
   {
     "company": "Micro1",
@@ -1455,7 +1716,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Methodological rigor, Clinical interpretation, Regulatory sensitivity, Biostatistics Mastery.",
     "url": "https://jobs.micro1.ai/post/d3d26252-acce-406a-af5c-1297b089f4bf?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-12T18:46:55.000Z"
   },
   {
     "company": "Micro1",
@@ -1464,7 +1726,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Hardware/software troubleshooting, networking knowledge (TCP/IP, DNS, VPN).",
     "url": "https://jobs.micro1.ai/post/ec723f21-3803-4c59-8462-1cdef6916291?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-12T18:45:10.000Z"
   },
   {
     "company": "Micro1",
@@ -1473,7 +1736,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Data cleaning and preparation (dirty data), Basic descriptive and inferential statistics, Programming in Python or R for analysis, Data visualization.",
     "url": "https://jobs.micro1.ai/post/c6e6d3d1-7a58-4d7a-856a-d17eab9a33bf?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
+    "domain": "Science & STEM",
+    "posted": "2026-08-12T18:38:52.000Z"
   },
   {
     "company": "Micro1",
@@ -1482,16 +1746,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Accuracy discipline, Error detection, Format reconciliation, Attention to Detail.",
     "url": "https://jobs.micro1.ai/post/62417e7b-5c95-4446-8d56-dceaf9f0ac4d?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
-  },
-  {
-    "company": "Micro1",
-    "title": "Purchasing Agent ",
-    "pay": "$30–$65/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Bid analysis, Supplier evaluation, Contract reasoning.",
-    "url": "https://jobs.micro1.ai/post/5eefc489-278b-4729-a1bd-dc5f90edc3b8?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-12T18:29:26.000Z"
   },
   {
     "company": "Micro1",
@@ -1500,7 +1756,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Prioritization and triage of requests under pressure, Applying standardized protocols/checklists, Handling multiple channels simultaneously (multitasking), Clear.",
     "url": "https://jobs.micro1.ai/post/ed55e8c9-b1a3-4838-a9fa-d66723e48f63?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-12T18:25:52.000Z"
   },
   {
     "company": "Micro1",
@@ -1509,7 +1766,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Prioritization and triage of requests under pressure, Clear, concise communication, Handling multiple channels simultaneously (multitasking).",
     "url": "https://jobs.micro1.ai/post/0ca99770-34a5-4e04-b04b-8965e9c01a06?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-12T18:20:51.000Z"
   },
   {
     "company": "Micro1",
@@ -1518,7 +1776,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Prioritization and triage of requests under pressure, Clear, concise communication (radio/phone/chat), Handling multiple channels simultaneously (multitasking).",
     "url": "https://jobs.micro1.ai/post/99cb0baf-6922-4d44-9b1a-cfa2beae7ae2?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-12T18:13:31.000Z"
   },
   {
     "company": "Micro1",
@@ -1527,7 +1786,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Defining learning/program objectives, Designing basic assessment (quiz/rubric), designing learning programs, creating educational content.",
     "url": "https://jobs.micro1.ai/post/2989f3e9-2248-429f-86d9-be90775fea2b?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-12T18:07:01.000Z"
   },
   {
     "company": "Micro1",
@@ -1536,7 +1796,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Structuring a business problem, Building executive-ready slides, Basic quantitative analysis in Excel, Synthesizing scattered information into a recommendation.",
     "url": "https://jobs.micro1.ai/post/57eae02c-bcd0-4e39-9a0a-be495c331011?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-12T18:01:18.000Z"
   },
   {
     "company": "Micro1",
@@ -1545,7 +1806,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in linguistics analysis, grammar and usage evaluation, written communication, attention to detail.",
     "url": "https://jobs.micro1.ai/post/ba976b4a-3b64-4797-adbf-a33770f3a44f?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-12T16:12:27.000Z"
   },
   {
     "company": "Micro1",
@@ -1554,7 +1816,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Playbooks, Redlining, Contract Drafting, Contract Negotiation.",
     "url": "https://jobs.micro1.ai/post/eee79aa8-1813-43c3-b486-19f6c9a622ce?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-12T15:16:16.000Z"
   },
   {
     "company": "Micro1",
@@ -1563,7 +1826,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in military writing, federal documentation standards, report generation and evaluation, grading rubric development.",
     "url": "https://jobs.micro1.ai/post/6e5e0aa7-5dff-4568-904d-14a4b70bdc0b?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-12T06:28:16.000Z"
   },
   {
     "company": "Micro1",
@@ -1572,7 +1836,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in military writing, federal documentation standards, report generation and evaluation, grading rubric development.",
     "url": "https://jobs.micro1.ai/post/4961fc31-3f78-46ba-ae1e-5b2af349214c?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-12T06:28:11.000Z"
   },
   {
     "company": "Micro1",
@@ -1581,7 +1846,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in military writing, federal documentation standards, report generation and evaluation, grading rubric development.",
     "url": "https://jobs.micro1.ai/post/2eea3ae0-03df-4131-9f64-0191909c44a5?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-12T06:17:33.000Z"
   },
   {
     "company": "Micro1",
@@ -1590,7 +1856,8 @@
     "tag": "50 openings",
     "blurb": "Looking for expertise in Chart interpretation accuracy, Multi-step quantitative reasoning, Question design / unambiguous task construction, Domain-specific terminology precision.",
     "url": "https://jobs.micro1.ai/post/fab7869a-d1dd-4bb8-8b87-85f56307478b?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-11T20:07:48.000Z"
   },
   {
     "company": "Micro1",
@@ -1599,7 +1866,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Playbooks, Redlining, Contract Drafting, Contract Negotiation.",
     "url": "https://jobs.micro1.ai/post/7f5dbf6b-9619-48cf-94db-0e846fce8227?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-11T19:37:59.000Z"
   },
   {
     "company": "Micro1",
@@ -1608,7 +1876,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Chart interpretation accuracy, Multi-step quantitative reasoning, Question design / unambiguous task construction, Domain-specific terminology precision.",
     "url": "https://jobs.micro1.ai/post/95deaf5c-fd39-44e8-8d30-a9197cd2afa6?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
+    "domain": "Science & STEM",
+    "posted": "2026-08-11T19:35:45.000Z"
   },
   {
     "company": "Micro1",
@@ -1617,7 +1886,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Chart interpretation accuracy, Multi-step quantitative reasoning, Question design / unambiguous task construction, Domain-specific terminology precision.",
     "url": "https://jobs.micro1.ai/post/fe56e0c9-b110-4f27-8240-573c17099110?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
+    "domain": "Science & STEM",
+    "posted": "2026-08-11T19:20:40.000Z"
   },
   {
     "company": "Micro1",
@@ -1626,7 +1896,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Chart interpretation accuracy, Multi-step quantitative reasoning, Question design / unambiguous task construction, Domain-specific terminology precision.",
     "url": "https://jobs.micro1.ai/post/77162e90-225e-4184-8176-9ee27752f0fd?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-11T19:05:52.000Z"
   },
   {
     "company": "Micro1",
@@ -1635,7 +1906,8 @@
     "tag": "1 opening",
     "blurb": "Looking for expertise in Automation Testing, QA.",
     "url": "https://jobs.micro1.ai/post/c718c7c4-f136-4749-b442-8d51d6d17235?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-11T17:39:51.000Z"
   },
   {
     "company": "Micro1",
@@ -1644,7 +1916,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Playbooks, Redlining, Contract Drafting, Contract Negotiation.",
     "url": "https://jobs.micro1.ai/post/f29fadc8-dd29-4400-866a-1967c92722b5?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-11T14:17:04.000Z"
   },
   {
     "company": "Micro1",
@@ -1653,7 +1926,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in CUDA, C++, GLSL, WebGPU.",
     "url": "https://jobs.micro1.ai/post/c5d8a217-2f8c-42a8-8b41-8c8e88f160c1?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-11T13:54:01.000Z"
   },
   {
     "company": "Micro1",
@@ -1662,7 +1936,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in AutoCAD, Aerodynamics, Mechanical Engineering.",
     "url": "https://jobs.micro1.ai/post/89c8ea6b-dd8e-43e1-af94-548640c9c17d?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
+    "domain": "Science & STEM",
+    "posted": "2026-08-11T11:58:37.000Z"
   },
   {
     "company": "Micro1",
@@ -1671,7 +1946,8 @@
     "tag": "10 openings",
     "blurb": "Looking for expertise in us tax law interpretation, irs regulation analysis, legal document review, structured written communication.",
     "url": "https://jobs.micro1.ai/post/6b5638ff-0020-4655-bda9-88360b283b1a?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-11T07:05:06.000Z"
   },
   {
     "company": "Micro1",
@@ -1680,7 +1956,8 @@
     "tag": "1 opening",
     "blurb": "Looking for expertise in Large Scale Onboarding, Stakeholder Management, Cross-functional Collaboration, Leadership Skills.",
     "url": "https://jobs.micro1.ai/post/c225484e-6792-49f9-a40a-212f9a24fc19?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-10T17:07:13.000Z"
   },
   {
     "company": "Micro1",
@@ -1689,7 +1966,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in German Proficiency, Speech Data Collection, AI Workflows, Transcription.",
     "url": "https://jobs.micro1.ai/post/7e5bac29-cf45-4072-ad7e-9c7574c94bc5?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-09T16:45:21.000Z"
   },
   {
     "company": "Micro1",
@@ -1698,7 +1976,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Autodesk Fusion, Fusion360, CAM, Computer-Aided Manufacturing.",
     "url": "https://jobs.micro1.ai/post/55e3a797-5ed9-4f99-bfd6-f90947d9b05b?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-07T21:44:50.000Z"
   },
   {
     "company": "Micro1",
@@ -1707,7 +1986,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Research Methodology, Mathematics, Mathematical proof writing, Advanced Mathematics.",
     "url": "https://jobs.micro1.ai/post/eb647954-2290-49e6-8c30-7213a7555a62?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
+    "domain": "Science & STEM",
+    "posted": "2026-08-07T05:58:25.000Z"
   },
   {
     "company": "Micro1",
@@ -1716,7 +1996,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in CAM, CNC, Manufacturing, Fusion 360.",
     "url": "https://jobs.micro1.ai/post/e511d686-859b-422d-8562-70f7c8257035?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-06T20:57:16.000Z"
   },
   {
     "company": "Micro1",
@@ -1725,7 +2006,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Selfies, Video Recordings, Attention to Detail, Follow Instructions.",
     "url": "https://jobs.micro1.ai/post/405b0fce-a70f-4121-8827-04246f0d9e48?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-06T15:24:04.000Z"
   },
   {
     "company": "Micro1",
@@ -1734,7 +2016,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Fusion 360 CAM proficiency, Multi-axis programming, Toolpath strategy & simulation, Attention to detail.",
     "url": "https://jobs.micro1.ai/post/be611f6c-5382-4356-a04e-28bb438d20e3?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-06T13:28:09.000Z"
   },
   {
     "company": "Micro1",
@@ -1743,7 +2026,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Machine set-up & Operation, Haas + hobbyist crossover, Precision measurement & blueprint interpretation, Troubleshooting.",
     "url": "https://jobs.micro1.ai/post/5a01819c-2e1e-4ef3-9cf7-b676f6f0e307?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-06T13:27:29.000Z"
   },
   {
     "company": "Micro1",
@@ -1752,7 +2036,8 @@
     "tag": "25 openings",
     "blurb": "Looking for expertise in Audio Transcription, Attention to detail, AI training.",
     "url": "https://jobs.micro1.ai/post/9faa786c-1f7b-4c7c-8a9b-32353a44c1a2?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-05T19:20:37.000Z"
   },
   {
     "company": "Micro1",
@@ -1761,7 +2046,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in C++, Python, Rust, GoLang.",
     "url": "https://jobs.micro1.ai/post/c2684826-73f6-4abb-9511-e89bf5c69e14?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-05T18:41:59.000Z"
   },
   {
     "company": "Micro1",
@@ -1770,7 +2056,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in AWS, GCP, IaC, CI/CD.",
     "url": "https://jobs.micro1.ai/post/4ec0692c-6714-4c97-aa9d-406b0abd684e?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-05T17:08:28.000Z"
   },
   {
     "company": "Micro1",
@@ -1779,7 +2066,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Python, SQL, AI/ML, Spark.",
     "url": "https://jobs.micro1.ai/post/4e941f66-e98b-44cb-bc92-55018050682f?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-05T14:45:20.000Z"
   },
   {
     "company": "Micro1",
@@ -1788,7 +2076,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Outpatient Professional Fee Coding, Coding Auditing, Academic Medical Center Experience, Audit Program Management.",
     "url": "https://jobs.micro1.ai/post/eae14e1c-d44c-4486-b773-61f57b0f3d64?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Medical & Healthcare"
+    "domain": "Medical & Healthcare",
+    "posted": "2026-08-05T00:13:18.000Z"
   },
   {
     "company": "Micro1",
@@ -1797,7 +2086,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Medical Coding, ICD-10, CPT, CPC Certification.",
     "url": "https://jobs.micro1.ai/post/eac2bf43-4fa7-46ed-8db8-ec2b6d3a52d5?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Medical & Healthcare"
+    "domain": "Medical & Healthcare",
+    "posted": "2026-08-05T00:10:39.000Z"
   },
   {
     "company": "Micro1",
@@ -1806,7 +2096,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in healthcare law, regulatory compliance (e.g., hipaa, stark law, anti-kickback statute), legal document review and annotation, policy analysis.",
     "url": "https://jobs.micro1.ai/post/ef5498e4-f232-48b8-b8aa-9067e487c74a?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-04T21:18:03.000Z"
   },
   {
     "company": "Micro1",
@@ -1815,7 +2106,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in civil rights law, legal research and analysis, legal writing, case law analysis.",
     "url": "https://jobs.micro1.ai/post/8c60d801-f16d-4896-82d1-a37559be1314?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-04T21:14:57.000Z"
   },
   {
     "company": "Micro1",
@@ -1824,7 +2116,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in criminal law expertise, legal document analysis, legal writing and editing, reviewing court filings and case materials.",
     "url": "https://jobs.micro1.ai/post/11539bac-d048-4e27-8bbd-a9bfa0629cf1?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-04T21:11:18.000Z"
   },
   {
     "company": "Micro1",
@@ -1833,7 +2126,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in criminal law, trial advocacy, legal writing, case analysis.",
     "url": "https://jobs.micro1.ai/post/03f08d8d-79a9-4e5b-a976-f97d2e32f33b?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-04T21:08:56.000Z"
   },
   {
     "company": "Micro1",
@@ -1842,7 +2136,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Python3, JAVA, Rust, Algorithms.",
     "url": "https://jobs.micro1.ai/post/16835609-8ebc-4fb4-911f-cd8321617810?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-04T18:35:10.000Z"
   },
   {
     "company": "Micro1",
@@ -1851,16 +2146,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Python3, JAVA, Rust, Algorithms.",
     "url": "https://jobs.micro1.ai/post/f10ca3ec-bf16-43c0-a094-8db20948de30?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Micro1",
-    "title": "Senior Software Engineer",
-    "pay": "$50–$100/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Python3, JAVA, Rust, Algorithms.",
-    "url": "https://jobs.micro1.ai/post/fcc30344-05f8-423d-b33f-545177765e35?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-04T15:35:18.000Z"
   },
   {
     "company": "Micro1",
@@ -1869,7 +2156,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in critical thinking, analytical reasoning, attention to detail, quality assurance.",
     "url": "https://jobs.micro1.ai/post/0b30881e-512e-459e-be5d-108c4a455b7b?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-04T13:11:27.000Z"
   },
   {
     "company": "Micro1",
@@ -1878,7 +2166,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in critical thinking, analytical reasoning, attention to detail, quality assurance.",
     "url": "https://jobs.micro1.ai/post/9c1927de-288b-45c9-b3d2-e68c6fb07c1f?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-04T13:11:20.000Z"
   },
   {
     "company": "Micro1",
@@ -1887,7 +2176,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in critical thinking, analytical reasoning, attention to detail, quality assurance.",
     "url": "https://jobs.micro1.ai/post/13af2a34-72a6-4caf-9fc1-59248921e6b4?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-04T13:11:11.000Z"
   },
   {
     "company": "Micro1",
@@ -1896,7 +2186,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in compliance law expertise, legal document analysis, legal writing, regulatory research.",
     "url": "https://jobs.micro1.ai/post/fb683031-e95e-4dbd-88c8-59c53ec8240c?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-04T12:47:10.000Z"
   },
   {
     "company": "Micro1",
@@ -1905,7 +2196,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in bankruptcy law expertise, legal document analysis, legal drafting (motions, pleadings, filings), written communication.",
     "url": "https://jobs.micro1.ai/post/73f5291e-366b-41e7-8ff9-14124682d146?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-04T12:43:13.000Z"
   },
   {
     "company": "Micro1",
@@ -1914,7 +2206,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in legal research, legal document analysis, legal drafting, us corporate law.",
     "url": "https://jobs.micro1.ai/post/91c54ab1-6764-487b-9a38-1917d848b18f?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-04T12:42:30.000Z"
   },
   {
     "company": "Micro1",
@@ -1923,7 +2216,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in clinical oncology, clinical hematology, clinical trial evaluation, ctcae grading.",
     "url": "https://jobs.micro1.ai/post/6ea686cd-9a77-4221-94dc-1e0d952eb187?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Medical & Healthcare"
+    "domain": "Medical & Healthcare",
+    "posted": "2026-08-04T03:42:42.000Z"
   },
   {
     "company": "Micro1",
@@ -1932,7 +2226,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in pharmacovigilance, drug safety report authoring, dsur/psur/pbrer review, ich e2f and ich e2c(r2) compliance.",
     "url": "https://jobs.micro1.ai/post/176d0aa1-3dde-43d9-bb54-9f75f1c490dc?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Medical & Healthcare"
+    "domain": "Medical & Healthcare",
+    "posted": "2026-08-04T03:07:08.000Z"
   },
   {
     "company": "Micro1",
@@ -1941,7 +2236,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in regulatory affairs, clinical documentation review, ich guidelines, ctd/ectd structure.",
     "url": "https://jobs.micro1.ai/post/7b914c4c-fe06-4b48-8337-320aca6681fb?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Medical & Healthcare"
+    "domain": "Medical & Healthcare",
+    "posted": "2026-08-04T03:00:49.000Z"
   },
   {
     "company": "Micro1",
@@ -1950,7 +2246,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in sas, r, cdisc sdtm, cdisc adam.",
     "url": "https://jobs.micro1.ai/post/28d8beab-6ea8-4c98-8ce8-b97f6a478d53?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Medical & Healthcare"
+    "domain": "Medical & Healthcare",
+    "posted": "2026-08-04T02:46:43.000Z"
   },
   {
     "company": "Micro1",
@@ -1959,7 +2256,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in regulatory medical writing, clinical study report authoring, ich e3 guidelines, scientific accuracy assessment.",
     "url": "https://jobs.micro1.ai/post/6e08aec4-88e2-4a31-b592-b64bc3330c68?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Medical & Healthcare"
+    "domain": "Medical & Healthcare",
+    "posted": "2026-08-04T02:31:53.000Z"
   },
   {
     "company": "Micro1",
@@ -1968,7 +2266,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in data annotation, prompt engineering, critical thinking, written communication.",
     "url": "https://jobs.micro1.ai/post/9376db02-e91b-41e3-b10c-e865ff8aa2a6?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-04T01:01:40.000Z"
   },
   {
     "company": "Micro1",
@@ -1977,7 +2276,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in critical thinking, analytical reasoning, attention to detail, quality assurance.",
     "url": "https://jobs.micro1.ai/post/392f2203-398d-4479-b823-d0244147ba4a?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-04T01:00:01.000Z"
   },
   {
     "company": "Micro1",
@@ -1986,7 +2286,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in smartphone video recording, device compatibility testing, first-person video capture, following project guidelines.",
     "url": "https://jobs.micro1.ai/post/07d29f55-367b-48a5-a5d8-6f993006d4be?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-03T22:42:14.000Z"
   },
   {
     "company": "Micro1",
@@ -1995,7 +2296,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Sourcing, Talent Acquisition, Resume Screening, Interviewing.",
     "url": "https://jobs.micro1.ai/post/65877c40-5dc5-4b39-82a2-5cb6bd9f0407?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-03T19:07:02.000Z"
   },
   {
     "company": "Micro1",
@@ -2004,7 +2306,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Motivation, Communication, Commitment and Reliability, Program Design.",
     "url": "https://jobs.micro1.ai/post/bd3aab41-e0ae-4e24-ac99-c1ec2e13623c?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-03T19:00:56.000Z"
   },
   {
     "company": "Micro1",
@@ -2013,7 +2316,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Customer Service, Reading Comprehension, Scheduling, Negotiation.",
     "url": "https://jobs.micro1.ai/post/fd9004ab-d96f-47a5-84eb-1a1406699b4f?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-03T19:00:43.000Z"
   },
   {
     "company": "Micro1",
@@ -2022,7 +2326,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Organization, Time Management, Multitasking, Communication.",
     "url": "https://jobs.micro1.ai/post/976d7b59-0d19-4c69-aaa3-d081337a574c?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-03T18:26:04.000Z"
   },
   {
     "company": "Micro1",
@@ -2031,7 +2336,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in B2B Sales, Cold Calling, Prospecting, CRM.",
     "url": "https://jobs.micro1.ai/post/c8a130d8-3a70-4a4c-9c4f-8f739840fd04?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-03T18:05:34.000Z"
   },
   {
     "company": "Micro1",
@@ -2040,7 +2346,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in React, Node.js, AWS, PostgreSQL.",
     "url": "https://jobs.micro1.ai/post/364acc50-17de-4a4b-b8f1-996a7065e549?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-03T17:58:58.000Z"
   },
   {
     "company": "Micro1",
@@ -2049,7 +2356,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in gameplay.",
     "url": "https://jobs.micro1.ai/post/3461d671-c918-45ab-94cf-d52ee9e2e4b5?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-03T08:11:02.000Z"
   },
   {
     "company": "Micro1",
@@ -2058,16 +2366,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in bioinformatics, biochemistry, ADMET, Cheminformatics.",
     "url": "https://jobs.micro1.ai/post/a50167d7-bd8d-4710-90e6-7cfeadc24f16?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Micro1",
-    "title": "Physics Expert (PhD / Postdoc) ",
-    "pay": "$100–$200/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Physics Mastery, Written Technical Communication, Technical Problem-Solving Depth, Mathematical & Computational Fluency.",
-    "url": "https://jobs.micro1.ai/post/015017c1-d47a-4dcf-9665-86221d2f7780?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
+    "domain": "Software & Data",
+    "posted": "2026-08-03T02:05:32.000Z"
   },
   {
     "company": "Micro1",
@@ -2076,7 +2376,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Physics Mastery, Expert Judgment in Ambiguous Cases, Meta-Level Reasoning, Research Leadership.",
     "url": "https://jobs.micro1.ai/post/c90c2d11-bdb6-42fc-91fd-a753a3c72ebf?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
+    "domain": "Science & STEM",
+    "posted": "2026-08-03T00:32:54.000Z"
   },
   {
     "company": "Micro1",
@@ -2085,7 +2386,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Physics Mastery, Written Technical Communication, Critical Evaluation & Error Detection, Calibrated Technical Judgment.",
     "url": "https://jobs.micro1.ai/post/70a8467d-117d-41c9-a508-f4b5fdb9a533?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
+    "domain": "Science & STEM",
+    "posted": "2026-08-03T00:32:52.000Z"
   },
   {
     "company": "Micro1",
@@ -2094,7 +2396,8 @@
     "tag": "20 openings",
     "blurb": "Looking for expertise in Video Data Annotation, Data annotation, Attention to detail, AI Review.",
     "url": "https://jobs.micro1.ai/post/8c24c739-5ad1-484f-88f1-e9d7d2cea7cd?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-02T17:11:58.000Z"
   },
   {
     "company": "Micro1",
@@ -2103,7 +2406,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Physics, exact diagonalization with translation + reflection symmetries (QuSpin preferred) for L >= 26, subspace block-diagonalization, overlap with Z2 state analysis.",
     "url": "https://jobs.micro1.ai/post/6127bd10-eb44-4b7c-bac5-cfe629893526?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
+    "domain": "Science & STEM",
+    "posted": "2026-08-02T02:01:40.000Z"
   },
   {
     "company": "Micro1",
@@ -2112,16 +2416,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Physics, magnetic structure factor calculations, propagation-vector analysis, magnetic space group identification (MAGNDATA).",
     "url": "https://jobs.micro1.ai/post/e97e0e7c-6788-4298-9f14-716aa6c34ded?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
-  },
-  {
-    "company": "Micro1",
-    "title": "Physics Expert (AMO / Optical Properties of Materials)\t\t",
-    "pay": "$80–$160/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Physics, ab initio configuration interaction for polarizability, atomic-structure calculations for Yb-171 / Yb-174, sigma vs pi transition identification.",
-    "url": "https://jobs.micro1.ai/post/d36a07f4-00ba-42b0-8590-b9676900a690?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
+    "domain": "Science & STEM",
+    "posted": "2026-08-02T02:01:36.000Z"
   },
   {
     "company": "Micro1",
@@ -2130,7 +2426,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Physics, Bogoliubov transformations, sideband photocurrent spectra, homodyne detection.",
     "url": "https://jobs.micro1.ai/post/cf86ac29-1d6f-42e8-bfd9-5b1a5094bd0b?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
+    "domain": "Science & STEM",
+    "posted": "2026-08-02T01:46:56.000Z"
   },
   {
     "company": "Micro1",
@@ -2139,7 +2436,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Physics, stochastic two-state Markov processes with gamma-distributed waiting times, Euler-Lotka equation, perturbative expansion in small division-noise variance.",
     "url": "https://jobs.micro1.ai/post/ab03236f-d339-473c-89d1-be944ce53d97?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
+    "domain": "Science & STEM",
+    "posted": "2026-08-02T01:40:27.000Z"
   },
   {
     "company": "Micro1",
@@ -2148,16 +2446,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Physics, first-order Palatini gravity, tetrad + spin connections, Pontryagin density.",
     "url": "https://jobs.micro1.ai/post/dbd04789-74da-461f-8e20-a6c596f7a4e9?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
-  },
-  {
-    "company": "Micro1",
-    "title": "Physics Expert (Statistical Physics / Quantum Information / Condensed Matter)",
-    "pay": "$80–$160/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Physics, Kramers-Wannier duality, quenched disorder averaging, square-lattice self-duality.",
-    "url": "https://jobs.micro1.ai/post/a9905e25-0cd4-430a-8205-bc3760499e9e?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
+    "domain": "Science & STEM",
+    "posted": "2026-08-02T01:40:23.000Z"
   },
   {
     "company": "Micro1",
@@ -2166,7 +2456,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in AdS/CFT, on-shell gravitational action, Weyl-Fefferman-Graham gauge, tensor algebra of boundary curvature invariants.",
     "url": "https://jobs.micro1.ai/post/ec92f108-3713-478c-9ddf-2d20c5af02c7?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
+    "domain": "Science & STEM",
+    "posted": "2026-08-02T01:09:56.000Z"
   },
   {
     "company": "Micro1",
@@ -2175,7 +2466,8 @@
     "tag": "100 openings",
     "blurb": "Looking for expertise in Gaming, QA, Annotation.",
     "url": "https://jobs.micro1.ai/post/8e8fd735-11b7-436e-8669-8e2a30bb2e52?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-01T22:49:56.000Z"
   },
   {
     "company": "Micro1",
@@ -2184,7 +2476,8 @@
     "tag": "10 openings",
     "blurb": "Looking for expertise in commercial real estate expertise, property valuation, feasibility studies, lease agreement analysis.",
     "url": "https://jobs.micro1.ai/post/e4559d84-181c-434d-9346-77b9bd432cfa?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-08-01T01:02:31.000Z"
   },
   {
     "company": "Micro1",
@@ -2193,7 +2486,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Captura de Video, Atención al Detalle, Tareas Domésticas.",
     "url": "https://jobs.micro1.ai/post/708b0a8b-9d4e-451b-8a0d-2fa6008ea4a9?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-31T20:56:50.000Z"
   },
   {
     "company": "Micro1",
@@ -2202,7 +2496,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Captura de Vídeo, Atenção a Detalhes, Tarefas domésticas.",
     "url": "https://jobs.micro1.ai/post/22332d44-d4d7-4444-b777-46fa149a14c3?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-31T15:57:50.000Z"
   },
   {
     "company": "Micro1",
@@ -2211,7 +2506,8 @@
     "tag": "25 openings",
     "blurb": "Looking for expertise in Audio recording.",
     "url": "https://jobs.micro1.ai/post/065d39e1-31ac-4a73-9bae-bf5bdaaf2b7c?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-07-30T05:23:05.000Z"
   },
   {
     "company": "Micro1",
@@ -2220,7 +2516,8 @@
     "tag": "21 openings",
     "blurb": "Looking for expertise in Audio recording.",
     "url": "https://jobs.micro1.ai/post/2e0922bd-d93f-4252-9b7b-3ddcf9546709?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-07-30T05:22:59.000Z"
   },
   {
     "company": "Micro1",
@@ -2229,7 +2526,8 @@
     "tag": "25 openings",
     "blurb": "Looking for expertise in Audio recording.",
     "url": "https://jobs.micro1.ai/post/dfda92a0-f639-4d0a-a8ca-10e92646346b?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-07-30T05:22:54.000Z"
   },
   {
     "company": "Micro1",
@@ -2238,7 +2536,8 @@
     "tag": "25 openings",
     "blurb": "Looking for expertise in Audio recording.",
     "url": "https://jobs.micro1.ai/post/a8c3a3ba-8913-444c-a667-a3219f5fe903?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-07-30T04:54:59.000Z"
   },
   {
     "company": "Micro1",
@@ -2247,7 +2546,8 @@
     "tag": "25 openings",
     "blurb": "Looking for expertise in Audio recording.",
     "url": "https://jobs.micro1.ai/post/b164a44d-97fc-49ff-a3a2-748a27096e80?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-07-30T04:54:54.000Z"
   },
   {
     "company": "Micro1",
@@ -2256,7 +2556,8 @@
     "tag": "25 openings",
     "blurb": "Looking for expertise in Audio recording.",
     "url": "https://jobs.micro1.ai/post/2a38d77e-3e6c-4b3f-ab87-58ac146810f4?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-07-30T04:54:17.000Z"
   },
   {
     "company": "Micro1",
@@ -2265,7 +2566,8 @@
     "tag": "25 openings",
     "blurb": "Looking for expertise in Audio recording.",
     "url": "https://jobs.micro1.ai/post/72536acf-1bed-4da6-9e18-bbf99b55fa50?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-07-30T04:52:06.000Z"
   },
   {
     "company": "Micro1",
@@ -2274,7 +2576,8 @@
     "tag": "25 openings",
     "blurb": "Looking for expertise in Audio recording, Audio editing.",
     "url": "https://jobs.micro1.ai/post/4de0d6fd-40fe-486e-82fb-66e24d2331b3?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-07-30T04:33:50.000Z"
   },
   {
     "company": "Micro1",
@@ -2283,7 +2586,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in semiconductors, engineering.",
     "url": "https://jobs.micro1.ai/post/0d13155b-b70e-4f8d-87d6-503942c3824f?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-30T02:45:19.000Z"
   },
   {
     "company": "Micro1",
@@ -2292,7 +2596,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Mechanical Design, CAD.",
     "url": "https://jobs.micro1.ai/post/a83744f0-dd11-43d2-86fa-373afff7eb92?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-30T01:45:07.000Z"
   },
   {
     "company": "Micro1",
@@ -2301,7 +2606,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in remote collaboration, Engineering Mechanics, Thermodynamics, Fluid Mechanics.",
     "url": "https://jobs.micro1.ai/post/be3b2ad9-b1c3-4893-84f1-6060fb8003fd?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-30T00:56:09.000Z"
   },
   {
     "company": "Micro1",
@@ -2310,7 +2616,8 @@
     "tag": "10 openings",
     "blurb": "Looking for expertise in data annotation, prompt engineering, critical thinking, written communication.",
     "url": "https://jobs.micro1.ai/post/972f4b3e-07a1-4a00-bd6a-b16da1f61461?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-30T00:53:57.000Z"
   },
   {
     "company": "Micro1",
@@ -2319,7 +2626,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Circuit Analysis, Computer Engineering, Computer Architecture, RF & Microwave.",
     "url": "https://jobs.micro1.ai/post/c5e0383b-f2c4-4db8-957e-f232f4888e5a?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-29T23:50:44.000Z"
   },
   {
     "company": "Micro1",
@@ -2328,7 +2636,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Chemistry, Wet Labs, Critical Thinking, Chemical Reactions.",
     "url": "https://jobs.micro1.ai/post/05b8c655-cd57-4fff-979c-1aca5842f5f0?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
+    "domain": "Science & STEM",
+    "posted": "2026-07-29T19:15:05.000Z"
   },
   {
     "company": "Micro1",
@@ -2337,16 +2646,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in CUDA, WebGPU, GLSL, C++.",
     "url": "https://jobs.micro1.ai/post/3f55aef6-c6ea-4781-95b1-94a5e54dc1dd?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Micro1",
-    "title": "GitHub Contributor",
-    "pay": "$50–$150/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Python3, JAVA, Rust, Algorithms.",
-    "url": "https://jobs.micro1.ai/post/b18ad8af-9702-40fd-9853-ab5090a96ca0?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-29T16:13:32.000Z"
   },
   {
     "company": "Micro1",
@@ -2355,7 +2656,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in materials science expertise, materials characterization, technical literature review, scientific data interpretation.",
     "url": "https://jobs.micro1.ai/post/18eba353-af76-465d-989f-bb9c22216342?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-29T01:48:42.000Z"
   },
   {
     "company": "Micro1",
@@ -2364,7 +2666,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in aerodynamics, computational fluid dynamics (cfd), technical writing, verbal communication.",
     "url": "https://jobs.micro1.ai/post/37888a94-0a87-453c-b307-1b5b02fe91ad?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
+    "domain": "Science & STEM",
+    "posted": "2026-07-29T01:36:58.000Z"
   },
   {
     "company": "Micro1",
@@ -2373,7 +2676,8 @@
     "tag": "1 opening",
     "blurb": "Looking for expertise in live music performance, musical instrument proficiency, public performance, event logistics coordination.",
     "url": "https://jobs.micro1.ai/post/2dd5785e-8f43-40dd-acb4-b6f9bb0d79cc?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Design & Creative"
+    "domain": "Design & Creative",
+    "posted": "2026-07-29T00:55:41.000Z"
   },
   {
     "company": "Micro1",
@@ -2382,7 +2686,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Biology, Molecular Biology, Wet Labs, Crispr.",
     "url": "https://jobs.micro1.ai/post/fbd9e6c9-d88d-4b9b-a8c3-de1db554dfea?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
+    "domain": "Science & STEM",
+    "posted": "2026-07-28T20:14:07.000Z"
   },
   {
     "company": "Micro1",
@@ -2391,7 +2696,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Biology, Microbiology, Chemistry, Bacteria.",
     "url": "https://jobs.micro1.ai/post/c7354915-3bff-4f3f-8e1f-ff7816c66881?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
+    "domain": "Science & STEM",
+    "posted": "2026-07-28T17:53:21.000Z"
   },
   {
     "company": "Micro1",
@@ -2400,7 +2706,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in microsoft powerpoint, microsoft excel, microsoft word, business document creation.",
     "url": "https://jobs.micro1.ai/post/934f6f28-c455-4a8a-884c-57bc3a003a0c?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-07-28T15:19:01.000Z"
   },
   {
     "company": "Micro1",
@@ -2409,7 +2716,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in microsoft excel, office open xml, microsoft powerpoint, microsoft word.",
     "url": "https://jobs.micro1.ai/post/1217188b-82d9-4a8a-8019-6d3b1fdbda0a?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-07-28T15:12:08.000Z"
   },
   {
     "company": "Micro1",
@@ -2418,7 +2726,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in microsoft word, pdf editing tools, document formatting, tracked changes management.",
     "url": "https://jobs.micro1.ai/post/7e03b22c-271c-4d85-924f-8377f65001fa?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-07-28T13:27:32.000Z"
   },
   {
     "company": "Micro1",
@@ -2427,7 +2736,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Legal Reasoning, Litigation & Practice Expertise, Analytical Rigor, Calibration in Ambiguous Cases.",
     "url": "https://jobs.micro1.ai/post/b5594d46-29f1-4696-b7f5-707b04d707bd?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-07-28T12:41:50.000Z"
   },
   {
     "company": "Micro1",
@@ -2436,7 +2746,8 @@
     "tag": "30 openings",
     "blurb": "Looking for expertise in medicinal chemistry.",
     "url": "https://jobs.micro1.ai/post/3f30d455-3bb2-4af3-95ba-0579311eb915?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-28T02:40:15.000Z"
   },
   {
     "company": "Micro1",
@@ -2445,7 +2756,8 @@
     "tag": "30 openings",
     "blurb": "Looking for expertise in medicinal chemistry.",
     "url": "https://jobs.micro1.ai/post/204624c7-1a34-4658-9cf1-95ef2a4844c5?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-28T02:40:08.000Z"
   },
   {
     "company": "Micro1",
@@ -2454,7 +2766,8 @@
     "tag": "20 openings",
     "blurb": "Looking for expertise in Data Annotation, Attention to detail.",
     "url": "https://jobs.micro1.ai/post/4214a8e0-d519-493d-9871-d3e68964306f?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-07-27T19:34:04.000Z"
   },
   {
     "company": "Micro1",
@@ -2463,7 +2776,8 @@
     "tag": "20 openings",
     "blurb": "Looking for expertise in Data annotation, Attention to detail.",
     "url": "https://jobs.micro1.ai/post/ed7e3327-b2bb-4cc5-8cd1-150b1399bd29?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-07-27T19:34:02.000Z"
   },
   {
     "company": "Micro1",
@@ -2472,7 +2786,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Physics, Science, Critical Thinking, Research.",
     "url": "https://jobs.micro1.ai/post/0a65be3c-a2b6-4b56-a0ec-f6fcdb5096f9?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
+    "domain": "Science & STEM",
+    "posted": "2026-07-27T18:34:46.000Z"
   },
   {
     "company": "Micro1",
@@ -2481,7 +2796,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Leadership & Team Management, Data Operations, Human Data.",
     "url": "https://jobs.micro1.ai/post/baba498f-d69b-4d87-aefe-a32031d799e7?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-07-25T08:14:35.000Z"
   },
   {
     "company": "Micro1",
@@ -2490,7 +2806,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Leadership & Team Management, Data Operations, Human Data.",
     "url": "https://jobs.micro1.ai/post/11f4f6d8-daec-4021-8ad9-97e50b985684?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-07-25T08:14:31.000Z"
   },
   {
     "company": "Micro1",
@@ -2499,7 +2816,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Leadership & Team Management, Data Operations, Human Data.",
     "url": "https://jobs.micro1.ai/post/edf674d4-4b5e-4fce-ba2c-38ca2cf3b8de?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-07-25T08:14:27.000Z"
   },
   {
     "company": "Micro1",
@@ -2508,7 +2826,8 @@
     "tag": "1 opening",
     "blurb": "Looking for expertise in Attention to detail, UMI Grippers, Video Capturing.",
     "url": "https://jobs.micro1.ai/post/faa2ffcb-d232-46b7-94c1-1f47c98e6c98?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-24T15:51:38.000Z"
   },
   {
     "company": "Micro1",
@@ -2517,7 +2836,8 @@
     "tag": "1 opening",
     "blurb": "Looking for expertise in UMI-grippers, Video Capturing, Attention to detail.",
     "url": "https://jobs.micro1.ai/post/106a45e0-94c9-4dc3-8a60-a64adfd3c68f?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-24T15:48:39.000Z"
   },
   {
     "company": "Micro1",
@@ -2526,7 +2846,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Economic Research, Enterprise AI, Benchmarking, Agentic Economic Workflows.",
     "url": "https://jobs.micro1.ai/post/befb30fe-c881-4886-ae7c-e96d6366b236?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-07-23T17:41:09.000Z"
   },
   {
     "company": "Micro1",
@@ -2535,7 +2856,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in contract drafting and negotiation, private equity legal expertise, investment funds legal expertise, m&a legal expertise.",
     "url": "https://jobs.micro1.ai/post/490d4ba9-eeca-4d63-b373-cb1b4d28799d?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-07-23T17:06:49.000Z"
   },
   {
     "company": "Micro1",
@@ -2544,7 +2866,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Smartphone, Video Recording, Attention to Detail, Household Tasks.",
     "url": "https://jobs.micro1.ai/post/0f435bd2-e7f0-4d24-9e32-de34b71c2a97?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-22T21:38:09.000Z"
   },
   {
     "company": "Micro1",
@@ -2553,7 +2876,8 @@
     "tag": "1 opening",
     "blurb": "Looking for expertise in Python, SQL, AI/ML, ETL.",
     "url": "https://jobs.micro1.ai/post/3e8b3972-cca9-42aa-98a8-d9610fb97e20?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-22T19:36:31.000Z"
   },
   {
     "company": "Micro1",
@@ -2562,7 +2886,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Research Signal Judgment, ML-Oriented Data Design, Ops-to-Research Translation, RL Environments.",
     "url": "https://jobs.micro1.ai/post/3e4095b8-adc0-48f9-a0bd-4d0c18d96ba6?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-22T08:25:42.000Z"
   },
   {
     "company": "Micro1",
@@ -2571,7 +2896,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Cloud Benchmark Task Authoring, Cloud and Distributed Systems Architecture, Production Infrastructure Ownership.",
     "url": "https://jobs.micro1.ai/post/cf633740-7783-442e-881b-bbad6912770b?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-21T21:46:50.000Z"
   },
   {
     "company": "Micro1",
@@ -2580,7 +2906,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in corporate law, m&a (mergers and acquisitions), contract drafting and review, us regulatory compliance.",
     "url": "https://jobs.micro1.ai/post/d7f5df79-5f17-4b25-8b17-4ffa23a73b6c?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-07-21T18:04:14.000Z"
   },
   {
     "company": "Micro1",
@@ -2589,7 +2916,8 @@
     "tag": "1 opening",
     "blurb": "Looking for expertise in Client Acquisition, Outbound Prospecting, Enterprise Parnerships, Enterprise AI.",
     "url": "https://jobs.micro1.ai/post/b1f19abc-f0d3-45f0-8077-55b11bed9209?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-07-21T08:04:25.000Z"
   },
   {
     "company": "Micro1",
@@ -2598,7 +2926,8 @@
     "tag": "30 openings",
     "blurb": "Looking for expertise in pharmacology.",
     "url": "https://jobs.micro1.ai/post/8ee5ab2e-ec03-4259-b82f-1005e7006df3?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-21T07:27:08.000Z"
   },
   {
     "company": "Micro1",
@@ -2607,7 +2936,8 @@
     "tag": "30 openings",
     "blurb": "Looking for expertise in neuroscience.",
     "url": "https://jobs.micro1.ai/post/8563b928-b4ad-44a5-b3a8-6166cbd45bcd?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-21T07:25:49.000Z"
   },
   {
     "company": "Micro1",
@@ -2616,7 +2946,8 @@
     "tag": "30 openings",
     "blurb": "Looking for expertise in molecular biology.",
     "url": "https://jobs.micro1.ai/post/3814ff86-439e-4956-bfa4-dfe4c7353450?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-21T07:25:19.000Z"
   },
   {
     "company": "Micro1",
@@ -2625,7 +2956,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in biochemistry.",
     "url": "https://jobs.micro1.ai/post/9de2ca9e-8bbf-4ddf-adaa-927991d46396?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-21T07:24:54.000Z"
   },
   {
     "company": "Micro1",
@@ -2634,7 +2966,8 @@
     "tag": "1 opening",
     "blurb": "Looking for expertise in Project Management, Data Operations, Quality Analyst, Human Data.",
     "url": "https://jobs.micro1.ai/post/a69b982c-badd-4d71-aafd-0a31ff7efbda?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-07-21T05:39:18.000Z"
   },
   {
     "company": "Micro1",
@@ -2643,7 +2976,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Project Management, Data Operations, Quality Analysis, Human Data.",
     "url": "https://jobs.micro1.ai/post/6d465d20-6e27-4fca-9566-b0f15940003a?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-07-21T05:38:10.000Z"
   },
   {
     "company": "Micro1",
@@ -2652,7 +2986,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Multi-Cloud Exploitation, Red Teaming, Strategic Remediation, Control Validation.",
     "url": "https://jobs.micro1.ai/post/3c61d4a4-ed70-4915-a763-0839b09b8928?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-20T16:13:59.000Z"
   },
   {
     "company": "Micro1",
@@ -2661,7 +2996,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Cloud Benchmark Task Authoring, Cloud and Distributed Systems Architecture, Production Infrastructure Ownership.",
     "url": "https://jobs.micro1.ai/post/b97d952d-98f7-4122-a005-4c89053731a4?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-20T16:11:23.000Z"
   },
   {
     "company": "Micro1",
@@ -2670,7 +3006,8 @@
     "tag": "1 opening",
     "blurb": "Looking for expertise in Customer support, Community moderation, Conflict De-escalation, Time management.",
     "url": "https://jobs.micro1.ai/post/160d69de-5d1f-4ecc-95c2-2cd23b60cea8?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-07-20T15:47:46.000Z"
   },
   {
     "company": "Micro1",
@@ -2679,7 +3016,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in PR, Vendor Management, Partnerships, Communications Strategy.",
     "url": "https://jobs.micro1.ai/post/5b80dfdc-b737-4626-99f2-50baf207b94e?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-07-17T19:40:00.000Z"
   },
   {
     "company": "Micro1",
@@ -2688,7 +3026,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Playbook, Contract Negotiation, Contract Drafting, Contract Management.",
     "url": "https://jobs.micro1.ai/post/251f01db-9b62-40d6-9392-7ebf3c67ca88?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-07-17T18:29:18.000Z"
   },
   {
     "company": "Micro1",
@@ -2697,7 +3036,8 @@
     "tag": "6 openings",
     "blurb": "Looking for expertise in commercial contract review, m&a diligence, legal risk assessment, contract drafting and negotiation.",
     "url": "https://jobs.micro1.ai/post/a58e34d6-a1c6-4d25-aa24-18b1104f70a3?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-07-17T00:48:41.000Z"
   },
   {
     "company": "Micro1",
@@ -2706,7 +3046,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in m&a transaction analysis, corporate governance, securities law, legal risk assessment.",
     "url": "https://jobs.micro1.ai/post/d7759fcc-cf6a-413c-abfe-ac55f83bf74a?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-07-17T00:43:57.000Z"
   },
   {
     "company": "Micro1",
@@ -2715,7 +3056,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in contract drafting, commercial agreements, legal document review, attention to detail.",
     "url": "https://jobs.micro1.ai/post/416f4a44-95ff-455f-ab01-fa318a30dda8?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-07-16T20:50:08.000Z"
   },
   {
     "company": "Micro1",
@@ -2724,7 +3066,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Playbook, Contract Negotiation, Contract Drafting, Contract Management.",
     "url": "https://jobs.micro1.ai/post/f70dbf96-7991-4b99-9a26-b5f2148a3d71?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-07-16T20:49:37.000Z"
   },
   {
     "company": "Micro1",
@@ -2733,7 +3076,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Python3, JAVA, Rust, Basics C++.",
     "url": "https://jobs.micro1.ai/post/dcb37b06-8e05-434d-ac22-372a4c04cefc?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-16T19:04:13.000Z"
   },
   {
     "company": "Micro1",
@@ -2742,7 +3086,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Python3, JAVA, Rust, Algorithms.",
     "url": "https://jobs.micro1.ai/post/0505e8ef-fd14-495a-87fd-ecc38fcd7e6c?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-16T17:57:57.000Z"
   },
   {
     "company": "Micro1",
@@ -2751,7 +3096,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Captura de Video, Atenção a Detalhes, Taréficas Domésticas.",
     "url": "https://jobs.micro1.ai/post/6a56a90b-6a8b-4f88-863e-378f334cb06d?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-16T01:16:45.000Z"
   },
   {
     "company": "Micro1",
@@ -2760,7 +3106,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Python, LLMs, AWS, LangChain.",
     "url": "https://jobs.micro1.ai/post/86cc2317-a266-4edd-a1dc-8e04acf74149?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-15T00:54:09.000Z"
   },
   {
     "company": "Micro1",
@@ -2769,7 +3116,8 @@
     "tag": "20 openings",
     "blurb": "Looking for expertise in AI training, AI Response Evaluation, Critical Thinking & Analytical Reasoning, Attention to Detail.",
     "url": "https://jobs.micro1.ai/post/b079dac2-1d38-4da3-a65f-fab372884f72?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-14T18:11:29.000Z"
   },
   {
     "company": "Micro1",
@@ -2778,7 +3126,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Calculus, Research Methodology, Mathematics.",
     "url": "https://jobs.micro1.ai/post/737b57d1-ffc8-4e2d-82c4-86c3c4943325?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-14T09:08:40.000Z"
   },
   {
     "company": "Micro1",
@@ -2787,7 +3136,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in advanced chemistry knowledge, scientific writing, verbal comms, attention to detail.",
     "url": "https://jobs.micro1.ai/post/0af69636-770d-447f-9f3c-ea8936565aca?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-14T09:08:38.000Z"
   },
   {
     "company": "Micro1",
@@ -2796,7 +3146,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Advanced physics knowledge, scientific data analysis, technical writing, verbal comms.",
     "url": "https://jobs.micro1.ai/post/31ab7766-5edf-463a-a490-79290e5dcef6?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-14T09:08:36.000Z"
   },
   {
     "company": "Micro1",
@@ -2805,7 +3156,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in biology expertise, critical evaluation, scientific communication, attention to detail.",
     "url": "https://jobs.micro1.ai/post/5136fd03-6ff0-45c0-8e36-2126cc5b21c7?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-14T09:08:34.000Z"
   },
   {
     "company": "Micro1",
@@ -2814,7 +3166,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in economics, PhD, microeconomics, macroeconomics.",
     "url": "https://jobs.micro1.ai/post/2649478e-fe69-4c2b-ad3f-43a53f0f89d2?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-14T09:08:32.000Z"
   },
   {
     "company": "Micro1",
@@ -2823,7 +3176,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in statistics, PhD, statistical approach, advanced data analysis.",
     "url": "https://jobs.micro1.ai/post/78e55232-cb71-4f9c-8d60-b5d52678d7a8?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-14T09:08:28.000Z"
   },
   {
     "company": "Micro1",
@@ -2832,7 +3186,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Computer Science, PhD, Python, Data Science.",
     "url": "https://jobs.micro1.ai/post/47cf4a46-1d8e-4a38-a7f6-1ae51f23ba3a?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-14T09:08:27.000Z"
   },
   {
     "company": "Micro1",
@@ -2841,7 +3196,8 @@
     "tag": "50 openings",
     "blurb": "Looking for expertise in mechanical engineering, solid and structural mechanics, dynamics and vibration and control, thermal-fluids.",
     "url": "https://jobs.micro1.ai/post/b3cd1044-8649-4019-932b-1bd7267e30d9?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-14T06:46:19.000Z"
   },
   {
     "company": "Micro1",
@@ -2850,7 +3206,8 @@
     "tag": "50 openings",
     "blurb": "Looking for expertise in electrical engineering, analog circuits, digital circuits, rf.",
     "url": "https://jobs.micro1.ai/post/2d8d20b2-089f-44eb-8a34-61ff4c7bbc2b?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-14T06:46:17.000Z"
   },
   {
     "company": "Micro1",
@@ -2859,7 +3216,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in adobe premiere pro, final cut pro, davinci resolve, motion graphics.",
     "url": "https://jobs.micro1.ai/post/207453cb-479e-4fd3-9d49-13e4e35b23f7?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-07-13T13:56:15.000Z"
   },
   {
     "company": "Micro1",
@@ -2868,7 +3226,8 @@
     "tag": "1 opening",
     "blurb": "Looking for expertise in ROS 2, Teleoperation, Robotics Data Pipelines, Video Streaming.",
     "url": "https://jobs.micro1.ai/post/8319e497-8122-47a6-be41-4e2c6236fca6?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-10T21:33:45.000Z"
   },
   {
     "company": "Micro1",
@@ -2877,7 +3236,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in Floor Plans, Elevation Sets, CAD Drawings, GD&T Callouts.",
     "url": "https://jobs.micro1.ai/post/840bc863-3ca5-4f58-aa8c-f2234067ebc9?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "domain": "General & Other",
+    "posted": "2026-07-10T21:26:49.000Z"
   },
   {
     "company": "Micro1",
@@ -2886,7 +3246,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in video editing, video production workflows, motion graphics, visual effects (vfx).",
     "url": "https://jobs.micro1.ai/post/b0bba9cf-0617-4dd2-9cb7-ee348936e72f?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Design & Creative"
+    "domain": "Design & Creative",
+    "posted": "2026-07-10T19:32:17.000Z"
   },
   {
     "company": "Micro1",
@@ -2895,7 +3256,8 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in mechanical engineering, solid mechanics, structural mechanics, dynamics.",
     "url": "https://jobs.micro1.ai/post/062c791a-a0a6-4003-9bc8-1f004079aa89?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-10T01:31:03.000Z"
   },
   {
     "company": "Micro1",
@@ -2904,7 +3266,8 @@
     "tag": "5 openings",
     "blurb": "Looking for expertise in Python, Go, Typescript.",
     "url": "https://jobs.micro1.ai/post/66b20ba1-3666-49ad-9d4c-6c390b438c4e?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-10T01:30:27.000Z"
   },
   {
     "company": "Micro1",
@@ -2913,6 +3276,7 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in electrical engineering, analog circuits, digital circuits, rf (radio frequency).",
     "url": "https://jobs.micro1.ai/post/be1242bf-1a4b-4a1c-b943-cbdaaef37210?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-07-10T01:19:51.000Z"
   }
 ]

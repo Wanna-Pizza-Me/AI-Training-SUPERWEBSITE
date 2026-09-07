@@ -11,6 +11,7 @@
 const fs = require('fs');
 const path = require('path');
 const { mapDomain } = require('./domain-categories');
+const { normalizePosted } = require('./posted-date');
 
 const BASE_URL = 'https://www.dataannotation.tech';
 const CONCURRENCY = 8;
@@ -114,6 +115,10 @@ async function main() {
       blurb,
       url: applyUrl,
       domain: mapDomain(card.domain, 'DataAnnotation'),
+      // No date anywhere to scrape: these are evergreen role pages on a
+      // signup funnel, not dated postings. Undated sorts last under
+      // "Most recent" and renders without an age on the card.
+      posted: null,
     };
   });
 

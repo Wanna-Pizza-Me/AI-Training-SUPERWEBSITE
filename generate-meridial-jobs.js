@@ -13,6 +13,7 @@
 const fs = require('fs');
 const path = require('path');
 const { mapDomain } = require('./domain-categories');
+const { normalizePosted } = require('./posted-date');
 
 const API_URL = 'https://boards-api.greenhouse.io/v1/boards/agency/jobs?content=true';
 const TITLE_SUFFIX = /\s*[-–]\s*Freelance( AI Trainer)? Project\s*$/i;
@@ -69,6 +70,9 @@ async function main() {
     blurb: cleanBlurb(j.content),
     url: j.absolute_url,
     domain: mapDomain((j.departments && j.departments[0] && j.departments[0].name) || '', 'Meridial'),
+    // first_published, not updated_at: an edit to an old posting shouldn't
+    // make it resurface at the top of the recency sort.
+    posted: normalizePosted(j.first_published),
   }));
 
   const outPath = path.join(__dirname, 'jobs-meridial.json');

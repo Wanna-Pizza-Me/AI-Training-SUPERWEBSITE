@@ -1,579 +1,13 @@
 [
   {
     "company": "Turing",
-    "title": "Software / Platform / Data Engineer — Agent Trace Collection",
+    "title": "LLM ServiceNow Product Owner",
     "pay": "Not listed",
     "tag": "Remote",
-    "blurb": "Build a data pipeline to capture and sanitize developer tool usage traces.",
-    "url": "https://work.turing.com/jobs?jobId=104024",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Turing",
-    "title": "Senior Software Engineer – Python (LLM Evaluation & Repository Validation)",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Design and build coding-agent benchmarks using production-like environments.",
-    "url": "https://work.turing.com/jobs?jobId=102990",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Turing",
-    "title": "QC and Code Expert",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Review and improve legal tasks to ensure accuracy and clarity.",
-    "url": "https://work.turing.com/jobs?jobId=102361",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Turing",
-    "title": "Sr. Python Engineer",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Build and optimize scalable APIs for advanced AI applications.",
-    "url": "https://work.turing.com/jobs?jobId=102328",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Turing",
-    "title": "SWE – Python Docker",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Analyze GitHub issues and evaluate software quality for LLM tasks.",
-    "url": "https://work.turing.com/jobs?jobId=101677",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Turing",
-    "title": "Senior Software Engineer – C++(LLM Evaluation & Repository Validation)",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Analyze GitHub issues and evaluate test coverage for LLM projects.",
-    "url": "https://work.turing.com/jobs?jobId=101521",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Turing",
-    "title": "Senior Backend Engineer (Python, SQL & AI Integration)",
-    "pay": "Not listed",
-    "tag": "On-site",
-    "blurb": "Develop and execute test strategies for billing pipeline quality assurance.",
-    "url": "https://work.turing.com/jobs?jobId=101249",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Turing",
-    "title": "Senior Backend Engineer (Python, SQL & AI Integration)",
-    "pay": "Not listed",
-    "tag": "On-site",
-    "blurb": "Build automated GCP billing pipelines and rules engines for financial data.",
-    "url": "https://work.turing.com/jobs?jobId=101248",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Turing",
-    "title": "Web Research Specialist",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Design challenging research questions that AI cannot answer online.",
-    "url": "https://work.turing.com/jobs?jobId=102276",
-    "domain": "Science & STEM"
-  },
-  {
-    "company": "Turing",
-    "title": "Domain Expert - Statistician / Data Analyst – (jamovi / JASP)",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Build statistical analysis environments to benchmark AI models using jamovi or JASP.",
-    "url": "https://work.turing.com/jobs?jobId=103983",
-    "domain": "Science & STEM"
-  },
-  {
-    "company": "Turing",
-    "title": "Scientific Coding - Material science and Python",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Write and implement complex scientific coding tasks in Python for AI training.",
-    "url": "https://work.turing.com/jobs?jobId=103653",
-    "domain": "Science & STEM"
-  },
-  {
-    "company": "Turing",
-    "title": "Scientific Coding - Biology and Python",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Write and implement complex biology coding tasks in Python.",
-    "url": "https://work.turing.com/jobs?jobId=103652",
-    "domain": "Science & STEM"
-  },
-  {
-    "company": "Turing",
-    "title": "Scientific Coding - Chemistry and Python",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Write and implement complex chemistry coding tasks in Python.",
-    "url": "https://work.turing.com/jobs?jobId=103651",
-    "domain": "Science & STEM"
-  },
-  {
-    "company": "Turing",
-    "title": "Scientific Coding - Mathematics and Python",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Create and implement rigorous scientific coding tasks in Python.",
-    "url": "https://work.turing.com/jobs?jobId=103650",
-    "domain": "Science & STEM"
-  },
-  {
-    "company": "Turing",
-    "title": "Scientific Coding - Physics and Python",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Write and validate complex scientific coding tasks in Python for AI training.",
-    "url": "https://work.turing.com/jobs?jobId=103648",
-    "domain": "Science & STEM"
-  },
-  {
-    "company": "Turing",
-    "title": "AI Systems Engineer - STEM Workflow",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Design and build AI workflows for advanced mathematical reasoning tasks.",
-    "url": "https://work.turing.com/jobs?jobId=103622",
-    "domain": "Science & STEM"
-  },
-  {
-    "company": "Turing",
-    "title": "Domain Expert - Education / LMS Administrator (Moodle)",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Build and configure Moodle courses and assessment workflows for AI benchmarking.",
-    "url": "https://work.turing.com/jobs?jobId=103982",
-    "domain": "General & Other"
-  },
-  {
-    "company": "Turing",
-    "title": "Domain Expert - Health/EHR Administrator",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Design and execute accurate EHR workflows using OpenEMR.",
-    "url": "https://work.turing.com/jobs?jobId=103974",
-    "domain": "Medical & Healthcare"
-  },
-  {
-    "company": "Turing",
-    "title": "Medical Expert – Dermatology",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Review AI-generated dermatology content for accuracy and safety.",
-    "url": "https://work.turing.com/jobs?jobId=103353",
-    "domain": "Medical & Healthcare"
-  },
-  {
-    "company": "Turing",
-    "title": "Lifestyle / Family / Media SME",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Evaluate and refine AI tools for household and lifestyle management.",
-    "url": "https://work.turing.com/jobs?jobId=103328",
-    "domain": "Medical & Healthcare"
-  },
-  {
-    "company": "Turing",
-    "title": "Health & Fitness SME",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Evaluate and refine AI tools for health and fitness performance standards.",
-    "url": "https://work.turing.com/jobs?jobId=103326",
-    "domain": "Medical & Healthcare"
-  },
-  {
-    "company": "Turing",
-    "title": "Resident Medical Specialist (MD/DO)",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Design evaluation methods to enhance AI clinical reasoning in real scenarios.",
-    "url": "https://work.turing.com/jobs?jobId=42012",
-    "domain": "Medical & Healthcare"
-  },
-  {
-    "company": "Turing",
-    "title": "Medicine Physician (MD/DO/Doctoral study/PhD)",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Evaluate AI clinical reasoning with real medical scenarios and expertise.",
-    "url": "https://work.turing.com/jobs?jobId=33805",
-    "domain": "Medical & Healthcare"
-  },
-  {
-    "company": "Turing",
-    "title": "AI Quality Analyst - English",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Evaluate personalized AI responses for relevance and helpfulness.",
-    "url": "https://work.turing.com/jobs?jobId=103843",
-    "domain": "General & Other"
-  },
-  {
-    "company": "Turing",
-    "title": "AI Quality Analyst (Personalization) -Japanese",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Evaluate AI personalization quality using your personal experiences and insights.",
-    "url": "https://work.turing.com/jobs?jobId=62136",
-    "domain": "General & Other"
-  },
-  {
-    "company": "Turing",
-    "title": "LLM Trainer - Agent Function call",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Craft multi-turn dialogues to enhance AI assistant interactions.",
-    "url": "https://work.turing.com/jobs?jobId=57029",
-    "domain": "General & Other"
-  },
-  {
-    "company": "Turing",
-    "title": "Domain Expert - Enterprise Resource Planning (ERP)",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Create application templates and workflows for ERP benchmarking tasks.",
-    "url": "https://work.turing.com/jobs?jobId=103973",
-    "domain": "General & Other"
-  },
-  {
-    "company": "Turing",
-    "title": "Domain Expert: Research & Publishing (LaTeX / Overleaf)",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Execute complex LaTeX typesetting and academic publishing tasks efficiently.",
-    "url": "https://work.turing.com/jobs?jobId=103854",
-    "domain": "General & Other"
-  },
-  {
-    "company": "Turing",
-    "title": "Personal Account Generalist Raters (US)",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Evaluate personalized AI interactions using your Google app data.",
-    "url": "https://work.turing.com/jobs?jobId=103785",
-    "domain": "General & Other"
-  },
-  {
-    "company": "Turing",
-    "title": "Personal Account Generalist Raters (US)",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Evaluate AI responses using personalized prompts across connected Google apps.",
-    "url": "https://work.turing.com/jobs?jobId=103781",
-    "domain": "General & Other"
-  },
-  {
-    "company": "Turing",
-    "title": "PowerPoint Specialist",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Create and refine high-quality PowerPoint presentations for business audiences.",
-    "url": "https://work.turing.com/jobs?jobId=103359",
-    "domain": "General & Other"
-  },
-  {
-    "company": "Turing",
-    "title": "Domain Expert: Mechanical Engineering (FreeCAD)",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Execute complex CAD tasks in FreeCAD and validate design solutions.",
-    "url": "https://work.turing.com/jobs?jobId=103863",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Turing",
-    "title": "Domain Expert: Electronics & EDA (KiCad)",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Execute complex PCB design tasks using KiCad and validate solutions.",
-    "url": "https://work.turing.com/jobs?jobId=103856",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Turing",
-    "title": "Domain Expert: Mechanical Engineering (FreeCAD)",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Execute complex 3D modeling tasks using FreeCAD for mechanical design.",
-    "url": "https://work.turing.com/jobs?jobId=103855",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Turing",
-    "title": "Senior Infrastructure / Backend Engineer — GCP Production Systems",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Manage and monitor GCP production services for reliability and performance.",
-    "url": "https://work.turing.com/jobs?jobId=102910",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Turing",
-    "title": "Domain Experts - Aerospace / Flight-Dynamics Engineer",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Author flight tasks and validate designs using aerospace simulation tools.",
-    "url": "https://work.turing.com/jobs?jobId=102645",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Turing",
-    "title": "Fullstack Developer – AI Applications (GCP)",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "",
-    "url": "https://work.turing.com/jobs?jobId=101012",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Turing",
-    "title": "Agentic Coding Annotator - Online / Offline Tasks",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "",
-    "url": "https://work.turing.com/jobs?jobId=100952",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Turing",
-    "title": "Agentic Coding Annotator - Online / Offline Tasks",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "",
-    "url": "https://work.turing.com/jobs?jobId=100935",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Turing",
-    "title": "Business Analyst - US Educational Raters - Gemini",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Research and analyze information to improve AI-generated educational content.",
-    "url": "https://work.turing.com/jobs?jobId=100063",
-    "domain": "Business & Finance"
-  },
-  {
-    "company": "Turing",
-    "title": "Business Analyst",
-    "pay": "Not listed",
-    "tag": "On-site",
-    "blurb": "Analyze data quality and identify patterns to improve business processes.",
-    "url": "https://work.turing.com/jobs?jobId=103667",
-    "domain": "Business & Finance"
-  },
-  {
-    "company": "Turing",
-    "title": "Senior Accounting & Finance Advisors",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Analyze financial data and provide expert accounting guidance to clients.",
-    "url": "https://work.turing.com/jobs?jobId=102613",
-    "domain": "Business & Finance"
-  },
-  {
-    "company": "Turing",
-    "title": "CUA Data Annotator",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Train and mentor annotators on CUA data annotation processes.",
-    "url": "https://work.turing.com/jobs?jobId=102211",
-    "domain": "Business & Finance"
-  },
-  {
-    "company": "Turing",
-    "title": "CUA Quality Analysts",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Review and improve AI training data quality through detailed evaluations.",
-    "url": "https://work.turing.com/jobs?jobId=102207",
-    "domain": "Business & Finance"
-  },
-  {
-    "company": "Turing",
-    "title": "Business Analyst - Data Annotator (US)",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Review and label data to ensure quality for AI model training.",
-    "url": "https://work.turing.com/jobs?jobId=102012",
-    "domain": "Business & Finance"
-  },
-  {
-    "company": "Turing",
-    "title": "CUA Data Annotation Trainer",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Train annotators and ensure high-quality data for CUA projects.",
-    "url": "https://work.turing.com/jobs?jobId=101945",
-    "domain": "Business & Finance"
-  },
-  {
-    "company": "Turing",
-    "title": "CUA Data Annotation Trainer",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "",
-    "url": "https://work.turing.com/jobs?jobId=99912",
-    "domain": "Business & Finance"
-  },
-  {
-    "company": "Turing",
-    "title": "Finance Experts",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Review finance tasks for accuracy and clarity in evaluations.",
-    "url": "https://work.turing.com/jobs?jobId=103620",
-    "domain": "Business & Finance"
-  },
-  {
-    "company": "Turing",
-    "title": "Personal Finance SME",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Evaluate and refine AI tools for personal finance and budgeting.",
-    "url": "https://work.turing.com/jobs?jobId=103325",
-    "domain": "Business & Finance"
-  },
-  {
-    "company": "Turing",
-    "title": "HR & People Ops SME",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Evaluate and refine AI tools to enhance HR processes and standards.",
-    "url": "https://work.turing.com/jobs?jobId=103315",
-    "domain": "Business & Finance"
-  },
-  {
-    "company": "Turing",
-    "title": "Sales / Marketing / CRM SME",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Evaluate and verify AI outputs for fantasy sports accuracy and logic.",
-    "url": "https://work.turing.com/jobs?jobId=103314",
-    "domain": "Business & Finance"
-  },
-  {
-    "company": "Turing",
-    "title": "Mathematics Research Specialist – Algebraic Geometry",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Develop and refine advanced mathematical proofs in Algebraic Geometry.",
-    "url": "https://work.turing.com/jobs?jobId=102691",
-    "domain": "Business & Finance"
-  },
-  {
-    "company": "Turing",
-    "title": "US Tax Forms Experts",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Annotate tax forms by extracting and mapping bounding box relationships.",
-    "url": "https://work.turing.com/jobs?jobId=102511",
-    "domain": "Business & Finance"
-  },
-  {
-    "company": "Turing",
-    "title": "Finance, Accounting & Advisory SME Lead",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "",
-    "url": "https://work.turing.com/jobs?jobId=100987",
-    "domain": "Business & Finance"
-  },
-  {
-    "company": "Turing",
-    "title": "Senior Marketing Managers (LATAM, US)",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "",
-    "url": "https://work.turing.com/jobs?jobId=100778",
-    "domain": "Business & Finance"
-  },
-  {
-    "company": "Turing",
-    "title": "Agentic Coding Annotator - Online / Offline Tasks",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Provision and manage GPU infrastructure for AI model serving on GCP.",
-    "url": "https://work.turing.com/jobs?jobId=103478",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Turing",
-    "title": "Azure DevOps Engineer(LangGraph)",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Build and optimize CI/CD pipelines for AI applications on Azure.",
-    "url": "https://work.turing.com/jobs?jobId=94814",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Turing",
-    "title": "Dockerfile Data Validation Engineer",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Create and manage data-validation workflows in Docker-based build pipelines.",
-    "url": "https://work.turing.com/jobs?jobId=52945",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Turing",
-    "title": "Sports & Fantasy Sports SME",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Evaluate and validate AI outputs in sports and fantasy analytics.",
-    "url": "https://work.turing.com/jobs?jobId=103329",
-    "domain": "Design & Creative"
-  },
-  {
-    "company": "Turing",
-    "title": "Domain Experts - Creative & Media (Graphic / Media Designer + Video & Audio Editors)",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Create and edit engaging visual content based on structured guidelines.",
-    "url": "https://work.turing.com/jobs?jobId=102690",
-    "domain": "Design & Creative"
-  },
-  {
-    "company": "Turing",
-    "title": "Photo Editing Specialist",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Create high-quality stylized 3D models and digital assets from briefs.",
-    "url": "https://work.turing.com/jobs?jobId=102621",
-    "domain": "Design & Creative"
-  },
-  {
-    "company": "Turing",
-    "title": "Senior Artist (Graphic Designer)",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Create dynamic visual assets across various artistic styles and themes.",
-    "url": "https://work.turing.com/jobs?jobId=102620",
-    "domain": "Design & Creative"
-  },
-  {
-    "company": "Turing",
-    "title": "Digital Imaging Specialist/ Digital Artist",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Create stylized 3D models and digital assets from briefs and references.",
-    "url": "https://work.turing.com/jobs?jobId=102612",
-    "domain": "Design & Creative"
-  },
-  {
-    "company": "Turing",
-    "title": "Illustrator/Sketcher/Cartoonist",
-    "pay": "Not listed",
-    "tag": "Remote",
-    "blurb": "Create digital character illustrations from reference images with creative variations.",
-    "url": "https://work.turing.com/jobs?jobId=102588",
-    "domain": "Design & Creative"
+    "blurb": "Create scenario-driven tasks to enhance AI understanding of ServiceNow workflows.",
+    "url": "https://work.turing.com/jobs?jobId=104211",
+    "domain": "Legal",
+    "posted": "2026-09-07T17:06:35.000Z"
   },
   {
     "company": "Turing",
@@ -582,7 +16,8 @@
     "tag": "Remote",
     "blurb": "Evaluate AI nutrition tools to ensure accuracy and compliance with dietary standards.",
     "url": "https://work.turing.com/jobs?jobId=103319",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-09-01T14:07:16.000Z"
   },
   {
     "company": "Turing",
@@ -591,7 +26,8 @@
     "tag": "Remote",
     "blurb": "Evaluate AI tools for real-estate metrics and project management standards.",
     "url": "https://work.turing.com/jobs?jobId=103318",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-09-01T14:02:56.000Z"
   },
   {
     "company": "Turing",
@@ -600,7 +36,8 @@
     "tag": "Remote",
     "blurb": "",
     "url": "https://work.turing.com/jobs?jobId=100888",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-18T18:39:41.000Z"
   },
   {
     "company": "Turing",
@@ -609,7 +46,8 @@
     "tag": "Remote",
     "blurb": "",
     "url": "https://work.turing.com/jobs?jobId=99470",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-12T19:29:07.000Z"
   },
   {
     "company": "Turing",
@@ -618,7 +56,8 @@
     "tag": "Remote",
     "blurb": "",
     "url": "https://work.turing.com/jobs?jobId=99447",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-08-12T19:19:36.000Z"
   },
   {
     "company": "Turing",
@@ -627,7 +66,8 @@
     "tag": "Remote",
     "blurb": "Evaluate and improve AI-generated code for accuracy and quality.",
     "url": "https://work.turing.com/jobs?jobId=91017",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2026-06-12T14:59:07.000Z"
   },
   {
     "company": "Turing",
@@ -636,7 +76,638 @@
     "tag": "Remote",
     "blurb": "Design and refine prompts for AI interactions across various tools.",
     "url": "https://work.turing.com/jobs?jobId=56161",
-    "domain": "Legal"
+    "domain": "Legal",
+    "posted": "2025-12-12T19:13:22.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Software / Platform / Data Engineer — Agent Trace Collection",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Build a data pipeline to capture and sanitize developer tool usage traces.",
+    "url": "https://work.turing.com/jobs?jobId=104024",
+    "domain": "Software & Data",
+    "posted": "2026-09-04T18:04:32.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Senior Software Engineer – Python (LLM Evaluation & Repository Validation)",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Design and build coding-agent benchmarks using production-like environments.",
+    "url": "https://work.turing.com/jobs?jobId=102990",
+    "domain": "Software & Data",
+    "posted": "2026-08-31T12:40:13.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "QC and Code Expert",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Review and improve legal tasks to ensure accuracy and clarity.",
+    "url": "https://work.turing.com/jobs?jobId=102361",
+    "domain": "Software & Data",
+    "posted": "2026-08-25T17:55:30.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Sr. Python Engineer",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Build and optimize scalable APIs for advanced AI applications.",
+    "url": "https://work.turing.com/jobs?jobId=102328",
+    "domain": "Software & Data",
+    "posted": "2026-08-25T15:41:54.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "SWE – Python Docker",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Analyze GitHub issues and evaluate software quality for LLM tasks.",
+    "url": "https://work.turing.com/jobs?jobId=101677",
+    "domain": "Software & Data",
+    "posted": "2026-08-20T18:43:28.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Senior Software Engineer – C++(LLM Evaluation & Repository Validation)",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Analyze GitHub issues and evaluate test coverage for LLM projects.",
+    "url": "https://work.turing.com/jobs?jobId=101521",
+    "domain": "Software & Data",
+    "posted": "2026-08-20T15:48:27.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Senior Backend Engineer (Python, SQL & AI Integration)",
+    "pay": "Not listed",
+    "tag": "On-site",
+    "blurb": "Develop and execute test strategies for billing pipeline quality assurance.",
+    "url": "https://work.turing.com/jobs?jobId=101249",
+    "domain": "Software & Data",
+    "posted": "2026-08-20T01:58:22.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Senior Backend Engineer (Python, SQL & AI Integration)",
+    "pay": "Not listed",
+    "tag": "On-site",
+    "blurb": "Build automated GCP billing pipelines and rules engines for financial data.",
+    "url": "https://work.turing.com/jobs?jobId=101248",
+    "domain": "Software & Data",
+    "posted": "2026-08-20T01:49:51.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Web Research Specialist",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Design challenging research questions that AI cannot answer online.",
+    "url": "https://work.turing.com/jobs?jobId=102276",
+    "domain": "Science & STEM",
+    "posted": "2026-08-25T12:45:40.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Domain Expert - Statistician / Data Analyst – (jamovi / JASP)",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Build statistical analysis environments to benchmark AI models using jamovi or JASP.",
+    "url": "https://work.turing.com/jobs?jobId=103983",
+    "domain": "Science & STEM",
+    "posted": "2026-09-04T17:17:51.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Scientific Coding - Material science and Python",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Write and implement complex scientific coding tasks in Python for AI training.",
+    "url": "https://work.turing.com/jobs?jobId=103653",
+    "domain": "Science & STEM",
+    "posted": "2026-09-02T19:23:20.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Scientific Coding - Biology and Python",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Write and implement complex biology coding tasks in Python.",
+    "url": "https://work.turing.com/jobs?jobId=103652",
+    "domain": "Science & STEM",
+    "posted": "2026-09-02T19:20:12.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Scientific Coding - Chemistry and Python",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Write and implement complex chemistry coding tasks in Python.",
+    "url": "https://work.turing.com/jobs?jobId=103651",
+    "domain": "Science & STEM",
+    "posted": "2026-09-02T19:18:03.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Scientific Coding - Mathematics and Python",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Create and implement rigorous scientific coding tasks in Python.",
+    "url": "https://work.turing.com/jobs?jobId=103650",
+    "domain": "Science & STEM",
+    "posted": "2026-09-02T19:15:31.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Scientific Coding - Physics and Python",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Write and validate complex scientific coding tasks in Python for AI training.",
+    "url": "https://work.turing.com/jobs?jobId=103648",
+    "domain": "Science & STEM",
+    "posted": "2026-09-02T18:53:43.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "AI Systems Engineer - STEM Workflow",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Design and build AI workflows for advanced mathematical reasoning tasks.",
+    "url": "https://work.turing.com/jobs?jobId=103622",
+    "domain": "Science & STEM",
+    "posted": "2026-09-02T17:52:06.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Domain Expert - Education / LMS Administrator (Moodle)",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Build and configure Moodle courses and assessment workflows for AI benchmarking.",
+    "url": "https://work.turing.com/jobs?jobId=103982",
+    "domain": "General & Other",
+    "posted": "2026-09-04T17:06:30.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Domain Expert - Health/EHR Administrator",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Design and execute accurate EHR workflows using OpenEMR.",
+    "url": "https://work.turing.com/jobs?jobId=103974",
+    "domain": "Medical & Healthcare",
+    "posted": "2026-09-04T16:32:47.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Medical Expert – Dermatology",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Review AI-generated dermatology content for accuracy and safety.",
+    "url": "https://work.turing.com/jobs?jobId=103353",
+    "domain": "Medical & Healthcare",
+    "posted": "2026-09-01T15:27:51.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Health & Fitness SME",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Evaluate and refine AI tools for health and fitness performance standards.",
+    "url": "https://work.turing.com/jobs?jobId=103326",
+    "domain": "Medical & Healthcare",
+    "posted": "2026-09-01T14:35:36.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Resident Medical Specialist (MD/DO)",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Design evaluation methods to enhance AI clinical reasoning in real scenarios.",
+    "url": "https://work.turing.com/jobs?jobId=42012",
+    "domain": "Medical & Healthcare",
+    "posted": "2025-08-22T18:04:02.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Medicine Physician (MD/DO/Doctoral study/PhD)",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Evaluate AI clinical reasoning with real medical scenarios and expertise.",
+    "url": "https://work.turing.com/jobs?jobId=33805",
+    "domain": "Medical & Healthcare",
+    "posted": "2025-05-05T17:51:51.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "AI Quality Analyst - English",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Evaluate personalized AI responses for relevance and helpfulness.",
+    "url": "https://work.turing.com/jobs?jobId=103843",
+    "domain": "General & Other",
+    "posted": "2026-09-03T18:44:16.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "AI Quality Analyst (Personalization) -Japanese",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Evaluate AI personalization quality using your personal experiences and insights.",
+    "url": "https://work.turing.com/jobs?jobId=62136",
+    "domain": "General & Other",
+    "posted": "2026-02-16T18:40:49.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "LLM Trainer - Agent Function call",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Craft multi-turn dialogues to enhance AI assistant interactions.",
+    "url": "https://work.turing.com/jobs?jobId=57029",
+    "domain": "General & Other",
+    "posted": "2025-12-18T15:43:54.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Domain Expert - Enterprise Resource Planning (ERP)",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Create application templates and workflows for ERP benchmarking tasks.",
+    "url": "https://work.turing.com/jobs?jobId=103973",
+    "domain": "General & Other",
+    "posted": "2026-09-04T16:26:28.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Domain Expert: Research & Publishing (LaTeX / Overleaf)",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Execute complex LaTeX typesetting and academic publishing tasks efficiently.",
+    "url": "https://work.turing.com/jobs?jobId=103854",
+    "domain": "General & Other",
+    "posted": "2026-09-03T19:55:45.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Personal Account Generalist Raters (US)",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Evaluate personalized AI interactions using your Google app data.",
+    "url": "https://work.turing.com/jobs?jobId=103785",
+    "domain": "General & Other",
+    "posted": "2026-09-03T15:45:32.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Personal Account Generalist Raters (US)",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Evaluate AI responses using personalized prompts across connected Google apps.",
+    "url": "https://work.turing.com/jobs?jobId=103781",
+    "domain": "General & Other",
+    "posted": "2026-09-03T15:12:17.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "PowerPoint Specialist",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Create and refine high-quality PowerPoint presentations for business audiences.",
+    "url": "https://work.turing.com/jobs?jobId=103359",
+    "domain": "General & Other",
+    "posted": "2026-09-01T15:44:03.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Domain Expert: Mechanical Engineering (FreeCAD)",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Execute complex CAD tasks in FreeCAD and validate design solutions.",
+    "url": "https://work.turing.com/jobs?jobId=103863",
+    "domain": "Software & Data",
+    "posted": "2026-09-04T08:43:07.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Domain Expert: Electronics & EDA (KiCad)",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Execute complex PCB design tasks using KiCad and validate solutions.",
+    "url": "https://work.turing.com/jobs?jobId=103856",
+    "domain": "Software & Data",
+    "posted": "2026-09-03T19:55:50.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Domain Expert: Mechanical Engineering (FreeCAD)",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Execute complex 3D modeling tasks using FreeCAD for mechanical design.",
+    "url": "https://work.turing.com/jobs?jobId=103855",
+    "domain": "Software & Data",
+    "posted": "2026-09-03T19:55:47.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Senior Infrastructure / Backend Engineer — GCP Production Systems",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Manage and monitor GCP production services for reliability and performance.",
+    "url": "https://work.turing.com/jobs?jobId=102910",
+    "domain": "Software & Data",
+    "posted": "2026-08-28T15:49:35.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Domain Experts - Aerospace / Flight-Dynamics Engineer",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Author flight tasks and validate designs using aerospace simulation tools.",
+    "url": "https://work.turing.com/jobs?jobId=102645",
+    "domain": "Software & Data",
+    "posted": "2026-08-27T13:22:59.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Fullstack Developer – AI Applications (GCP)",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "",
+    "url": "https://work.turing.com/jobs?jobId=101012",
+    "domain": "Software & Data",
+    "posted": "2026-08-19T14:30:46.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Agentic Coding Annotator - Online / Offline Tasks",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "",
+    "url": "https://work.turing.com/jobs?jobId=100952",
+    "domain": "Software & Data",
+    "posted": "2026-08-18T19:11:41.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Agentic Coding Annotator - Online / Offline Tasks",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "",
+    "url": "https://work.turing.com/jobs?jobId=100935",
+    "domain": "Software & Data",
+    "posted": "2026-08-18T18:58:06.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Business Analyst - US Educational Raters - Gemini",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Research and analyze information to improve AI-generated educational content.",
+    "url": "https://work.turing.com/jobs?jobId=100063",
+    "domain": "Business & Finance",
+    "posted": "2026-08-14T18:47:16.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Business Analyst",
+    "pay": "Not listed",
+    "tag": "On-site",
+    "blurb": "Analyze data quality and identify patterns to improve business processes.",
+    "url": "https://work.turing.com/jobs?jobId=103667",
+    "domain": "Business & Finance",
+    "posted": "2026-09-03T08:37:49.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Senior Accounting & Finance Advisors",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Analyze financial data and provide expert accounting guidance to clients.",
+    "url": "https://work.turing.com/jobs?jobId=102613",
+    "domain": "Business & Finance",
+    "posted": "2026-08-26T19:10:23.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "CUA Data Annotator",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Train and mentor annotators on CUA data annotation processes.",
+    "url": "https://work.turing.com/jobs?jobId=102211",
+    "domain": "Business & Finance",
+    "posted": "2026-08-24T16:49:46.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "CUA Quality Analysts",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Review and improve AI training data quality through detailed evaluations.",
+    "url": "https://work.turing.com/jobs?jobId=102207",
+    "domain": "Business & Finance",
+    "posted": "2026-08-24T16:26:32.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Business Analyst - Data Annotator (US)",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Review and label data to ensure quality for AI model training.",
+    "url": "https://work.turing.com/jobs?jobId=102012",
+    "domain": "Business & Finance",
+    "posted": "2026-08-21T20:00:27.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "CUA Data Annotation Trainer",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Train annotators and ensure high-quality data for CUA projects.",
+    "url": "https://work.turing.com/jobs?jobId=101945",
+    "domain": "Business & Finance",
+    "posted": "2026-08-21T16:18:12.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "CUA Data Annotation Trainer",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "",
+    "url": "https://work.turing.com/jobs?jobId=99912",
+    "domain": "Business & Finance",
+    "posted": "2026-08-13T18:17:16.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Finance Experts",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Review finance tasks for accuracy and clarity in evaluations.",
+    "url": "https://work.turing.com/jobs?jobId=103620",
+    "domain": "Business & Finance",
+    "posted": "2026-09-02T17:35:24.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Personal Finance SME",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Evaluate and refine AI tools for personal finance and budgeting.",
+    "url": "https://work.turing.com/jobs?jobId=103325",
+    "domain": "Business & Finance",
+    "posted": "2026-09-01T14:28:58.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "HR & People Ops SME",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Evaluate and refine AI tools to enhance HR processes and standards.",
+    "url": "https://work.turing.com/jobs?jobId=103315",
+    "domain": "Business & Finance",
+    "posted": "2026-09-01T13:38:21.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Sales / Marketing / CRM SME",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Evaluate and verify AI outputs for fantasy sports accuracy and logic.",
+    "url": "https://work.turing.com/jobs?jobId=103314",
+    "domain": "Business & Finance",
+    "posted": "2026-09-01T13:25:11.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Mathematics Research Specialist – Algebraic Geometry",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Develop and refine advanced mathematical proofs in Algebraic Geometry.",
+    "url": "https://work.turing.com/jobs?jobId=102691",
+    "domain": "Business & Finance",
+    "posted": "2026-08-27T14:06:21.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "US Tax Forms Experts",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Annotate tax forms by extracting and mapping bounding box relationships.",
+    "url": "https://work.turing.com/jobs?jobId=102511",
+    "domain": "Business & Finance",
+    "posted": "2026-08-26T12:52:32.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Finance, Accounting & Advisory SME Lead",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "",
+    "url": "https://work.turing.com/jobs?jobId=100987",
+    "domain": "Business & Finance",
+    "posted": "2026-08-19T11:09:39.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Senior Marketing Managers (LATAM, US)",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "",
+    "url": "https://work.turing.com/jobs?jobId=100778",
+    "domain": "Business & Finance",
+    "posted": "2026-08-18T10:00:03.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Agentic Coding Annotator - Online / Offline Tasks",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Provision and manage GPU infrastructure for AI model serving on GCP.",
+    "url": "https://work.turing.com/jobs?jobId=103478",
+    "domain": "Software & Data",
+    "posted": "2026-09-02T06:04:08.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Azure DevOps Engineer(LangGraph)",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Build and optimize CI/CD pipelines for AI applications on Azure.",
+    "url": "https://work.turing.com/jobs?jobId=94814",
+    "domain": "Software & Data",
+    "posted": "2026-06-26T05:22:26.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Dockerfile Data Validation Engineer",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Create and manage data-validation workflows in Docker-based build pipelines.",
+    "url": "https://work.turing.com/jobs?jobId=52945",
+    "domain": "Software & Data",
+    "posted": "2025-11-24T22:44:51.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Sports & Fantasy Sports SME",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Evaluate and validate AI outputs in sports and fantasy analytics.",
+    "url": "https://work.turing.com/jobs?jobId=103329",
+    "domain": "Design & Creative",
+    "posted": "2026-09-01T14:44:28.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Domain Experts - Creative & Media (Graphic / Media Designer + Video & Audio Editors)",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Create and edit engaging visual content based on structured guidelines.",
+    "url": "https://work.turing.com/jobs?jobId=102690",
+    "domain": "Design & Creative",
+    "posted": "2026-08-27T13:54:23.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Photo Editing Specialist",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Create high-quality stylized 3D models and digital assets from briefs.",
+    "url": "https://work.turing.com/jobs?jobId=102621",
+    "domain": "Design & Creative",
+    "posted": "2026-08-27T11:00:16.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Senior Artist (Graphic Designer)",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Create dynamic visual assets across various artistic styles and themes.",
+    "url": "https://work.turing.com/jobs?jobId=102620",
+    "domain": "Design & Creative",
+    "posted": "2026-08-27T09:44:17.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Digital Imaging Specialist/ Digital Artist",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Create stylized 3D models and digital assets from briefs and references.",
+    "url": "https://work.turing.com/jobs?jobId=102612",
+    "domain": "Design & Creative",
+    "posted": "2026-08-26T18:46:03.000Z"
+  },
+  {
+    "company": "Turing",
+    "title": "Illustrator/Sketcher/Cartoonist",
+    "pay": "Not listed",
+    "tag": "Remote",
+    "blurb": "Create digital character illustrations from reference images with creative variations.",
+    "url": "https://work.turing.com/jobs?jobId=102588",
+    "domain": "Design & Creative",
+    "posted": "2026-08-26T16:23:05.000Z"
   },
   {
     "company": "Turing",
@@ -645,7 +716,8 @@
     "tag": "Remote",
     "blurb": "Create engaging walk-and-talk videos showcasing local public spaces.",
     "url": "https://work.turing.com/jobs?jobId=62562",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-02-19T12:16:15.000Z"
   },
   {
     "company": "Turing",
@@ -654,7 +726,8 @@
     "tag": "Remote",
     "blurb": "Review and validate Arabic audio transcriptions for accuracy and quality.",
     "url": "https://work.turing.com/jobs?jobId=103139",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-31T16:46:12.000Z"
   },
   {
     "company": "Turing",
@@ -663,7 +736,8 @@
     "tag": "Remote",
     "blurb": "Review audio quality and validate transcriptions for accuracy and fidelity.",
     "url": "https://work.turing.com/jobs?jobId=102316",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-25T15:00:56.000Z"
   },
   {
     "company": "Turing",
@@ -672,7 +746,8 @@
     "tag": "Remote",
     "blurb": "Analyze and evaluate content to improve AI model accuracy and reliability.",
     "url": "https://work.turing.com/jobs?jobId=102095",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-24T12:57:58.000Z"
   },
   {
     "company": "Turing",
@@ -681,7 +756,8 @@
     "tag": "Remote",
     "blurb": "",
     "url": "https://work.turing.com/jobs?jobId=100639",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-17T17:24:45.000Z"
   },
   {
     "company": "Turing",
@@ -690,7 +766,8 @@
     "tag": "Remote",
     "blurb": "",
     "url": "https://work.turing.com/jobs?jobId=99365",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-12T17:03:40.000Z"
   },
   {
     "company": "Turing",
@@ -699,7 +776,8 @@
     "tag": "Remote",
     "blurb": "Record engaging voice-overs in Korean for various projects.",
     "url": "https://work.turing.com/jobs?jobId=102293",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-25T14:16:46.000Z"
   },
   {
     "company": "Turing",
@@ -708,7 +786,8 @@
     "tag": "Remote",
     "blurb": "Record engaging French voice-overs with emotional depth and clarity.",
     "url": "https://work.turing.com/jobs?jobId=102292",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-25T14:13:43.000Z"
   },
   {
     "company": "Turing",
@@ -717,7 +796,8 @@
     "tag": "Remote",
     "blurb": "Record engaging Italian voice-overs for diverse projects and characters.",
     "url": "https://work.turing.com/jobs?jobId=102291",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-25T14:10:34.000Z"
   },
   {
     "company": "Turing",
@@ -726,7 +806,8 @@
     "tag": "Remote",
     "blurb": "Record engaging voice-overs in Brazilian Portuguese for diverse projects.",
     "url": "https://work.turing.com/jobs?jobId=102290",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-25T14:08:43.000Z"
   },
   {
     "company": "Turing",
@@ -735,7 +816,8 @@
     "tag": "Remote",
     "blurb": "Record engaging voice-overs in Spanish for various projects.",
     "url": "https://work.turing.com/jobs?jobId=102289",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-25T14:06:36.000Z"
   },
   {
     "company": "Turing",
@@ -744,7 +826,8 @@
     "tag": "Remote",
     "blurb": "Record engaging voice-overs in German for diverse projects.",
     "url": "https://work.turing.com/jobs?jobId=102284",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-25T14:04:26.000Z"
   },
   {
     "company": "Turing",
@@ -753,7 +836,8 @@
     "tag": "Remote",
     "blurb": "",
     "url": "https://work.turing.com/jobs?jobId=100853",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-18T16:42:01.000Z"
   },
   {
     "company": "Turing",
@@ -762,7 +846,8 @@
     "tag": "Remote",
     "blurb": "",
     "url": "https://work.turing.com/jobs?jobId=99977",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-14T14:07:06.000Z"
   },
   {
     "company": "Turing",
@@ -771,7 +856,8 @@
     "tag": "Remote",
     "blurb": "Evaluate and improve game mechanics for engaging player experiences.",
     "url": "https://work.turing.com/jobs?jobId=101815",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-21T14:32:52.000Z"
   },
   {
     "company": "Turing",
@@ -780,7 +866,8 @@
     "tag": "On-site",
     "blurb": "",
     "url": "https://work.turing.com/jobs?jobId=101015",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-19T14:40:18.000Z"
   },
   {
     "company": "Turing",
@@ -789,7 +876,8 @@
     "tag": "On-site",
     "blurb": "Translate customer needs into technical solutions using data and AI.",
     "url": "https://work.turing.com/jobs?jobId=100556",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-17T15:58:22.000Z"
   },
   {
     "company": "Turing",
@@ -798,7 +886,8 @@
     "tag": "On-site",
     "blurb": "",
     "url": "https://work.turing.com/jobs?jobId=100399",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-17T09:07:27.000Z"
   },
   {
     "company": "Turing",
@@ -807,7 +896,8 @@
     "tag": "Remote",
     "blurb": "Build and deploy scalable LLM solutions for enterprise AI projects.",
     "url": "https://work.turing.com/jobs?jobId=98467",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-08-10T15:21:35.000Z"
   },
   {
     "company": "Turing",
@@ -816,7 +906,8 @@
     "tag": "Remote",
     "blurb": "Analyze ML datasets to evaluate and improve system performance.",
     "url": "https://work.turing.com/jobs?jobId=60736",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-01-27T21:29:59.000Z"
   },
   {
     "company": "Turing",
@@ -825,7 +916,8 @@
     "tag": "Remote",
     "blurb": "Evaluate and improve real-world ML systems through hands-on benchmarking.",
     "url": "https://work.turing.com/jobs?jobId=60735",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-01-27T21:20:46.000Z"
   },
   {
     "company": "Turing",
@@ -834,7 +926,8 @@
     "tag": "Remote",
     "blurb": "Build and validate data pipelines for AI performance evaluation projects.",
     "url": "https://work.turing.com/jobs?jobId=60713",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2026-01-27T20:46:43.000Z"
   },
   {
     "company": "Turing",
@@ -843,7 +936,8 @@
     "tag": "Remote",
     "blurb": "Evaluate and improve AI-generated audio by identifying instruments.",
     "url": "https://work.turing.com/jobs?jobId=101767",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-21T12:48:07.000Z"
   },
   {
     "company": "Turing",
@@ -852,7 +946,8 @@
     "tag": "Remote",
     "blurb": "Evaluate AI-generated audio by identifying instruments in audio clips.",
     "url": "https://work.turing.com/jobs?jobId=98883",
-    "domain": "Language & Writing"
+    "domain": "Language & Writing",
+    "posted": "2026-08-11T13:41:09.000Z"
   },
   {
     "company": "Turing",
@@ -861,7 +956,8 @@
     "tag": "Remote",
     "blurb": "Create and refine complex business scenarios to enhance AI strategic reasoning.",
     "url": "https://work.turing.com/jobs?jobId=101384",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-20T11:46:57.000Z"
   },
   {
     "company": "Turing",
@@ -870,7 +966,8 @@
     "tag": "Remote",
     "blurb": "Create and evaluate realistic accounting tasks to train advanced AI systems.",
     "url": "https://work.turing.com/jobs?jobId=101134",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-19T17:50:46.000Z"
   },
   {
     "company": "Turing",
@@ -879,7 +976,8 @@
     "tag": "Remote",
     "blurb": "",
     "url": "https://work.turing.com/jobs?jobId=100972",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-19T08:35:08.000Z"
   },
   {
     "company": "Turing",
@@ -888,7 +986,8 @@
     "tag": "Remote",
     "blurb": "",
     "url": "https://work.turing.com/jobs?jobId=100780",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-18T10:12:38.000Z"
   },
   {
     "company": "Turing",
@@ -897,7 +996,8 @@
     "tag": "Remote",
     "blurb": "",
     "url": "https://work.turing.com/jobs?jobId=99906",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2026-08-13T18:11:07.000Z"
   },
   {
     "company": "Turing",
@@ -906,7 +1006,8 @@
     "tag": "Remote",
     "blurb": "Evaluate AI models to enhance finance performance and accuracy.",
     "url": "https://work.turing.com/jobs?jobId=42463",
-    "domain": "Business & Finance"
+    "domain": "Business & Finance",
+    "posted": "2025-08-29T09:31:48.000Z"
   },
   {
     "company": "Turing",
@@ -915,6 +1016,7 @@
     "tag": "Remote",
     "blurb": "Analyze data and write Python code to enhance AI model performance.",
     "url": "https://work.turing.com/jobs?jobId=17843",
-    "domain": "Software & Data"
+    "domain": "Software & Data",
+    "posted": "2024-01-25T23:48:35.000Z"
   }
 ]

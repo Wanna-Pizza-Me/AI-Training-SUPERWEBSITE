@@ -19,6 +19,7 @@
 const fs = require('fs');
 const path = require('path');
 const { mapDomain } = require('./domain-categories');
+const { normalizePosted } = require('./posted-date');
 
 const API_URL = 'https://experts.afterquery.com/api/jobs/listings';
 
@@ -79,6 +80,12 @@ async function main() {
     blurb: truncate(j.description),
     url: `https://experts.afterquery.com/apply?job=${j.id}`,
     domain: mapDomain(j.department, 'AfterQuery'),
+    // AfterQuery exposes no date field, but every id is an epoch-ms value
+    // in a plausible range (all 205 live listings span Apr 2025 - Sep 2026),
+    // which is the signature of Date.now() used as an id. Inferred, not
+    // documented: if it's wrong these sort oddly under "Most recent" and
+    // nothing else breaks. normalizePosted range-checks it either way.
+    posted: normalizePosted(Number(j.id)),
   }));
 
   const outPath = path.join(__dirname, 'jobs-afterquery.json');

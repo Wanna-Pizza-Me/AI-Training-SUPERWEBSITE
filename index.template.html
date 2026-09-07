@@ -190,8 +190,14 @@
     padding:14px 0;
     margin-top:36px;
   }
+  /* Four controls no longer fit one row at the 1180px content width, so give
+     the chips a row of their own instead of letting a lone dropdown orphan
+     onto a second line. Search + the two dropdowns read as one cluster, the
+     company filter as another — and it's the same arrangement the narrow
+     breakpoints use, so the layout doesn't reshuffle as the window narrows. */
   .controls-inner{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
   .search{
+    order:1;
     flex:1 1 240px;
     display:flex;align-items:center;gap:8px;
     background:var(--surface);
@@ -205,7 +211,7 @@
     font-family:inherit;
   }
   .search svg{flex:none;color:var(--muted);}
-  .chips{display:flex;gap:8px;flex-wrap:wrap;align-items:center;}
+  .chips{order:4; flex:1 0 100%; display:flex;gap:8px;flex-wrap:wrap;align-items:center;}
   .chip{
     border:1px solid var(--line);
     background:var(--surface);
@@ -225,6 +231,7 @@
     color:var(--bg);
   }
   .domain-select{
+    order:2;
     font-family:inherit; font-weight:600; font-size:13.5px; color:var(--ink);
     background:var(--surface);
     border:1px solid var(--line); border-radius:999px;
@@ -235,6 +242,7 @@
     background-position:right 14px center;
     cursor:pointer;
   }
+  .sort-select{ order:3; }
   .domain-select:focus{ outline:none; border-color:var(--mercor); }
   .domain-select:disabled{ opacity:.5; cursor:not-allowed; }
 
@@ -271,9 +279,9 @@
 
     /* flex-basis 0, not auto: with auto the search box claims its full content
        width and shoves the select onto a row of its own. */
-    .search{ order:1; flex:1 1 0; min-width:0; padding:9px 12px; }
+    .search{ flex:1 1 0; min-width:0; padding:9px 12px; }
     .domain-select{
-      order:2; flex:0 1 auto; min-width:0; max-width:42%;
+      flex:0 1 auto; min-width:0; max-width:42%;
       text-overflow:ellipsis;
     }
 
@@ -282,7 +290,6 @@
        at the edge is what signals there's more to swipe to. Ending flush at
        the gutter would read as a complete list. */
     .chips{
-      order:3; flex:1 0 100%;
       flex-wrap:nowrap;
       overflow-x:auto;
       overscroll-behavior-x:contain;
@@ -296,7 +303,15 @@
 
   /* Phone-only trims. These are about getting the first cards above the fold,
      which only bites once the hero is stacked this narrow. */
+  /* Below ~620px the search box can't hold its placeholder while also sharing
+     a row with both selects, so give it a row of its own and let the two
+     dropdowns split the next one. Three rows instead of two, but every control
+     stays legible and it's still far short of the five rows this started at. */
   @media (max-width:620px){
+    .search{ flex:1 0 100%; }
+    .domain-select,
+    .sort-select{ flex:1 1 0; max-width:none; }
+
     .hero{ padding:32px 0 22px; }
     .hero p{ font-size:16px; margin:0 0 22px; }
     .stat-row{ gap:22px; }
@@ -333,7 +348,8 @@
     font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
     color:var(--accent, var(--mercor));
   }
-  .card-label .dom{ color:var(--muted-2); font-weight:600; text-transform:none; letter-spacing:0; }
+  .card-label .dom,
+  .card-label .age{ color:var(--muted-2); font-weight:600; text-transform:none; letter-spacing:0; }
   .card-label .sep{ color:var(--line); }
   .card h3{
     margin:0;
@@ -463,6 +479,10 @@
     <select class="domain-select" id="domainSelect" aria-label="Filter by domain">
       <option value="All">All domains</option>
     </select>
+    <select class="domain-select sort-select" id="sortSelect" aria-label="Sort listings">
+      <option value="default">Default order</option>
+      <option value="recent">Most recent</option>
+    </select>
   </div>
 </div>
 
@@ -547,11 +567,13 @@ const JOBS = [...MERCOR_JOBS, ...DATAANNOTATION_JOBS, ...TURING_JOBS, ...MERIDIA
 const grid = document.getElementById('jobGrid');
 const chipsWrap = document.getElementById('companyChips');
 const domainSelect = document.getElementById('domainSelect');
+const sortSelect = document.getElementById('sortSelect');
 const searchInput = document.getElementById('searchInput');
 const emptyState = document.getElementById('emptyState');
 
 let activeCompany = "All";
 let activeDomain = "All";
+let activeSort = "default";
 
 const ACCENTS = { Mercor: "var(--mercor)", DataAnnotation: "var(--dataannotation)", Turing: "var(--turing)", Meridial: "var(--meridial)", Micro1: "var(--micro1)", AfterQuery: "var(--afterquery)" };
 function accentVar(company){
@@ -601,6 +623,38 @@ function escapeHtml(s){
   return String(s).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
 }
 
+// Mirrors relativeAge()/compareRecency() in posted-date.js, which build.js
+// uses to server-render these same cards. Same intentional duplication as
+// escapeHtml/accentVar above — this runs as an inline <script> and can't
+// require the module. Change one, change the other.
+//
+// GENERATED_AT is used as "now" rather than the real clock so a card's age
+// never changes between the server-rendered markup and a client re-render;
+// sorting the grid would otherwise flicker "6d ago" to "7d ago" mid-session.
+function relativeAge(iso){
+  if (!iso) return null;
+  const then = new Date(iso).getTime();
+  const ref = new Date(GENERATED_AT).getTime();
+  if (!Number.isFinite(then) || !Number.isFinite(ref)) return null;
+  const days = Math.max(0, Math.floor((ref - then) / 86400000));
+  if (days < 1) return 'today';
+  if (days === 1) return '1d ago';
+  if (days < 7) return days + 'd ago';
+  if (days < 30) return Math.floor(days / 7) + 'w ago';
+  if (days < 365) return Math.floor(days / 30) + 'mo ago';
+  const years = Math.floor(days / 365);
+  return years === 1 ? '1y ago' : years + 'y ago';
+}
+
+function compareRecency(a, b){
+  const ta = a.posted ? new Date(a.posted).getTime() : null;
+  const tb = b.posted ? new Date(b.posted).getTime() : null;
+  if (ta === null && tb === null) return 0;
+  if (ta === null) return 1;   // undated always sorts last
+  if (tb === null) return -1;
+  return tb - ta;
+}
+
 function cardHTML(job){
   // buildApplyUrl falls back to the raw job.url when the URL won't parse,
   // so escape it here rather than trusting it in the href attribute.
@@ -612,11 +666,16 @@ function cardHTML(job){
   const blurb = escapeHtml(job.blurb);
   const pay = escapeHtml(job.pay);
   const tag = escapeHtml(job.tag);
+  // null for sources with no posting date (DataAnnotation) — omit, don't
+  // render an empty separator.
+  const rawAge = relativeAge(job.posted);
+  const age = rawAge ? escapeHtml(rawAge) : '';
   return `
     <a class="card" style="--accent:${accent}" href="${applyUrl}" target="_blank" rel="noopener noreferrer sponsored">
       <div class="card-label">
         <span>${company}</span>
         ${domain ? `<span class="sep">·</span><span class="dom">${domain}</span>` : ''}
+        ${age ? `<span class="sep">·</span><span class="age">${age}</span>` : ''}
       </div>
       <h3>${title}</h3>
       <p class="card-desc">${blurb}</p>
@@ -641,23 +700,19 @@ function renderGrid(){
     return matchesCompany && matchesDomain && matchesQuery;
   });
 
+  // Default order is the order build.js concatenates the sources in, which is
+  // what the server-rendered grid already shows, so only "recent" reorders.
+  if (activeSort === 'recent') filtered.sort(compareRecency);
+
   grid.innerHTML = filtered.map(cardHTML).join('');
   emptyState.classList.toggle('show', filtered.length === 0);
 }
 
 
-// Once the domain select shares a row with the search box there's less room
-// for the placeholder, and below roughly 480px the full one gets clipped
-// mid-word. Swap in a short one there. Listening for the change (rather than
-// checking once) keeps it right through a device rotation.
-const narrowScreen = window.matchMedia('(max-width:480px)');
-function syncPlaceholder(){
-  searchInput.placeholder = narrowScreen.matches
-    ? 'Search roles…'
-    : 'Search by title or keyword…';
-}
-narrowScreen.addEventListener('change', syncPlaceholder);
-syncPlaceholder();
+sortSelect.addEventListener('change', ()=>{
+  activeSort = sortSelect.value;
+  renderGrid();
+});
 
 searchInput.addEventListener('input', renderGrid);
 
@@ -669,7 +724,10 @@ renderDomains();
 // identical markup. Only re-render if the browser restored a previous search
 // value (reload/bfcache can repopulate the input), which would otherwise
 // leave the search box and the grid disagreeing.
-if (searchInput.value.trim()) renderGrid();
+// A reload can restore both of these, so pick up a restored sort too — not
+// just a restored search — or the control and the grid would disagree.
+activeSort = sortSelect.value || 'default';
+if (searchInput.value.trim() || activeSort !== 'default') renderGrid();
 
 function updatedLabel(){
   const d = new Date(GENERATED_AT);
