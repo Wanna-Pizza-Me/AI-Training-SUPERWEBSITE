@@ -73,6 +73,7 @@ const CATEGORY_MAP = {
   'Humanities & Interdisciplinary Studies': 'Language & Writing',
   'language-audio': 'Language & Writing',
   humanities: 'Language & Writing',
+  'Language Audio & Video': 'Language & Writing',
 
   // Design & Creative
   'Arts & Design': 'Design & Creative',
@@ -95,6 +96,7 @@ const CATEGORY_MAP = {
   'Project Fenrir': 'General & Other',
   'Project Silver': 'General & Other',
   'Education & Training': 'General & Other',
+  Education: 'General & Other',
 };
 
 function mapDomain(raw, source) {

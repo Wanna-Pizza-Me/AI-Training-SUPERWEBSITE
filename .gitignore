@@ -1,2 +1,4 @@
 node_modules/
 .vercel/
+afterquery-raw.json
+afterquery-post.txt

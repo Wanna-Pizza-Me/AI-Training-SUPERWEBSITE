@@ -19,7 +19,32 @@ const micro1Jobs = JSON.parse(fs.readFileSync(path.join(dir, 'jobs-micro1.json')
 const afterqueryJobs = JSON.parse(fs.readFileSync(path.join(dir, 'jobs-afterquery.json'), 'utf8'));
 const referralConfig = JSON.parse(fs.readFileSync(path.join(dir, 'referral-config.json'), 'utf8'));
 
-const JOBS = [...mercorJobs, ...dataannotationJobs, ...turingJobs, ...meridialJobs, ...micro1Jobs, ...afterqueryJobs];
+const ALL_JOBS = [...mercorJobs, ...dataannotationJobs, ...turingJobs, ...meridialJobs, ...micro1Jobs, ...afterqueryJobs];
+
+/* =========================================================================
+   APPLY-LINK VALIDATION
+   Every card on the site is a link to an external application page, so a job
+   whose URL didn't come out as a real http(s) URL is worse than useless — it
+   renders as a dead card and the referral never lands. AfterQuery shipped a
+   listing with a null id that built "?job=null"; this is the single choke
+   point that catches that class of bug from any of the six sources.
+   ========================================================================= */
+const JOBS = ALL_JOBS.filter(j => {
+  try {
+    const u = new URL(j.url);
+    return u.protocol === 'https:' || u.protocol === 'http:';
+  } catch {
+    return false;
+  }
+});
+const droppedCount = ALL_JOBS.length - JOBS.length;
+if (droppedCount) {
+  const dropped = ALL_JOBS.filter(j => !JOBS.includes(j));
+  console.warn(
+    `Dropped ${droppedCount} listing(s) with an unusable apply URL: ` +
+      dropped.map(j => `${j.company} "${j.title}" -> ${j.url}`).join('; ')
+  );
+}
 
 const now = new Date();
 

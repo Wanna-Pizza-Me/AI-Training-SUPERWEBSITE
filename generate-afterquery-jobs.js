@@ -2,8 +2,19 @@
 // used by index.html: { company, title, pay, tag, blurb, url, domain }.
 // The apply URL just needs ?job=<id> — REFERRAL_CONFIG in index.template.html
 // adds the ?ref=<code> param client-side, same mechanism as Mercor/DataAnnotation.
-// Run with: node generate-afterquery-jobs.js
 // Writes jobs-afterquery.json to this directory.
+//
+//   node generate-afterquery-jobs.js                  # fetch live
+//   node generate-afterquery-jobs.js --from raw.json  # transform a saved payload
+//
+// The --from mode exists because AfterQuery put Vercel's bot-protection
+// challenge in front of this endpoint (a scripted fetch gets a 429 with
+// X-Vercel-Mitigated: challenge, while a normal browser loads it fine). So
+// the automated daily run can no longer reach it and this source goes stale
+// until someone refreshes it by hand: open the API URL in a browser, save
+// the JSON, and run --from against it. Same transform either way, so a
+// manual refresh produces byte-identical output to a live fetch.
+// See MANUAL-REFRESH.md.
 
 const fs = require('fs');
 const path = require('path');
@@ -35,12 +46,30 @@ function truncate(text) {
   return cut.slice(0, cut.lastIndexOf(' ')) + '…';
 }
 
-async function main() {
+async function loadPayload() {
+  const fromIndex = process.argv.indexOf('--from');
+  if (fromIndex !== -1) {
+    const file = process.argv[fromIndex + 1];
+    if (!file) throw new Error('--from needs a path to a saved JSON payload');
+    const data = JSON.parse(fs.readFileSync(path.resolve(file), 'utf8'));
+    if (!Array.isArray(data.jobs)) {
+      throw new Error(`${file} has no "jobs" array — is it the raw API payload?`);
+    }
+    console.log(`Reading saved payload from ${file} (manual refresh)`);
+    return data;
+  }
   const res = await fetch(API_URL);
   if (!res.ok) throw new Error(`AfterQuery API returned ${res.status}`);
-  const data = await res.json();
+  return res.json();
+}
 
-  const active = data.jobs.filter(j => !j.archived);
+async function main() {
+  const data = await loadPayload();
+
+  // A job with no id would build an apply link of ?job=null, which is a dead
+  // link on the site — the referral never lands and the visitor bounces.
+  // AfterQuery has shipped at least one of these ("Fenrir Security Researcher").
+  const active = data.jobs.filter(j => !j.archived && j.id != null);
 
   const jobs = active.map(j => ({
     company: 'AfterQuery',
