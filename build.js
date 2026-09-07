@@ -23,6 +23,36 @@ const JOBS = [...mercorJobs, ...dataannotationJobs, ...turingJobs, ...meridialJo
 
 const now = new Date();
 
+/* =========================================================================
+   STALENESS CHECK
+   Each generate-*.js exits cleanly when its source is unreachable, keeping
+   the previous jobs-<source>.json rather than failing the whole build. That
+   is the right call for uptime, but it means a source can quietly stop
+   refreshing and nobody notices — AfterQuery did exactly that for 11 days.
+   So: warn loudly in the build log for any source whose data file hasn't
+   been rewritten recently. This does not fail the build, it just makes the
+   silence visible.
+   ========================================================================= */
+const STALE_AFTER_DAYS = 2;
+const SOURCE_FILES = {
+  Mercor: 'jobs-mercor.json',
+  DataAnnotation: 'jobs-dataannotation.json',
+  Turing: 'jobs-turing.json',
+  Meridial: 'jobs-meridial.json',
+  Micro1: 'jobs-micro1.json',
+  AfterQuery: 'jobs-afterquery.json',
+};
+const staleSources = [];
+for (const [source, file] of Object.entries(SOURCE_FILES)) {
+  const ageDays = (now - fs.statSync(path.join(dir, file)).mtime) / 86400000;
+  if (ageDays > STALE_AFTER_DAYS) {
+    staleSources.push(`${source} (${ageDays.toFixed(1)}d)`);
+  }
+}
+if (staleSources.length) {
+  console.warn(`STALE DATA WARNING — these sources have not refreshed in over ${STALE_AFTER_DAYS} days: ${staleSources.join(', ')}. Their listings are still being served from the last successful fetch and may be out of date.`);
+}
+
 // Escape "</" so a job title/blurb containing e.g. "</script>" can't
 // prematurely close the inline <script> tag when the browser parses this
 // file (job descriptions are free text scraped from other sites, so this
@@ -73,11 +103,13 @@ function buildApplyUrl(job) {
 }
 
 function escapeHtml(s) {
-  return String(s).replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+  return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
 
 function cardHTML(job) {
-  const applyUrl = buildApplyUrl(job);
+  // buildApplyUrl falls back to the raw job.url when the URL won't parse,
+  // so escape it here rather than trusting it in the href attribute.
+  const applyUrl = escapeHtml(buildApplyUrl(job));
   const accent = accentVar(job.company);
   const company = escapeHtml(job.company);
   const domain = escapeHtml(job.domain);
@@ -124,6 +156,7 @@ const out = template
   .replace('{{GENERATED_AT_LABEL}}', () => generatedAtLabel)
   .replace(/\{\{SITE_URL\}\}/g, () => SITE_URL)
   .replace(/\{\{JOBS_TOTAL\}\}/g, () => String(JOBS.length))
+  .replace(/\{\{COMPANIES_TOTAL\}\}/g, () => String(new Set(JOBS.map(j => j.company)).size))
   .replace('{{JOB_CARDS_HTML}}', () => jobCardsHTML);
 
 fs.writeFileSync(path.join(dir, 'index.html'), out);

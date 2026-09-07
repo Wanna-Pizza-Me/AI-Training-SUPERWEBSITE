@@ -389,8 +389,8 @@
     <h1>Every open <span class="hl">AI&nbsp;training</span> gig, in one clean list.</h1>
     <p>Freelance and contract roles pulled from Mercor, Turing, and other AI‑training platforms — pay rate up front, one click to the real application page.</p>
     <div class="stat-row" id="statRow">
-      <div class="stat"><b id="statTotal">0</b><span>open roles listed</span></div>
-      <div class="stat"><b id="statCompanies">0</b><span>companies</span></div>
+      <div class="stat"><b id="statTotal">{{JOBS_TOTAL}}</b><span>open roles listed</span></div>
+      <div class="stat"><b id="statCompanies">{{COMPANIES_TOTAL}}</b><span>companies</span></div>
     </div>
   </div>
 </header>
@@ -509,7 +509,7 @@ function renderStats(){
 function renderChips(){
   const companies = ["All", ...new Set(JOBS.map(j=>j.company))];
   chipsWrap.innerHTML = companies.map(c =>
-    `<button class="chip${c===activeCompany?' active':''}" data-company="${c}">${c}</button>`
+    `<button class="chip${c===activeCompany?' active':''}" data-company="${escapeHtml(c)}">${escapeHtml(c)}</button>`
   ).join('');
   chipsWrap.querySelectorAll('.chip').forEach(btn=>{
     btn.addEventListener('click', ()=>{
@@ -525,7 +525,10 @@ function renderDomains(){
   const relevant = activeCompany === "All" ? JOBS : JOBS.filter(j => j.company === activeCompany);
   const domains = ["All", ...new Set(relevant.map(j=>j.domain).filter(Boolean))].sort((a,b)=> a==="All" ? -1 : b==="All" ? 1 : a.localeCompare(b));
   if (!domains.includes(activeDomain)) activeDomain = "All";
-  domainSelect.innerHTML = domains.map(d => `<option value="${d}"${d===activeDomain?' selected':''}>${d === "All" ? "All domains" : d}</option>`).join('');
+  // Category names contain "&" (e.g. "Business & Finance"), so both the
+  // attribute and the label need escaping; the browser decodes value back
+  // to the raw string, which is what activeDomain is compared against.
+  domainSelect.innerHTML = domains.map(d => `<option value="${escapeHtml(d)}"${d===activeDomain?' selected':''}>${escapeHtml(d === "All" ? "All domains" : d)}</option>`).join('');
 }
 
 domainSelect.addEventListener('change', ()=>{
@@ -533,12 +536,17 @@ domainSelect.addEventListener('change', ()=>{
   renderGrid();
 });
 
+// Escapes quotes as well as angle brackets so the same helper is safe for
+// attribute values (href, data-*) and not just text content. Job data is
+// free text scraped from six external APIs, so nothing here is trusted.
 function escapeHtml(s){
-  return String(s).replace(/[&<>]/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;' }[c]));
+  return String(s).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
 }
 
 function cardHTML(job){
-  const applyUrl = buildApplyUrl(job);
+  // buildApplyUrl falls back to the raw job.url when the URL won't parse,
+  // so escape it here rather than trusting it in the href attribute.
+  const applyUrl = escapeHtml(buildApplyUrl(job));
   const accent = accentVar(job.company);
   const company = escapeHtml(job.company);
   const domain = escapeHtml(job.domain);
@@ -584,7 +592,12 @@ searchInput.addEventListener('input', renderGrid);
 renderStats();
 renderChips();
 renderDomains();
-renderGrid();
+// build.js already server-rendered the full unfiltered grid, so re-rendering
+// every card here on load would just rebuild ~1000 DOM nodes to produce the
+// identical markup. Only re-render if the browser restored a previous search
+// value (reload/bfcache can repopulate the input), which would otherwise
+// leave the search box and the grid disagreeing.
+if (searchInput.value.trim()) renderGrid();
 
 function updatedLabel(){
   const d = new Date(GENERATED_AT);

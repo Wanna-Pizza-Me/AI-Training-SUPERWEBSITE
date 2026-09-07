@@ -72,6 +72,14 @@ async function main() {
   }));
 
   const outPath = path.join(__dirname, 'jobs-meridial.json');
+  // A 200 response that yields nothing almost always means the source
+  // changed its API/markup, not that Meridial has zero openings. Bail out
+  // rather than overwriting good data with an empty file — the catch below
+  // then keeps the previous snapshot and logs it.
+  if (jobs.length === 0) {
+    throw new Error('parsed 0 listings — refusing to overwrite existing data (source API or markup likely changed)');
+  }
+
   fs.writeFileSync(outPath, JSON.stringify(jobs, null, 2));
   console.log(`Wrote ${jobs.length} US/Canada + English World Wide Meridial listings (of ${data.jobs.length} total) to ${outPath}`);
 }

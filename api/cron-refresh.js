@@ -1,7 +1,7 @@
 // Vercel Cron hits this endpoint on the schedule set in vercel.json.
 // It doesn't regenerate any data itself — it just triggers a fresh Vercel
 // deployment via a Deploy Hook, and the deployment's own build command
-// (`npm run build`) is what actually re-pulls all four job sources and
+// (`npm run build`) is what actually re-pulls all six job sources and
 // rebuilds index.html. That keeps "refresh the data" and "serve the site"
 // as the same well-tested path used for every manual rebuild.
 //
@@ -13,12 +13,19 @@
 //                       cron trigger apart from someone just visiting the URL
 
 module.exports = async function handler(req, res) {
-  if (process.env.CRON_SECRET) {
-    const auth = req.headers.authorization || '';
-    if (auth !== `Bearer ${process.env.CRON_SECRET}`) {
-      res.status(401).json({ error: 'Unauthorized' });
-      return;
-    }
+  // Fail closed. This endpoint triggers real production deployments, so if
+  // CRON_SECRET is ever missing (deleted, renamed, typo'd — DEPLOY_HOOK_URL
+  // already went blank once on this project) it must refuse rather than
+  // silently accept unauthenticated requests and let anyone with the URL
+  // spend the account's build minutes.
+  const secret = process.env.CRON_SECRET;
+  if (!secret) {
+    res.status(500).json({ error: 'CRON_SECRET is not set; refusing to trigger a deploy' });
+    return;
+  }
+  if ((req.headers.authorization || '') !== `Bearer ${secret}`) {
+    res.status(401).json({ error: 'Unauthorized' });
+    return;
   }
 
   const hookUrl = process.env.DEPLOY_HOOK_URL;

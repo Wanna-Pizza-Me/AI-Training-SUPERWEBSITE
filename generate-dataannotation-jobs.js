@@ -119,6 +119,14 @@ async function main() {
 
   const clean = jobs.filter(Boolean);
   const outPath = path.join(__dirname, 'jobs-dataannotation.json');
+  // A 200 response that yields nothing almost always means the source
+  // changed its API/markup, not that DataAnnotation has zero openings. Bail out
+  // rather than overwriting good data with an empty file — the catch below
+  // then keeps the previous snapshot and logs it.
+  if (clean.length === 0) {
+    throw new Error('parsed 0 listings — refusing to overwrite existing data (source API or markup likely changed)');
+  }
+
   fs.writeFileSync(outPath, JSON.stringify(clean, null, 2));
   console.log(`Wrote ${clean.length} DataAnnotation listings (of ${cards.length} found) to ${outPath}`);
 }
