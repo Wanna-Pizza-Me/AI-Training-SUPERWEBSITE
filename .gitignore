@@ -3,3 +3,4 @@ node_modules/
 afterquery-raw.json
 afterquery-post.txt
 AFTERQUERY-EMAIL-DRAFT.md
+.claude/

@@ -248,6 +248,64 @@
   @media (max-width:920px){ .grid{grid-template-columns:repeat(2,1fr);} }
   @media (max-width:620px){ .grid{grid-template-columns:1fr;} }
 
+
+  /* ---------- Narrow screens ----------
+     The sticky controls bar measured 260px tall on a 375px phone — 31% of the
+     viewport, and because it's position:sticky that space was gone for the
+     whole session, not just at the top of the page. Most of it was the seven
+     company chips wrapping onto three rows. The bar stayed oversized well past
+     phone widths too: 215px at 670px wide, 170px at 768px.
+
+     So the fix applies up to 820px, not just at phone sizes. The domain select
+     moves up beside the search box and the chips get a single non-wrapping
+     row, which is all they need — between roughly 620px and 820px every chip
+     fits without scrolling, and below that the row scrolls horizontally.
+     Either way the bar is two rows instead of five.
+
+     Flex `order` does the rearranging, so the DOM order (search, chips,
+     select) is untouched and tab order still reads search -> companies ->
+     domains. */
+  @media (max-width:820px){
+    .controls{ padding:10px 0; margin-top:22px; }
+    .controls-inner{ gap:10px; }
+
+    /* flex-basis 0, not auto: with auto the search box claims its full content
+       width and shoves the select onto a row of its own. */
+    .search{ order:1; flex:1 1 0; min-width:0; padding:9px 12px; }
+    .domain-select{
+      order:2; flex:0 1 auto; min-width:0; max-width:42%;
+      text-overflow:ellipsis;
+    }
+
+    /* The negative margin cancels .wrap's 24px gutter so the row bleeds to
+       both screen edges. That matters once it actually scrolls: a chip cut off
+       at the edge is what signals there's more to swipe to. Ending flush at
+       the gutter would read as a complete list. */
+    .chips{
+      order:3; flex:1 0 100%;
+      flex-wrap:nowrap;
+      overflow-x:auto;
+      overscroll-behavior-x:contain;
+      -webkit-overflow-scrolling:touch;
+      scrollbar-width:none;
+      margin:0 -24px; padding:2px 24px;
+    }
+    .chips::-webkit-scrollbar{ display:none; }
+    .chip{ flex:none; white-space:nowrap; padding:10px 15px; }
+  }
+
+  /* Phone-only trims. These are about getting the first cards above the fold,
+     which only bites once the hero is stacked this narrow. */
+  @media (max-width:620px){
+    .hero{ padding:32px 0 22px; }
+    .hero p{ font-size:16px; margin:0 0 22px; }
+    .stat-row{ gap:22px; }
+    .stat{ padding-top:12px; }
+    .stat b{ font-size:22px; }
+    .corner-deco{ width:150px; height:150px; }
+    .corner-deco.br{ width:110px; height:110px; }
+  }
+
   .card{
     background:var(--surface);
     border:1px solid var(--line);
@@ -586,6 +644,20 @@ function renderGrid(){
   grid.innerHTML = filtered.map(cardHTML).join('');
   emptyState.classList.toggle('show', filtered.length === 0);
 }
+
+
+// Once the domain select shares a row with the search box there's less room
+// for the placeholder, and below roughly 480px the full one gets clipped
+// mid-word. Swap in a short one there. Listening for the change (rather than
+// checking once) keeps it right through a device rotation.
+const narrowScreen = window.matchMedia('(max-width:480px)');
+function syncPlaceholder(){
+  searchInput.placeholder = narrowScreen.matches
+    ? 'Search roles…'
+    : 'Search by title or keyword…';
+}
+narrowScreen.addEventListener('change', syncPlaceholder);
+syncPlaceholder();
 
 searchInput.addEventListener('input', renderGrid);
 
