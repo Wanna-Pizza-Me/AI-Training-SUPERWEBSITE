@@ -1,6 +1,411 @@
 [
   {
     "company": "Micro1",
+    "title": "Video Data Collector (Smartphone)",
+    "pay": "$8–$17/hr",
+    "tag": "100 openings",
+    "blurb": "Looking for expertise in video recording, data collection, metadata management, attention to detail.",
+    "url": "https://jobs.micro1.ai/post/a4e8f813-f908-4433-8cf7-d06f878c82fa?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Software & Data"
+  },
+  {
+    "company": "Micro1",
+    "title": "Attorney",
+    "pay": "$90–$130/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in Contract Drafting, Technology Transactions, Contract Negotiation, Contract Redlining.",
+    "url": "https://jobs.micro1.ai/post/c9a1355a-74bc-4300-8c68-b88c5a88803f?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Legal"
+  },
+  {
+    "company": "Micro1",
+    "title": "Video Annotation Specialist",
+    "pay": "$50–$90/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in video annotation, data labeling, attention to detail, written communication.",
+    "url": "https://jobs.micro1.ai/post/7dbb09e4-d2d9-4138-ba02-f8a1bc6a71a5?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "General & Other"
+  },
+  {
+    "company": "Micro1",
+    "title": "Generalist",
+    "pay": "$50–$90/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in data annotation, critical thinking, attention to detail, written and verbal communication.",
+    "url": "https://jobs.micro1.ai/post/8b1146d2-f854-4461-83e0-4c4bbde847e7?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "General & Other"
+  },
+  {
+    "company": "Micro1",
+    "title": "Sales / Revenue / CS Operations Expert",
+    "pay": "$40–$80/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in Operations, CRM Ownership, Revenue Tools Beyond the CRM, Operational Judgment and Policy Conflicts.",
+    "url": "https://jobs.micro1.ai/post/cd222383-2114-4280-940c-79d0a1e75ee0?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Business & Finance"
+  },
+  {
+    "company": "Micro1",
+    "title": "Revenue Operations Specialist (SaaS)",
+    "pay": "$50–$100/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in Operations, Conflicting Policy Arbitration, CRM Ownership and Data Model, Compliance-Constrained Operations Design.",
+    "url": "https://jobs.micro1.ai/post/678df5e9-a43e-4dad-adbb-5ee13c42ec48?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Business & Finance"
+  },
+  {
+    "company": "Micro1",
+    "title": "Vlogger (Insta360, DJI Osmo, GoPro MAX)",
+    "pay": "$20/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in video recording, attention to detail.",
+    "url": "https://jobs.micro1.ai/post/0f2c4f59-00c6-4296-a9dc-fb7b93efd31b?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Software & Data"
+  },
+  {
+    "company": "Micro1",
+    "title": "360° Video Recorder (Insta360 / GoPro MAX)",
+    "pay": "$20/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in 360° Video Recording, Camera Mounts, Video Upload, Equipment Handling.",
+    "url": "https://jobs.micro1.ai/post/9d57fd44-b189-41ca-a0d4-2fe3903eec41?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Software & Data"
+  },
+  {
+    "company": "Micro1",
+    "title": "CAD Expert",
+    "pay": "$50–$100/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in AutoCAD, AutoDesk, Fusion 360, FreeCAD.",
+    "url": "https://jobs.micro1.ai/post/f5e8360f-b6b5-4674-9b5d-798082e223ec?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "General & Other"
+  },
+  {
+    "company": "Micro1",
+    "title": "Tax Advisor (CPA or EA)",
+    "pay": "$80–$110/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in CPA, Income Tax Prep, Income Tax Filing, Communication.",
+    "url": "https://jobs.micro1.ai/post/c441bd91-0d44-4a92-89bc-befbf215d89f?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Business & Finance"
+  },
+  {
+    "company": "Micro1",
+    "title": "Exocentric Video Recorder",
+    "pay": "$20/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in video recording, attention to detail, camera setup.",
+    "url": "https://jobs.micro1.ai/post/04955b6f-5026-498a-8143-5ec852cbd526?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Software & Data"
+  },
+  {
+    "company": "Micro1",
+    "title": "Senior Accountant Expert",
+    "pay": "$58–$110/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in Financial Reporting, Audit Procedures, Financial Modeling, Tax Compliance.",
+    "url": "https://jobs.micro1.ai/post/c946b7ad-f8f6-4378-9ce6-ce836760af89?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Business & Finance"
+  },
+  {
+    "company": "Micro1",
+    "title": "Product Management Specialist",
+    "pay": "$90–$140/hr",
+    "tag": "15 openings",
+    "blurb": "Looking for expertise in Product Management, PRDs & Product Specs, Roadmap Prioritization, Product Discovery.",
+    "url": "https://jobs.micro1.ai/post/2b9000cd-9104-4b1e-afce-1358372d7c0a?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "General & Other"
+  },
+  {
+    "company": "Micro1",
+    "title": "Software Engineering Specialist",
+    "pay": "$90–$140/hr",
+    "tag": "15 openings",
+    "blurb": "Looking for expertise in Software Engineering, System Design, Code Review, Automation Testing.",
+    "url": "https://jobs.micro1.ai/post/3aa4725e-1c37-488a-b848-75489cf1e0ce?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Software & Data"
+  },
+  {
+    "company": "Micro1",
+    "title": "Technical Writing Specialist",
+    "pay": "$90–$140/hr",
+    "tag": "15 openings",
+    "blurb": "Looking for expertise in Technical Writing, Developer Documentation, API Documentation, Information Architecture for Docs.",
+    "url": "https://jobs.micro1.ai/post/9ef74457-f1e1-487a-8583-def78112ce46?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "General & Other"
+  },
+  {
+    "company": "Micro1",
+    "title": "UX Designer Specialist",
+    "pay": "$90–$140/hr",
+    "tag": "15 openings",
+    "blurb": "Looking for expertise in UX Design, User Research, Usability Testing, Heuristic.",
+    "url": "https://jobs.micro1.ai/post/3aed5e7a-de88-49c1-8399-0e071c53a3b7?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "General & Other"
+  },
+  {
+    "company": "Micro1",
+    "title": "Product Designer Specialist",
+    "pay": "$90–$140/hr",
+    "tag": "15 openings",
+    "blurb": "Looking for expertise in Product design, Design Strategy, Prototyping (Figma), Design Rationale.",
+    "url": "https://jobs.micro1.ai/post/7d9f7b38-5448-42e9-bf19-2ad2f03a570d?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "General & Other"
+  },
+  {
+    "company": "Micro1",
+    "title": "Frontend Engineer Specialist",
+    "pay": "$90–$140/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in JavaScript, Typescript, React, Component Architecture.",
+    "url": "https://jobs.micro1.ai/post/e473c308-0568-43aa-9e07-7349fcec0893?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Software & Data"
+  },
+  {
+    "company": "Micro1",
+    "title": "UI / Visual Designer Specialist",
+    "pay": "$90–$140/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in UI Design, Typography, Color & Layout, Design Systems.",
+    "url": "https://jobs.micro1.ai/post/e9f0e202-f0a7-4b07-8167-2ca28cf5946b?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "General & Other"
+  },
+  {
+    "company": "Micro1",
+    "title": "Design & Frontend Specialist",
+    "pay": "$90–$140/hr",
+    "tag": "15 openings",
+    "blurb": "Looking for expertise in Product Design, UX Design & User Research, UI/Visual Design, Design Systems (Figma).",
+    "url": "https://jobs.micro1.ai/post/390ce816-fe12-4667-adbd-764cb32d3170?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "General & Other"
+  },
+  {
+    "company": "Micro1",
+    "title": "Marketing, Sales & Strategy Specialist",
+    "pay": "$90–$140/hr",
+    "tag": "15 openings",
+    "blurb": "Looking for expertise in Product Marketing, Positioning & Messaging, Go-To-Market Strategy, Competitive Analysis.",
+    "url": "https://jobs.micro1.ai/post/ae9dce2c-e355-4a2b-a3b5-b4ec3d5906bd?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "General & Other"
+  },
+  {
+    "company": "Micro1",
+    "title": "Business Analyst / Researcher / Operations Specialist",
+    "pay": "$90–$140/hr",
+    "tag": "15 openings",
+    "blurb": "Looking for expertise in Business Analysis, Requirements Gathering, Quantitative & Qualitative Research, Data Analysis (Excel/SQL a plus).",
+    "url": "https://jobs.micro1.ai/post/088e7d1f-9f9e-4941-99ac-b28f551c9715?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "General & Other"
+  },
+  {
+    "company": "Micro1",
+    "title": "Adolescent Suicide & Self-Harm Specialist",
+    "pay": "$45–$95/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in Clinical reasoning, Clinical risk assessment, Intervention judgment, Risk formulation.",
+    "url": "https://jobs.micro1.ai/post/afddf4b4-2a89-4848-9826-708eff6a3c7c?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Medical & Healthcare"
+  },
+  {
+    "company": "Micro1",
+    "title": "Music & Sound Annotation Expert",
+    "pay": "$30–$45/hr",
+    "tag": "10 openings",
+    "blurb": "Looking for expertise in analytical listening, music theory knowledge, audio annotation, attention to detail.",
+    "url": "https://jobs.micro1.ai/post/43067af3-efeb-435d-aeb9-6d1de8c2af0a?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Language & Writing"
+  },
+  {
+    "company": "Micro1",
+    "title": "STEM Expert",
+    "pay": "$50–$100/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in Biology.",
+    "url": "https://jobs.micro1.ai/post/46d40ceb-c9b5-4b76-a595-6d74ecf7107e?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "General & Other"
+  },
+  {
+    "company": "Micro1",
+    "title": "Adolescent/Child Safeguarding & Exploitation Specialist",
+    "pay": "$45–$95/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in Clinical reasoning, Clinical risk assessment, Severity staging, Intervention judgment.",
+    "url": "https://jobs.micro1.ai/post/4537e9e8-68fc-40c5-bb2d-53de5b5f6eee?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Medical & Healthcare"
+  },
+  {
+    "company": "Micro1",
+    "title": "Data-Video Generalist (US-based)",
+    "pay": "$13–$15/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in Video Capturing, IMU (Inertial Measurement Unit), Attention to Detail.",
+    "url": "https://jobs.micro1.ai/post/204600bf-1abe-4ab0-a474-cd2264999149?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Software & Data"
+  },
+  {
+    "company": "Micro1",
+    "title": "Eating Disorder Specialist  (Adolescent)",
+    "pay": "$45–$95/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in Clinical reasoning, Child/Adolescent Clinical Safety expertise, Clinical risk assessment, Severity staging.",
+    "url": "https://jobs.micro1.ai/post/b13e34d0-d672-42bf-9a5d-b783311f2601?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Medical & Healthcare"
+  },
+  {
+    "company": "Micro1",
+    "title": "Substance Use - Adolescent Addiction Specialist",
+    "pay": "$45–$95/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in Clinical reasoning, Child/Adolescent Clinical Safety expertise, Clinical risk assessment, Severity staging.",
+    "url": "https://jobs.micro1.ai/post/aeda6c13-c58d-4e11-bf6a-edcb9fdf65c2?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Medical & Healthcare"
+  },
+  {
+    "company": "Micro1",
+    "title": "Senior Database Reliability Engineer",
+    "pay": "$220k–$260k/yr",
+    "tag": "1 opening",
+    "blurb": "Looking for expertise in PostgreSQL, AWS RDS, High-availability structures, Large-scale databases.",
+    "url": "https://jobs.micro1.ai/post/ba5cfa19-1fa9-4e01-a416-f9da4c3e2628?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Software & Data"
+  },
+  {
+    "company": "Micro1",
+    "title": "Backend C#/.NET Developer ",
+    "pay": "$60–$110/hr",
+    "tag": "2 openings",
+    "blurb": "Looking for expertise in C#, .NET, MySQL.",
+    "url": "https://jobs.micro1.ai/post/f55c5e8b-d0e2-427c-b84f-7642e66e263f?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Software & Data"
+  },
+  {
+    "company": "Micro1",
+    "title": "Machine Learning Engineer",
+    "pay": "$80–$140/hr",
+    "tag": "35 openings",
+    "blurb": "Looking for expertise in Python, Machine Learning, MongoDB.",
+    "url": "https://jobs.micro1.ai/post/3751d160-6ea1-45e9-8c40-7af439059844?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Software & Data"
+  },
+  {
+    "company": "Micro1",
+    "title": "Member of Legal Staff, Corporate Counsel",
+    "pay": "$50–$55/hr",
+    "tag": "1 opening",
+    "blurb": "Looking for expertise in Venture Financings, Corporate Governance, Equity Administration, Transaction Execution.",
+    "url": "https://jobs.micro1.ai/post/c23e27f9-f0a5-4165-9f1c-255f78da2a79?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Legal"
+  },
+  {
+    "company": "Micro1",
+    "title": "Video Annotation Expert",
+    "pay": "$15–$20/hr",
+    "tag": "30 openings",
+    "blurb": "Looking for expertise in video annotation tools, attention to detail, english reading and writing, quality assurance.",
+    "url": "https://jobs.micro1.ai/post/f6d12b67-cb6d-4561-9659-a2da145b95fb?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Software & Data"
+  },
+  {
+    "company": "Micro1",
+    "title": "Naval Subject Matter Expert (Cleared)",
+    "pay": "$50–$100/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in Naval domain depth, Classified-environment fluency, Stakeholder navigation, Analytical judgment.",
+    "url": "https://jobs.micro1.ai/post/a051bb56-cde2-4f5c-bbbe-a7d52e7506db?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "General & Other"
+  },
+  {
+    "company": "Micro1",
+    "title": "Tamil Transcription Expert",
+    "pay": "$10–$24/hr",
+    "tag": "10 openings",
+    "blurb": "Looking for expertise in tamil language proficiency, audio transcription, linguistic annotation, attention to detail.",
+    "url": "https://jobs.micro1.ai/post/9c3be41a-3d6d-4a1e-a917-5234b2b19c14?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "General & Other"
+  },
+  {
+    "company": "Micro1",
+    "title": "Telugu Transcription Expert",
+    "pay": "$10–$24/hr",
+    "tag": "10 openings",
+    "blurb": "Looking for expertise in telugu language proficiency, transcription, linguistic annotation, editing and proofreading.",
+    "url": "https://jobs.micro1.ai/post/d49df3cc-52f9-4da6-9c84-a4f9ddb6c553?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "General & Other"
+  },
+  {
+    "company": "Micro1",
+    "title": "German Transcription Expert",
+    "pay": "$10–$25/hr",
+    "tag": "10 openings",
+    "blurb": "Looking for expertise in german language proficiency, audio transcription, attention to detail, linguistic annotation.",
+    "url": "https://jobs.micro1.ai/post/eb959833-f2b5-4401-95e0-cb698f0f199f?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "General & Other"
+  },
+  {
+    "company": "Micro1",
+    "title": "Investment & Finance Expert",
+    "pay": "$245–$280/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in Financial Modeling, Valuation, Investment Analysis, Due Diligence.",
+    "url": "https://jobs.micro1.ai/post/3b1f3a6f-51b3-4622-8baa-28b88e58f3d4?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Business & Finance"
+  },
+  {
+    "company": "Micro1",
+    "title": "Management Consultant",
+    "pay": "$245–$280/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in Business Strategy, Problem Solving, Business Analysis, Market Research.",
+    "url": "https://jobs.micro1.ai/post/d3fbfdeb-eb0e-44b1-80a3-20b0baa07bf5?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Business & Finance"
+  },
+  {
+    "company": "Micro1",
+    "title": "Senior Journalist / Writer",
+    "pay": "$245–$280/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in Writing, Editing, Copyediting, Journalism.",
+    "url": "https://jobs.micro1.ai/post/44bc2206-7fb7-4711-9daa-9328de14eda2?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "General & Other"
+  },
+  {
+    "company": "Micro1",
+    "title": "Corporate Attorney",
+    "pay": "$245–$280/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in Legal Research, Legal Writing, Contract Law, Contract Drafting.",
+    "url": "https://jobs.micro1.ai/post/cffadbd5-0477-400e-a386-6bba54ffa150?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Legal"
+  },
+  {
+    "company": "Micro1",
+    "title": "Senior Software Engineer",
+    "pay": "$245–$280/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in System Design, Code Review, Debugging, Algorithms.",
+    "url": "https://jobs.micro1.ai/post/3d79ba82-926b-48c0-9d15-8791a364ea81?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Software & Data"
+  },
+  {
+    "company": "Micro1",
+    "title": "Data Scientist",
+    "pay": "$245–$280/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in Python, Machine Learning, Statistics, Data Analysis.",
+    "url": "https://jobs.micro1.ai/post/dc71a0c0-527b-474b-96e3-022c63e7012d?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Software & Data"
+  },
+  {
+    "company": "Micro1",
+    "title": "PhD & Academic Expert",
+    "pay": "$245–$280/hr",
+    "tag": "High demand",
+    "blurb": "Looking for expertise in Research, Academic Writing, Critical Analysis, Data Analysis.",
+    "url": "https://jobs.micro1.ai/post/ba8b8566-e3ac-49b4-8fd3-f7208f609a06?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Science & STEM"
+  },
+  {
+    "company": "Micro1",
     "title": "Graphic Designer - Editorial, Poster & Marketing Layout",
     "pay": "$20–$50/hr",
     "tag": "30 openings",
@@ -25,15 +430,6 @@
     "blurb": "Looking for expertise in MusicXML.",
     "url": "https://jobs.micro1.ai/post/8a0ef31d-212b-49e4-ba4a-6075436f5f6b?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
     "domain": "General & Other"
-  },
-  {
-    "company": "Micro1",
-    "title": "Radiologist",
-    "pay": "$15–$80/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in anatomy expertise, annotation, mediapipe-style hand topology, attention to detail.",
-    "url": "https://jobs.micro1.ai/post/774c6009-929a-4e40-a03e-bb660f02ea52?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Design & Creative"
   },
   {
     "company": "Micro1",
@@ -92,7 +488,7 @@
   {
     "company": "Micro1",
     "title": "Defense & Cleared Workforce Recruiter",
-    "pay": "Not listed",
+    "pay": "$35–$65/hr",
     "tag": "High demand",
     "blurb": "Looking for expertise in Full-cycle recruiting, Clearance fluency, Cleared sourcing, Military/veteran translation.",
     "url": "https://jobs.micro1.ai/post/80077f82-8234-4285-a1d6-332e6d4fa985?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
@@ -101,7 +497,7 @@
   {
     "company": "Micro1",
     "title": "Military/Veteran Mental Health Experts",
-    "pay": "$100–$300/hr",
+    "pay": "$100–$200/hr",
     "tag": "High demand",
     "blurb": "Looking for expertise in clinical psychology, psychiatry, military and veteran mental health expertise, trauma and ptsd assessment.",
     "url": "https://jobs.micro1.ai/post/cdb8b25d-0be7-41c3-87d6-241592b9fc41?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
@@ -109,8 +505,8 @@
   },
   {
     "company": "Micro1",
-    "title": "Child Development Psychologist (PhD)",
-    "pay": "$100–$300/hr",
+    "title": "Developmental Psychology (PhD)",
+    "pay": "$100–$200/hr",
     "tag": "High demand",
     "blurb": "Looking for expertise in child development expertise, developmental psychology.",
     "url": "https://jobs.micro1.ai/post/dcb0b1e6-a6a0-4cdc-9ab8-82ef4bb34479?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
@@ -127,12 +523,12 @@
   },
   {
     "company": "Micro1",
-    "title": "English Voice Coach",
-    "pay": "$40–$65/hr",
-    "tag": "High demand",
-    "blurb": "",
-    "url": "https://jobs.micro1.ai/post/bd0da3d2-f365-4e57-9a63-58939315b67c?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Language & Writing"
+    "title": "Video Editor ",
+    "pay": "$30–$80/hr",
+    "tag": "100 openings",
+    "blurb": "Looking for expertise in video editing, adobe premiere pro, after effects, final cut pro.",
+    "url": "https://jobs.micro1.ai/post/c4e4ac18-a3aa-47ba-8229-d6611085afc6?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Design & Creative"
   },
   {
     "company": "Micro1",
@@ -226,7 +622,7 @@
   },
   {
     "company": "Micro1",
-    "title": "Immigration Attorney (BigLaw Firms)",
+    "title": "Immigration Attorney ",
     "pay": "$140–$400/hr",
     "tag": "High demand",
     "blurb": "Looking for expertise in immigration law expertise, legal writing, document review, case management software.",
@@ -235,7 +631,7 @@
   },
   {
     "company": "Micro1",
-    "title": "Family Law Attorney (BigLaw Firms)",
+    "title": "Family Law Attorney (AAML Registered)",
     "pay": "$140–$400/hr",
     "tag": "High demand",
     "blurb": "Looking for expertise in family law expertise, legal research, legal writing, case analysis.",
@@ -286,15 +682,6 @@
     "blurb": "Looking for expertise in Graphic Design, UI/UX Design, Typography, Figma.",
     "url": "https://jobs.micro1.ai/post/32d47282-866f-420c-8d11-eb243aae997d?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
     "domain": "Design & Creative"
-  },
-  {
-    "company": "Micro1",
-    "title": "Software Developer",
-    "pay": "$60–$120/hr",
-    "tag": "10 openings",
-    "blurb": "Looking for expertise in Programming, Data Structures, Algorithms, Git.",
-    "url": "https://jobs.micro1.ai/post/dbc81a01-8c3f-49eb-a74b-5e9a2d81edc2?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
   },
   {
     "company": "Micro1",
@@ -349,15 +736,6 @@
     "blurb": "Looking for expertise in Household Task, Attention to detail, Video Recording, Smartphone.",
     "url": "https://jobs.micro1.ai/post/8944ed79-063d-43e2-a244-bd3185fbfb43?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
     "domain": "Software & Data"
-  },
-  {
-    "company": "Micro1",
-    "title": "Grabador de Video con Smartphone ",
-    "pay": "$6/hr",
-    "tag": "1000 openings",
-    "blurb": "Looking for expertise in Captura de Video, Atención al Detalle, Tareas Domésticas.",
-    "url": "https://jobs.micro1.ai/post/7433e140-3233-4591-b568-0a196736fa9d?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
   },
   {
     "company": "Micro1",
@@ -421,33 +799,6 @@
     "blurb": "Looking for expertise in Adobe Premiere Pro, Adobe After Effects, Motion Graphics y Compositing, Professional Video Editing.",
     "url": "https://jobs.micro1.ai/post/60d397a2-fa5a-4a90-afd0-4ce1b5223472?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
     "domain": "Software & Data"
-  },
-  {
-    "company": "Micro1",
-    "title": "3D Animator (Cinema 4D/ Blender/ Mixamo/ Unity)",
-    "pay": "$15–$80/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in cinema 4d, blender, mixamo, unity.",
-    "url": "https://jobs.micro1.ai/post/dc7bb42e-568d-48d8-9fd2-e0f338d4db24?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Design & Creative"
-  },
-  {
-    "company": "Micro1",
-    "title": "Rigging 3D expert",
-    "pay": "$15–$80/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in character rigging, hand and finger articulation, maya, blender.",
-    "url": "https://jobs.micro1.ai/post/2ba53ba8-9de7-4032-8e5f-72e0484b0839?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Design & Creative"
-  },
-  {
-    "company": "Micro1",
-    "title": "Autodesk Maya Specialist",
-    "pay": "$15–$80/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in autodesk maya, 3d modeling, rigging, texturing.",
-    "url": "https://jobs.micro1.ai/post/fd94a787-15a2-4332-9970-673f5d599d06?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Design & Creative"
   },
   {
     "company": "Micro1",
@@ -613,8 +964,8 @@
   },
   {
     "company": "Micro1",
-    "title": "Member of Legal Staff, Corporate & Legal Ops Associate",
-    "pay": "$200k–$250k/yr",
+    "title": "Member of Legal Staff, Legal Ops & Corporate Paralegal ",
+    "pay": "$50–$55/hr",
     "tag": "High demand",
     "blurb": "Looking for expertise in Venture Financings, Corporate Governance, Equity Administration, Transaction Execution.",
     "url": "https://jobs.micro1.ai/post/04ac5d10-6bf2-4268-a615-2ff58c15d58b?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
@@ -766,101 +1117,11 @@
   },
   {
     "company": "Micro1",
-    "title": "Backend Engineer ",
-    "pay": "$65–$120/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Backend Developement.",
-    "url": "https://jobs.micro1.ai/post/ad268461-fcfc-457c-80bf-aaffe767eb3f?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Micro1",
-    "title": "Software Developer",
-    "pay": "$65–$120/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Python, Rust, GoLang, Full-stack.",
-    "url": "https://jobs.micro1.ai/post/95d13780-1516-4434-8f0a-30d199f4d1c7?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Micro1",
-    "title": "Full Stack Developer",
-    "pay": "$65–$120/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Node.js, Typescript, React, Angular.",
-    "url": "https://jobs.micro1.ai/post/e4af7669-a52f-4f24-95f4-621259887aef?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Micro1",
-    "title": "Frontend Engineer",
-    "pay": "$65–$120/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in JavaScript, Typescript, React.",
-    "url": "https://jobs.micro1.ai/post/6057e0a4-aada-4bac-8393-df081d8ac7f0?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Micro1",
     "title": "Video Annotation Expert",
     "pay": "$15–$80/hr",
     "tag": "High demand",
     "blurb": "Looking for expertise in video annotation, attention to detail, written communication, quality assurance.",
     "url": "https://jobs.micro1.ai/post/69fef3d7-ebd4-4f86-8aae-74b80c7a9035?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Design & Creative"
-  },
-  {
-    "company": "Micro1",
-    "title": "Anime Illustrator",
-    "pay": "$15–$80/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in anatomy expertise, annotation, mediapipe-style hand topology, attention to detail.",
-    "url": "https://jobs.micro1.ai/post/26ddf3b8-1462-424b-95d6-768900049153?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Design & Creative"
-  },
-  {
-    "company": "Micro1",
-    "title": "3D Character Animation Artist ",
-    "pay": "$15–$80/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in anatomy expertise, annotation, mediapipe-style hand topology, attention to detail.",
-    "url": "https://jobs.micro1.ai/post/9ff6fd32-c1d4-43b2-8358-2cb8a3e7f934?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Design & Creative"
-  },
-  {
-    "company": "Micro1",
-    "title": "Kinesiologist / Biomechanics Specialist",
-    "pay": "$15–$80/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in anatomy expertise, annotation, mediapipe-style hand topology, attention to detail.",
-    "url": "https://jobs.micro1.ai/post/8328e8c2-e7e7-4f11-81c7-954b41fdf9ea?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Design & Creative"
-  },
-  {
-    "company": "Micro1",
-    "title": "3D Animator / Character Animator",
-    "pay": "$15–$80/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in anatomy expertise, annotation, mediapipe-style hand topology, attention to detail.",
-    "url": "https://jobs.micro1.ai/post/50c13dc5-30dc-4268-8db8-258f656aa3eb?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Design & Creative"
-  },
-  {
-    "company": "Micro1",
-    "title": "Anatomy / Medicine / Physiotherapy Student",
-    "pay": "$15–$80/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in anatomy expertise, annotation, mediapipe-style hand topology, attention to detail.",
-    "url": "https://jobs.micro1.ai/post/dc4be5ae-e5d2-486a-b43f-5f8d9c933d0b?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Design & Creative"
-  },
-  {
-    "company": "Micro1",
-    "title": "Physiotherapist / Physical Therapist",
-    "pay": "$15–$80/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in anatomy expertise, annotation, mediapipe-style hand topology, attention to detail.",
-    "url": "https://jobs.micro1.ai/post/893004c8-39ee-4f91-b2ea-503ddcd22d4d?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
     "domain": "Design & Creative"
   },
   {
@@ -991,15 +1252,6 @@
   },
   {
     "company": "Micro1",
-    "title": "Retail CX & Policy Specialist ",
-    "pay": "$40–$65/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Policy authoring, Edge-case reasoning, CX Consultancy, CX process design.",
-    "url": "https://jobs.micro1.ai/post/cc16ed31-7592-47c3-81c0-49bd19ed6ab5?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
-  },
-  {
-    "company": "Micro1",
     "title": "Physical Sciences Research Assistant",
     "pay": "$30–$50/hr",
     "tag": "High demand",
@@ -1086,15 +1338,6 @@
     "tag": "High demand",
     "blurb": "",
     "url": "https://jobs.micro1.ai/post/aae4e860-c280-40ae-9493-0ac9e6f44ad3?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Language & Writing"
-  },
-  {
-    "company": "Micro1",
-    "title": "Voice Recorder (French + English)",
-    "pay": "$30–$65/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in French.",
-    "url": "https://jobs.micro1.ai/post/0a44ab89-f375-4163-a5bf-8b2410d3c425?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
     "domain": "Language & Writing"
   },
   {
@@ -1450,69 +1693,6 @@
   },
   {
     "company": "Micro1",
-    "title": "Simulation/CAE-heavy mechanical engineering Expert",
-    "pay": "$80–$100/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in computer-aided engineering (cae), mechanical simulation, ai coding agents (e.g., codex, claude science, claude code, claude cowork), technical documentation.",
-    "url": "https://jobs.micro1.ai/post/abbf3d76-cc43-4768-b904-ee891330d9f3?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
-  },
-  {
-    "company": "Micro1",
-    "title": "GIS/geospatial Expert",
-    "pay": "$80–$100/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in gis, remote sensing, spatial analytics, ai coding agents (codex, claude science, claude code, claude cowork).",
-    "url": "https://jobs.micro1.ai/post/ed2b2d11-c88e-4790-aa66-476d828f0492?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Micro1",
-    "title": "Data-heavy chemistry/materials Science Expert",
-    "pay": "$80–$100/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in chemistry domain expertise, materials science domain expertise, ai coding agents (codex, claude science, claude code, claude cowork), computational chemistry.",
-    "url": "https://jobs.micro1.ai/post/26031c13-1b4d-46ab-8ffc-c1ccaa09b9bb?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
-  },
-  {
-    "company": "Micro1",
-    "title": "Computational Mathematics Expert",
-    "pay": "$80–$100/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in computational mathematics, python, ai coding agents (codex, claude science, claude code, claude cowork), technical documentation.",
-    "url": "https://jobs.micro1.ai/post/c6b82ab0-2e11-4584-83cc-3a7d9676e711?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
-  },
-  {
-    "company": "Micro1",
-    "title": "Computational Physics Expert",
-    "pay": "$80–$100/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in computational physics, python, ai coding agents, codex.",
-    "url": "https://jobs.micro1.ai/post/3c1ce29f-61f0-4183-b4ae-86b9099e1280?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Micro1",
-    "title": "Robotics/Mechatronics Expert",
-    "pay": "$80–$100/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in robotics, mechatronics, ai coding agents (codex, claude science, claude code, claude cowork), system design.",
-    "url": "https://jobs.micro1.ai/post/f9cb1647-bcbe-4bd2-9989-b5804a1cdc30?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Micro1",
-    "title": "Computational Biology Expert",
-    "pay": "$80–$100/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in computational biology, python, ai coding agents (codex, claude science, claude code, claude cowork), debugging.",
-    "url": "https://jobs.micro1.ai/post/fb0cb802-7e50-4c7c-9534-5ab78a4b1c6a?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
-  },
-  {
-    "company": "Micro1",
     "title": "Autodesk Fusion Expert",
     "pay": "$80–$120/hr",
     "tag": "High demand",
@@ -1604,7 +1784,7 @@
   {
     "company": "Micro1",
     "title": "Medical Auditor",
-    "pay": "$55–$68/hr",
+    "pay": "$30–$40/hr",
     "tag": "High demand",
     "blurb": "Looking for expertise in Outpatient Professional Fee Coding, Coding Auditing, Academic Medical Center Experience, Audit Program Management.",
     "url": "https://jobs.micro1.ai/post/eae14e1c-d44c-4486-b773-61f57b0f3d64?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
@@ -1613,7 +1793,7 @@
   {
     "company": "Micro1",
     "title": "Medical Coder",
-    "pay": "$55–$68/hr",
+    "pay": "$25–$40/hr",
     "tag": "High demand",
     "blurb": "Looking for expertise in Medical Coding, ICD-10, CPT, CPC Certification.",
     "url": "https://jobs.micro1.ai/post/eac2bf43-4fa7-46ed-8db8-ec2b6d3a52d5?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
@@ -1757,7 +1937,7 @@
   {
     "company": "Micro1",
     "title": "Regulatory Affairs Specialist",
-    "pay": "$50–$70/hr",
+    "pay": "$50–$80/hr",
     "tag": "High demand",
     "blurb": "Looking for expertise in regulatory affairs, clinical documentation review, ich guidelines, ctd/ectd structure.",
     "url": "https://jobs.micro1.ai/post/7b914c4c-fe06-4b48-8337-320aca6681fb?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
@@ -1771,15 +1951,6 @@
     "blurb": "Looking for expertise in sas, r, cdisc sdtm, cdisc adam.",
     "url": "https://jobs.micro1.ai/post/28d8beab-6ea8-4c98-8ce8-b97f6a478d53?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
     "domain": "Medical & Healthcare"
-  },
-  {
-    "company": "Micro1",
-    "title": "STEM AI Agent Research Specialist",
-    "pay": "$80–$100/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in STEM research, Agentic AI, Technical Research, Scientific Reasoning.",
-    "url": "https://jobs.micro1.ai/post/b2a5b69f-1af1-41de-b87e-c5e410751be6?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
   },
   {
     "company": "Micro1",
@@ -1873,15 +2044,6 @@
   },
   {
     "company": "Micro1",
-    "title": "Gardener",
-    "pay": "$13–$15/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in attention to detail, video recording.",
-    "url": "https://jobs.micro1.ai/post/db547ccc-0789-4673-83cd-251a7c39b874?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Micro1",
     "title": "Gameplay Data Capture Specialist",
     "pay": "$10–$15/hr",
     "tag": "High demand",
@@ -1901,7 +2063,7 @@
   {
     "company": "Micro1",
     "title": "Physics Expert (PhD / Postdoc) ",
-    "pay": "$80–$140/hr",
+    "pay": "$100–$200/hr",
     "tag": "High demand",
     "blurb": "Looking for expertise in Physics Mastery, Written Technical Communication, Technical Problem-Solving Depth, Mathematical & Computational Fluency.",
     "url": "https://jobs.micro1.ai/post/015017c1-d47a-4dcf-9665-86221d2f7780?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
@@ -2422,33 +2584,6 @@
   },
   {
     "company": "Micro1",
-    "title": "Hindi Language Expert (US/Canada Based)",
-    "pay": "$10–$30/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Language proficiency, Linguistic, Writing.",
-    "url": "https://jobs.micro1.ai/post/4fda49ed-5443-4b3b-b614-a7864f1afd07?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Language & Writing"
-  },
-  {
-    "company": "Micro1",
-    "title": "Hebrew Language Expert (US/ Canada Based)",
-    "pay": "$10–$30/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Language proficiency, Linguistic, Writing.",
-    "url": "https://jobs.micro1.ai/post/2e43bf54-1af7-4eea-a72f-ac7f4568be93?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Language & Writing"
-  },
-  {
-    "company": "Micro1",
-    "title": "Swedish Language Expert (US/Canada Based)",
-    "pay": "$10–$30/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Language proficiency, Linguistic.",
-    "url": "https://jobs.micro1.ai/post/5a73bd51-adab-4902-b4ad-26299cd6d13d?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Language & Writing"
-  },
-  {
-    "company": "Micro1",
     "title": "Enterprise Client Partner, Frontier AI",
     "pay": "$2–$3/hr",
     "tag": "1 opening",
@@ -2585,7 +2720,7 @@
   {
     "company": "Micro1",
     "title": "General Counsel",
-    "pay": "$100–$200/hr",
+    "pay": "$90–$130/hr",
     "tag": "High demand",
     "blurb": "Looking for expertise in Playbook, Contract Negotiation, Contract Drafting, Contract Management.",
     "url": "https://jobs.micro1.ai/post/f70dbf96-7991-4b99-9a26-b5f2148a3d71?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
@@ -2719,39 +2854,12 @@
   },
   {
     "company": "Micro1",
-    "title": "GCP DevOps Engineer",
-    "pay": "$20–$300/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in GCP, DevOps, Cloud infrastructure, Kubernetes.",
-    "url": "https://jobs.micro1.ai/post/aab351d0-20ad-4219-b9d6-f306700aced9?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Micro1",
     "title": "Content Editor",
     "pay": "Not listed",
     "tag": "High demand",
     "blurb": "Looking for expertise in adobe premiere pro, final cut pro, davinci resolve, motion graphics.",
     "url": "https://jobs.micro1.ai/post/207453cb-479e-4fd3-9d49-13e4e35b23f7?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
     "domain": "Business & Finance"
-  },
-  {
-    "company": "Micro1",
-    "title": "Competitive Coder Contest",
-    "pay": "$45–$65/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Basics C++, C++, Competitive Programming.",
-    "url": "https://jobs.micro1.ai/post/345dd4f0-e901-4d51-8fa8-5e5a01ddff43?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Micro1",
-    "title": "Generalist for Data Annotation",
-    "pay": "$30–$80/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in data annotation, critical thinking, attention to detail, written and verbal communication.",
-    "url": "https://jobs.micro1.ai/post/0566558a-52b0-4c27-affe-702d16dcdfd7?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
   },
   {
     "company": "Micro1",
@@ -2773,12 +2881,12 @@
   },
   {
     "company": "Micro1",
-    "title": "AI Data Annotation Expert",
-    "pay": "$40–$80/hr",
+    "title": "Video related professional for AI training",
+    "pay": "$65–$80/hr",
     "tag": "High demand",
-    "blurb": "Looking for expertise in Video Annotation, Attention to detail, Data Labeling Accuracy, English-language Proficiency.",
-    "url": "https://jobs.micro1.ai/post/00790f76-0b22-4b18-8910-6596efa752ca?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
+    "blurb": "Looking for expertise in video editing, video production workflows, motion graphics, visual effects (vfx).",
+    "url": "https://jobs.micro1.ai/post/b0bba9cf-0617-4dd2-9cb7-ee348936e72f?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "domain": "Design & Creative"
   },
   {
     "company": "Micro1",
@@ -2805,276 +2913,6 @@
     "tag": "High demand",
     "blurb": "Looking for expertise in electrical engineering, analog circuits, digital circuits, rf (radio frequency).",
     "url": "https://jobs.micro1.ai/post/be1242bf-1a4b-4a1c-b943-cbdaaef37210?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Micro1",
-    "title": "Growth Manager",
-    "pay": "$130k–$170k/yr",
-    "tag": "1 opening",
-    "blurb": "Looking for expertise in go-to-market strategy, market research, performance analysis, strategic partnership development.",
-    "url": "https://jobs.micro1.ai/post/b4a5a6be-4101-4740-a075-383e659309fb?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
-  },
-  {
-    "company": "Micro1",
-    "title": "Logistics & Supply Chain Management Specialist",
-    "pay": "$40–$50/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Logistics, Supply Chains, Packing Lists, Bills of Landing.",
-    "url": "https://jobs.micro1.ai/post/45ec3271-a485-446c-965e-edba13f09655?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
-  },
-  {
-    "company": "Micro1",
-    "title": "Frontend Software Engineer",
-    "pay": "$40–$50/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Component Style Guides, Pixel-Perfect UI Implementation, Typescript, Responsive Web Design.",
-    "url": "https://jobs.micro1.ai/post/aa022f40-ca04-4794-8791-5f9378400f4f?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Micro1",
-    "title": "Data-Video Generalist (Europe-based)",
-    "pay": "$10/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Video Capturing, Attention to detail, household tasks.",
-    "url": "https://jobs.micro1.ai/post/2418674e-c1a6-4dbb-a43c-85fc8ddfdec4?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Micro1",
-    "title": "Senior Webflow Developer",
-    "pay": "$35–$50/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Webflow, CSS, JavaScript, HTML.",
-    "url": "https://jobs.micro1.ai/post/f013d7ae-8c68-4316-a2a9-fd5bf4a8bc37?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Micro1",
-    "title": "Computational Chemistry Expert (PhD)",
-    "pay": "$40–$60/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in computational chemistry, molecular simulations, python, gaussian.",
-    "url": "https://jobs.micro1.ai/post/707b29ab-98dc-43ef-a5f2-2452526d654b?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Micro1",
-    "title": "Computational Biology Expert (PhD)",
-    "pay": "$40–$60/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Python, Bash.",
-    "url": "https://jobs.micro1.ai/post/a26bf8e6-bdd6-4889-88d7-f474f0f8a458?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Micro1",
-    "title": "Chemistry Professor/Researcher (PhD)",
-    "pay": "$70–$90/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Chemistry, Research, Teaching, PhD.",
-    "url": "https://jobs.micro1.ai/post/7465b232-3add-4ab5-8ea9-65b2db2e7007?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
-  },
-  {
-    "company": "Micro1",
-    "title": "Mathematics Expert",
-    "pay": "$20–$40/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in advanced mathematics, mathematical proof writing, technical report writing, data annotation.",
-    "url": "https://jobs.micro1.ai/post/8b842ebb-cb89-4ed4-b46a-e7ffd2ae122f?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
-  },
-  {
-    "company": "Micro1",
-    "title": "Computer Science Specialist",
-    "pay": "$20–$40/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in technical writing, system design, algorithms, distributed systems.",
-    "url": "https://jobs.micro1.ai/post/75b76df7-6fe1-4759-8c0c-fd552054169b?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
-  },
-  {
-    "company": "Micro1",
-    "title": "Engineering Expert ",
-    "pay": "$20–$40/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in engineering documentation analysis, technical report writing, written and verbal communication, cross-functional collaboration.",
-    "url": "https://jobs.micro1.ai/post/074f30c2-8474-4b5f-9774-a4f058277a4e?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
-  },
-  {
-    "company": "Micro1",
-    "title": "Physics Expert",
-    "pay": "$20–$50/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in physics domain expertise, data analysis, experimental design, computational modeling.",
-    "url": "https://jobs.micro1.ai/post/10645acb-cffe-48a0-800c-68e1e142007a?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
-  },
-  {
-    "company": "Micro1",
-    "title": "Chemistry Expert",
-    "pay": "$20–$40/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in chemistry domain expertise, experimental write-ups, technical analysis, scientific data review.",
-    "url": "https://jobs.micro1.ai/post/c8a38430-97b1-41c9-b36f-761d2b0e2098?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
-  },
-  {
-    "company": "Micro1",
-    "title": "Biology Expert",
-    "pay": "$20–$40/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in scientific writing, biological data analysis, academic research, attention to detail.",
-    "url": "https://jobs.micro1.ai/post/ba8d074d-3547-43aa-b851-fdc0e135c9ed?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
-  },
-  {
-    "company": "Micro1",
-    "title": "Legal Specialist",
-    "pay": "$20–$40/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Legal analysis and issue spotting, Strong legal writing, Document drafting experience, Confidentiality / privilege awareness.",
-    "url": "https://jobs.micro1.ai/post/179656c6-55ed-4daf-b48b-2e7ed938ecdf?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
-  },
-  {
-    "company": "Micro1",
-    "title": " Medical Specialist",
-    "pay": "$20–$40/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Medical writing & documentation, Confidentiality & de-identification judgment, Medical Depth.",
-    "url": "https://jobs.micro1.ai/post/5fee5987-61f7-4294-a261-df699ec45a07?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Medical & Healthcare"
-  },
-  {
-    "company": "Micro1",
-    "title": "Finance Specialist",
-    "pay": "$20–$40/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Financial analysis depth, Financial report writing, Data visualization and quantitative presentation, Accuracy and source discipline.",
-    "url": "https://jobs.micro1.ai/post/6b2155b3-8406-4b9c-9318-6ec2178258ec?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Business & Finance"
-  },
-  {
-    "company": "Micro1",
-    "title": "Associate Recruiter",
-    "pay": "$15–$20/hr",
-    "tag": "1 opening",
-    "blurb": "Looking for expertise in Sourcing, Recruitment pipeline, Remote work self-management, Stakeholder communication.",
-    "url": "https://jobs.micro1.ai/post/780eb79e-41aa-4746-958f-9b0b067d4df4?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
-  },
-  {
-    "company": "Micro1",
-    "title": "Azure DevOps Engineer",
-    "pay": "$200k–$300k/yr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Azure, DevOps, Kubernetes, Docker.",
-    "url": "https://jobs.micro1.ai/post/8292728f-4504-40a6-bbe1-b59d6459e83c?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Micro1",
-    "title": "Physics Professor/Researcher (PhD)",
-    "pay": "$70–$90/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Physics, Research, Teaching, PhD.",
-    "url": "https://jobs.micro1.ai/post/d2c1174a-b6a9-479c-aa64-9b8e22cdd5b7?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
-  },
-  {
-    "company": "Micro1",
-    "title": "AI Jailbreak & Prompt-Injection Security Expert",
-    "pay": "$50–$90/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Ethical Jailbreaks, LLM Red Teaming, Prompt Injection, Tool-Use Abuse.",
-    "url": "https://jobs.micro1.ai/post/91c1c68b-72e8-4532-9aa0-dac3cbf8b79d?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Micro1",
-    "title": "Mental-Health Crisis Prevention Expert",
-    "pay": "$50–$90/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Psychology, Mental-Health, Crisis Response, Eating Disorders.",
-    "url": "https://jobs.micro1.ai/post/aa92352b-19d7-4095-82b3-4a2c0da723c0?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Medical & Healthcare"
-  },
-  {
-    "company": "Micro1",
-    "title": "Biosecurity & Synthetic Biology Expert",
-    "pay": "$50–$90/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Biosecurity, Lab Safety, Biological Misuse, Public-Health Threat Modeling.",
-    "url": "https://jobs.micro1.ai/post/39ebc9e2-ffef-4d6c-9ed8-61a0034a6847?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
-  },
-  {
-    "company": "Micro1",
-    "title": "Financial Crime & AML Compliance Expert",
-    "pay": "$50–$90/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in AML, Fraud, Marketplace Abuse, Phishing.",
-    "url": "https://jobs.micro1.ai/post/0aa5b93c-f3ec-4007-a115-94e588338dd3?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Legal"
-  },
-  {
-    "company": "Micro1",
-    "title": "Red Team Lead (Offensive Cybersecurity)",
-    "pay": "$50–$90/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Cyber Security, Exploit Chains, Cloud/Appsec, Malware/Social Engineering Boundaries.",
-    "url": "https://jobs.micro1.ai/post/c11cbae4-dcfc-4832-95f4-99d3258133f8?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Software & Data"
-  },
-  {
-    "company": "Micro1",
-    "title": " Nuclear & Radiological Security Expert",
-    "pay": "$50–$90/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Nuclear Physics, Radiological Safety, Nonproliferation, Safeguards.",
-    "url": "https://jobs.micro1.ai/post/cda78c70-c436-411c-842f-351f235efb81?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
-  },
-  {
-    "company": "Micro1",
-    "title": "Child & Online Safety Expert",
-    "pay": "$50–$90/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Child Safety, CSAM-adjacent Policy, Teen Safety, Crisis-care.",
-    "url": "https://jobs.micro1.ai/post/05253d71-954f-4634-9760-1f0ef01881e7?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
-  },
-  {
-    "company": "Micro1",
-    "title": "Military Operations & IHL Expert",
-    "pay": "$50–$90/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in War Fighting, Weapons Targeting, Defense Operations, Humanitarian Law.",
-    "url": "https://jobs.micro1.ai/post/6b82a1c1-9c99-4993-9f14-9bcfd0fd9e4a?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "General & Other"
-  },
-  {
-    "company": "Micro1",
-    "title": "Chemical Safety & Toxicology Expert",
-    "pay": "$50–$90/hr",
-    "tag": "High demand",
-    "blurb": "Looking for expertise in Chemistry, Chemical Weapons, Toxicology, Hazardous Substances.",
-    "url": "https://jobs.micro1.ai/post/c7458a03-9552-4a9b-bc69-97aaa0602061?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
-    "domain": "Science & STEM"
-  },
-  {
-    "company": "Micro1",
-    "title": "Director of Robotics Research",
-    "pay": "$100–$120/hr",
-    "tag": "1 opening",
-    "blurb": "Looking for expertise in Robotics Software, Robotics Data, Robotics Research.",
-    "url": "https://jobs.micro1.ai/post/d53f2ee7-675d-478e-9159-a4b24e3dec25?referralCode=02b9d485-f559-40d2-981d-caca8ba2a435&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
     "domain": "Software & Data"
   }
 ]

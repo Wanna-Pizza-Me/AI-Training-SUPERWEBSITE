@@ -124,6 +124,11 @@ async function main() {
 }
 
 main().catch(err => {
-  console.error(err);
-  process.exit(1);
+  // Exit 0 (not 1) so npm run generate's && chain keeps going even if this
+  // one source is having a bad day (rate limit, timeout, brief outage) —
+  // jobs-*.json for this source is only overwritten on success above, so
+  // build.js falls back to this source's last-known-good snapshot instead
+  // of taking the whole site down. Logged loudly so it is still visible in
+  // Vercel build logs.
+  console.error(`[generate-dataannotation-jobs.js] FAILED, keeping previous jobs data for this source:`, err);
 });
