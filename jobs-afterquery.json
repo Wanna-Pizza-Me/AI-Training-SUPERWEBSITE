@@ -2,7 +2,7 @@
   {
     "company": "AfterQuery",
     "title": "Medical MD Expert",
-    "pay": "$120–$200/hr",
+    "pay": "$160/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is searching for Medical MD Experts to design and evaluate complex medical scenarios that drive the training of our advanced AI systems.",
     "url": "https://experts.afterquery.com/apply?job=1744594327685",
@@ -12,7 +12,7 @@
   {
     "company": "AfterQuery",
     "title": "General AfterQuery Expert (Data Annotator)",
-    "pay": "$25–$60/hr",
+    "pay": "$42.5/hr",
     "tag": "Remote",
     "blurb": "This is a remote, project-based role for experienced practitioners across any professional domain who can apply their real-world expertise to data annotation tasks.",
     "url": "https://experts.afterquery.com/apply?job=1745827009100",
@@ -22,9 +22,9 @@
   {
     "company": "AfterQuery",
     "title": "Content Writer & AI Evaluation Specialist (UK/US)",
-    "pay": "$35–$50/hr",
+    "pay": "$42.5/hr",
     "tag": "Remote",
-    "blurb": "We are seeking elite Content Writers & AI Evaluation Specialists with expertise in copywriting, content creation and LLM evaluation.",
+    "blurb": "<p>We are seeking elite Content Writers & AI Evaluation Specialists with expertise in copywriting, content creation and LLM evaluation.",
     "url": "https://experts.afterquery.com/apply?job=1758761985491",
     "domain": "Language & Writing",
     "posted": "2025-09-25T00:59:45.491Z"
@@ -43,8 +43,8 @@
     "company": "AfterQuery",
     "title": "Finance Expert -Undergraduate / Early Career",
     "pay": "$50/hr",
-    "tag": "Featured",
-    "blurb": "This is a remote, part-time finance research role. You’ll use Excel, PowerPoint, and financial reasoning to replicate the kinds of analyses, models, and memos typical in investment banking,…",
+    "tag": "Remote",
+    "blurb": "<p>This is a remote, part-time finance research role. You’ll use Excel, PowerPoint, and financial reasoning to replicate the kinds of analyses, models, and memos typical in investment…",
     "url": "https://experts.afterquery.com/apply?job=1760378322906",
     "domain": "Business & Finance",
     "posted": "2025-10-13T17:58:42.906Z"
@@ -52,9 +52,9 @@
   {
     "company": "AfterQuery",
     "title": "Mid Level Full-Stack Engineer",
-    "pay": "$60–$100/hr",
-    "tag": "Featured",
-    "blurb": "We're seeking a Full Stack Engineer to build diverse, production-quality applications that will serve as training examples for AI models.",
+    "pay": "$80/hr",
+    "tag": "Remote",
+    "blurb": "<p>AfterQuery empowers foundational AI labs, enterprises, and startups by providing high-quality human-generated datasets that are essential for fine-tuning more capable, refined, and…",
     "url": "https://experts.afterquery.com/apply?job=1760834682926",
     "domain": "Software & Data",
     "posted": "2025-10-19T00:44:42.926Z"
@@ -62,9 +62,9 @@
   {
     "company": "AfterQuery",
     "title": "Senior Full-Stack Engineer",
-    "pay": "$100–$180/hr",
-    "tag": "Featured",
-    "blurb": "We're seeking a Full Stack Engineer to build diverse, production-quality applications that will serve as training examples for AI models.",
+    "pay": "$140/hr",
+    "tag": "Remote",
+    "blurb": "<p>AfterQuery empowers foundational AI labs, enterprises, and startups by providing high-quality human-generated datasets that are essential for fine-tuning more capable, refined, and…",
     "url": "https://experts.afterquery.com/apply?job=1760867204229",
     "domain": "Software & Data",
     "posted": "2025-10-19T09:46:44.229Z"
@@ -72,7 +72,7 @@
   {
     "company": "AfterQuery",
     "title": "Junior Consultant Expert",
-    "pay": "$100–$150/hr",
+    "pay": "$125/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is hiring Consulting Deliverables Experts — current or former consultants with strong research and synthesis skills to help design datasets that capture real consulting…",
     "url": "https://experts.afterquery.com/apply?job=1762242482237",
@@ -82,9 +82,9 @@
   {
     "company": "AfterQuery",
     "title": "High School Teacher Expert",
-    "pay": "$40–$70/hr",
+    "pay": "$55/hr",
     "tag": "Remote",
-    "blurb": "You’ll create rubrics, exemplar responses, short research-style briefs, and instructional materials that mirror high-quality high school coursework.",
+    "blurb": "<p>This is a remote, part-time educational content role. You’ll create rubrics, exemplar responses, short research-style briefs, and instructional materials that mirror high-quality high…",
     "url": "https://experts.afterquery.com/apply?job=1763407072053",
     "domain": "General & Other",
     "posted": "2025-11-17T19:17:52.053Z"
@@ -92,9 +92,9 @@
   {
     "company": "AfterQuery",
     "title": "Full-Stack Software Engineer - Testing & Evaluation ",
-    "pay": "$50–$100/hr",
-    "tag": "Featured",
-    "blurb": "We are hiring skilled software engineers with strong full-stack experience.",
+    "pay": "$75/hr",
+    "tag": "Remote",
+    "blurb": "<p>We are hiring skilled software engineers with strong full-stack experience.",
     "url": "https://experts.afterquery.com/apply?job=1764624326152",
     "domain": "Software & Data",
     "posted": "2025-12-01T21:25:26.152Z"
@@ -102,9 +102,9 @@
   {
     "company": "AfterQuery",
     "title": "Generalist Accounting Expert",
-    "pay": "$80–$150/hr",
+    "pay": "$115/hr",
     "tag": "Remote",
-    "blurb": "This is a remote, part-time accounting role. You'll use Excel and PowerPoint to replicate the kinds of schedules, statements, and summary memos typical in corporate accounting, audit, and…",
+    "blurb": "<p>This is a remote, part-time accounting role. You'll use Excel and PowerPoint to replicate the kinds of schedules, statements, and summary memos typical in corporate accounting, audit,…",
     "url": "https://experts.afterquery.com/apply?job=1764632206267",
     "domain": "Business & Finance",
     "posted": "2025-12-01T23:36:46.267Z"
@@ -112,9 +112,9 @@
   {
     "company": "AfterQuery",
     "title": "Physics Expert",
-    "pay": "$50–$80/hr",
-    "tag": "Featured",
-    "blurb": "AfterQuery is searching for Physics Experts to craft, review, and enhance physics-related reasoning problems to advance our AI labs.",
+    "pay": "$65/hr",
+    "tag": "Remote",
+    "blurb": "<p>AfterQuery is searching for Physics PhD Experts to craft, review, and enhance physics-related reasoning problems to advance our AI labs.",
     "url": "https://experts.afterquery.com/apply?job=1767334089871",
     "domain": "Science & STEM",
     "posted": "2026-01-02T06:08:09.871Z"
@@ -122,9 +122,9 @@
   {
     "company": "AfterQuery",
     "title": "Chemistry Expert",
-    "pay": "$50–$100/hr",
-    "tag": "Featured",
-    "blurb": "AfterQuery is seeking a Chemistry Expert to help design and evaluate challenging chemistry problems that train and refine our AI models.",
+    "pay": "$75/hr",
+    "tag": "Remote",
+    "blurb": "<p>AfterQuery is seeking a Chemistry PhD Expert to help design, create and evaluate challenging chemistry problems that train and refine our AI models.",
     "url": "https://experts.afterquery.com/apply?job=1767335102113",
     "domain": "Science & STEM",
     "posted": "2026-01-02T06:25:02.113Z"
@@ -132,9 +132,9 @@
   {
     "company": "AfterQuery",
     "title": "Attorney ",
-    "pay": "$75–$200/hr",
+    "pay": "$137.5/hr",
     "tag": "Remote",
-    "blurb": "AfterQuery is seeking Legal JD Experts to create and refine legal reasoning challenges for our AI training modules.",
+    "blurb": "<p>AfterQuery is seeking Legal JD Experts to create and refine legal reasoning challenges for our AI training modules.",
     "url": "https://experts.afterquery.com/apply?job=1768283029442",
     "domain": "Legal",
     "posted": "2026-01-13T05:43:49.442Z"
@@ -142,7 +142,7 @@
   {
     "company": "AfterQuery",
     "title": "Investment Banking / Private Equity Expert",
-    "pay": "$100–$200/hr",
+    "pay": "$150/hr",
     "tag": "Remote",
     "blurb": "This is a remote, project-based role for Investment Banking or Private Equity professionals with 1–3 years of work experience.",
     "url": "https://experts.afterquery.com/apply?job=1769138978153",
@@ -152,7 +152,7 @@
   {
     "company": "AfterQuery",
     "title": "Corporate Finance / FP&A Expert",
-    "pay": "$60–$100/hr",
+    "pay": "$80/hr",
     "tag": "Remote",
     "blurb": "This is a remote, project-based role for corporate finance professionals with 1–3 years of work experience.",
     "url": "https://experts.afterquery.com/apply?job=1769189107337",
@@ -162,7 +162,7 @@
   {
     "company": "AfterQuery",
     "title": "Machine Learning / Data Science Expert",
-    "pay": "$60–$100/hr",
+    "pay": "$80/hr",
     "tag": "Remote",
     "blurb": "This is a remote, project-based role for data scientists and machine learning professionals with 1–3 years of work experience.",
     "url": "https://experts.afterquery.com/apply?job=1769189600406",
@@ -172,7 +172,7 @@
   {
     "company": "AfterQuery",
     "title": "Data Engineering Expert",
-    "pay": "$60–$100/hr",
+    "pay": "$80/hr",
     "tag": "Remote",
     "blurb": "This is a remote, project-based role for data engineering professionals with 1–3 years of work experience.",
     "url": "https://experts.afterquery.com/apply?job=1769190135984",
@@ -182,7 +182,7 @@
   {
     "company": "AfterQuery",
     "title": "Economics Expert",
-    "pay": "$60–$100/hr",
+    "pay": "$80/hr",
     "tag": "Remote",
     "blurb": "This is a remote, project-based role for economics professionals with 1–3 years of experience.",
     "url": "https://experts.afterquery.com/apply?job=1769322131343",
@@ -192,7 +192,7 @@
   {
     "company": "AfterQuery",
     "title": "3D Designer/Blender Expert",
-    "pay": "$40–$50/hr",
+    "pay": "$45/hr",
     "tag": "Remote",
     "blurb": "This is a remote, project-based role for 3D design professionals with 1–3 years of work experience in Blender.",
     "url": "https://experts.afterquery.com/apply?job=1770064353636",
@@ -202,7 +202,7 @@
   {
     "company": "AfterQuery",
     "title": "Marketing Expert",
-    "pay": "$40–$50/hr",
+    "pay": "$45/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is seeking Marketing Experts to create and refine marketing strategy challenges for our AI training modules.",
     "url": "https://experts.afterquery.com/apply?job=1770238120728",
@@ -212,7 +212,7 @@
   {
     "company": "AfterQuery",
     "title": "Pharmacist Expert",
-    "pay": "$60–$100/hr",
+    "pay": "$80/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is seeking Pharmaceutical Experts to create and refine pharmaceutical reasoning challenges for our AI training modules.",
     "url": "https://experts.afterquery.com/apply?job=1770245470623",
@@ -222,7 +222,7 @@
   {
     "company": "AfterQuery",
     "title": "Medical Assistant Expert",
-    "pay": "$40–$50/hr",
+    "pay": "$45/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is seeking Medical Assistant Experts to create and refine healthcare reasoning challenges for our AI training modules.",
     "url": "https://experts.afterquery.com/apply?job=1770245915016",
@@ -232,7 +232,7 @@
   {
     "company": "AfterQuery",
     "title": "Real Estate Agent Expert",
-    "pay": "$50–$100/hr",
+    "pay": "$75/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is seeking Real Estate Experts to create and refine real estate reasoning challenges for our AI training modules.",
     "url": "https://experts.afterquery.com/apply?job=1770246704339",
@@ -242,7 +242,7 @@
   {
     "company": "AfterQuery",
     "title": "Manufacturing Expert",
-    "pay": "$40–$100/hr",
+    "pay": "$70/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is seeking Manufacturing Experts to create and refine production and operations challenges for our AI training modules.",
     "url": "https://experts.afterquery.com/apply?job=1770249062775",
@@ -252,7 +252,7 @@
   {
     "company": "AfterQuery",
     "title": "Technology and Professional Services Expert",
-    "pay": "$60–$100/hr",
+    "pay": "$80/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is seeking Technology and Professional Services Experts to create and refine consulting and solutions challenges for our AI training modules.",
     "url": "https://experts.afterquery.com/apply?job=1770249305321",
@@ -262,7 +262,7 @@
   {
     "company": "AfterQuery",
     "title": "Insurance Expert",
-    "pay": "$60–$100/hr",
+    "pay": "$80/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is seeking Insurance Experts to create and refine insurance industry challenges for our AI training modules.",
     "url": "https://experts.afterquery.com/apply?job=1770249718482",
@@ -272,7 +272,7 @@
   {
     "company": "AfterQuery",
     "title": "Retail Sales and Wholesaler Expert",
-    "pay": "$75–$115/hr",
+    "pay": "$95/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is seeking Retail Sales and Wholesaler Experts to create and refine retail and wholesale industry challenges for our AI training modules.",
     "url": "https://experts.afterquery.com/apply?job=1770250109332",
@@ -282,7 +282,7 @@
   {
     "company": "AfterQuery",
     "title": "Media and Communications Expert",
-    "pay": "$35–$75/hr",
+    "pay": "$55/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is seeking Media and Communications Experts to create and refine communications and media strategy challenges for our AI training modules.",
     "url": "https://experts.afterquery.com/apply?job=1770250996648",
@@ -292,7 +292,7 @@
   {
     "company": "AfterQuery",
     "title": "Industrial Engineering Expert",
-    "pay": "$75–$115/hr",
+    "pay": "$95/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is seeking Industrial Engineering Experts to create and refine engineering and operations challenges for our AI training modules.",
     "url": "https://experts.afterquery.com/apply?job=1770664655386",
@@ -302,7 +302,7 @@
   {
     "company": "AfterQuery",
     "title": "Mechanical Engineering Expert",
-    "pay": "$75–$115/hr",
+    "pay": "$95/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is seeking Mechanical Engineering Experts to create and refine engineering challenges for our AI training modules.",
     "url": "https://experts.afterquery.com/apply?job=1770665014233",
@@ -312,7 +312,7 @@
   {
     "company": "AfterQuery",
     "title": "Civil Engineering Expert",
-    "pay": "$75–$115/hr",
+    "pay": "$95/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is seeking Civil Engineering Experts to create and refine engineering challenges for our AI training modules.",
     "url": "https://experts.afterquery.com/apply?job=1770665247000",
@@ -322,7 +322,7 @@
   {
     "company": "AfterQuery",
     "title": "Audio and Video Technician Expert",
-    "pay": "$35–$75/hr",
+    "pay": "$55/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is seeking Audio and Video Technician Experts to create and refine audiovisual production challenges for training AI models.",
     "url": "https://experts.afterquery.com/apply?job=1771265882244",
@@ -332,7 +332,7 @@
   {
     "company": "AfterQuery",
     "title": "Customer Service Representative Expert",
-    "pay": "$35–$75/hr",
+    "pay": "$55/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is seeking Customer Service Representative Experts to create and refine customer support challenges for training AI models.",
     "url": "https://experts.afterquery.com/apply?job=1771266825553",
@@ -342,7 +342,7 @@
   {
     "company": "AfterQuery",
     "title": "Sales Manager Expert",
-    "pay": "$75–$110/hr",
+    "pay": "$92.5/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is seeking Sales Manager Experts to create and refine sales leadership challenges for training AI models.",
     "url": "https://experts.afterquery.com/apply?job=1771267864424",
@@ -352,7 +352,7 @@
   {
     "company": "AfterQuery",
     "title": "Office Manager Expert",
-    "pay": "$50–$120/hr",
+    "pay": "$85/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is seeking Office Manager Experts to create and refine office management challenges for training AI models.",
     "url": "https://experts.afterquery.com/apply?job=1771270765832",
@@ -362,7 +362,7 @@
   {
     "company": "AfterQuery",
     "title": "Financial Advisor Expert",
-    "pay": "$75–$120/hr",
+    "pay": "$97.5/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is seeking Financial Advisor Experts to create and refine personal financial planning challenges for training AI models.",
     "url": "https://experts.afterquery.com/apply?job=1771272980655",
@@ -372,7 +372,7 @@
   {
     "company": "AfterQuery",
     "title": "Producer and Director Expert",
-    "pay": "$50–$100/hr",
+    "pay": "$75/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is seeking Producer and Director Experts to create and refine media production challenges for training AI models.",
     "url": "https://experts.afterquery.com/apply?job=1771274614656",
@@ -382,7 +382,7 @@
   {
     "company": "AfterQuery",
     "title": "Property Manager Expert",
-    "pay": "$40–$100/hr",
+    "pay": "$70/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is seeking Property Manager Experts to create and refine property management challenges for training AI models.",
     "url": "https://experts.afterquery.com/apply?job=1771276815047",
@@ -392,7 +392,7 @@
   {
     "company": "AfterQuery",
     "title": "Compliance Officer Expert",
-    "pay": "$50–$100/hr",
+    "pay": "$75/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is seeking Compliance Officer Experts to create and refine regulatory compliance challenges for training AI models.",
     "url": "https://experts.afterquery.com/apply?job=1771277152095",
@@ -402,7 +402,7 @@
   {
     "company": "AfterQuery",
     "title": "Competitive Programming Expert",
-    "pay": "$30–$60/hr",
+    "pay": "$45/hr",
     "tag": "Remote",
     "blurb": "We are seeking exceptional competitive programmers (top 1% LeetCode users, ICPC Nationals, Codeforces Master, USACO Gold) to join our research project in collaboration with a leading AI…",
     "url": "https://experts.afterquery.com/apply?job=1771474373832",
@@ -412,7 +412,7 @@
   {
     "company": "AfterQuery",
     "title": "Tax Accountant Expert",
-    "pay": "$75–$150/hr",
+    "pay": "$112.5/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is seeking Tax Accountant Experts to create and refine tax preparation and planning challenges for training AI models.",
     "url": "https://experts.afterquery.com/apply?job=1772044275987",
@@ -422,7 +422,7 @@
   {
     "company": "AfterQuery",
     "title": "Audit or Assurance Accounting Expert",
-    "pay": "$75–$150/hr",
+    "pay": "$112.5/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is seeking Audit Accountant Experts to create and refine auditing challenges for training AI models.",
     "url": "https://experts.afterquery.com/apply?job=1772044558366",
@@ -432,7 +432,7 @@
   {
     "company": "AfterQuery",
     "title": "Financial Reporting Accountant Expert",
-    "pay": "$75–$150/hr",
+    "pay": "$112.5/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is seeking Financial Reporting Accountant Experts to create and refine financial reporting challenges for training AI models.",
     "url": "https://experts.afterquery.com/apply?job=1772044844736",
@@ -442,7 +442,7 @@
   {
     "company": "AfterQuery",
     "title": "Forensic Accountanting Expert",
-    "pay": "$75–$150/hr",
+    "pay": "$112.5/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is seeking Forensic Accountant Experts to create and refine fraud investigation and litigation support challenges for training AI models.",
     "url": "https://experts.afterquery.com/apply?job=1772045096095",
@@ -452,7 +452,7 @@
   {
     "company": "AfterQuery",
     "title": "Behavioral Economist Expert",
-    "pay": "$60–$100/hr",
+    "pay": "$80/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is seeking Behavioral Economist Experts to create and refine behavioral economics challenges for training AI models.",
     "url": "https://experts.afterquery.com/apply?job=1772244632753",
@@ -462,7 +462,7 @@
   {
     "company": "AfterQuery",
     "title": "Consulting expert",
-    "pay": "$100–$150/hr",
+    "pay": "$125/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is seeking Consultant Experts to create and refine business consulting challenges for training AI models.",
     "url": "https://experts.afterquery.com/apply?job=1772506536278",
@@ -473,7 +473,7 @@
     "company": "AfterQuery",
     "title": "College Software Engineering Expert",
     "pay": "$50/hr",
-    "tag": "Featured",
+    "tag": "Remote",
     "blurb": "AfterQuery is seeking College Software Engineer Experts to create and refine software development challenges for training AI models.",
     "url": "https://experts.afterquery.com/apply?job=1772823158406",
     "domain": "Software & Data",
@@ -482,7 +482,7 @@
   {
     "company": "AfterQuery",
     "title": "Paralegal Expert",
-    "pay": "$50–$60/hr",
+    "pay": "$55/hr",
     "tag": "Remote",
     "blurb": "AfterQuery is seeking Paralegal Experts to create and refine legal support challenges for training AI models.",
     "url": "https://experts.afterquery.com/apply?job=1773092312509",
@@ -512,7 +512,7 @@
   {
     "company": "AfterQuery",
     "title": "Bioinformatics Machine Learning Expert",
-    "pay": "$150–$200/hr",
+    "pay": "$175/hr",
     "tag": "Remote",
     "blurb": "This is a remote, project-based role for machine learning professionals with deep expertise in bioinformatics.",
     "url": "https://experts.afterquery.com/apply?job=1776313637858",
@@ -522,7 +522,7 @@
   {
     "company": "AfterQuery",
     "title": "Computational Materials Science Expert",
-    "pay": "$150–$200/hr",
+    "pay": "$175/hr",
     "tag": "Remote",
     "blurb": "This is a remote, project-based role for machine learning professionals with deep expertise in computational materials science.",
     "url": "https://experts.afterquery.com/apply?job=1776314668221",
@@ -532,7 +532,7 @@
   {
     "company": "AfterQuery",
     "title": "Excel Expert",
-    "pay": "$40–$80/hr",
+    "pay": "$60/hr",
     "tag": "Remote",
     "blurb": "This is a remote, project-based role for Excel and spreadsheet modeling experts with deep proficiency in advanced Excel techniques and data analysis.",
     "url": "https://experts.afterquery.com/apply?job=1777336909862",
@@ -542,7 +542,7 @@
   {
     "company": "AfterQuery",
     "title": "Mechanical Engineering Expert",
-    "pay": "$75–$100/hr",
+    "pay": "$87.5/hr",
     "tag": "Remote",
     "blurb": "This is a remote, project-based role for mechanical engineers with 2–4 years of hands-on experience in CAD and mechanical design.",
     "url": "https://experts.afterquery.com/apply?job=1777422098805",
@@ -552,7 +552,7 @@
   {
     "company": "AfterQuery",
     "title": "Software Engineering Expert",
-    "pay": "$50–$100/hr",
+    "pay": "$75/hr",
     "tag": "Remote",
     "blurb": "This is a remote, project-based role for software engineers with 1–3 years of professional experience.",
     "url": "https://experts.afterquery.com/apply?job=1777523403497",
@@ -562,8 +562,8 @@
   {
     "company": "AfterQuery",
     "title": "Project Iter",
-    "pay": "$120–$180/hr",
-    "tag": "Featured",
+    "pay": "$150/hr",
+    "tag": "Remote",
     "blurb": "This is a remote, project-based role for industry professionals and PhD-level researchers across academic disciplines.",
     "url": "https://experts.afterquery.com/apply?job=1779397546965",
     "domain": "General & Other",
@@ -573,8 +573,8 @@
     "company": "AfterQuery",
     "title": "Bilingual Audio Contributor (Mandarin/English) | 中英双语专家审核员",
     "pay": "$30/hr",
-    "tag": "Featured",
-    "blurb": "Assist in the development of an AI research tool that generates structured tables in response to complex questions.",
+    "tag": "Remote",
+    "blurb": "<p>Assist in the development of an AI research tool that generates structured tables in response to complex questions.",
     "url": "https://experts.afterquery.com/apply?job=1779496051501",
     "domain": "Language & Writing",
     "posted": "2026-05-23T00:27:31.501Z"
@@ -582,9 +582,9 @@
   {
     "company": "AfterQuery",
     "title": "Cybersecurity Expert",
-    "pay": "$50–$100/hr",
+    "pay": "$75/hr",
     "tag": "Remote",
-    "blurb": "Paid, part-time remote project helping train frontier AI models on cybersecurity workflows. Earn $300 per accepted task with flexible hours designed to fit around a full-time role.",
+    "blurb": "<p>Paid, part-time remote project helping train frontier AI models on cybersecurity workflows.",
     "url": "https://experts.afterquery.com/apply?job=1779812018420",
     "domain": "Software & Data",
     "posted": "2026-05-26T16:13:38.420Z"
@@ -592,7 +592,7 @@
   {
     "company": "AfterQuery",
     "title": "Law Student Expert",
-    "pay": "$100–$150/hr",
+    "pay": "$125/hr",
     "tag": "Remote",
     "blurb": "This is a remote, project-based role for current law students with strong academic backgrounds and foundational legal research and analysis skills.",
     "url": "https://experts.afterquery.com/apply?job=1779817717871",
@@ -602,7 +602,7 @@
   {
     "company": "AfterQuery",
     "title": "CRISPR & Gene Editing Subject Matter Expert (PhD / Masters)",
-    "pay": "$50–$150/hr",
+    "pay": "$100/hr",
     "tag": "Remote",
     "blurb": "This is a remote, project-based role for a PhD student or strong Masters-level researcher with hands-on CRISPR and gene editing experience to contribute to a short-term AI safety evaluation…",
     "url": "https://experts.afterquery.com/apply?job=1780434307068",
@@ -612,8 +612,8 @@
   {
     "company": "AfterQuery",
     "title": "Students Across All Disciplines (Undergrad)",
-    "pay": "$50–$150/hr",
-    "tag": "Featured",
+    "pay": "$100/hr",
+    "tag": "Remote",
     "blurb": "This is a remote, project-based role for strong undergraduates across academic disciplines, to contribute to an AI evaluation research project.",
     "url": "https://experts.afterquery.com/apply?job=1780944298874",
     "domain": "Language & Writing",
@@ -624,7 +624,7 @@
     "title": "Bilingual Audio Contributor (German/English)",
     "pay": "$30/hr",
     "tag": "Remote",
-    "blurb": "We have a new quick-turnaround audio project and are looking for authentic German-accented English speakers.",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic German-accented English speakers to join as voice contributors.",
     "url": "https://experts.afterquery.com/apply?job=1781652265650",
     "domain": "Language & Writing",
     "posted": "2026-06-16T23:24:25.650Z"
@@ -634,7 +634,7 @@
     "title": "Audio Recording Contributor - Australian English Accent",
     "pay": "$50/hr",
     "tag": "Remote",
-    "blurb": "We have a new quick-turnaround audio project and are looking for authentic German-accented English speakers to join as voice contributors.",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic German-accented or Australian-accented English speakers to join as voice contributors.",
     "url": "https://experts.afterquery.com/apply?job=1781652816966",
     "domain": "Language & Writing",
     "posted": "2026-06-16T23:33:36.966Z"
@@ -644,7 +644,7 @@
     "title": "Bilingual Audio Contributor (French/English)",
     "pay": "$30/hr",
     "tag": "Remote",
-    "blurb": "We have a new quick-turnaround audio project and are looking for authentic French-accented English speakers to join as voice contributors.",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic French-accented English speakers to join as voice contributors.",
     "url": "https://experts.afterquery.com/apply?job=1781654082745",
     "domain": "Language & Writing",
     "posted": "2026-06-16T23:54:42.745Z"
@@ -654,7 +654,7 @@
     "title": "Bilingual Audio Contributor (Italian/English)",
     "pay": "$30/hr",
     "tag": "Remote",
-    "blurb": "We have a new quick-turnaround audio project and are looking for authentic Italian-accented English speakers to join as voice contributors.",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Italian-accented English speakers to join as voice contributors.",
     "url": "https://experts.afterquery.com/apply?job=1781654229180",
     "domain": "Language & Writing",
     "posted": "2026-06-16T23:57:09.180Z"
@@ -664,7 +664,7 @@
     "title": "Bilingual Audio Contributor (Korean/English)",
     "pay": "$30/hr",
     "tag": "Remote",
-    "blurb": "We have a new quick-turnaround audio project and are looking for authentic Korean-accented English speakers to join as voice contributors.",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Korean-accented English speakers to join as voice contributors.",
     "url": "https://experts.afterquery.com/apply?job=1781654376846",
     "domain": "Language & Writing",
     "posted": "2026-06-16T23:59:36.846Z"
@@ -674,7 +674,7 @@
     "title": "Bilingual Audio Contributor (Japanese/English)",
     "pay": "$30/hr",
     "tag": "Remote",
-    "blurb": "We have a new quick-turnaround audio project and are looking for authentic Japanese-accented English speakers to join as voice contributors.",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Japanese-accented English speakers to join as voice contributors.",
     "url": "https://experts.afterquery.com/apply?job=1781654700746",
     "domain": "Language & Writing",
     "posted": "2026-06-17T00:05:00.746Z"
@@ -682,7 +682,7 @@
   {
     "company": "AfterQuery",
     "title": "Arcade/Gaming Experts",
-    "pay": "$10–$30/hr",
+    "pay": "$20/hr",
     "tag": "Remote",
     "blurb": "This is a remote, project-based role for experienced gamers and gaming industry professionals — video games, arcade, esports, game design, or any related domain.",
     "url": "https://experts.afterquery.com/apply?job=1782173684845",
@@ -692,8 +692,8 @@
   {
     "company": "AfterQuery",
     "title": "Students Across All Disciplines (Masters/PhD)",
-    "pay": "$50–$150/hr",
-    "tag": "Featured",
+    "pay": "$100/hr",
+    "tag": "Remote",
     "blurb": "This is a remote, project-based role for currently enrolled graduate students across academic disciplines, to contribute to an AI evaluation research project.",
     "url": "https://experts.afterquery.com/apply?job=1782502891540",
     "domain": "Language & Writing",
@@ -702,7 +702,7 @@
   {
     "company": "AfterQuery",
     "title": "Software/ML Engineer",
-    "pay": "$100–$150/hr",
+    "pay": "$125/hr",
     "tag": "Remote",
     "blurb": "We're assembling a group of senior software and ML engineers to work on one of the hardest open problems in AI today: how well can frontier models reason about LLM inference systems,…",
     "url": "https://experts.afterquery.com/apply?job=1784753421052",
@@ -712,9 +712,9 @@
   {
     "company": "AfterQuery",
     "title": "Senior Domain Expert — Multi-Discipline AI Research Program",
-    "pay": "$100–$170/hr",
+    "pay": "$135/hr",
     "tag": "Remote",
-    "blurb": "We're building a research cohort of senior domain experts across seven specialist tracks — software/systems engineering, formal methods and computational science, ML inference and GPU…",
+    "blurb": "<p>We're building a research cohort of senior domain experts across seven specialist tracks — software/systems engineering, formal methods and computational science, ML inference and GPU…",
     "url": "https://experts.afterquery.com/apply?job=1784929903913",
     "domain": "General & Other",
     "posted": "2026-07-24T21:51:43.913Z"
@@ -722,9 +722,9 @@
   {
     "company": "AfterQuery",
     "title": "CAD Design Expert",
-    "pay": "$75–$100/hr",
+    "pay": "$87.5/hr",
     "tag": "Remote",
-    "blurb": "Remote, project-based role for experienced CAD professionals. Flexible hours, competitive pay, and a variety of modeling and design tasks.",
+    "blurb": "<p>Remote, project-based role for experienced CAD professionals.",
     "url": "https://experts.afterquery.com/apply?job=1785317747658",
     "domain": "Design & Creative",
     "posted": "2026-07-29T09:35:47.658Z"
@@ -732,7 +732,7 @@
   {
     "company": "AfterQuery",
     "title": "Software Developer Expert",
-    "pay": "$50–$100/hr",
+    "pay": "$75/hr",
     "tag": "Remote",
     "blurb": "This is a remote, project-based role for software engineers with 1–3 years of professional experience.",
     "url": "https://experts.afterquery.com/apply?job=1785830229414",
@@ -742,9 +742,9 @@
   {
     "company": "AfterQuery",
     "title": "Research Scientist — Formal Methods / Computational Science",
-    "pay": "$100–$170/hr",
+    "pay": "$135/hr",
     "tag": "Remote",
-    "blurb": "We're building a research cohort of senior domain experts in formal methods and computational science — spanning math, physics, chemistry, and biology — to help evaluate how frontier AI…",
+    "blurb": "<p>We're building a research cohort of senior domain experts in formal methods and computational science — spanning math, physics, chemistry, and biology — to help evaluate how frontier AI…",
     "url": "https://experts.afterquery.com/apply?job=1785872346700",
     "domain": "Science & STEM",
     "posted": "2026-08-04T19:39:06.700Z"
@@ -752,9 +752,9 @@
   {
     "company": "AfterQuery",
     "title": "ML Research Engineer — Inference & GPU Kernels",
-    "pay": "$100–$170/hr",
+    "pay": "$135/hr",
     "tag": "Remote",
-    "blurb": "We're building a research cohort of senior domain experts in ML inference and GPU kernel engineering — spanning inference serving systems, kernel optimization, and large-model deployment…",
+    "blurb": "<p>We're building a research cohort of senior domain experts in ML inference and GPU kernel engineering — spanning inference serving systems, kernel optimization, and large-model deployment…",
     "url": "https://experts.afterquery.com/apply?job=1785872576677",
     "domain": "Software & Data",
     "posted": "2026-08-04T19:42:56.677Z"
@@ -762,9 +762,9 @@
   {
     "company": "AfterQuery",
     "title": "Enterprise Operations / Domain Analyst",
-    "pay": "$100–$170/hr",
+    "pay": "$135/hr",
     "tag": "Remote",
-    "blurb": "We're building a research cohort of senior domain experts in enterprise operations — spanning supply chain, finance, and compliance — to help evaluate how frontier AI models reason about…",
+    "blurb": "<p>We're building a research cohort of senior domain experts in enterprise operations — spanning supply chain, finance, and compliance — to help evaluate how frontier AI models reason about…",
     "url": "https://experts.afterquery.com/apply?job=1785872837338",
     "domain": "Business & Finance",
     "posted": "2026-08-04T19:47:17.338Z"
@@ -772,9 +772,9 @@
   {
     "company": "AfterQuery",
     "title": "Security Engineer — Cryptanalysis / Reverse Engineering",
-    "pay": "$100–$170/hr",
+    "pay": "$135/hr",
     "tag": "Remote",
-    "blurb": "We're building a research cohort of senior domain experts in security — spanning cryptanalysis and reverse engineering — to help evaluate how frontier AI models reason about hard,…",
+    "blurb": "<p>We're building a research cohort of senior domain experts in security — spanning cryptanalysis and reverse engineering — to help evaluate how frontier AI models reason about hard,…",
     "url": "https://experts.afterquery.com/apply?job=1785873008661",
     "domain": "Software & Data",
     "posted": "2026-08-04T19:50:08.661Z"
@@ -782,9 +782,9 @@
   {
     "company": "AfterQuery",
     "title": "Mechanical / Hardware Design Engineer",
-    "pay": "$100–$170/hr",
+    "pay": "$135/hr",
     "tag": "Remote",
-    "blurb": "We're building a research cohort of senior domain experts in mechanical and hardware design — spanning CAD, RTL, and robotics — to help evaluate how frontier AI models reason about hard,…",
+    "blurb": "<p>We're building a research cohort of senior domain experts in mechanical and hardware design — spanning CAD, RTL, and robotics — to help evaluate how frontier AI models reason about hard,…",
     "url": "https://experts.afterquery.com/apply?job=1785873200348",
     "domain": "Software & Data",
     "posted": "2026-08-04T19:53:20.348Z"
@@ -792,9 +792,9 @@
   {
     "company": "AfterQuery",
     "title": "Creative Technologist — Audio / Design / UX",
-    "pay": "$100–$170/hr",
+    "pay": "$135/hr",
     "tag": "Remote",
-    "blurb": "We're building a research cohort of senior domain experts in creative technology — spanning audio, design, and UX — to help evaluate how frontier AI models reason about hard, real-world…",
+    "blurb": "<p>We're building a research cohort of senior domain experts in creative technology — spanning audio, design, and UX — to help evaluate how frontier AI models reason about hard, real-world…",
     "url": "https://experts.afterquery.com/apply?job=1785873376268",
     "domain": "Language & Writing",
     "posted": "2026-08-04T19:56:16.268Z"
@@ -802,8 +802,8 @@
   {
     "company": "AfterQuery",
     "title": "Construction Expert",
-    "pay": "$50–$100/hr",
-    "tag": "Featured",
+    "pay": "$75/hr",
+    "tag": "Remote",
     "blurb": "This is a remote, project based role for construction professionals with 1 to 3 years of professional experience.",
     "url": "https://experts.afterquery.com/apply?job=1786408052556",
     "domain": "General & Other",
@@ -812,8 +812,8 @@
   {
     "company": "AfterQuery",
     "title": "Supply Chain Expert",
-    "pay": "$50–$100/hr",
-    "tag": "Featured",
+    "pay": "$75/hr",
+    "tag": "Remote",
     "blurb": "Job Description This is a remote, project based role for supply chain professionals with 1 to 3 years of professional experience.",
     "url": "https://experts.afterquery.com/apply?job=1786408794707",
     "domain": "Business & Finance",
@@ -822,8 +822,8 @@
   {
     "company": "AfterQuery",
     "title": "Insurance Policy Analyst",
-    "pay": "$50–$100/hr",
-    "tag": "Featured",
+    "pay": "$75/hr",
+    "tag": "Remote",
     "blurb": "Job Description This is a remote, project based role for insurance policy professionals with 1 to 3 years of professional experience.",
     "url": "https://experts.afterquery.com/apply?job=1786416388860",
     "domain": "General & Other",
@@ -832,9 +832,9 @@
   {
     "company": "AfterQuery",
     "title": "Contract Manager/ Negotiator",
-    "pay": "$75–$115/hr",
-    "tag": "Featured",
-    "blurb": "Review contract negotiation redlines and assess whether they reflect what competent counsel would actually do. Remote, flexible, paid per task.",
+    "pay": "$150/hr",
+    "tag": "Remote",
+    "blurb": "<p>Review contract negotiation redlines and assess whether they reflect what competent counsel would actually do.",
     "url": "https://experts.afterquery.com/apply?job=1787089488726",
     "domain": "Legal",
     "posted": "2026-08-18T21:44:48.726Z"
@@ -843,8 +843,8 @@
     "company": "AfterQuery",
     "title": "Optics and Photonics Expert",
     "pay": "$100/hr",
-    "tag": "Featured",
-    "blurb": "This is a remote, project-based role for optics and photonics professionals with 1+ years of hands-on experience modeling optical, photonic, or electromagnetic systems.",
+    "tag": "Remote",
+    "blurb": "<p>This is a remote, project-based role for optics and photonics professionals with 1+ years of hands-on experience modeling optical, photonic, or electromagnetic systems.",
     "url": "https://experts.afterquery.com/apply?job=1787180435760",
     "domain": "Software & Data",
     "posted": "2026-08-19T23:00:35.760Z"
@@ -852,9 +852,9 @@
   {
     "company": "AfterQuery",
     "title": "Pharmacy Technician Expert",
-    "pay": "$45–$65/hr",
-    "tag": "Featured",
-    "blurb": "Certified pharmacy technicians to build the medication workflow scenarios frontier AI labs use to test practical accuracy. $45 to $65/hr, remote, async, paid weekly.",
+    "pay": "$55/hr",
+    "tag": "Remote",
+    "blurb": "<p>Certified pharmacy technicians to build the medication workflow scenarios frontier AI labs use to test practical accuracy.</p> <p>AfterQuery builds the expert evaluation data that…",
     "url": "https://experts.afterquery.com/apply?job=1787810649632",
     "domain": "Medical & Healthcare",
     "posted": "2026-08-27T06:04:09.632Z"
@@ -862,9 +862,9 @@
   {
     "company": "AfterQuery",
     "title": "Dentist Expert",
-    "pay": "$100–$155/hr",
-    "tag": "Featured",
-    "blurb": "Licensed dentists to author and grade the clinical dentistry scenarios frontier AI labs use to test model judgment. $100 to $155/hr, remote, async, paid weekly.",
+    "pay": "$127.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>Licensed dentists to author and grade the clinical dentistry scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI…",
     "url": "https://experts.afterquery.com/apply?job=1787810769478",
     "domain": "Medical & Healthcare",
     "posted": "2026-08-27T06:06:09.478Z"
@@ -872,9 +872,9 @@
   {
     "company": "AfterQuery",
     "title": "Veterinarian Expert",
-    "pay": "$95–$145/hr",
-    "tag": "Featured",
-    "blurb": "Licensed veterinarians to author and grade the clinical scenarios frontier AI labs use to test veterinary reasoning. $95 to $145/hr, remote, async, paid weekly.",
+    "pay": "$120/hr",
+    "tag": "Remote",
+    "blurb": "<p>Licensed veterinarians to author and grade the clinical scenarios frontier AI labs use to test veterinary reasoning.</p> <p>AfterQuery builds the expert evaluation data that frontier AI…",
     "url": "https://experts.afterquery.com/apply?job=1787810855764",
     "domain": "Medical & Healthcare",
     "posted": "2026-08-27T06:07:35.764Z"
@@ -882,9 +882,9 @@
   {
     "company": "AfterQuery",
     "title": "Licensed Professional Counselor Expert",
-    "pay": "$65–$100/hr",
-    "tag": "Featured",
-    "blurb": "Licensed counselors (LPC or LMHC) to build the counseling scenarios frontier AI labs use to test model judgment and safety. $65 to $100/hr, remote, async, paid weekly.",
+    "pay": "$82.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>Licensed counselors (LPC or LMHC) to build the counseling scenarios frontier AI labs use to test model judgment and safety.</p> <p>AfterQuery builds the expert evaluation data that…",
     "url": "https://experts.afterquery.com/apply?job=1787811617775",
     "domain": "Medical & Healthcare",
     "posted": "2026-08-27T06:20:17.775Z"
@@ -892,9 +892,9 @@
   {
     "company": "AfterQuery",
     "title": "Nurse Practitioner Expert",
-    "pay": "$80–$125/hr",
-    "tag": "Featured",
-    "blurb": "Board certified nurse practitioners to build the clinical scenarios frontier AI labs use to test model judgment. $80 to $125/hr, remote, async, paid weekly.",
+    "pay": "$102.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>Board certified nurse practitioners to build the clinical scenarios frontier AI labs use to test model judgment.",
     "url": "https://experts.afterquery.com/apply?job=1787811697469",
     "domain": "Medical & Healthcare",
     "posted": "2026-08-27T06:21:37.469Z"
@@ -902,9 +902,9 @@
   {
     "company": "AfterQuery",
     "title": "Radiologic Technologist Expert",
-    "pay": "$55–$85/hr",
-    "tag": "Featured",
-    "blurb": "ARRT certified radiologic technologists to build the imaging scenarios frontier AI labs use to test model judgment. $55 to $85/hr, remote, async, paid weekly.",
+    "pay": "$70/hr",
+    "tag": "Remote",
+    "blurb": "<p>ARRT certified radiologic technologists to build the imaging scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI…",
     "url": "https://experts.afterquery.com/apply?job=1787811833324",
     "domain": "Medical & Healthcare",
     "posted": "2026-08-27T06:23:53.324Z"
@@ -912,9 +912,9 @@
   {
     "company": "AfterQuery",
     "title": "Diagnostic Medical Sonographer Expert",
-    "pay": "$60–$90/hr",
-    "tag": "Featured",
-    "blurb": "ARDMS registered sonographers to build the ultrasound scenarios frontier AI labs use to test model judgment. $60 to $90/hr, remote, async, paid weekly.",
+    "pay": "$75/hr",
+    "tag": "Remote",
+    "blurb": "<p>ARDMS registered sonographers to build the ultrasound scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI labs use…",
     "url": "https://experts.afterquery.com/apply?job=1787811953531",
     "domain": "Medical & Healthcare",
     "posted": "2026-08-27T06:25:53.531Z"
@@ -922,9 +922,9 @@
   {
     "company": "AfterQuery",
     "title": "Medical Laboratory Scientist Expert",
-    "pay": "$65–$95/hr",
-    "tag": "Featured",
-    "blurb": "ASCP certified medical laboratory scientists to build the lab medicine scenarios frontier AI labs use to test model judgment. $65 to $95/hr, remote, async, paid weekly.",
+    "pay": "$80/hr",
+    "tag": "Remote",
+    "blurb": "<p>ASCP certified medical laboratory scientists to build the lab medicine scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that…",
     "url": "https://experts.afterquery.com/apply?job=1787812043762",
     "domain": "Medical & Healthcare",
     "posted": "2026-08-27T06:27:23.762Z"
@@ -932,9 +932,9 @@
   {
     "company": "AfterQuery",
     "title": "Medical Coder Expert",
-    "pay": "$65–$95/hr",
-    "tag": "Featured",
-    "blurb": "Certified medical coders to build the coding and documentation scenarios frontier AI labs use to test model judgment. $65 to $95/hr, remote, async, paid weekly.",
+    "pay": "$80/hr",
+    "tag": "Remote",
+    "blurb": "<p>Certified medical coders to build the coding and documentation scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI…",
     "url": "https://experts.afterquery.com/apply?job=1787812201899",
     "domain": "Medical & Healthcare",
     "posted": "2026-08-27T06:30:01.899Z"
@@ -942,9 +942,9 @@
   {
     "company": "AfterQuery",
     "title": "Health Information Management Expert",
-    "pay": "$70–$95/hr",
-    "tag": "Featured",
-    "blurb": "RHIA and RHIT credentialed HIM professionals to build the health data governance scenarios frontier AI labs use to test model judgment. $70 to $95/hr, remote, async, paid weekly.",
+    "pay": "$82.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>RHIA and RHIT credentialed HIM professionals to build the health data governance scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation…",
     "url": "https://experts.afterquery.com/apply?job=1787812261229",
     "domain": "Medical & Healthcare",
     "posted": "2026-08-27T06:31:01.229Z"
@@ -952,9 +952,9 @@
   {
     "company": "AfterQuery",
     "title": "EMT Expert",
-    "pay": "$40–$65/hr",
-    "tag": "Featured",
-    "blurb": "NREMT certified EMTs to build the prehospital scenarios frontier AI labs use to test model judgment. $40 to $65/hr, remote, async, paid weekly.",
+    "pay": "$52.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>NREMT certified EMTs to build the prehospital scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI labs use to…",
     "url": "https://experts.afterquery.com/apply?job=1787812266706",
     "domain": "Medical & Healthcare",
     "posted": "2026-08-27T06:31:06.706Z"
@@ -962,9 +962,9 @@
   {
     "company": "AfterQuery",
     "title": "Licensed Clinical Social Worker Expert",
-    "pay": "$70–$105/hr",
-    "tag": "Featured",
-    "blurb": "LCSWs to build the clinical social work scenarios frontier AI labs use to test model judgment and safety. $70 to $105/hr, remote, async, paid weekly.",
+    "pay": "$87.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>LCSWs to build the clinical social work scenarios frontier AI labs use to test model judgment and safety.</p> <p>AfterQuery builds the expert evaluation data that frontier AI labs use to…",
     "url": "https://experts.afterquery.com/apply?job=1787812379780",
     "domain": "Medical & Healthcare",
     "posted": "2026-08-27T06:32:59.780Z"
@@ -972,9 +972,9 @@
   {
     "company": "AfterQuery",
     "title": "Paramedic Expert",
-    "pay": "$55–$80/hr",
-    "tag": "Featured",
-    "blurb": "NRP certified paramedics to build the ALS scenarios frontier AI labs use to test model judgment. $55 to $80/hr, remote, async, paid weekly.",
+    "pay": "$67.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>NRP certified paramedics to build the ALS scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI labs use to measure…",
     "url": "https://experts.afterquery.com/apply?job=1787812471410",
     "domain": "Medical & Healthcare",
     "posted": "2026-08-27T06:34:31.410Z"
@@ -982,9 +982,9 @@
   {
     "company": "AfterQuery",
     "title": "Registered Dietitian Expert",
-    "pay": "$60–$90/hr",
-    "tag": "Featured",
-    "blurb": "Registered dietitians to build the clinical nutrition scenarios frontier AI labs use to test model judgment. $60 to $90/hr, remote, async, paid weekly.",
+    "pay": "$75/hr",
+    "tag": "Remote",
+    "blurb": "<p>Registered dietitians to build the clinical nutrition scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI labs use…",
     "url": "https://experts.afterquery.com/apply?job=1787812569545",
     "domain": "Medical & Healthcare",
     "posted": "2026-08-27T06:36:09.545Z"
@@ -992,9 +992,9 @@
   {
     "company": "AfterQuery",
     "title": "Physical Therapist Expert",
-    "pay": "$70–$105/hr",
-    "tag": "Featured",
-    "blurb": "Licensed physical therapists to build the rehab and movement scenarios frontier AI labs use to test model judgment. $70 to $105/hr, remote, async, paid weekly.",
+    "pay": "$87.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>Licensed physical therapists to build the rehab and movement scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI…",
     "url": "https://experts.afterquery.com/apply?job=1787812575079",
     "domain": "Medical & Healthcare",
     "posted": "2026-08-27T06:36:15.079Z"
@@ -1002,9 +1002,9 @@
   {
     "company": "AfterQuery",
     "title": "Case Manager Expert",
-    "pay": "$70–$115/hr",
-    "tag": "Featured",
-    "blurb": "Licensed case managers to build the care coordination scenarios frontier AI labs use to test model judgment. $70 to $115/hr, remote, async, paid weekly.",
+    "pay": "$92.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>Licensed case managers to build the care coordination scenarios frontier AI labs use to test model judgment.",
     "url": "https://experts.afterquery.com/apply?job=1787812666174",
     "domain": "Medical & Healthcare",
     "posted": "2026-08-27T06:37:46.174Z"
@@ -1012,9 +1012,9 @@
   {
     "company": "AfterQuery",
     "title": "Occupational Therapist Expert",
-    "pay": "$70–$105/hr",
-    "tag": "Featured",
-    "blurb": "Licensed occupational therapists to build the functional and daily living scenarios frontier AI labs use to test model judgment. $70 to $105/hr, remote, async, paid weekly.",
+    "pay": "$87.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>Licensed occupational therapists to build the functional and daily living scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that…",
     "url": "https://experts.afterquery.com/apply?job=1787812723622",
     "domain": "Medical & Healthcare",
     "posted": "2026-08-27T06:38:43.622Z"
@@ -1022,9 +1022,9 @@
   {
     "company": "AfterQuery",
     "title": "Healthcare Quality Specialist Expert",
-    "pay": "$80–$120/hr",
-    "tag": "Featured",
-    "blurb": "Healthcare quality professionals to build the patient safety and quality scenarios frontier AI labs use to test model judgment. $80 to $120/hr, remote, async, paid weekly.",
+    "pay": "$100/hr",
+    "tag": "Remote",
+    "blurb": "<p>Healthcare quality professionals to build the patient safety and quality scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that…",
     "url": "https://experts.afterquery.com/apply?job=1787812728795",
     "domain": "Medical & Healthcare",
     "posted": "2026-08-27T06:38:48.795Z"
@@ -1032,9 +1032,9 @@
   {
     "company": "AfterQuery",
     "title": "Psychologist Expert",
-    "pay": "$90–$155/hr",
-    "tag": "Featured",
-    "blurb": "Licensed psychologists to build the clinical and behavioral scenarios frontier AI labs use to test model judgment and safety. $90 to $155/hr, remote, async, paid weekly.",
+    "pay": "$122.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>Licensed psychologists to build the clinical and behavioral scenarios frontier AI labs use to test model judgment and safety.</p> <p>AfterQuery builds the expert evaluation data that…",
     "url": "https://experts.afterquery.com/apply?job=1787812773781",
     "domain": "Medical & Healthcare",
     "posted": "2026-08-27T06:39:33.781Z"
@@ -1042,9 +1042,9 @@
   {
     "company": "AfterQuery",
     "title": "Speech Language Pathologist Expert",
-    "pay": "$70–$105/hr",
-    "tag": "Featured",
-    "blurb": "ASHA certified speech language pathologists to build the communication and swallowing scenarios frontier AI labs use to test model judgment. $70 to $105/hr, remote, async, paid weekly.",
+    "pay": "$87.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>ASHA certified speech language pathologists to build the communication and swallowing scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert…",
     "url": "https://experts.afterquery.com/apply?job=1787812794885",
     "domain": "Medical & Healthcare",
     "posted": "2026-08-27T06:39:54.885Z"
@@ -1052,9 +1052,9 @@
   {
     "company": "AfterQuery",
     "title": "Respiratory Therapist Expert",
-    "pay": "$60–$90/hr",
-    "tag": "Featured",
-    "blurb": "Registered respiratory therapists to build the airway and ventilation scenarios frontier AI labs use to test model judgment. $60 to $90/hr, remote, async, paid weekly.",
+    "pay": "$75/hr",
+    "tag": "Remote",
+    "blurb": "<p>Registered respiratory therapists to build the airway and ventilation scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that…",
     "url": "https://experts.afterquery.com/apply?job=1787812820819",
     "domain": "Medical & Healthcare",
     "posted": "2026-08-27T06:40:20.819Z"
@@ -1062,9 +1062,9 @@
   {
     "company": "AfterQuery",
     "title": "Education Expert",
-    "pay": "$35–$70/hr",
-    "tag": "Featured",
-    "blurb": "Experienced classroom teachers to build the pedagogy and lesson scenarios frontier AI labs use to test model judgment. $35 to $70/hr, remote, async, paid weekly.",
+    "pay": "$52.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>Experienced classroom teachers to build the pedagogy and lesson scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier…",
     "url": "https://experts.afterquery.com/apply?job=1787814324197",
     "domain": "General & Other",
     "posted": "2026-08-27T07:05:24.197Z"
@@ -1072,9 +1072,9 @@
   {
     "company": "AfterQuery",
     "title": "Elementary School Teacher Expert",
-    "pay": "$35–$65/hr",
-    "tag": "Featured",
-    "blurb": "Primary education teachers to build the elementary classroom scenarios frontier AI labs use to test model judgment. $35 to $65/hr, remote, async, paid weekly.",
+    "pay": "$50/hr",
+    "tag": "Remote",
+    "blurb": "<p>Primary education teachers to build the elementary classroom scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI…",
     "url": "https://experts.afterquery.com/apply?job=1787814536585",
     "domain": "General & Other",
     "posted": "2026-08-27T07:08:56.585Z"
@@ -1082,9 +1082,9 @@
   {
     "company": "AfterQuery",
     "title": "Mathematics Teacher Expert",
-    "pay": "$45–$80/hr",
-    "tag": "Featured",
-    "blurb": "Mathematics teachers to build the math instruction scenarios frontier AI labs use to test model judgment. $45 to $80/hr, remote, async, paid weekly.",
+    "pay": "$62.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>Mathematics teachers to build the math instruction scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI labs use to…",
     "url": "https://experts.afterquery.com/apply?job=1787815071304",
     "domain": "General & Other",
     "posted": "2026-08-27T07:17:51.304Z"
@@ -1092,9 +1092,9 @@
   {
     "company": "AfterQuery",
     "title": "Science Teacher Expert",
-    "pay": "$45–$75/hr",
-    "tag": "Featured",
-    "blurb": "Science teachers to build the science instruction scenarios frontier AI labs use to test model judgment. $45 to $75/hr, remote, async, paid weekly.",
+    "pay": "$60/hr",
+    "tag": "Remote",
+    "blurb": "<p>Science teachers to build the science instruction scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI labs use to…",
     "url": "https://experts.afterquery.com/apply?job=1787815490935",
     "domain": "General & Other",
     "posted": "2026-08-27T07:24:50.935Z"
@@ -1102,9 +1102,9 @@
   {
     "company": "AfterQuery",
     "title": "English Teacher Expert",
-    "pay": "$35–$65/hr",
-    "tag": "Featured",
-    "blurb": "English teachers to build the reading and writing instruction scenarios frontier AI labs use to test model judgment. $35 to $65/hr, remote, async, paid weekly.",
+    "pay": "$50/hr",
+    "tag": "Remote",
+    "blurb": "<p>English teachers to build the reading and writing instruction scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI…",
     "url": "https://experts.afterquery.com/apply?job=1787815803837",
     "domain": "General & Other",
     "posted": "2026-08-27T07:30:03.837Z"
@@ -1112,9 +1112,9 @@
   {
     "company": "AfterQuery",
     "title": "Special Education Teacher Expert",
-    "pay": "$40–$70/hr",
-    "tag": "Featured",
-    "blurb": "Special education teachers to build the IEP and intervention scenarios frontier AI labs use to test model judgment. $40 to $70/hr, remote, async, paid weekly.",
+    "pay": "$55/hr",
+    "tag": "Remote",
+    "blurb": "<p>Special education teachers to build the IEP and intervention scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI…",
     "url": "https://experts.afterquery.com/apply?job=1787816376655",
     "domain": "General & Other",
     "posted": "2026-08-27T07:39:36.655Z"
@@ -1122,11 +1122,1001 @@
   {
     "company": "AfterQuery",
     "title": "Court Interpreter Expert",
-    "pay": "$60–$100/hr",
-    "tag": "Featured",
-    "blurb": "Certified court interpreters to build the legal interpretation scenarios frontier AI labs use to test model judgment. $60 to $100/hr, remote, async, paid weekly.",
+    "pay": "$80/hr",
+    "tag": "Remote",
+    "blurb": "<p>Certified court interpreters to build the legal interpretation scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI…",
     "url": "https://experts.afterquery.com/apply?job=1787856613390",
     "domain": "Language & Writing",
     "posted": "2026-08-27T18:50:13.390Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Medical Interpreter Expert",
+    "pay": "$75/hr",
+    "tag": "Remote",
+    "blurb": "<p>Certified medical interpreters to build the clinical interpretation scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that…",
+    "url": "https://experts.afterquery.com/apply?job=1787856799874",
+    "domain": "Language & Writing",
+    "posted": "2026-08-27T18:53:19.874Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "ESL Teacher Expert",
+    "pay": "$52.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>ESL teachers to build the language learning scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI labs use to…",
+    "url": "https://experts.afterquery.com/apply?job=1787856997720",
+    "domain": "General & Other",
+    "posted": "2026-08-27T18:56:37.720Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Indian/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>Bilingual speakers of Indian languages and English to record and review the speech data frontier AI labs train and evaluate on.</p> <p>AfterQuery builds the expert evaluation data that…",
+    "url": "https://experts.afterquery.com/apply?job=1787857219483",
+    "domain": "Language & Writing",
+    "posted": "2026-08-27T19:00:19.483Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Patent Attorney Expert",
+    "pay": "$117.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>Patent attorneys to build the claim drafting and prosecution scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI…",
+    "url": "https://experts.afterquery.com/apply?job=1787857514912",
+    "domain": "Legal",
+    "posted": "2026-08-27T19:05:14.912Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Patent Agent Expert",
+    "pay": "$107.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>USPTO registered patent agents to build the claim drafting and prosecution scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that…",
+    "url": "https://experts.afterquery.com/apply?job=1787857762538",
+    "domain": "Legal",
+    "posted": "2026-08-27T19:09:22.538Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Notary Public Expert",
+    "pay": "$47.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>Commissioned notaries public to build the notarization and document execution scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data…",
+    "url": "https://experts.afterquery.com/apply?job=1787857989238",
+    "domain": "Legal",
+    "posted": "2026-08-27T19:13:09.238Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Real Estate Broker Expert",
+    "pay": "$100/hr",
+    "tag": "Remote",
+    "blurb": "<p>Licensed real estate brokers to build the transaction scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI labs use…",
+    "url": "https://experts.afterquery.com/apply?job=1787859426155",
+    "domain": "Business & Finance",
+    "posted": "2026-08-27T19:37:06.155Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Mortgage Loan Officer Expert",
+    "pay": "$87.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>NMLS licensed mortgage loan officers to build the origination scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI…",
+    "url": "https://experts.afterquery.com/apply?job=1787859660917",
+    "domain": "Business & Finance",
+    "posted": "2026-08-27T19:41:00.917Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Chartered Accountant Expert",
+    "pay": "$105/hr",
+    "tag": "Remote",
+    "blurb": "<p>Chartered accountants to build the financial reporting and audit scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier…",
+    "url": "https://experts.afterquery.com/apply?job=1787861653968",
+    "domain": "Business & Finance",
+    "posted": "2026-08-27T20:14:13.968Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Information Security Analyst Expert",
+    "pay": "$112.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>Security analysts to build the detection and incident response scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI…",
+    "url": "https://experts.afterquery.com/apply?job=1787863131024",
+    "domain": "Software & Data",
+    "posted": "2026-08-27T20:38:51.024Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "IT Support Specialist Expert",
+    "pay": "$62.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>IT support specialists to build the troubleshooting scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI labs use…",
+    "url": "https://experts.afterquery.com/apply?job=1787863409184",
+    "domain": "Software & Data",
+    "posted": "2026-08-27T20:43:29.184Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Network Engineer Expert",
+    "pay": "$100/hr",
+    "tag": "Remote",
+    "blurb": "<p>Network engineers to build the routing, switching, and troubleshooting scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that…",
+    "url": "https://experts.afterquery.com/apply?job=1787863700635",
+    "domain": "Software & Data",
+    "posted": "2026-08-27T20:48:20.635Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Cloud Engineer Expert",
+    "pay": "$125/hr",
+    "tag": "Remote",
+    "blurb": "<p>Cloud engineers to build the infrastructure and automation scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI…",
+    "url": "https://experts.afterquery.com/apply?job=1787863980010",
+    "domain": "Software & Data",
+    "posted": "2026-08-27T20:53:00.010Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Project Manager Expert",
+    "pay": "$102.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>Project managers to build the planning and delivery scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI labs use…",
+    "url": "https://experts.afterquery.com/apply?job=1787864267948",
+    "domain": "Business & Finance",
+    "posted": "2026-08-27T20:57:47.948Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Scrum Master Expert",
+    "pay": "$90/hr",
+    "tag": "Remote",
+    "blurb": "<p>Scrum masters to build the agile delivery scenarios frontier AI labs use to test model judgment.",
+    "url": "https://experts.afterquery.com/apply?job=1787864560097",
+    "domain": "Software & Data",
+    "posted": "2026-08-27T21:02:40.097Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Electrical Engineer Expert",
+    "pay": "$112.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>Electrical engineers to build the design and analysis scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI labs use…",
+    "url": "https://experts.afterquery.com/apply?job=1787865145090",
+    "domain": "Software & Data",
+    "posted": "2026-08-27T21:12:25.090Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Professional Engineer Expert",
+    "pay": "$147.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>Licensed professional engineers to build the design and review scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI…",
+    "url": "https://experts.afterquery.com/apply?job=1787865392425",
+    "domain": "Software & Data",
+    "posted": "2026-08-27T21:16:32.425Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Structural Engineer Expert",
+    "pay": "$152.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>Structural engineers to build the analysis and design scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI labs use…",
+    "url": "https://experts.afterquery.com/apply?job=1787865653225",
+    "domain": "Software & Data",
+    "posted": "2026-08-27T21:20:53.225Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Chemical Engineer Expert",
+    "pay": "$115/hr",
+    "tag": "Remote",
+    "blurb": "<p>Chemical engineers to build the process design and safety scenarios frontier AI labs use to test model judgment.",
+    "url": "https://experts.afterquery.com/apply?job=1787865937469",
+    "domain": "Software & Data",
+    "posted": "2026-08-27T21:25:37.469Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Architect Expert",
+    "pay": "$112.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>Architects to build the design and documentation scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI labs use to…",
+    "url": "https://experts.afterquery.com/apply?job=1787866191443",
+    "domain": "Design & Creative",
+    "posted": "2026-08-27T21:29:51.443Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Aerospace Engineer Expert",
+    "pay": "$115/hr",
+    "tag": "Remote",
+    "blurb": "<p>Aerospace engineers to build the design and analysis scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI labs use…",
+    "url": "https://experts.afterquery.com/apply?job=1787866882166",
+    "domain": "Software & Data",
+    "posted": "2026-08-27T21:41:22.166Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Materials Science and Engineering Expert",
+    "pay": "$115/hr",
+    "tag": "Remote",
+    "blurb": "<p>Materials scientists and engineers to build the selection and failure analysis scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data…",
+    "url": "https://experts.afterquery.com/apply?job=1787867141875",
+    "domain": "Software & Data",
+    "posted": "2026-08-27T21:45:41.875Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "BI & Data Visualization Expert",
+    "pay": "$70/hr",
+    "tag": "Remote",
+    "blurb": "<p>BI and data visualization experts in Tableau, Power BI, and Looker to build the dashboard scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert…",
+    "url": "https://experts.afterquery.com/apply?job=1787867750093",
+    "domain": "Software & Data",
+    "posted": "2026-08-27T21:55:50.093Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Statistician & Experimentation Expert",
+    "pay": "$115/hr",
+    "tag": "Remote",
+    "blurb": "<p>Statisticians and experimentation experts in causal inference and A/B testing to build the scenarios frontier AI labs use to test model reasoning.</p> <p>AfterQuery builds the expert…",
+    "url": "https://experts.afterquery.com/apply?job=1787868019800",
+    "domain": "Software & Data",
+    "posted": "2026-08-27T22:00:19.800Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "SQL & Analytics Engineer Expert",
+    "pay": "$80/hr",
+    "tag": "Remote",
+    "blurb": "<p>Analytics engineers who live in dbt, BigQuery, and Snowflake to build the SQL scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data…",
+    "url": "https://experts.afterquery.com/apply?job=1787868288127",
+    "domain": "Software & Data",
+    "posted": "2026-08-27T22:04:48.127Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "UI/UX Designer Expert",
+    "pay": "$90/hr",
+    "tag": "Remote",
+    "blurb": "<p>UI/UX designers to build the design evaluation and Figma workflow scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier…",
+    "url": "https://experts.afterquery.com/apply?job=1787868808825",
+    "domain": "Design & Creative",
+    "posted": "2026-08-27T22:13:28.825Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Graphic Designer Expert",
+    "pay": "$60/hr",
+    "tag": "Remote",
+    "blurb": "<p>Graphic designers with brand and typography depth to rate and prompt the image generation work frontier AI labs run.</p> <p>AfterQuery builds the expert evaluation data that frontier AI…",
+    "url": "https://experts.afterquery.com/apply?job=1787868988606",
+    "domain": "Design & Creative",
+    "posted": "2026-08-27T22:16:28.606Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Video Editor & Post Production Expert",
+    "pay": "$70/hr",
+    "tag": "Remote",
+    "blurb": "<p>Video editors in Premiere, DaVinci Resolve, and After Effects to evaluate video generation and demonstrate timeline workflows for frontier AI labs.</p> <p>AfterQuery builds the expert…",
+    "url": "https://experts.afterquery.com/apply?job=1787869185112",
+    "domain": "Design & Creative",
+    "posted": "2026-08-27T22:19:45.112Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Certified Financial Planner Expert",
+    "pay": "$107.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>CFP professionals to build the financial planning scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI labs use to…",
+    "url": "https://experts.afterquery.com/apply?job=1787869365896",
+    "domain": "Business & Finance",
+    "posted": "2026-08-27T22:22:45.896Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Fraud Investigator Expert",
+    "pay": "$77.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>Fraud investigators across payments, insurance, AML, and corporate cases to build the investigation scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the…",
+    "url": "https://experts.afterquery.com/apply?job=1787869574798",
+    "domain": "Business & Finance",
+    "posted": "2026-08-27T22:26:14.798Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Corporate & M&A Attorney Expert",
+    "pay": "$150/hr",
+    "tag": "Remote",
+    "blurb": "<p>Corporate and M&A attorneys to build the deal, diligence, and board governance scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data…",
+    "url": "https://experts.afterquery.com/apply?job=1787871022336",
+    "domain": "Legal",
+    "posted": "2026-08-27T22:50:22.336Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Litigation Attorney Expert",
+    "pay": "$150/hr",
+    "tag": "Remote",
+    "blurb": "<p>Litigators to build the motions, discovery, and procedural reasoning scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that…",
+    "url": "https://experts.afterquery.com/apply?job=1787871215394",
+    "domain": "Legal",
+    "posted": "2026-08-27T22:53:35.394Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Tax Attorney Expert",
+    "pay": "$160/hr",
+    "tag": "Remote",
+    "blurb": "<p>Tax attorneys to build the tax law reasoning scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI labs use to…",
+    "url": "https://experts.afterquery.com/apply?job=1787871382784",
+    "domain": "Legal",
+    "posted": "2026-08-27T22:56:22.784Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Biology Expert",
+    "pay": "$90/hr",
+    "tag": "Remote",
+    "blurb": "<p>Biologists to build the life science scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI labs use to measure and…",
+    "url": "https://experts.afterquery.com/apply?job=1787871589704",
+    "domain": "Science & STEM",
+    "posted": "2026-08-27T22:59:49.704Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Biochemistry & Molecular Biology Expert",
+    "pay": "$90/hr",
+    "tag": "Remote",
+    "blurb": "<p>Biochemists and molecular biologists to build the mechanism level life science scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data…",
+    "url": "https://experts.afterquery.com/apply?job=1787871788352",
+    "domain": "Science & STEM",
+    "posted": "2026-08-27T23:03:08.352Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Psychology Research Expert",
+    "pay": "$90/hr",
+    "tag": "Remote",
+    "blurb": "<p>Psychology researchers to build the behavioral science scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier AI labs…",
+    "url": "https://experts.afterquery.com/apply?job=1787871955830",
+    "domain": "Science & STEM",
+    "posted": "2026-08-27T23:05:55.830Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Earth Science & Geology Expert",
+    "pay": "$85/hr",
+    "tag": "Remote",
+    "blurb": "<p>Geologists and earth scientists to build the geoscience and climate scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that…",
+    "url": "https://experts.afterquery.com/apply?job=1787872119978",
+    "domain": "Science & STEM",
+    "posted": "2026-08-27T23:08:39.978Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Philosophy Expert",
+    "pay": "$75/hr",
+    "tag": "Remote",
+    "blurb": "<p>Philosophers to build the argument analysis and ethical reasoning scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier…",
+    "url": "https://experts.afterquery.com/apply?job=1787873305334",
+    "domain": "Language & Writing",
+    "posted": "2026-08-27T23:28:25.334Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "History Expert",
+    "pay": "$75/hr",
+    "tag": "Remote",
+    "blurb": "<p>Historians to build the source analysis and historical reasoning scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier…",
+    "url": "https://experts.afterquery.com/apply?job=1787873468918",
+    "domain": "Language & Writing",
+    "posted": "2026-08-27T23:31:08.918Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Literature Expert",
+    "pay": "$75/hr",
+    "tag": "Remote",
+    "blurb": "<p>Literary scholars to build the close reading and interpretation scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that frontier…",
+    "url": "https://experts.afterquery.com/apply?job=1787873635802",
+    "domain": "Language & Writing",
+    "posted": "2026-08-27T23:33:55.802Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Linguistics Expert",
+    "pay": "$75/hr",
+    "tag": "Remote",
+    "blurb": "<p>Linguists to build the language analysis scenarios frontier AI labs use to test model judgment on syntax, semantics, and phonology.</p> <p>AfterQuery builds the expert evaluation data…",
+    "url": "https://experts.afterquery.com/apply?job=1787873802551",
+    "domain": "Language & Writing",
+    "posted": "2026-08-27T23:36:42.551Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Physician Assistant Expert",
+    "pay": "$100/hr",
+    "tag": "Remote",
+    "blurb": "<p>PA-C certified physician assistants to build the clinical reasoning scenarios frontier AI labs use to test model judgment.</p> <p>AfterQuery builds the expert evaluation data that…",
+    "url": "https://experts.afterquery.com/apply?job=1787873971715",
+    "domain": "Medical & Healthcare",
+    "posted": "2026-08-27T23:39:31.715Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Electrician Expert",
+    "pay": "$70/hr",
+    "tag": "Remote",
+    "blurb": "<p>Licensed electricians to build the troubleshooting and code compliance scenarios frontier AI labs use to test model judgment on real trade work.</p> <p>AfterQuery builds the expert…",
+    "url": "https://experts.afterquery.com/apply?job=1787874148965",
+    "domain": "General & Other",
+    "posted": "2026-08-27T23:42:28.965Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Plumber Expert",
+    "pay": "$70/hr",
+    "tag": "Remote",
+    "blurb": "<p>Licensed plumbers to build the diagnosis and code compliance scenarios frontier AI labs use to test model judgment on real trade work.",
+    "url": "https://experts.afterquery.com/apply?job=1787874320731",
+    "domain": "General & Other",
+    "posted": "2026-08-27T23:45:20.731Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "HVAC Expert",
+    "pay": "$70/hr",
+    "tag": "Remote",
+    "blurb": "<p>Licensed HVAC technicians to build the diagnosis and system design scenarios frontier AI labs use to test model judgment on real trade work.</p> <p>AfterQuery builds the expert…",
+    "url": "https://experts.afterquery.com/apply?job=1787874501482",
+    "domain": "General & Other",
+    "posted": "2026-08-27T23:48:21.482Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Product Manager Expert",
+    "pay": "$85/hr",
+    "tag": "Remote",
+    "blurb": "<p>Product managers to build the product judgment scenarios frontier AI labs use to test model reasoning on prioritization, specs, and strategy.</p> <p>AfterQuery builds the expert…",
+    "url": "https://experts.afterquery.com/apply?job=1787874681534",
+    "domain": "Business & Finance",
+    "posted": "2026-08-27T23:51:21.534Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Registered Nurse Expert",
+    "pay": "$67.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>Registered nurses build expert-level evaluation and training data for frontier AI labs.",
+    "url": "https://experts.afterquery.com/apply?job=1787954983734",
+    "domain": "Medical & Healthcare",
+    "posted": "2026-08-28T22:09:43.734Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Actuary Expert",
+    "pay": "$115/hr",
+    "tag": "Remote",
+    "blurb": "Credentialed actuaries build expert-level evaluation and training data for frontier AI labs. Paid hourly, fully remote, fully async.",
+    "url": "https://experts.afterquery.com/apply?job=1787955210025",
+    "domain": "Business & Finance",
+    "posted": "2026-08-28T22:13:30.025Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Quantitative Analyst Expert",
+    "pay": "$175/hr",
+    "tag": "Remote",
+    "blurb": "<p>Quantitative researchers and analysts build expert-level evaluation and training data for frontier AI labs.</p> <p>AfterQuery partners with frontier AI labs to build expert-level…",
+    "url": "https://experts.afterquery.com/apply?job=1787955585782",
+    "domain": "Business & Finance",
+    "posted": "2026-08-28T22:19:45.782Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Environmental Scientist & Engineer Expert",
+    "pay": "$100/hr",
+    "tag": "Remote",
+    "blurb": "<p>Environmental scientists and engineers build expert-level evaluation and training data for frontier AI labs.</p> <p>AfterQuery partners with frontier AI labs to build expert-level…",
+    "url": "https://experts.afterquery.com/apply?job=1787955754038",
+    "domain": "Software & Data",
+    "posted": "2026-08-28T22:22:34.038Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Biomedical Engineer Expert",
+    "pay": "$107.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>Biomedical engineers build expert-level evaluation and training data for frontier AI labs.</p> <p>AfterQuery partners with frontier AI labs to build expert-level evaluation and training…",
+    "url": "https://experts.afterquery.com/apply?job=1787955907274",
+    "domain": "Software & Data",
+    "posted": "2026-08-28T22:25:07.274Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Technical Writer Expert",
+    "pay": "$67.5/hr",
+    "tag": "Remote",
+    "blurb": "<p>Technical writers build expert-level evaluation and training data for frontier AI labs.</p> <p>AfterQuery partners with frontier AI labs to build expert-level evaluation and training…",
+    "url": "https://experts.afterquery.com/apply?job=1787956066649",
+    "domain": "General & Other",
+    "posted": "2026-08-28T22:27:46.649Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Health Economics Expert",
+    "pay": "$120/hr",
+    "tag": "Remote",
+    "blurb": "<p>AfterQuery builds the expert evaluation data that frontier AI labs use to measure and improve their models.",
+    "url": "https://experts.afterquery.com/apply?job=1787963033761",
+    "domain": "Medical & Healthcare",
+    "posted": "2026-08-29T00:23:53.761Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Portuguese/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Portuguese-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788460551456",
+    "domain": "Language & Writing",
+    "posted": "2026-09-03T18:35:51.456Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Spanish/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Spanish-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788460624080",
+    "domain": "Language & Writing",
+    "posted": "2026-09-03T18:37:04.080Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Dutch/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Dutch-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788460682229",
+    "domain": "Language & Writing",
+    "posted": "2026-09-03T18:38:02.229Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Scientific Computing Research Expert",
+    "pay": "$75/hr",
+    "tag": "Remote",
+    "blurb": "<p>Author research-grade AI evaluation tasks from your own computational work.",
+    "url": "https://experts.afterquery.com/apply?job=1788482163002",
+    "domain": "Science & STEM",
+    "posted": "2026-09-04T00:36:03.002Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Polish/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Polish-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788506721269",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:25:21.269Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Russian/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Russian-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507118526",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:31:58.526Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Czech/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Czech-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507221510",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:33:41.510Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Romanian/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Romanian-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507273619",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:34:33.619Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Hungarian/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Hungarian-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507336602",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:35:36.602Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Greek/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Greek-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507364875",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:36:04.875Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Finnish/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Finnish-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507381682",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:36:21.682Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Lithuanian/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Lithuanian-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507413666",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:36:53.666Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Danish/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Danish-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507430596",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:37:10.596Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Swedish/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Swedish-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507448610",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:37:28.610Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Latvian/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Latvian-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507479626",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:37:59.626Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Croatian/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Croatian-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507495621",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:38:15.621Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Estonian/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Estonian-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507511692",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:38:31.692Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Bulgarian/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Bulgarian-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507547615",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:39:07.615Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Slovak/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Slovak-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507564666",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:39:24.666Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Slovenian/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Slovenian-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507580728",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:39:40.728Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Maltese/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Maltese-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507596623",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:39:56.623Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Ukrainian/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Ukrainian-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507634612",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:40:34.612Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Arabic/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Arabic-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507651627",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:40:51.627Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Hebrew/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Hebrew-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507667973",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:41:07.973Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Thai/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Thai-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507683667",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:41:23.667Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Tamil/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Tamil-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507700642",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:41:40.642Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Marathi/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Marathi-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507739664",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:42:19.664Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Bengali/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Bengali-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507756624",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:42:36.624Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Kannada/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Kannada-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507772630",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:42:52.630Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Telugu/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Telugu-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507789635",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:43:09.635Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Malayalam/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Malayalam-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507806716",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:43:26.716Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Gujarati/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Gujarati-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507822697",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:43:42.697Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Urdu/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Urdu-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507863769",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:44:23.769Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Punjabi/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Punjabi-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507879667",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:44:39.667Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Indonesian/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Indonesian-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507896657",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:44:56.657Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Vietnamese/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Vietnamese-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507913721",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:45:13.721Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Turkish/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Turkish-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507930643",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:45:30.643Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Filipino/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Filipino-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507946621",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:45:46.621Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Bilingual Audio Contributor (Persian/English)",
+    "pay": "$30/hr",
+    "tag": "Remote",
+    "blurb": "<p>We have a new quick-turnaround audio project and are looking for authentic Persian-accented English speakers to join as voice contributors.",
+    "url": "https://experts.afterquery.com/apply?job=1788507963597",
+    "domain": "Language & Writing",
+    "posted": "2026-09-04T07:46:03.597Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "ML Research Expert — Published First Author (Benchmark Authoring)",
+    "pay": "$150/hr",
+    "tag": "Remote",
+    "blurb": "<p>Paid, remote work authoring and validating research-grade ML benchmark tasks.",
+    "url": "https://experts.afterquery.com/apply?job=1789506215159",
+    "domain": "Software & Data",
+    "posted": "2026-09-15T21:03:35.159Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Finance Expert",
+    "pay": "$175/hr",
+    "tag": "Remote",
+    "blurb": "<p>Practitioner finance experts to write and review real world finance scenarios and grade how AI models handle them.</p> <p>AfterQuery works with leading AI labs to improve how their…",
+    "url": "https://experts.afterquery.com/apply?job=1789678456797",
+    "domain": "Business & Finance",
+    "posted": "2026-09-17T20:54:16.797Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Contract Attorney / Commercial Counsel",
+    "pay": "$150/hr",
+    "tag": "Remote",
+    "blurb": "<p>Review contract negotiation redlines and assess whether they reflect what competent counsel would actually do.",
+    "url": "https://experts.afterquery.com/apply?job=1790633804933",
+    "domain": "Legal",
+    "posted": "2026-09-28T22:16:44.933Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Scientific Researcher (Computational Task Author)",
+    "pay": "$60/hr",
+    "tag": "Remote",
+    "blurb": "<p>Author research-grade AI evaluation tasks from your own computational work.",
+    "url": "https://experts.afterquery.com/apply?job=1790900287521",
+    "domain": "Science & STEM",
+    "posted": "2026-10-02T00:18:07.521Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Psychologist Expert (Clinical Review)",
+    "pay": "$90/hr",
+    "tag": "Remote",
+    "blurb": "<p>Licensed psychologists to review how AI models handle clinical psychology scenarios, and help write realistic cases.</p><p>AfterQuery builds the expert evaluation data that frontier AI…",
+    "url": "https://experts.afterquery.com/apply?job=1791259919397",
+    "domain": "Medical & Healthcare",
+    "posted": "2026-10-06T04:11:59.397Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Psychiatrist Expert (Clinical Review)",
+    "pay": "$125/hr",
+    "tag": "Remote",
+    "blurb": "<p>Licensed psychiatrists to review how AI models handle psychiatric cases, and help write realistic cases.</p><p>AfterQuery builds the expert evaluation data that frontier AI labs use to…",
+    "url": "https://experts.afterquery.com/apply?job=1791260295385",
+    "domain": "Medical & Healthcare",
+    "posted": "2026-10-06T04:18:15.385Z"
+  },
+  {
+    "company": "AfterQuery",
+    "title": "Fenrir Security Researcher",
+    "pay": "$100/hr",
+    "tag": "Remote",
+    "blurb": "Find real vulnerabilities in private repositories and turn them into difficulty-probed cybersecurity tasks for frontier LLMs.",
+    "url": "https://experts.afterquery.com/apply?job=QypySltJ17L3pCZtzKha",
+    "domain": "Software & Data",
+    "posted": null
   }
 ]
