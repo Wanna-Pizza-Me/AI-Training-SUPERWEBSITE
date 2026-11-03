@@ -9,7 +9,10 @@ const path = require('path');
 const { relativeAge } = require('./posted-date');
 
 const dir = __dirname;
-const SITE_URL = 'https://ai-training-superwebsite.vercel.app';
+// The custom domain, not the *.vercel.app one: this feeds the canonical tag,
+// og:url, robots.txt and sitemap.xml, and search engines index whichever host
+// those name. vercel.json 308-redirects the vercel.app host here.
+const SITE_URL = 'https://www.oneaitrainer.com';
 
 const template = fs.readFileSync(path.join(dir, 'index.template.html'), 'utf8');
 const mercorJobs = JSON.parse(fs.readFileSync(path.join(dir, 'jobs-mercor.json'), 'utf8'));
@@ -170,6 +173,103 @@ function cardHTML(job) {
 
 const jobCardsHTML = JOBS.map(cardHTML).join('');
 
+/* =========================================================================
+   FAQ + STRUCTURED DATA
+   One source for both the visible FAQ section and its FAQPage JSON-LD, so
+   the two can't drift apart (Google ignores FAQ markup that doesn't match
+   what's on the page). The pay answer is computed from the live listings
+   rather than hard-coded, since the mix of roles changes daily.
+   ========================================================================= */
+function hourlyPayRange(jobs) {
+  // Ignore implausible values: a few sources occasionally put an annual
+  // figure in an hourly field, which would wreck a max.
+  const lows = [];
+  const highs = [];
+  for (const j of jobs) {
+    if (!/\/hr/.test(j.pay || '')) continue;
+    const nums = [...j.pay.matchAll(/\$([\d.]+)/g)].map(m => parseFloat(m[1])).filter(n => n > 0 && n < 1000);
+    if (!nums.length) continue;
+    lows.push(nums[0]);
+    highs.push(nums[nums.length - 1]);
+  }
+  if (lows.length < 20) return null;
+  const sortNum = a => a.sort((x, y) => x - y);
+  const pct = (a, p) => a[Math.floor((a.length - 1) * p)];
+  const round5 = n => Math.max(5, Math.round(n / 5) * 5);
+  sortNum(lows);
+  sortNum(highs);
+  return { p10: round5(pct(lows, 0.1)), p90: round5(pct(highs, 0.9)), median: round5(pct(highs, 0.5)) };
+}
+
+const COMPANY_NAMES = [...new Set(JOBS.map(j => j.company))];
+const companyList = COMPANY_NAMES.slice(0, -1).join(', ') + ' and ' + COMPANY_NAMES.at(-1);
+const payRange = hourlyPayRange(JOBS);
+
+const FAQ = [
+  {
+    q: 'What is an AI training job?',
+    a: 'AI training jobs are paid freelance or contract roles where you help AI labs improve their models: writing prompts and test questions, judging and correcting model answers, annotating data, or building expert tasks in your field. Almost all of them are remote and paid by the hour.',
+  },
+  {
+    q: 'How much do AI training jobs pay?',
+    a: payRange
+      ? `Each company sets its own rate, and every listing here shows it. Across the hourly roles listed right now, most pay between about $${payRange.p10} and $${payRange.p90} an hour, with a typical top-of-range rate around $${payRange.median}/hr. Generalist work pays least; roles that need medical, legal, finance, engineering or PhD-level expertise pay the most.`
+      : 'Each company sets its own rate, and every listing here shows it. Generalist work pays least; roles that need medical, legal, finance, engineering or PhD-level expertise pay the most.',
+  },
+  {
+    q: 'Which companies are listed?',
+    a: `${companyList}. Listings are pulled from each company's own public job feed and refreshed daily, so the list stays current without anyone re-posting it by hand.`,
+  },
+  {
+    q: 'Do I need experience to get an AI training job?',
+    a: 'It depends on the role. Many listings want specific expertise, like a degree, a professional license or several years in the field, while generalist and language roles mainly need strong writing and attention to detail. Each company runs its own application and skills assessment.',
+  },
+  {
+    q: 'Is One AI Trainer free, and is it affiliated with these companies?',
+    a: 'It is free with no sign-up. One AI Trainer is an independent aggregator, not affiliated with any company listed. Every "Apply" link goes straight to the company\'s own application page, and some links include a referral code.',
+  },
+];
+
+const faqHTML = FAQ.map(
+  ({ q, a }) => `
+    <details>
+      <summary><h3>${escapeHtml(q)}</h3></summary>
+      <p>${escapeHtml(a)}</p>
+    </details>`
+).join('');
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': `${SITE_URL}/#website`,
+      url: `${SITE_URL}/`,
+      name: 'One AI Trainer',
+      description: `${JOBS.length} remote AI training jobs from ${companyList}, with pay shown up front.`,
+      inLanguage: 'en',
+      publisher: { '@id': `${SITE_URL}/#organization` },
+    },
+    {
+      '@type': 'Organization',
+      '@id': `${SITE_URL}/#organization`,
+      name: 'One AI Trainer',
+      url: `${SITE_URL}/`,
+      logo: `${SITE_URL}/apple-touch-icon.png`,
+      founder: { '@type': 'Person', name: 'Chaney Lovellette', url: 'https://www.linkedin.com/in/contractinnovator/' },
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${SITE_URL}/#faq`,
+      mainEntity: FAQ.map(({ q, a }) => ({
+        '@type': 'Question',
+        name: q,
+        acceptedAnswer: { '@type': 'Answer', text: a },
+      })),
+    },
+  ],
+};
+
 // Matches the client script's own toLocaleDateString('en-US', {...}) format
 // exactly, so the server-rendered label and the JS-recomputed one never
 // visibly disagree.
@@ -188,6 +288,8 @@ const out = template
   .replace(/\{\{SITE_URL\}\}/g, () => SITE_URL)
   .replace(/\{\{JOBS_TOTAL\}\}/g, () => String(JOBS.length))
   .replace(/\{\{COMPANIES_TOTAL\}\}/g, () => String(new Set(JOBS.map(j => j.company)).size))
+  .replace('{{FAQ_HTML}}', () => faqHTML)
+  .replace('{{JSON_LD}}', () => embed(JSON.stringify(jsonLd)))
   .replace('{{JOB_CARDS_HTML}}', () => jobCardsHTML);
 
 fs.writeFileSync(path.join(dir, 'index.html'), out);
