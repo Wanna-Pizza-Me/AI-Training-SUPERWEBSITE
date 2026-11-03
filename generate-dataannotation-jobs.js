@@ -1,10 +1,11 @@
 // Pulls DataAnnotation's public job board (server-rendered static HTML — no
 // API) and curates it into the JOBS shape used by index.html:
 // { company, title, pay, tag, blurb, url, domain }.
-// The board's per-job "Apply now" links carry a worker_src=ai_jobs param;
-// the site's own REFERRAL_CONFIG overwrites that with the user's referral
-// code client-side (same mechanism used for Mercor), so we keep the raw
-// scraped apply URL (worker_src=ai_jobs) as-is here.
+// The board's per-job "Apply now" links carry a worker_src=ai_jobs param.
+// That is DataAnnotation's traffic-source tag, not a referral: the signup
+// form only fills its referral_code field from ?ref=. The site's own
+// REFERRAL_CONFIG adds ref=<code> (same mechanism used for Mercor), so we
+// keep the raw scraped apply URL (worker_src=ai_jobs) as-is here.
 // Run with: node generate-dataannotation-jobs.js
 // Writes jobs-dataannotation.json to this directory.
 
