@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--
+  Source for og-image.png, the 1200x630 social preview (og:image / twitter:image).
+  Not linked from the site. To re-render after editing, from this folder:
+
+    "C:/Program Files/Google/Chrome/Application/chrome.exe" --headless=new --hide-scrollbars \
+      --force-device-scale-factor=1 --window-size=1200,630 --virtual-time-budget=5000 \
+      --screenshot=og-image.png "file:///<absolute path to this folder>/og-image.html"
+
+  Then bump the ?v= on og-image.png in index.template.html and landing.template.html
+  so LinkedIn, X and Slack fetch the new image instead of their cached copy.
+  Colors, type and card anatomy mirror index.template.html; the three cards are
+  real listings from the day it was made (2026-11-03), shown as examples, with
+  no age label since the image outlives any "3w ago".
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex">
+<title>One AI Trainer social preview</title>
+<style>
+  @font-face{font-family:"Plus Jakarta Sans";font-weight:200 800;font-display:block;src:url("fonts/plus-jakarta-sans-latin.woff2") format("woff2");}
+  :root{
+    --bg:#0A1211; --surface:#111c1a; --line:#253431; --hair:#1b2826;
+    --ink:#E9F4F1; --muted:#9DB3AD; --muted-2:#88A099; --accent:#3FD9C9; --accent-line:#1d4a45; --on-fill:#0A1211;
+    --mercor:#3FD9C9; --dataannotation:#6FA8FF; --turing:#F08FC0; --meridial:#F0B429; --micro1:#6BC24F; --afterquery:#FF7A6B;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;width:1200px;height:630px;overflow:hidden;}
+  body{background:var(--bg);color:var(--ink);font-family:"Plus Jakarta Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased;position:relative;}
+  .gridbg{
+    position:absolute;inset:0;
+    background-image:linear-gradient(rgba(63,217,201,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(63,217,201,.07) 1px,transparent 1px);
+    background-size:48px 48px;background-position:-1px -1px;
+    -webkit-mask-image:radial-gradient(ellipse 85% 90% at 78% 40%,#000 0,transparent 75%);
+    mask-image:radial-gradient(ellipse 85% 90% at 78% 40%,#000 0,transparent 75%);
+  }
+  .frame{position:absolute;inset:0;padding:60px 72px 56px;display:flex;flex-direction:column;}
+
+  .top{display:flex;justify-content:space-between;align-items:center;}
+  .brand{display:flex;align-items:center;gap:14px;font-size:30px;font-weight:800;letter-spacing:-.015em;}
+  .mark{width:22px;height:22px;border-radius:7px;background:conic-gradient(from 180deg,var(--mercor),var(--dataannotation),var(--turing),var(--meridial),var(--micro1),var(--afterquery),var(--mercor));}
+  .live{display:inline-flex;align-items:center;gap:10px;font-size:20px;font-weight:700;color:var(--accent);border:1px solid var(--accent-line);border-radius:999px;padding:9px 18px 9px 16px;}
+  .live::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px rgba(63,217,201,.18);}
+
+  .main{flex:1;display:flex;align-items:center;gap:40px;}
+  .copy{flex:0 0 610px;}
+  h1{margin:0;font-size:78px;line-height:1.0;letter-spacing:-.04em;font-weight:800;}
+  h1 .grad{
+    background:linear-gradient(90deg,#3FD9C9 0%,#6FA8FF 38%,#F08FC0 70%,#F0B429 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .sub{margin:26px 0 0;font-size:25px;line-height:1.4;color:var(--muted);max-width:560px;}
+  .sub b{color:var(--ink);font-weight:700;}
+
+  /* Card stack: the site's card anatomy, fanned. */
+  .stack{position:relative;flex:1;height:360px;}
+  .card{
+    position:absolute;width:380px;background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;
+    box-shadow:0 24px 50px rgba(0,0,0,.45);
+  }
+  /* Back cards sit higher and narrower so only their header stripes show
+     above the front card; their bodies stay empty and hidden behind it. */
+  .card.back{right:40px;top:0;width:340px;height:300px;opacity:.5;}
+  .card.mid{right:20px;top:34px;width:360px;height:300px;opacity:.78;}
+  .card.front{right:0;top:70px;border-color:var(--c);}
+  h1 .p{margin-left:-.07em;}
+  .head{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;background:var(--c);color:var(--on-fill);font-size:14px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;}
+  .body{padding:18px 20px 20px;}
+  .dom{font-size:13px;font-weight:600;color:var(--muted-2);letter-spacing:.05em;text-transform:uppercase;}
+  .title{margin-top:8px;font-size:24px;font-weight:700;letter-spacing:-.01em;}
+  .payrow{display:flex;justify-content:flex-end;align-items:baseline;margin-top:22px;}
+  .pay{font-size:30px;font-weight:800;letter-spacing:-.02em;}
+  .pay small{font-size:15px;font-weight:600;color:var(--muted-2);letter-spacing:0;}
+  .bar{height:5px;border-radius:3px;background:var(--hair);margin-top:9px;overflow:hidden;}
+  .bar i{display:block;height:100%;background:var(--c);}
+  .apply{margin-top:16px;padding:11px;border-radius:10px;border:1px solid var(--c);color:var(--c);font-size:15px;font-weight:700;text-align:center;}
+
+  .foot{display:flex;align-items:center;gap:10px;}
+  .chip{display:inline-flex;align-items:center;gap:9px;font-size:19px;font-weight:600;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:8px 16px 8px 14px;}
+  .chip i{width:10px;height:10px;border-radius:3px;background:var(--c);}
+  .free{margin-left:auto;font-size:19px;font-weight:700;color:var(--ink);}
+  .free span{color:var(--accent);}
+</style>
+</head>
+<body>
+<div class="gridbg"></div>
+<div class="frame">
+  <div class="top">
+    <div class="brand"><span class="mark"></span>One AI Trainer</div>
+    <div class="live">Refreshed daily</div>
+  </div>
+
+  <div class="main">
+    <div class="copy">
+      <h1>Every open<br>AI training job<span class="p">,</span><br><span class="grad">in one list<span class="p">.</span></span></h1>
+      <p class="sub">Contract roles from six platforms, with <b>pay shown up front</b> and one click to apply.</p>
+    </div>
+    <div class="stack" aria-hidden="true">
+      <div class="card back" style="--c:var(--dataannotation)">
+        <div class="head"><span>DataAnnotation</span></div>
+      </div>
+      <div class="card mid" style="--c:var(--afterquery)">
+        <div class="head"><span>AfterQuery</span></div>
+      </div>
+      <div class="card front" style="--c:var(--mercor)">
+        <div class="head"><span>Mercor</span></div>
+        <div class="body">
+          <div class="dom">Medical &amp; Healthcare</div>
+          <div class="title">Oncologist</div>
+          <div class="payrow"><span class="pay">$350–$450<small>/hr</small></span></div>
+          <div class="bar"><i style="width:100%"></i></div>
+          <div class="apply">Apply on Mercor ↗</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span class="chip" style="--c:var(--mercor)"><i></i>Mercor</span>
+    <span class="chip" style="--c:var(--dataannotation)"><i></i>DataAnnotation</span>
+    <span class="chip" style="--c:var(--turing)"><i></i>Turing</span>
+    <span class="chip" style="--c:var(--meridial)"><i></i>Meridial</span>
+    <span class="chip" style="--c:var(--micro1)"><i></i>Micro1</span>
+    <span class="chip" style="--c:var(--afterquery)"><i></i>AfterQuery</span>
+    <span class="free"><span>100%</span> free</span>
+  </div>
+</div>
+</body>
+</html>
