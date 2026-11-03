@@ -2,9 +2,10 @@
 // referral dashboard (refer.micro1.ai) uses — and curates it into the JOBS
 // shape used by index.html: { company, title, pay, tag, blurb, url, domain }.
 // This endpoint returns apply_url values with the referral code already
-// baked in (?referralCode=...&utm_source=referral&...), so unlike the other
-// four sources, micro1 needs no REFERRAL_CONFIG entry in index.template.html
-// — every listing is already correctly attributed.
+// baked in (?referralCode=...&utm_source=referral&...), so every listing is
+// already correctly attributed. The Micro1 entry in referral-config.json is
+// a fallback: buildApplyUrl() sets referralCode on every link regardless, in
+// case this API ever returns apply_url values without it.
 // Run with: node generate-micro1-jobs.js
 // Writes jobs-micro1.json to this directory.
 
@@ -13,7 +14,8 @@ const path = require('path');
 const { mapDomain } = require('./domain-categories');
 const { normalizePosted } = require('./posted-date');
 
-const REFERRAL_CODE = '02b9d485-f559-40d2-981d-caca8ba2a435';
+// Same code the site's buildApplyUrl() uses, so the two can't drift apart.
+const REFERRAL_CODE = require('./referral-config.json').Micro1.code;
 const API_URL = `https://prod-api.micro1.ai/api/v1/job/portal/referral/${REFERRAL_CODE}/jobs`;
 const PAGE_SIZE = 100;
 
