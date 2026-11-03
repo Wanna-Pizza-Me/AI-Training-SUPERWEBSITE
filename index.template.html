@@ -35,9 +35,10 @@
   without executing JavaScript.
 -->
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Self-hosted (OFL-licensed) instead of the Google Fonts stylesheet, which
+     blocked first render for ~0.7s on mobile. Preloading lets the one variable
+     font file download in parallel with the HTML. -->
+<link rel="preload" href="/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
 
 <!-- Vercel Web Analytics — static-HTML install (no npm package needed; Vercel
      serves this script directly once Web Analytics is enabled for the project) -->
@@ -47,18 +48,31 @@
 <script defer src="/_vercel/insights/script.js"></script>
 
 <style>
+  /* font-display:optional, not swap: a late swap re-flowed the hero and was
+     the page's entire layout shift (CLS 0.17 on mobile). With the preload the
+     font almost always arrives in time; when it doesn't, that one visit keeps
+     the system font instead of jumping. */
+  @font-face{
+    font-family:"Plus Jakarta Sans";
+    font-style:normal;
+    font-weight:200 800;
+    font-display:optional;
+    src:url("/fonts/plus-jakarta-sans-latin.woff2") format("woff2");
+    unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+  }
+
   :root{
     --bg: #FFFFFF;
     --surface: #FFFFFF;
     --ink: #132522;
     --muted: #5B6E69;
-    --muted-2: #8CA09A;
+    --muted-2: #64776F;
     --line: #DCEAE6;
-    --mercor: #0C8C82;
+    --mercor: #0A7A71;
     --mercor-tint: #E1F5F2;
     --turing: #A6337B;
     --turing-tint: #F7E8F1;
-    --meridial: #B5790A;
+    --meridial: #9A6608;
     --meridial-tint: #FBF0DC;
     --dataannotation: #2461C7;
     --dataannotation-tint: #E7EFFC;
@@ -66,7 +80,7 @@
     --micro1-tint: #E9F3E4;
     --afterquery: #C23B3B;
     --afterquery-tint: #FAE7E5;
-    --focus: #0C8C82;
+    --focus: #0A7A71;
     --shadow: 0 1px 2px rgba(15,35,32,.04), 0 8px 22px rgba(15,35,32,.05);
     --shadow-hover: 0 6px 14px rgba(15,35,32,.07), 0 18px 36px rgba(15,35,32,.10);
     --chevron-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="%235B6E69" stroke-width="3"><path d="m6 9 6 6 6-6"/></svg>');
@@ -78,7 +92,7 @@
       --surface: #16211F;
       --ink: #E9F4F1;
       --muted: #9DB3AD;
-      --muted-2: #6D827C;
+      --muted-2: #88A099;
       --line: #253431;
       --mercor: #3FD9C9;
       --mercor-tint: #113230;
@@ -103,7 +117,7 @@
     --surface: #16211F;
     --ink: #E9F4F1;
     --muted: #9DB3AD;
-    --muted-2: #6D827C;
+    --muted-2: #88A099;
     --line: #253431;
     --mercor: #3FD9C9;
     --mercor-tint: #113230;
