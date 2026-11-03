@@ -38,8 +38,25 @@ function formatPay(raw) {
   return min === max ? `$${min}/hr` : `$${min}–$${max}/hr`;
 }
 
+// AfterQuery's description field is HTML ("<p>…</p><p>…</p>"), unlike every
+// other source. Card blurbs are escaped on render, so left as-is the tags
+// show up on the page as literal "<p>" text. Reduce it to plain text first.
+const ENTITIES = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ' };
+function stripHtml(html) {
+  return (html || '')
+    .replace(/<(br|\/p|\/li|\/h\d|\/div)\b[^>]*>/gi, ' ')
+    .replace(/<[^>]*>/g, '')
+    .replace(/&(#x[0-9a-f]+|#\d+|[a-z]+);/gi, (m, e) => {
+      if (e[0] === '#') {
+        const code = e[1].toLowerCase() === 'x' ? parseInt(e.slice(2), 16) : parseInt(e.slice(1), 10);
+        return Number.isFinite(code) ? String.fromCodePoint(code) : m;
+      }
+      return ENTITIES[e.toLowerCase()] ?? m;
+    });
+}
+
 function truncate(text) {
-  const t = (text || '').replace(/\s+/g, ' ').trim();
+  const t = stripHtml(text).replace(/\s+/g, ' ').trim();
   if (t.length <= 190) return t;
   const cut = t.slice(0, 190);
   const lastPeriod = cut.lastIndexOf('. ');

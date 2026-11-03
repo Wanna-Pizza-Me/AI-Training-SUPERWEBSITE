@@ -28,4 +28,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://ai-training-superwebsite.vercel.app/sitemap.xml
+Sitemap: https://www.oneaitrainer.com/sitemap.xml
