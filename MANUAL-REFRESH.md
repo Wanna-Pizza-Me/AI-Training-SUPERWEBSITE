@@ -26,6 +26,28 @@ the steps below.
 `build.js` prints a `STALE DATA WARNING` for any source that hasn't
 refreshed in more than 2 days, so this won't go unnoticed again.
 
+## The easy way: the "Refresh AfterQuery" bookmark
+
+1. Open any page on `experts.afterquery.com` in your browser.
+2. Click **Refresh AfterQuery** in the bookmarks bar.
+3. A pop-up says how many jobs were sent; the site updates about a minute
+   later. No terminal, no commit.
+
+The bookmark reads AfterQuery's jobs API as the open page (so it passes the
+challenge), and POSTs it to `api/afterquery-refresh.js`, which saves it to
+the `oneaitrainer-afterquery` Vercel Blob store and fires the Deploy Hook.
+On every build, `generate-afterquery-jobs.js` uses the newest upload when
+its live fetch fails, as long as that upload is newer than the committed
+`jobs-afterquery.json` (per `data-fetched.json`). Uploads aren't committed
+to git; they live in Blob, and the daily rebuild keeps using the latest one.
+
+Setting it up (once per browser): run `node make-bookmarklet.js <secret>`
+with the `UPLOAD_SECRET` from the Vercel project settings, open the
+`refresh-afterquery-bookmark.html` it writes, and drag the button to the
+bookmarks bar. That file contains the secret, so it's gitignored. If the
+bookmark ever stops working (say AfterQuery tightens its security policy),
+the saved-file steps below still work.
+
 ## The daily reminder
 
 A scheduled agent runs every morning at 8:00 AM America/Chicago and does
@@ -41,7 +63,7 @@ days stale. Otherwise it stays quiet. Routine id
 `trig_013vZb58BXPTyrsVn22JRtVm` — findable under scheduled routines if you
 ever want to change the time or turn it off.
 
-## Steps
+## The fallback: refresh from a saved file
 
 1. Open this in a normal browser:
    `https://experts.afterquery.com/api/jobs/listings`

@@ -14,15 +14,21 @@
 // until someone refreshes it by hand: open the API URL in a browser, save
 // the JSON, and run --from against it. Same transform either way, so a
 // manual refresh produces byte-identical output to a live fetch.
-// See MANUAL-REFRESH.md.
+//
+// The easier route is the "Refresh AfterQuery" bookmark, which uploads the
+// payload to Vercel Blob via api/afterquery-refresh.js. When the live fetch
+// fails, this script uses the newest upload, provided it's newer than the
+// data already committed. See MANUAL-REFRESH.md.
 
 const fs = require('fs');
 const path = require('path');
 const { mapDomain } = require('./domain-categories');
 const { normalizePosted } = require('./posted-date');
-const { markFetched } = require('./fetch-log');
+const { markFetched, readFetchLog } = require('./fetch-log');
 
 const API_URL = 'https://experts.afterquery.com/api/jobs/listings';
+// api/afterquery-refresh.js stores uploads under the same prefix.
+const BLOB_PREFIX = 'afterquery/';
 
 function formatPay(raw) {
   if (!raw) return 'Not listed';
@@ -80,15 +86,47 @@ async function loadPayload() {
       throw new Error(`${file} has no "jobs" array — is it the raw API payload?`);
     }
     console.log(`Reading saved payload from ${file} (manual refresh)`);
-    return data;
+    return { data, fetchedAt: new Date() };
   }
   const res = await fetch(API_URL);
-  if (!res.ok) throw new Error(`AfterQuery API returned ${res.status}`);
-  return res.json();
+  if (res.ok) return { data: await res.json(), fetchedAt: new Date() };
+  const liveError = new Error(`AfterQuery API returned ${res.status}`);
+  const uploaded = await loadUploadedPayload();
+  if (uploaded) return uploaded;
+  throw liveError;
+}
+
+// The newest payload the bookmark uploaded, or null when there isn't one or
+// it's no newer than the data already in jobs-afterquery.json (someone may
+// have refreshed from a saved file since). Never throws: a Blob problem just
+// means falling back to the existing data, same as any other failure here.
+async function loadUploadedPayload() {
+  if (!process.env.BLOB_READ_WRITE_TOKEN) return null;
+  try {
+    const { list } = require('@vercel/blob');
+    const { blobs } = await list({ prefix: BLOB_PREFIX });
+    const newest = blobs.sort((a, b) => new Date(b.uploadedAt) - new Date(a.uploadedAt))[0];
+    if (!newest) return null;
+    const uploadedAt = new Date(newest.uploadedAt);
+    const current = Date.parse(readFetchLog().AfterQuery);
+    if (Number.isFinite(current) && uploadedAt.getTime() <= current) {
+      console.log(`Bookmark upload from ${uploadedAt.toISOString()} is not newer than the current AfterQuery data; keeping it.`);
+      return null;
+    }
+    const res = await fetch(newest.url);
+    if (!res.ok) throw new Error(`Blob returned ${res.status}`);
+    const data = await res.json();
+    if (!Array.isArray(data.jobs)) throw new Error('upload has no "jobs" array');
+    console.log(`Live fetch blocked; using the bookmark upload from ${uploadedAt.toISOString()}`);
+    return { data, fetchedAt: uploadedAt };
+  } catch (err) {
+    console.error('[generate-afterquery-jobs.js] Could not read the bookmark upload:', err.message);
+    return null;
+  }
 }
 
 async function main() {
-  const data = await loadPayload();
+  const { data, fetchedAt } = await loadPayload();
 
   // A job with no id would build an apply link of ?job=null, which is a dead
   // link on the site — the referral never lands and the visitor bounces.
@@ -123,7 +161,7 @@ async function main() {
   }
 
   fs.writeFileSync(outPath, JSON.stringify(jobs, null, 2));
-  markFetched('AfterQuery');
+  markFetched('AfterQuery', fetchedAt);
   console.log(`Wrote ${jobs.length} AfterQuery listings (of ${data.jobs.length} total) to ${outPath}`);
 }
 

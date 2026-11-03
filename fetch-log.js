@@ -21,9 +21,11 @@ function readFetchLog() {
 }
 
 // Call only after the source's jobs file has been written successfully.
-function markFetched(source) {
+// `at` is when the data was actually pulled from the source, for data that
+// was saved earlier and only transformed now (AfterQuery's bookmark uploads).
+function markFetched(source, at = new Date()) {
   const log = readFetchLog();
-  log[source] = new Date().toISOString();
+  log[source] = new Date(at).toISOString();
   fs.writeFileSync(LOG_PATH, JSON.stringify(log, null, 2) + '\n');
 }
 
