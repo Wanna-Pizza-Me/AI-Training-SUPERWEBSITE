@@ -71,13 +71,25 @@ const html = `<!doctype html>
   li { margin-bottom: 8px; }
   code { background: #1b2320; padding: 1px 6px; border-radius: 5px; color: #e8ece9; }
   .note { font-size: 14px; border-top: 1px solid #26302c; padding-top: 16px; margin-top: 28px; }
+  h2 { font-size: 17px; margin: 32px 0 6px; }
+  textarea { width: 100%; box-sizing: border-box; height: 84px; background: #1b2320; color: #e8ece9; border: 1px solid #26302c; border-radius: 8px; padding: 8px; font: 12px/1.4 ui-monospace, monospace; resize: none; }
+  button { margin-top: 8px; padding: 8px 14px; border-radius: 8px; border: 1px solid #7bd88f; background: transparent; color: #7bd88f; font-weight: 600; cursor: pointer; }
 </style>
 </head>
 <body>
 <main>
   <h1>Refresh AfterQuery</h1>
-  <p>Drag this button onto your bookmarks bar:</p>
+  <p>Drag this button onto your bookmarks bar. Clicking it here does nothing useful; it only works on an AfterQuery page.</p>
   <a class="bm" href="${href}">Refresh AfterQuery</a>
+  <h2>If dragging doesn't work</h2>
+  <ol>
+    <li>Click <b>Copy</b> below.</li>
+    <li>Right-click your bookmarks bar and choose <b>Add page…</b></li>
+    <li>Name it <code>Refresh AfterQuery</code>, paste into the <b>URL</b> box, and save. (Paste it there, not in the address bar; Chrome strips the <code>javascript:</code> start from anything pasted into the address bar.)</li>
+  </ol>
+  <textarea id="code" readonly>${href}</textarea>
+  <button type="button" id="copy">Copy</button>
+  <h2>Using it</h2>
   <ol>
     <li>Open <code>experts.afterquery.com</code> in this browser (any page; you don't need to sign in).</li>
     <li>Click <b>Refresh AfterQuery</b> in your bookmarks bar.</li>
@@ -85,6 +97,18 @@ const html = `<!doctype html>
   </ol>
   <p class="note">This bookmark contains the site's upload password. Keep it in your own browser and don't share it or this file. If the bookmarks bar is hidden, press Ctrl+Shift+B.</p>
 </main>
+<script>
+  document.getElementById('copy').addEventListener('click', async e => {
+    const box = document.getElementById('code');
+    try {
+      await navigator.clipboard.writeText(box.value);
+    } catch {
+      box.select();
+      document.execCommand('copy');
+    }
+    e.target.textContent = 'Copied';
+  });
+</script>
 </body>
 </html>
 `;
