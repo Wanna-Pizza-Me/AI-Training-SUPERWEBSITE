@@ -7,6 +7,7 @@ const fs = require('fs');
 const path = require('path');
 const { mapDomain } = require('./domain-categories');
 const { normalizePosted } = require('./posted-date');
+const { markFetched } = require('./fetch-log');
 
 const API_URL = 'https://aws.api.mercor.com/work/listings-explore-page';
 const PER_DOMAIN_CAP = 8;
@@ -98,6 +99,7 @@ async function main() {
   }
 
   fs.writeFileSync(outPath, JSON.stringify(jobs, null, 2));
+  markFetched('Mercor');
   console.log(`Wrote ${jobs.length} curated Mercor listings to ${outPath}`);
 }
 

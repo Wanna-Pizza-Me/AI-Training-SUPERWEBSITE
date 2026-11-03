@@ -20,6 +20,7 @@ const fs = require('fs');
 const path = require('path');
 const { mapDomain } = require('./domain-categories');
 const { normalizePosted } = require('./posted-date');
+const { markFetched } = require('./fetch-log');
 
 const API_URL = 'https://experts.afterquery.com/api/jobs/listings';
 
@@ -64,6 +65,11 @@ function truncate(text) {
   return cut.slice(0, cut.lastIndexOf(' ')) + '…';
 }
 
+function careerArea(job) {
+  const areas = job.careerAreas && job.careerAreas.value;
+  return Array.isArray(areas) && areas[0] ? areas[0].name : '';
+}
+
 async function loadPayload() {
   const fromIndex = process.argv.indexOf('--from');
   if (fromIndex !== -1) {
@@ -96,13 +102,15 @@ async function main() {
     tag: j.featured ? 'Featured' : (j.detailPage && j.detailPage.location) || 'Remote',
     blurb: truncate(j.description),
     url: `https://experts.afterquery.com/apply?job=${j.id}`,
-    domain: mapDomain(j.department, 'AfterQuery'),
-    // AfterQuery exposes no date field, but every id is an epoch-ms value
-    // in a plausible range (all 205 live listings span Apr 2025 - Sep 2026),
-    // which is the signature of Date.now() used as an id. Inferred, not
-    // documented: if it's wrong these sort oddly under "Most recent" and
-    // nothing else breaks. normalizePosted range-checks it either way.
-    posted: normalizePosted(Number(j.id)),
+    // By Nov 2026 AfterQuery had dropped `department` for a `careerAreas`
+    // list ({ kind, value: [{ name }] }, most relevant area first). Read
+    // either shape, so an older saved payload still transforms correctly.
+    domain: mapDomain(j.department ?? careerArea(j), 'AfterQuery'),
+    // postedDate arrived in the same change. Older payloads have no date
+    // field, but every id is an epoch-ms value (Date.now() used as an id),
+    // which agrees with postedDate to within a day on all but one listing,
+    // so it stays as the fallback. normalizePosted range-checks either.
+    posted: normalizePosted(j.postedDate ?? Number(j.id)),
   }));
 
   const outPath = path.join(__dirname, 'jobs-afterquery.json');
@@ -115,6 +123,7 @@ async function main() {
   }
 
   fs.writeFileSync(outPath, JSON.stringify(jobs, null, 2));
+  markFetched('AfterQuery');
   console.log(`Wrote ${jobs.length} AfterQuery listings (of ${data.jobs.length} total) to ${outPath}`);
 }
 

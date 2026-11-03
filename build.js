@@ -8,7 +8,8 @@
 
 const fs = require('fs');
 const path = require('path');
-const { relativeAge, compareRecency } = require('./posted-date');
+const { relativeAge, byRecency, ONGOING_AFTER_DAYS } = require('./posted-date');
+const { readFetchLog } = require('./fetch-log');
 
 const dir = __dirname;
 // The custom domain, not the *.vercel.app one: this feeds the canonical tag,
@@ -60,22 +61,22 @@ const now = new Date();
    the previous jobs-<source>.json rather than failing the whole build. That
    is the right call for uptime, but it means a source can quietly stop
    refreshing and nobody notices — AfterQuery did exactly that for 11 days.
-   So: warn loudly in the build log for any source whose data file hasn't
-   been rewritten recently. This does not fail the build, it just makes the
-   silence visible.
+   So: warn loudly in the build log for any source that hasn't refreshed
+   recently. This does not fail the build, it just makes the silence visible.
+   Freshness comes from data-fetched.json (see fetch-log.js), not file
+   mtimes, which a fresh git clone resets on every Vercel build.
    ========================================================================= */
 const STALE_AFTER_DAYS = 2;
-const SOURCE_FILES = {
-  Mercor: 'jobs-mercor.json',
-  DataAnnotation: 'jobs-dataannotation.json',
-  Turing: 'jobs-turing.json',
-  Meridial: 'jobs-meridial.json',
-  Micro1: 'jobs-micro1.json',
-  AfterQuery: 'jobs-afterquery.json',
-};
+const SOURCES = ['Mercor', 'DataAnnotation', 'Turing', 'Meridial', 'Micro1', 'AfterQuery'];
+const fetchLog = readFetchLog();
 const staleSources = [];
-for (const [source, file] of Object.entries(SOURCE_FILES)) {
-  const ageDays = (now - fs.statSync(path.join(dir, file)).mtime) / 86400000;
+for (const source of SOURCES) {
+  const fetchedAt = Date.parse(fetchLog[source]);
+  if (!Number.isFinite(fetchedAt)) {
+    staleSources.push(`${source} (no successful fetch on record)`);
+    continue;
+  }
+  const ageDays = (now - fetchedAt) / 86400000;
   if (ageDays > STALE_AFTER_DAYS) {
     staleSources.push(`${source} (${ageDays.toFixed(1)}d)`);
   }
@@ -173,7 +174,11 @@ function cardHTML(job) {
     </a>`;
 }
 
-const jobCardsHTML = JOBS.map(cardHTML).join('');
+// Newest first, matching the client's default "Newest first" sort, so the
+// first cards a visitor (or crawler) sees are the newest openings rather than
+// whichever source happens to be concatenated first.
+const compareRecency = byRecency(now);
+const jobCardsHTML = [...JOBS].sort(compareRecency).map(cardHTML).join('');
 
 /* =========================================================================
    FAQ + STRUCTURED DATA
@@ -507,6 +512,7 @@ const out = template
   .replace('{{AFTERQUERY_JOBS_JSON}}', () => embed(JSON.stringify(afterqueryJobs)))
   .replace('{{REFERRAL_CONFIG_JSON}}', () => JSON.stringify(referralConfig))
   .replace('{{GENERATED_AT_ISO}}', () => now.toISOString())
+  .replace('{{ONGOING_AFTER_DAYS}}', () => String(ONGOING_AFTER_DAYS))
   .replace('{{GENERATED_AT_LABEL}}', () => generatedAtLabel)
   .replace(/\{\{SITE_URL\}\}/g, () => SITE_URL)
   .replace(/\{\{JOBS_TOTAL\}\}/g, () => String(JOBS.length))
@@ -552,10 +558,11 @@ for (const p of landingPages) {
     ],
   };
   // Newest first, since a landing page has no sort control of its own. The
-  // sort is stable, so an all-undated source (DataAnnotation) keeps its
-  // feed order — and then the heading doesn't claim an order it can't show.
+  // sort is stable, so a page of only ongoing roles (DataAnnotation's are all
+  // undated) keeps its feed order — and then the heading doesn't claim an
+  // order it can't show.
   const sorted = [...p.jobs].sort(compareRecency);
-  const dated = p.jobs.some(j => j.posted);
+  const dated = p.jobs.some(j => j.posted && relativeAge(j.posted, now) !== 'Ongoing');
   const vars = {
     TITLE: escapeHtml(`${p.title} | One AI Trainer`),
     OG_TITLE: escapeHtml(p.title),
@@ -650,7 +657,7 @@ console.log(
 console.log(`Wrote ${landingPages.length} landing pages: ` + landingPages.map(p => `${p.path} (${p.jobs.length})`).join(', '));
 console.log('Wrote robots.txt and sitemap.xml');
 
-// Date coverage drives the "Most recent" sort — undated listings always sort
+// Date coverage drives the default "Newest first" sort — undated listings sort
 // last, so a source silently losing its date field would quietly sink all of
 // its listings. Make that visible in the build log.
 const datedBySource = {};

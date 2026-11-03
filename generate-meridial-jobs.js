@@ -14,6 +14,7 @@ const fs = require('fs');
 const path = require('path');
 const { mapDomain } = require('./domain-categories');
 const { normalizePosted } = require('./posted-date');
+const { markFetched } = require('./fetch-log');
 
 const API_URL = 'https://boards-api.greenhouse.io/v1/boards/agency/jobs?content=true';
 const TITLE_SUFFIX = /\s*[-–]\s*Freelance( AI Trainer)? Project\s*$/i;
@@ -85,6 +86,7 @@ async function main() {
   }
 
   fs.writeFileSync(outPath, JSON.stringify(jobs, null, 2));
+  markFetched('Meridial');
   console.log(`Wrote ${jobs.length} US/Canada + English World Wide Meridial listings (of ${data.jobs.length} total) to ${outPath}`);
 }
 

@@ -13,6 +13,7 @@ const fs = require('fs');
 const path = require('path');
 const { mapDomain } = require('./domain-categories');
 const { normalizePosted } = require('./posted-date');
+const { markFetched } = require('./fetch-log');
 
 // Same code the site's buildApplyUrl() uses, so the two can't drift apart.
 const REFERRAL_CODE = require('./referral-config.json').Micro1.code;
@@ -86,6 +87,7 @@ async function main() {
   }
 
   fs.writeFileSync(outPath, JSON.stringify(jobs, null, 2));
+  markFetched('Micro1');
   console.log(`Wrote ${jobs.length} Micro1 listings (of ${first.total} total) to ${outPath}`);
 }
 

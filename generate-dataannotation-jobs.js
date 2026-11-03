@@ -13,6 +13,7 @@ const fs = require('fs');
 const path = require('path');
 const { mapDomain } = require('./domain-categories');
 const { normalizePosted } = require('./posted-date');
+const { markFetched } = require('./fetch-log');
 
 const BASE_URL = 'https://www.dataannotation.tech';
 const CONCURRENCY = 8;
@@ -118,7 +119,7 @@ async function main() {
       domain: mapDomain(card.domain, 'DataAnnotation'),
       // No date anywhere to scrape: these are evergreen role pages on a
       // signup funnel, not dated postings. Undated sorts last under
-      // "Most recent" and renders without an age on the card.
+      // "Newest first" with the other ongoing roles and renders without an age.
       posted: null,
     };
   });
@@ -134,6 +135,7 @@ async function main() {
   }
 
   fs.writeFileSync(outPath, JSON.stringify(clean, null, 2));
+  markFetched('DataAnnotation');
   console.log(`Wrote ${clean.length} DataAnnotation listings (of ${cards.length} found) to ${outPath}`);
 }
 

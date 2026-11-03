@@ -7,6 +7,7 @@ const fs = require('fs');
 const path = require('path');
 const { mapDomain } = require('./domain-categories');
 const { normalizePosted } = require('./posted-date');
+const { markFetched } = require('./fetch-log');
 
 const API_URL = 'https://work.turing.com/api/jobs/all';
 const PER_GROUP_CAP = 8;
@@ -59,6 +60,7 @@ async function main() {
   }
 
   fs.writeFileSync(outPath, JSON.stringify(jobs, null, 2));
+  markFetched('Turing');
   console.log(`Wrote ${jobs.length} curated Turing listings to ${outPath}`);
 }
 

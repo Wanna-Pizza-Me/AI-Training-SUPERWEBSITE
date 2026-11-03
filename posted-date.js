@@ -5,7 +5,8 @@
 // hand back timestamps several hours in the future with no zone attached), so
 // normalise once here rather than getting it subtly wrong in six places.
 //
-// relativeAge() is mirrored in index.template.html's inline client script —
+// relativeAge() and byRecency() are mirrored in index.template.html's inline
+// client script (build.js fills in ONGOING_AFTER_DAYS there from this file) —
 // same intentional duplication as cardHTML()/escapeHtml()/accentVar(), since
 // the browser copy runs as an inline <script> string and can't require this.
 // Change one, change the other.
@@ -13,6 +14,14 @@
 // Anything outside this window is a parsing accident, not a real posting date.
 const EARLIEST = Date.UTC(2015, 0, 1);
 const FUTURE_SLACK_MS = 3 * 24 * 60 * 60 * 1000;
+
+// A posting still live this long after it was first published is a standing,
+// always-hiring role (Meridial keeps hundreds open for a year or more), not a
+// new opening. Its card says "Ongoing" rather than "1y ago" — the site is
+// re-pulled daily, so "1y ago" read as the site being stale when it was the
+// role that was old — and the newest-first sort files it after the fresh
+// postings instead of ranking it by an age that no longer means anything.
+const ONGOING_AFTER_DAYS = 180;
 
 /**
  * @param {string|number|null|undefined} raw
@@ -62,26 +71,36 @@ function relativeAge(iso, now) {
   // Sources that report ahead of UTC can land slightly in the future. Reading
   // that as a negative age would render nonsense, so treat it as brand new.
   const days = Math.max(0, Math.floor((ref - then) / 86400000));
+  if (days >= ONGOING_AFTER_DAYS) return 'Ongoing';
   if (days < 1) return 'today';
   if (days === 1) return '1d ago';
   if (days < 7) return `${days}d ago`;
   if (days < 30) return `${Math.floor(days / 7)}w ago`;
-  if (days < 365) return `${Math.floor(days / 30)}mo ago`;
-  const years = Math.floor(days / 365);
-  return years === 1 ? '1y ago' : `${years}y ago`;
+  return `${Math.floor(days / 30)}mo ago`;
 }
 
 /**
- * Newest first, undated last. Used for the "Most recent" sort; the default
- * order is the order build.js concatenates the sources in and is left alone.
+ * Comparator for the "Newest first" sort, which is the default order on
+ * every page. Postings under ONGOING_AFTER_DAYS old come first, newest first;
+ * then every ongoing role (long-running ones, plus undated evergreen sources
+ * like DataAnnotation) in feed order. Array.prototype.sort is stable, so
+ * returning 0 for two ongoing roles keeps them in the order build.js
+ * concatenates the sources in.
  */
-function compareRecency(a, b) {
-  const ta = a.posted ? new Date(a.posted).getTime() : null;
-  const tb = b.posted ? new Date(b.posted).getTime() : null;
-  if (ta === null && tb === null) return 0;
-  if (ta === null) return 1;
-  if (tb === null) return -1;
-  return tb - ta;
+function byRecency(now) {
+  const ref = new Date(now).getTime();
+  const freshTime = job => {
+    const t = job.posted ? new Date(job.posted).getTime() : NaN;
+    return Number.isFinite(t) && (ref - t) / 86400000 < ONGOING_AFTER_DAYS ? t : null;
+  };
+  return (a, b) => {
+    const ta = freshTime(a);
+    const tb = freshTime(b);
+    if (ta === null && tb === null) return 0;
+    if (ta === null) return 1;
+    if (tb === null) return -1;
+    return tb - ta;
+  };
 }
 
-module.exports = { normalizePosted, relativeAge, compareRecency };
+module.exports = { normalizePosted, relativeAge, byRecency, ONGOING_AFTER_DAYS };

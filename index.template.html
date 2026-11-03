@@ -575,8 +575,8 @@
       <option value="All">All domains</option>
     </select>
     <select class="domain-select sort-select" id="sortSelect" aria-label="Sort listings">
-      <option value="default">Default order</option>
-      <option value="recent">Most recent</option>
+      <option value="recent">Newest first</option>
+      <option value="company">By company</option>
     </select>
   </div>
 </div>
@@ -661,6 +661,7 @@ const MERIDIAL_JOBS = {{MERIDIAL_JOBS_JSON}};
 const MICRO1_JOBS = {{MICRO1_JOBS_JSON}};
 const AFTERQUERY_JOBS = {{AFTERQUERY_JOBS_JSON}};
 const GENERATED_AT = "{{GENERATED_AT_ISO}}";
+const ONGOING_AFTER_DAYS = {{ONGOING_AFTER_DAYS}};
 
 const JOBS = [...MERCOR_JOBS, ...DATAANNOTATION_JOBS, ...TURING_JOBS, ...MERIDIAL_JOBS, ...MICRO1_JOBS, ...AFTERQUERY_JOBS];
 
@@ -675,7 +676,7 @@ const emptyState = document.getElementById('emptyState');
 
 let activeCompany = "All";
 let activeDomain = "All";
-let activeSort = "default";
+let activeSort = "recent";
 
 const ACCENTS = { Mercor: "var(--mercor)", DataAnnotation: "var(--dataannotation)", Turing: "var(--turing)", Meridial: "var(--meridial)", Micro1: "var(--micro1)", AfterQuery: "var(--afterquery)" };
 function accentVar(company){
@@ -725,7 +726,7 @@ function escapeHtml(s){
   return String(s).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
 }
 
-// Mirrors relativeAge()/compareRecency() in posted-date.js, which build.js
+// Mirrors relativeAge()/byRecency() in posted-date.js, which build.js
 // uses to server-render these same cards. Same intentional duplication as
 // escapeHtml/accentVar above — this runs as an inline <script> and can't
 // require the module. Change one, change the other.
@@ -739,20 +740,27 @@ function relativeAge(iso){
   const ref = new Date(GENERATED_AT).getTime();
   if (!Number.isFinite(then) || !Number.isFinite(ref)) return null;
   const days = Math.max(0, Math.floor((ref - then) / 86400000));
+  if (days >= ONGOING_AFTER_DAYS) return 'Ongoing';
   if (days < 1) return 'today';
   if (days === 1) return '1d ago';
   if (days < 7) return days + 'd ago';
   if (days < 30) return Math.floor(days / 7) + 'w ago';
-  if (days < 365) return Math.floor(days / 30) + 'mo ago';
-  const years = Math.floor(days / 365);
-  return years === 1 ? '1y ago' : years + 'y ago';
+  return Math.floor(days / 30) + 'mo ago';
+}
+
+// Fresh postings newest first, then every ongoing role (long-running or
+// undated) in feed order — sort is stable, so returning 0 keeps that order.
+function freshTime(job){
+  const t = job.posted ? new Date(job.posted).getTime() : NaN;
+  const ref = new Date(GENERATED_AT).getTime();
+  return Number.isFinite(t) && (ref - t) / 86400000 < ONGOING_AFTER_DAYS ? t : null;
 }
 
 function compareRecency(a, b){
-  const ta = a.posted ? new Date(a.posted).getTime() : null;
-  const tb = b.posted ? new Date(b.posted).getTime() : null;
+  const ta = freshTime(a);
+  const tb = freshTime(b);
   if (ta === null && tb === null) return 0;
-  if (ta === null) return 1;   // undated always sorts last
+  if (ta === null) return 1;
   if (tb === null) return -1;
   return tb - ta;
 }
@@ -802,8 +810,9 @@ function renderGrid(){
     return matchesCompany && matchesDomain && matchesQuery;
   });
 
-  // Default order is the order build.js concatenates the sources in, which is
-  // what the server-rendered grid already shows, so only "recent" reorders.
+  // JOBS is in the order build.js concatenates the sources in, which is what
+  // "By company" shows; "Newest first" (the default, and what the
+  // server-rendered grid already shows) reorders.
   if (activeSort === 'recent') filtered.sort(compareRecency);
 
   grid.innerHTML = filtered.map(cardHTML).join('');
@@ -828,8 +837,8 @@ renderDomains();
 // leave the search box and the grid disagreeing.
 // A reload can restore both of these, so pick up a restored sort too — not
 // just a restored search — or the control and the grid would disagree.
-activeSort = sortSelect.value || 'default';
-if (searchInput.value.trim() || activeSort !== 'default') renderGrid();
+activeSort = sortSelect.value || 'recent';
+if (searchInput.value.trim() || activeSort !== 'recent') renderGrid();
 
 function updatedLabel(){
   const d = new Date(GENERATED_AT);

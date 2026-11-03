@@ -29,6 +29,7 @@ const CATEGORY_MAP = {
   robotics: 'Software & Data',
   'applied-engineering': 'Software & Data',
   cybersecurity: 'Software & Data',
+  'Information Technology and Computer Science': 'Software & Data',
 
   // Science & STEM
   'Life, Physical, and Social Science': 'Science & STEM',
@@ -36,6 +37,8 @@ const CATEGORY_MAP = {
   Science: 'Science & STEM',
   STEM: 'Science & STEM',
   'sciences-research': 'Science & STEM',
+  'Science and Research': 'Science & STEM',
+  'Social Analysis and Planning': 'Science & STEM',
 
   // Business & Finance
   'Business Operations': 'Business & Finance',
@@ -48,12 +51,17 @@ const CATEGORY_MAP = {
   'business-operations': 'Business & Finance',
   finance: 'Business & Finance',
   'sales-marketing': 'Business & Finance',
+  'Business Management and Operations': 'Business & Finance',
+  'Marketing and Public Relations': 'Business & Finance',
+  Sales: 'Business & Finance',
+  'Human Resources': 'Business & Finance',
 
   // Legal
   Law: 'Legal',
   'Legal & Law Services': 'Legal',
   Legal: 'Legal',
   law: 'Legal',
+  'Law, Compliance, and Public Safety': 'Legal',
 
   // Medical & Healthcare
   Medicine: 'Medical & Healthcare',
@@ -62,6 +70,7 @@ const CATEGORY_MAP = {
   'Healthcare Ops': 'Medical & Healthcare',
   'Medical/Healthcare': 'Medical & Healthcare',
   medicine: 'Medical & Healthcare',
+  Healthcare: 'Medical & Healthcare',
 
   // Language & Writing
   'Language and Audio': 'Language & Writing',
@@ -74,6 +83,7 @@ const CATEGORY_MAP = {
   'language-audio': 'Language & Writing',
   humanities: 'Language & Writing',
   'Language Audio & Video': 'Language & Writing',
+  'Design, Media, and Writing': 'Language & Writing',
 
   // Design & Creative
   'Arts & Design': 'Design & Creative',
@@ -97,6 +107,14 @@ const CATEGORY_MAP = {
   'Project Silver': 'General & Other',
   'Education & Training': 'General & Other',
   Education: 'General & Other',
+  'Education and Training': 'General & Other',
+  'Customer and Client Support': 'General & Other',
+  'Clerical and Administrative': 'General & Other',
+  'Construction, Extraction, and Architecture': 'General & Other',
+  'Community and Social Services': 'General & Other',
+  'Maintenance, Repair, and Installation': 'General & Other',
+  'Manufacturing and Production': 'General & Other',
+  'retail-hospitality': 'General & Other',
 };
 
 function mapDomain(raw, source) {
