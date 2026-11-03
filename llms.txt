@@ -11,6 +11,25 @@ not affiliated with any of the companies below. It re-publishes publicly
 available listings from each company's own careers/experts page, with pay
 rate shown up front and a direct apply link to the original source.
 
+## Pages
+
+- [All AI training jobs](https://www.oneaitrainer.com/): every open listing, searchable and filterable
+- [Legal AI training jobs](https://www.oneaitrainer.com/jobs/legal/)
+- [Medical AI training jobs](https://www.oneaitrainer.com/jobs/medical/)
+- [Coding & data AI training jobs](https://www.oneaitrainer.com/jobs/coding/)
+- [STEM AI training jobs](https://www.oneaitrainer.com/jobs/stem/)
+- [Finance & business AI training jobs](https://www.oneaitrainer.com/jobs/finance/)
+- [Writing & language AI training jobs](https://www.oneaitrainer.com/jobs/writing/)
+- [Design & creative AI training jobs](https://www.oneaitrainer.com/jobs/creative/)
+- [Generalist AI training jobs](https://www.oneaitrainer.com/jobs/general/)
+- [Mercor jobs](https://www.oneaitrainer.com/mercor/)
+- [DataAnnotation jobs](https://www.oneaitrainer.com/dataannotation/)
+- [Turing jobs](https://www.oneaitrainer.com/turing/)
+- [Meridial jobs](https://www.oneaitrainer.com/meridial/)
+- [Micro1 jobs](https://www.oneaitrainer.com/micro1/)
+- [AfterQuery jobs](https://www.oneaitrainer.com/afterquery/)
+- [Sitemap](https://www.oneaitrainer.com/sitemap.xml)
+
 ## Sources aggregated
 
 - Mercor (work.mercor.com) — freelance AI-training and evaluation experts across many domains

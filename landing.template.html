@@ -35,9 +35,10 @@
   changes belong there, not here.
 -->
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Self-hosted (OFL-licensed) instead of the Google Fonts stylesheet, which
+     blocked first render for ~0.7s on mobile. Preloading lets the one variable
+     font file download in parallel with the HTML. -->
+<link rel="preload" href="/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
 
 <script>
   window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };

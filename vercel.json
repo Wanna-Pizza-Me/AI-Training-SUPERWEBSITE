@@ -13,6 +13,21 @@
       "has": [{ "type": "host", "value": "ai-training-superwebsite.vercel.app" }],
       "destination": "https://www.oneaitrainer.com/:path",
       "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/:page(jobs/[a-z0-9-]+|mercor|dataannotation|turing|meridial|micro1|afterquery)/index.html",
+      "destination": "/:page/",
+      "permanent": true
+    },
+    {
+      "source": "/:page(jobs/[a-z0-9-]+|mercor|dataannotation|turing|meridial|micro1|afterquery)",
+      "destination": "/:page/",
+      "permanent": true
     }
   ]
 }
