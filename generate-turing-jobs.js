@@ -12,6 +12,30 @@ const { markFetched } = require('./fetch-log');
 const API_URL = 'https://work.turing.com/api/jobs/all';
 const PER_GROUP_CAP = 8;
 
+// Turing's API has no pay field. The "$100"/"$750" badge on each card at
+// work.turing.com/jobs is `referralReward`, a referral bonus (gift icon,
+// "Referral Bonus" popover), not what the role pays, so it is never used
+// here. Some listings do state a rate in the title or description prose
+// ("$25/hour", "Payment: $280 per approved task", "Pay up to $150/hr");
+// only figures tied to an hourly or per-task unit count. Weekly totals and
+// unit-less amounts ("Earn up to ~$150–$160 across both days") are skipped.
+const RATE_RE =
+  /(up to\s*)?~?\$(\d[\d,]*(?:\.\d+)?)(\+)?(?:\s*(?:-|–|—|to)\s*\$?(\d[\d,]*(?:\.\d+)?)(\+)?)?\s*(?:USD\s*)?(?:\/\s*(?:per\s+)?|per\s+|an\s+)?(?:ap?proved\s+)?(hr|hour|task)\b/gi;
+
+function payFromListing(j) {
+  const rates = new Set();
+  for (const text of [j.title, j.description]) {
+    const plain = (text || '').replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ');
+    for (const [, upTo, lo, loPlus, hi, hiPlus, unit] of plain.matchAll(RATE_RE)) {
+      const amount = `$${lo}${loPlus || ''}` + (hi ? `–$${hi}${hiPlus || ''}` : '');
+      rates.add(`${upTo ? 'Up to ' : ''}${amount}${unit.toLowerCase() === 'task' ? '/task' : '/hr'}`);
+    }
+  }
+  // Two different rates on one listing (tiers by region, say) can't be
+  // collapsed into one honest figure, so those stay unlisted too.
+  return rates.size === 1 ? [...rates][0] : 'Not listed';
+}
+
 async function main() {
   const res = await fetch(API_URL, {
     method: 'POST',
@@ -42,7 +66,7 @@ async function main() {
   const jobs = curated.map(j => ({
     company: 'Turing',
     title: j.title,
-    pay: 'Not listed', // Turing's API doesn't expose a rate field
+    pay: payFromListing(j),
     tag: j.locationType === 'remote' ? 'Remote' : j.locationType === 'on-site' ? 'On-site' : 'New opportunity',
     blurb: j.oneLinerDescription || '',
     url: `https://work.turing.com/jobs?jobId=${j.id}`,
