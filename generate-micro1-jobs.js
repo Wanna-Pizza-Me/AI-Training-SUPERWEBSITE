@@ -23,7 +23,17 @@ const PAGE_SIZE = 100;
 function formatPay(j) {
   const hr = j.ideal_hourly_rate;
   if (hr && (hr.min != null || hr.max != null)) {
-    return hr.min === hr.max ? `$${hr.min}/hr` : `$${hr.min}–$${hr.max}/hr`;
+    // Either end can be missing; show the one that's there as a single rate.
+    const lo = hr.min ?? hr.max;
+    const hi = hr.max ?? hr.min;
+    // A few postings put an annual salary in the hourly field (e.g. 180000–
+    // 250000). No real hourly rate tops $1,000, so label those as yearly.
+    if (hi > 1000) {
+      const loK = Math.round(lo / 1000);
+      const hiK = Math.round(hi / 1000);
+      return loK === hiK ? `$${hiK}k/yr` : `$${loK}k–$${hiK}k/yr`;
+    }
+    return lo === hi ? `$${hi}/hr` : `$${lo}–$${hi}/hr`;
   }
   if (j.ideal_monthly_salary_min != null || j.ideal_monthly_salary_max != null) {
     const min = Math.round(parseFloat(j.ideal_monthly_salary_min) / 1000);

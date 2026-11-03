@@ -45,7 +45,11 @@ function decodeEntities(s) {
 
 function cleanBlurb(html) {
   let t = decodeEntities(html || '');
-  t = t.replace(/<[^>]+>/g, ' ');
+  // Quote-aware: some listings are pasted from web apps whose attributes hold
+  // a literal ">" (class="[&:has(...)>*]:..."), which ends a plain <[^>]+>
+  // match early and leaks the rest of the tag into the blurb.
+  // The plain match after "|" is the fallback for a tag with an unclosed quote.
+  t = t.replace(/<(?:[^>"']|"[^"]*"|'[^']*')*>|<[^>]*>/g, ' ');
   t = decodeEntities(t); // entities can be double-encoded in this feed
   t = t.replace(/\s+/g, ' ').trim();
   if (t.length <= 190) return t;

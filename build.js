@@ -1,14 +1,14 @@
 // Stitches index.template.html + jobs-mercor.json + jobs-dataannotation.json
 // + jobs-turing.json + jobs-meridial.json + jobs-micro1.json
-// + jobs-afterquery.json into index.html. Also server-renders the initial
-// job grid (see SSR RENDERING below), writes one static landing page per job
+// + jobs-afterquery.json into index.html. Also server-renders every job
+// card (see CARD RENDERING below), writes one static landing page per job
 // field and per platform (see LANDING PAGES), and regenerates robots.txt /
 // sitemap.xml.
 // Run the six generate-*.js scripts first to refresh the data, then: node build.js
 
 const fs = require('fs');
 const path = require('path');
-const { relativeAge, byRecency, ONGOING_AFTER_DAYS } = require('./posted-date');
+const { relativeAge, byRecency } = require('./posted-date');
 const { readFetchLog } = require('./fetch-log');
 
 const dir = __dirname;
@@ -89,25 +89,18 @@ if (staleSources.length) {
 // prematurely close the inline <script> tag when the browser parses this
 // file (job descriptions are free text scraped from other sites, so this
 // WILL happen eventually — CUDA/coding roles routinely mention HTML tags).
-// Using a function replacer (not a plain string) also sidesteps the
-// special $-pattern handling String.replace applies to string replacements.
 function embed(json) {
   return json.replace(/<\//g, '<\\/');
 }
 
 /* =========================================================================
-   SSR RENDERING
-   Mirrors buildApplyUrl()/accentVar()/escapeHtml()/cardHTML() in
-   index.template.html's client-side script exactly. This renders the full,
-   unfiltered job grid directly into the HTML at build time so the listings
-   are readable by crawlers and AI answer-engine fetchers that don't execute
-   JavaScript — previously #jobGrid shipped empty and only filled in client-
-   side, meaning non-JS-executing bots saw zero listings. The client script
-   still re-renders on load (for interactivity), producing identical output
-   in the default (unfiltered) state.
-   If you change cardHTML()/escapeHtml()/accentVar() in the template, update
-   the matching logic here too — this is intentionally duplicated rather
-   than shared, since the browser copy runs as an inline <script> string.
+   CARD RENDERING
+   Every card is rendered here, at build time, so the listings are readable
+   by crawlers and AI answer-engine fetchers that don't execute JavaScript.
+   The homepage script never re-renders a card: it only hides, shows and
+   reorders these, using the per-sort positions stamped on each one
+   (data-r / data-p / data-i, see SORT ORDERS below). So all card markup,
+   pay parsing and date logic live here and in posted-date.js, nowhere else.
    ========================================================================= */
 const ACCENTS = {
   Mercor: 'var(--mercor)',
@@ -118,7 +111,7 @@ const ACCENTS = {
   AfterQuery: 'var(--afterquery)',
 };
 function accentVar(company) {
-  return ACCENTS[company] || 'var(--mercor)';
+  return ACCENTS[company] || 'var(--muted)';
 }
 
 function buildApplyUrl(job) {
@@ -138,56 +131,109 @@ function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
 
-function cardHTML(job) {
+/**
+ * Splits a pay string into what the card shows and how it sorts.
+ * "$45–$70/hr" -> amount "$45–$70", unit "/hr". Only hourly pay feeds the
+ * pay bar; "Highest pay" ranks hourly roles first by top rate, then other
+ * listed pay by amount, then unlisted ("Not listed", "Up to" alone, ...).
+ * DataAnnotation lists a ceiling ("Up to $150+/hr"), kept as a prefix.
+ */
+const PAY_RE = /^(Up to\s+)?(\$[\d,.]+k?(?:\s*[–-]\s*\$?[\d,.]+k?)?\+?)\s*(\/hr|\/hour|\/yr|\/mo|\/task|one-time)?$/i;
+const BAR_FULL_HOURLY = 150;
+function parsePay(raw) {
+  const m = String(raw || '').trim().match(PAY_RE);
+  if (!m) return { pre: '', amount: 'Pay on listing', unit: '', bar: 0, sortKey: -1 };
+  let unit = (m[3] || '').toLowerCase();
+  const nums = (m[2].match(/[\d,.]+k?/gi) || []).map(n => parseFloat(n.replace(/,/g, '')) * (/k$/i.test(n) ? 1000 : 1));
+  const max = Math.max(...nums);
+  // No real hourly rate tops $1,000; that is an annual salary mislabeled
+  // upstream (generate-micro1-jobs.js fixes the known case at the source).
+  if ((unit === '/hr' || unit === '/hour') && max > 1000) unit = '/yr';
+  const hourly = unit === '/hr' || unit === '/hour';
+  return {
+    pre: m[1] ? 'Up to' : '',
+    amount: m[2],
+    unit: unit === 'one-time' ? ' one-time' : unit,
+    bar: hourly ? Math.min(100, Math.round((max / BAR_FULL_HOURLY) * 100)) : 0,
+    sortKey: hourly ? 1e6 + max : max,
+  };
+}
+
+// Feeds come in mixed case ("senior software engineer"); cards capitalize the
+// first letter of each all-lowercase word. Words already carrying a capital
+// ("macOS", "iOS", "AI") are left exactly as the source wrote them, and a
+// slash only starts a word after a letter, so "$150/hr" isn't made "/Hr".
+function titleCase(s) {
+  return String(s || '').replace(/(^|[\s\-—(]|(?<=[A-Za-z])\/)([a-z])(?=[a-z]*(?![A-Za-z]))/g, (m, pre, c) => pre + c.toUpperCase());
+}
+
+/* =========================================================================
+   SORT ORDERS
+   Each job's position under each of the homepage's three sorts, stamped on
+   its card so the browser can reorder without knowing the rules:
+     data-r  Most recent  posted-date.js byRecency (fresh first, then ongoing)
+     data-p  Highest pay  parsePay().sortKey, ties in feed order
+     data-i  By platform  feed order (the order JOBS concatenates sources in)
+   ========================================================================= */
+const compareRecency = byRecency(now);
+const RECENT = [...JOBS].sort(compareRecency);
+const BY_PAY = [...JOBS].sort((a, b) => parsePay(b.pay).sortKey - parsePay(a.pay).sortKey);
+const RANK = new Map(JOBS.map((j, i) => [j, { i }]));
+RECENT.forEach((j, r) => { RANK.get(j).r = r; });
+BY_PAY.forEach((j, p) => { RANK.get(j).p = p; });
+
+/**
+ * @param {object} job
+ * @param {number} n  the card's position on its page; the first 12 get a
+ *                    staggered entrance, and the first `visible` are shown.
+ * @param {number} visible  how many cards start visible (homepage pages 24
+ *                    at a time; landing pages show all).
+ */
+function cardHTML(job, n, visible = Infinity) {
   // buildApplyUrl falls back to the raw job.url when the URL won't parse,
   // so escape it here rather than trusting it in the href attribute.
   const applyUrl = escapeHtml(buildApplyUrl(job));
-  const accent = accentVar(job.company);
+  const rank = RANK.get(job);
   const company = escapeHtml(job.company);
-  const domain = escapeHtml(job.domain);
-  const title = escapeHtml(job.title);
-  const blurb = escapeHtml(job.blurb);
-  const pay = escapeHtml(job.pay);
-  const tag = escapeHtml(job.tag);
+  const title = escapeHtml(titleCase(job.title));
+  const pay = parsePay(job.pay);
+  const hasReferral = !!(referralConfig[job.company] && referralConfig[job.company].code);
   // null for the sources that expose no posting date (DataAnnotation), in
-  // which case the element is omitted rather than rendered empty.
-  const rawAge = relativeAge(job.posted, now);
-  const age = rawAge ? escapeHtml(rawAge) : '';
+  // which case the stripe shows only the company.
+  const age = relativeAge(job.posted, now);
+  const style = `--c:${accentVar(job.company)}` + (n < 12 ? `;--i:${n}` : '');
+  const blurbId = `b${rank.i}`;
   return `
-    <a class="card" style="--accent:${accent}" href="${applyUrl}" target="_blank" rel="noopener noreferrer sponsored">
-      <div class="card-label">
-        <span>${company}</span>
-        ${domain ? `<span class="sep">·</span><span class="dom">${domain}</span>` : ''}
-        ${age ? `<span class="sep">·</span><span class="age">${age}</span>` : ''}
-      </div>
-      <h3>${title}</h3>
-      <p class="card-desc">${blurb}</p>
-      <div class="card-foot">
-        <div>
-          <div class="pay">${pay}</div>
-          <div class="tag">${tag}</div>
-        </div>
-        <div class="apply-row">Apply
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17 17 7M8 7h9v9"/></svg>
-        </div>
-      </div>
-    </a>`;
+<article class="card" style="${style}" data-i="${rank.i}" data-r="${rank.r}" data-p="${rank.p}" data-co="${company}" data-dom="${escapeHtml(job.domain)}"${n >= visible ? ' hidden' : ''}>
+  <div class="card-head"><span>${company}</span>${age ? ` <span class="age">${escapeHtml(age)}</span>` : ''}</div>
+  <div class="card-body">
+    ${job.domain ? `<div class="card-dom">${escapeHtml(job.domain)}</div>` : ''}
+    <h3 class="card-title"><a href="${applyUrl}" target="_blank" rel="noopener noreferrer sponsored">${title}</a></h3>
+    ${job.blurb ? `<div><p class="blurb" id="${blurbId}">${escapeHtml(job.blurb)}</p><button class="more" type="button" aria-expanded="false" aria-controls="${blurbId}">Read more</button></div>` : ''}
+    <div class="card-pay">
+      <div class="pay-row">${hasReferral ? '<span class="ref">Referral link</span> ' : ''}<span class="pay">${pay.pre ? `<small class="pre">${pay.pre}</small> ` : ''}${escapeHtml(pay.amount)}${pay.unit ? `<small>${escapeHtml(pay.unit)}</small>` : ''}</span></div>
+      <div class="paybar"><i style="width:${pay.bar}%"></i></div>
+    </div>
+    <a class="apply" href="${applyUrl}" target="_blank" rel="noopener noreferrer sponsored" tabindex="-1" aria-hidden="true">Apply on ${company} ↗</a>
+  </div>
+</article>`;
 }
 
-// Newest first, matching the client's default "Newest first" sort, so the
-// first cards a visitor (or crawler) sees are the newest openings rather than
-// whichever source happens to be concatenated first.
-const compareRecency = byRecency(now);
-const jobCardsHTML = [...JOBS].sort(compareRecency).map(cardHTML).join('');
+// The homepage opens on "Most recent", 24 cards at a time; the rest are in
+// the HTML (for crawlers) but hidden until "Show 24 more" or a filter.
+const PAGE_SIZE = 24;
+const jobCardsHTML = RECENT.map((j, n) => cardHTML(j, n, PAGE_SIZE)).join('');
 
 /* =========================================================================
    FAQ + STRUCTURED DATA
    One source for both the visible FAQ section and its FAQPage JSON-LD, so
    the two can't drift apart (Google ignores FAQ markup that doesn't match
-   what's on the page). The pay answer is computed from the live listings
-   rather than hard-coded, since the mix of roles changes daily.
+   what's on the page). Copy is from the Live Board design.
+   hourlyPayRange() feeds the landing pages' pay figures.
    ========================================================================= */
-function hourlyPayRange(jobs, minRoles = 20) {
+// A field can have only a few dozen hourly roles in total, and a range from
+// those is still informative, so the floor is low.
+function hourlyPayRange(jobs, minRoles = 5) {
   // Ignore implausible values: a few sources occasionally put an annual
   // figure in an hourly field, which would wreck a max.
   const lows = [];
@@ -196,10 +242,12 @@ function hourlyPayRange(jobs, minRoles = 20) {
     if (!/\/hr/.test(j.pay || '')) continue;
     const nums = [...j.pay.matchAll(/\$([\d.]+)/g)].map(m => parseFloat(m[1])).filter(n => n > 0 && n < 1000);
     if (!nums.length) continue;
-    lows.push(nums[0]);
+    // "Up to $150+/hr" is a ceiling, not a starting rate.
+    if (!/^Up to/i.test(j.pay)) lows.push(nums[0]);
     highs.push(nums[nums.length - 1]);
   }
-  if (lows.length < minRoles) return null;
+  if (!lows.length) return null;
+  if (highs.length < minRoles) return null;
   const sortNum = a => a.sort((x, y) => x - y);
   const pct = (a, p) => a[Math.floor((a.length - 1) * p)];
   const round5 = n => Math.max(5, Math.round(n / 5) * 5);
@@ -210,30 +258,39 @@ function hourlyPayRange(jobs, minRoles = 20) {
 
 const COMPANY_NAMES = [...new Set(JOBS.map(j => j.company))];
 const companyList = COMPANY_NAMES.slice(0, -1).join(', ') + ' and ' + COMPANY_NAMES.at(-1);
-const payRange = hourlyPayRange(JOBS);
 
 const FAQ = [
   {
-    q: 'What is an AI training job?',
-    a: 'AI training jobs are paid freelance or contract roles where you help AI labs improve their models: writing prompts and test questions, judging and correcting model answers, annotating data, or building expert tasks in your field. Almost all of them are remote and paid by the hour.',
+    q: 'What does an AI trainer do?',
+    a: 'You grade or write material used to train and test AI models: rating answers, comparing two responses, writing expert questions, or reviewing code. The work is remote and paid hourly or per task.',
   },
   {
-    q: 'How much do AI training jobs pay?',
-    a: payRange
-      ? `Each company sets its own rate, and every listing here shows it. Across the hourly roles listed right now, most pay between about $${payRange.p10} and $${payRange.p90} an hour, with a typical top-of-range rate around $${payRange.median}/hr. Generalist work pays least; roles that need medical, legal, finance, engineering or PhD-level expertise pay the most.`
-      : 'Each company sets its own rate, and every listing here shows it. Generalist work pays least; roles that need medical, legal, finance, engineering or PhD-level expertise pay the most.',
+    q: 'Do I need a degree?',
+    a: 'Depends on the role. Generalist rating jobs mostly ask for strong written English. Law, medicine and STEM roles ask for a degree or license, which the platform checks during sign-up.',
   },
   {
-    q: 'Which companies are listed?',
-    a: `${companyList}. Listings are pulled from each company's own public job feed and refreshed daily, so the list stays current without anyone re-posting it by hand.`,
+    q: 'Where does the pay figure come from?',
+    a: 'From the company’s own listing. We show it unchanged. Rates can move after a listing is posted, so confirm on the application page.',
   },
   {
-    q: 'Do I need experience to get an AI training job?',
-    a: 'It depends on the role. Many listings want specific expertise, like a degree, a professional license or several years in the field, while generalist and language roles mainly need strong writing and attention to detail. Each company runs its own application and skills assessment.',
+    q: 'Does One AI Trainer take a cut?',
+    a: 'No. Some links carry a referral code, and the platform pays us a small bonus if you are hired. Your rate is the same either way.',
   },
   {
-    q: 'Is One AI Trainer free, and is it affiliated with these companies?',
-    a: 'It is free with no sign-up. One AI Trainer is an independent aggregator, not affiliated with any company listed. Every "Apply" link goes straight to the company\'s own application page, and some links include a referral code.',
+    q: 'How long does it take to hear back?',
+    a: 'Usually one to three weeks. Most platforms start with an assessment, then a short wait for a project to open. Some never reply if there is no match, so it is reasonable to apply to a few.',
+  },
+  {
+    q: 'Can I apply from outside the US?',
+    a: 'Often, yes. Mercor, Turing, Micro1 and AfterQuery hire in many countries. DataAnnotation is mostly US, UK, Canada and Australia. Meridial lists US and Canada roles plus some worldwide English work.',
+  },
+  {
+    q: 'How often is this list updated?',
+    a: 'Once a day. Listings that close are removed, and new ones appear the next morning. The date at the top of the page shows the last refresh.',
+  },
+  {
+    q: 'Can I hold roles on more than one platform?',
+    a: 'Yes. Most are independent contracts with no exclusivity, and many trainers work on two or three at once. Check each platform’s terms to be sure.',
   },
 ];
 
@@ -277,9 +334,7 @@ const jsonLd = {
   ],
 };
 
-// Matches the client script's own toLocaleDateString('en-US', {...}) format
-// exactly, so the server-rendered label and the JS-recomputed one never
-// visibly disagree.
+// "November 3, 2026", for the hero's "last updated" pill.
 const generatedAtLabel = new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric' }).format(now);
 
 /* =========================================================================
@@ -415,22 +470,21 @@ function fitDescription(candidates) {
 }
 
 function statHTML(value, label) {
-  return `<div class="stat"><b>${escapeHtml(value)}</b><span>${escapeHtml(label)}</span></div>`;
+  return `<div class="stat"><b>${escapeHtml(value)}</b> <span>${escapeHtml(label)}</span></div>`;
 }
 
 const fieldPages = FIELD_PAGES.map(f => {
   const jobs = JOBS.filter(j => j.domain === f.domain);
   const companies = countBy(jobs, 'company').map(([c]) => c);
-  // A much lower floor than the homepage FAQ's: a field can have a few dozen
-  // hourly roles in total, and a range from those is still informative.
-  const pay = hourlyPayRange(jobs, 5);
+  const pay = hourlyPayRange(jobs);
   const from = companies.length > 3 ? `${companies.slice(0, 3).join(', ')} and more` : listPhrase(companies);
   return {
     path: `/jobs/${f.slug}/`,
     nav: f.nav,
+    domain: f.domain,
     jobs,
     title: f.title,
-    h1HTML: `<span class="hl">${escapeHtml(f.h1)}</span> AI training jobs`,
+    h1HTML: `<span class="shimmer">${escapeHtml(f.h1)}</span> AI training jobs`,
     h1Text: `${f.h1} AI training jobs`,
     description: fitDescription([
       `${jobs.length} remote ${f.kw} AI training jobs for ${f.who}, from ${from}. Pay shown up front, updated daily.`,
@@ -453,7 +507,7 @@ const fieldPages = FIELD_PAGES.map(f => {
 const platformPages = COMPANY_NAMES.map(company => {
   const jobs = JOBS.filter(j => j.company === company);
   const fields = countBy(jobs, 'domain').map(([d]) => d);
-  const pay = hourlyPayRange(jobs, 5);
+  const pay = hourlyPayRange(jobs);
   const lead = PLATFORM_LEADS[company] || '';
   if (!lead) console.warn(`No landing-page intro for "${company}" — add one to PLATFORM_LEADS in build.js.`);
   return {
@@ -461,7 +515,7 @@ const platformPages = COMPANY_NAMES.map(company => {
     nav: company,
     jobs,
     title: `${company} Jobs: Remote AI Training Roles`,
-    h1HTML: `<span class="hl">${escapeHtml(company)}</span> AI training jobs`,
+    h1HTML: `<span class="shimmer">${escapeHtml(company)}</span> AI training jobs`,
     h1Text: `${company} AI training jobs`,
     description: fitDescription([
       `${jobs.length} open ${company} jobs: remote AI training roles in ${listPhrase(fields.slice(0, 3))}` +
@@ -490,37 +544,92 @@ const platformPages = COMPANY_NAMES.map(company => {
 const landingPages = [...fieldPages, ...platformPages].filter(p => p.jobs.length);
 const emptyLandingPages = [...fieldPages, ...platformPages].filter(p => !p.jobs.length);
 
-// Shared by the homepage hero and every landing page, so each page links to
-// all the others and nothing is orphaned.
+/* =========================================================================
+   FIELD TABS + PLATFORM CHIPS
+   Every chip is a link to its landing page, so the homepage links to all of
+   them and nothing is orphaned. On the homepage the script turns a plain
+   click into an in-page filter; on landing pages they are ordinary links.
+   ========================================================================= */
+const PLATFORM_PAGE = Object.fromEntries(platformPages.map(p => [p.nav, p]));
+
+/**
+ * One chip: a link when there is a page to go to, else a plain button.
+ * `current` is the aria-current value for the lit chip ('true' for the
+ * homepage's active filter, 'page' on landing pages), or '' when unlit.
+ * `data` is extra attributes for the homepage filter script.
+ */
+function chipHTML({ kind, label, n, color, href, current, data = '' }) {
+  const cls = `chip ${kind}${current ? ' on' : ''}`;
+  const attrs = `class="${cls}"${color ? ` style="--c:${color}"` : ''}${data}${current ? ` aria-current="${current}"` : ''}`;
+  const inner = kind === 'pchip'
+    ? `<span class="dot"></span>${escapeHtml(label)}`
+    : `${escapeHtml(label)} <span class="n">${n}</span>`;
+  return href ? `<a href="${href}" ${attrs}>${inner}</a>` : `<button type="button" ${attrs}>${inner}</button>`;
+}
+
+// Homepage: "All" first, then all eight fields in a fixed order with counts.
+// A field with no listings today has no page, so its tab is a plain button.
+function fieldTabsHTML() {
+  const data = (dom, label) => ` data-dom="${escapeHtml(dom)}" data-label="${escapeHtml(label)}"`;
+  return [
+    chipHTML({ kind: 'tab', label: 'All', n: JOBS.length, href: '/', current: 'true', data: data('All', 'All') }),
+    ...fieldPages.map(p => chipHTML({
+      kind: 'tab', label: p.nav, n: p.jobs.length, href: p.jobs.length ? p.path : '', current: '', data: data(p.domain, p.nav),
+    })),
+  ].join('');
+}
+
+function platformChipsHTML() {
+  return [
+    chipHTML({ kind: 'pchip', label: 'All', color: 'var(--accent)', href: '/', current: 'true', data: ' data-plat="All"' }),
+    ...SOURCES.map(c => {
+      const page = PLATFORM_PAGE[c];
+      return chipHTML({
+        kind: 'pchip', label: c, color: accentVar(c), href: page && page.jobs.length ? page.path : '', current: '', data: ` data-plat="${escapeHtml(c)}"`,
+      });
+    }),
+  ].join('');
+}
+
+// Landing pages: the same chips as two rows of plain links, current page lit.
 function browseNavHTML(currentPath) {
-  const link = p =>
-    `<a href="${p.path}"${p.path === currentPath ? ' aria-current="page"' : ''}>${escapeHtml(p.nav)}<span class="n">${p.jobs.length}</span></a>`;
-  const row = (label, pages) =>
-    `<div class="browse-row"><span class="browse-label">${label}</span>${pages.filter(p => p.jobs.length).map(link).join('')}</div>`;
+  const current = p => (p.path === currentPath ? 'page' : '');
+  const fields = fieldPages.filter(p => p.jobs.length)
+    .map(p => chipHTML({ kind: 'tab', label: p.nav, n: p.jobs.length, href: p.path, current: current(p) }));
+  const platforms = platformPages.filter(p => p.jobs.length)
+    .map(p => chipHTML({ kind: 'pchip', label: p.nav, color: accentVar(p.nav), href: p.path, current: current(p) }));
   return `<nav class="browse" aria-label="Browse AI training jobs">
-      ${row('By field', fieldPages)}
-      ${row('By platform', platformPages)}
+      <div class="chip-row"><span class="row-label">Field</span>${fields.join('')}</div>
+      <div class="chip-row"><span class="row-label">Platform</span>${platforms.join('')}</div>
     </nav>`;
 }
 
-const out = template
-  .replace('{{MERCOR_JOBS_JSON}}', () => embed(JSON.stringify(mercorJobs)))
-  .replace('{{DATAANNOTATION_JOBS_JSON}}', () => embed(JSON.stringify(dataannotationJobs)))
-  .replace('{{TURING_JOBS_JSON}}', () => embed(JSON.stringify(turingJobs)))
-  .replace('{{MERIDIAL_JOBS_JSON}}', () => embed(JSON.stringify(meridialJobs)))
-  .replace('{{MICRO1_JOBS_JSON}}', () => embed(JSON.stringify(micro1Jobs)))
-  .replace('{{AFTERQUERY_JOBS_JSON}}', () => embed(JSON.stringify(afterqueryJobs)))
-  .replace('{{REFERRAL_CONFIG_JSON}}', () => JSON.stringify(referralConfig))
-  .replace('{{GENERATED_AT_ISO}}', () => now.toISOString())
-  .replace('{{ONGOING_AFTER_DAYS}}', () => String(ONGOING_AFTER_DAYS))
-  .replace('{{GENERATED_AT_LABEL}}', () => generatedAtLabel)
-  .replace(/\{\{SITE_URL\}\}/g, () => SITE_URL)
-  .replace(/\{\{JOBS_TOTAL\}\}/g, () => String(JOBS.length))
-  .replace(/\{\{COMPANIES_TOTAL\}\}/g, () => String(new Set(JOBS.map(j => j.company)).size))
-  .replace('{{FAQ_HTML}}', () => faqHTML)
-  .replace('{{BROWSE_NAV_HTML}}', () => browseNavHTML('/'))
-  .replace('{{JSON_LD}}', () => embed(JSON.stringify(jsonLd)))
-  .replace('{{JOB_CARDS_HTML}}', () => jobCardsHTML);
+// Single pass, so a {{...}} inside a job's text is never itself expanded,
+// and a placeholder the template uses but this doesn't fill fails the build.
+// The function replacer also means a "$&" or "$1" in job text is inserted
+// literally instead of being read as a String.replace pattern.
+function fillTemplate(tpl, vars, name) {
+  return tpl.replace(/\{\{([A-Z0-9_]+)\}\}/g, (m, key) => {
+    if (!(key in vars)) throw new Error(`${name} uses {{${key}}}, which build.js does not fill`);
+    return vars[key];
+  });
+}
+
+const homeShown = Math.min(PAGE_SIZE, JOBS.length);
+const out = fillTemplate(template, {
+  SITE_URL,
+  JOBS_TOTAL: String(JOBS.length),
+  JOBS_TOTAL_LABEL: JOBS.length.toLocaleString('en-US'),
+  GENERATED_AT_LABEL: generatedAtLabel,
+  JSON_LD: embed(JSON.stringify(jsonLd)),
+  FIELD_TABS_HTML: fieldTabsHTML(),
+  PLATFORM_CHIPS_HTML: platformChipsHTML(),
+  JOB_CARDS_HTML: jobCardsHTML,
+  SHOWN_INITIAL: String(homeShown),
+  MORE_HIDDEN: JOBS.length > PAGE_SIZE ? '' : ' hidden',
+  MORE_LABEL: `Show ${Math.min(PAGE_SIZE, JOBS.length - PAGE_SIZE)} more`,
+  FAQ_HTML: faqHTML,
+}, 'index.template.html');
 
 fs.writeFileSync(path.join(dir, 'index.html'), out);
 
@@ -557,7 +666,7 @@ for (const p of landingPages) {
       },
     ],
   };
-  // Newest first, since a landing page has no sort control of its own. The
+  // Most recent first, since a landing page has no sort control of its own. The
   // sort is stable, so a page of only ongoing roles (DataAnnotation's are all
   // undated) keeps its feed order — and then the heading doesn't claim an
   // order it can't show.
@@ -578,14 +687,11 @@ for (const p of landingPages) {
     STATS_HTML: p.stats.map(([v, l]) => statHTML(v, l)).join(''),
     BROWSE_NAV_HTML: browseNavHTML(p.path),
     SECTION_TITLE: escapeHtml(`${p.jobs.length} open ${p.sectionNoun}${dated ? ', newest first' : ''}`),
-    JOB_CARDS_HTML: sorted.map(cardHTML).join(''),
+    JOB_CARDS_HTML: sorted.map((j, n) => cardHTML(j, n)).join(''),
     JOBS_TOTAL: String(JOBS.length),
+    PAGE_TOTAL_LABEL: p.jobs.length.toLocaleString('en-US'),
   };
-  // Single pass, so a {{...}} inside a job's text is never itself expanded.
-  const html = landingTemplate.replace(/\{\{([A-Z0-9_]+)\}\}/g, (m, key) => {
-    if (!(key in vars)) throw new Error(`landing.template.html uses {{${key}}}, which build.js does not fill`);
-    return vars[key];
-  });
+  const html = fillTemplate(landingTemplate, vars, 'landing.template.html');
   const file = landingFile(p.path);
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, html);
@@ -657,7 +763,7 @@ console.log(
 console.log(`Wrote ${landingPages.length} landing pages: ` + landingPages.map(p => `${p.path} (${p.jobs.length})`).join(', '));
 console.log('Wrote robots.txt and sitemap.xml');
 
-// Date coverage drives the default "Newest first" sort — undated listings sort
+// Date coverage drives the default "Most recent" sort — undated listings sort
 // last, so a source silently losing its date field would quietly sink all of
 // its listings. Make that visible in the build log.
 const datedBySource = {};

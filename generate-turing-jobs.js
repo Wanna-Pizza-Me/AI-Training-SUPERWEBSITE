@@ -25,7 +25,10 @@ const RATE_RE =
 function payFromListing(j) {
   const rates = new Set();
   for (const text of [j.title, j.description]) {
-    const plain = (text || '').replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ');
+    // Quote-aware tag match, so a ">" inside an attribute value can't end the
+    // tag early and leak attribute text (or a stray "$") into the prose.
+    // The plain match after "|" is the fallback for a tag with an unclosed quote.
+    const plain = (text || '').replace(/<(?:[^>"']|"[^"]*"|'[^']*')*>|<[^>]*>/g, ' ').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ');
     for (const [, upTo, lo, loPlus, hi, hiPlus, unit] of plain.matchAll(RATE_RE)) {
       const amount = `$${lo}${loPlus || ''}` + (hi ? `–$${hi}${hiPlus || ''}` : '');
       rates.add(`${upTo ? 'Up to ' : ''}${amount}${unit.toLowerCase() === 'task' ? '/task' : '/hr'}`);

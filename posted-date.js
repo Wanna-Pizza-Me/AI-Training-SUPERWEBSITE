@@ -5,11 +5,9 @@
 // hand back timestamps several hours in the future with no zone attached), so
 // normalise once here rather than getting it subtly wrong in six places.
 //
-// relativeAge() and byRecency() are mirrored in index.template.html's inline
-// client script (build.js fills in ONGOING_AFTER_DAYS there from this file) —
-// same intentional duplication as cardHTML()/escapeHtml()/accentVar(), since
-// the browser copy runs as an inline <script> string and can't require this.
-// Change one, change the other.
+// build.js is the only consumer of relativeAge() and byRecency(): it renders
+// each card's age and stamps each card with its "Most recent" position, so
+// the homepage script reorders cards without a copy of these rules.
 
 // Anything outside this window is a parsing accident, not a real posting date.
 const EARLIEST = Date.UTC(2015, 0, 1);
@@ -57,10 +55,8 @@ function normalizePosted(raw) {
  * Short relative age for a card, e.g. "3d ago". Returns null for undated
  * listings so callers can omit the element entirely.
  *
- * `now` is passed in rather than read from the clock so the server-rendered
- * markup and the client's re-render agree exactly — the client passes the
- * build's GENERATED_AT, so sorting the grid never makes a card's age flicker
- * to a different value.
+ * `now` is passed in rather than read from the clock so every card in one
+ * build is aged against the same instant.
  */
 function relativeAge(iso, now) {
   if (!iso) return null;
@@ -80,7 +76,7 @@ function relativeAge(iso, now) {
 }
 
 /**
- * Comparator for the "Newest first" sort, which is the default order on
+ * Comparator for the "Most recent" sort, which is the default order on
  * every page. Postings under ONGOING_AFTER_DAYS old come first, newest first;
  * then every ongoing role (long-running ones, plus undated evergreen sources
  * like DataAnnotation) in feed order. Array.prototype.sort is stable, so

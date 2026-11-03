@@ -48,11 +48,15 @@ function formatPay(raw) {
 // AfterQuery's description field is HTML ("<p>…</p><p>…</p>"), unlike every
 // other source. Card blurbs are escaped on render, so left as-is the tags
 // show up on the page as literal "<p>" text. Reduce it to plain text first.
+// Tag matches are quote-aware: an attribute value can contain a literal ">"
+// (Tailwind classes like "[&:has(...)>*]"), which would end a plain [^>]*
+// match early and leak the rest of the tag into the blurb. The plain match
+// after "|" is the fallback for a tag with an unclosed quote.
 const ENTITIES = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ' };
 function stripHtml(html) {
   return (html || '')
-    .replace(/<(br|\/p|\/li|\/h\d|\/div)\b[^>]*>/gi, ' ')
-    .replace(/<[^>]*>/g, '')
+    .replace(/<(br|\/p|\/li|\/h\d|\/div)\b(?:[^>"']|"[^"]*"|'[^']*')*>/gi, ' ')
+    .replace(/<(?:[^>"']|"[^"]*"|'[^']*')*>|<[^>]*>/g, '')
     .replace(/&(#x[0-9a-f]+|#\d+|[a-z]+);/gi, (m, e) => {
       if (e[0] === '#') {
         const code = e[1].toLowerCase() === 'x' ? parseInt(e.slice(2), 16) : parseInt(e.slice(1), 10);

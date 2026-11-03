@@ -29,8 +29,12 @@ function decodeEntities(s) {
     .replace(/&nbsp;/g, ' ');
 }
 
+// Quote-aware tag match: an attribute value can contain a literal ">"
+// (Tailwind classes like "[&:has(...)>*]"), which would end a plain <[^>]+>
+// early and leak the rest of the tag into the text. The plain match after
+// "|" is the fallback for a tag with an unclosed quote.
 function stripTagsAndComments(html) {
-  return decodeEntities(html.replace(/<!--[\s\S]*?-->/g, '').replace(/<[^>]+>/g, ' '))
+  return decodeEntities(html.replace(/<!--[\s\S]*?-->/g, '').replace(/<(?:[^>"']|"[^"]*"|'[^']*')*>|<[^>]*>/g, ' '))
     .replace(/\s+/g, ' ')
     .trim();
 }
@@ -47,7 +51,11 @@ function parseCards(homeHtml) {
   while ((m = cardRe.exec(homeHtml))) {
     const [, href, domain, inner] = m;
     const titleM = inner.match(/<h2>([^<]+)<\/h2>/);
-    const rateM = inner.match(/<span class="rate">([\s\S]*?)<\/span>/);
+    // The rate span now nests <span class="rate-pre">Up to</span>, so a plain
+    // lazy match would stop at the inner </span> and capture only "Up to".
+    // Run to the </span> that closes the rate itself (followed by the hired
+    // count or the end of the card).
+    const rateM = inner.match(/<span class="rate">([\s\S]*?)<\/span>(?=\s*(?:<span class="hired"|<\/div>))/);
     const hiredM = inner.match(/<span class="hired">([\s\S]*?)<\/span>/);
     if (!titleM) continue;
     cards.push({
@@ -119,7 +127,7 @@ async function main() {
       domain: mapDomain(card.domain, 'DataAnnotation'),
       // No date anywhere to scrape: these are evergreen role pages on a
       // signup funnel, not dated postings. Undated sorts last under
-      // "Newest first" with the other ongoing roles and renders without an age.
+      // "Most recent" with the other ongoing roles and renders without an age.
       posted: null,
     };
   });
