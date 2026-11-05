@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Illinois Procurement Wargame</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="A facilitated tabletop wargame for State of Illinois procurement staff: work a live procurement from the first phone call to the audit, one decision at a time.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23131B2C'/%3E%3Cpath d='M8 9h12l4 4v10H8z' fill='none' stroke='%23fff' stroke-width='2'/%3E%3Cpath d='M12 17l3 3 5-6' fill='none' stroke='%23FF8A7A' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=IBM+Plex+Mono:wght@400;500&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<style>
+/* Layout: a working case file. A sticky status strip on top; each turn reads as a document on the left
+   while the team ledger (meters, picks) rides on the right; everything stacks to one column on phones. */
+:root {
+  --paper: #EDF0F5;       /* cool form stock behind everything */
+  --sheet: #FFFFFF;       /* the document surface */
+  --ink: #131B2C;         /* body text */
+  --ink-2: #4B566C;       /* secondary text */
+  --rule: #CDD4DF;        /* form rules and borders */
+  --carbon: #2446A6;      /* carbon-copy blue: the accent */
+  --carbon-ink: #FFFFFF;
+  --carbon-wash: #E3E9F8;
+  --stamp: #B42318;       /* rubber-stamp red: injects and violations */
+  --stamp-wash: #FBE8E5;
+  --ok: #17744A;   --ok-wash: #E1F2E8;
+  --warn: #8F5500; --warn-wash: #FAF0DC;
+  --slip: #FBE3EA; --slip-ink: #7A1F3D; --slip-rule: #E9B9C8;
+  --bar: #131B2C; --bar-ink: #E9EDF5; --bar-dim: #9CA8BF;
+  --shadow: 0 1px 0 rgba(19, 27, 44, .05), 0 10px 28px -16px rgba(19, 27, 44, .28);
+
+  --f-display: "Big Shoulders Display", "Arial Narrow", "Roboto Condensed", Impact, sans-serif;
+  --f-body: "Public Sans", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --t-xs: .75rem; --t-sm: .875rem; --t-md: 1rem; --t-lg: 1.1875rem;
+  --t-xl: 1.5rem; --t-2xl: 2.125rem; --t-3xl: 3rem; --t-4xl: 4.25rem;
+  --radius: 6px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0C111C; --sheet: #141B2A; --ink: #E6EAF2; --ink-2: #A2ADC1; --rule: #2A3549;
+    --carbon: #93A9FF; --carbon-ink: #0C111C; --carbon-wash: #1B2647;
+    --stamp: #FF8A7A; --stamp-wash: #3A1916;
+    --ok: #5CD39A; --ok-wash: #11301F; --warn: #F0B45E; --warn-wash: #36270D;
+    --slip: #33202A; --slip-ink: #F4B6C9; --slip-rule: #5A3343;
+    --bar: #070B13; --bar-ink: #E6EAF2; --bar-dim: #8792A8;
+    --shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 10px 28px -16px rgba(0, 0, 0, .8);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0C111C; --sheet: #141B2A; --ink: #E6EAF2; --ink-2: #A2ADC1; --rule: #2A3549;
+  --carbon: #93A9FF; --carbon-ink: #0C111C; --carbon-wash: #1B2647;
+  --stamp: #FF8A7A; --stamp-wash: #3A1916;
+  --ok: #5CD39A; --ok-wash: #11301F; --warn: #F0B45E; --warn-wash: #36270D;
+  --slip: #33202A; --slip-ink: #F4B6C9; --slip-rule: #5A3343;
+  --bar: #070B13; --bar-ink: #E6EAF2; --bar-dim: #8792A8;
+  --shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 10px 28px -16px rgba(0, 0, 0, .8);
+  color-scheme: dark;
+}
+
+:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+html { font-size: 16px; -webkit-text-size-adjust: 100%; }
+html.room { font-size: 19px; }
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: var(--f-body); font-size: var(--t-md); line-height: 1.55;
+  font-variant-numeric: tabular-nums;
+}
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);
+  z-index: 10; background: var(--bar);
+}
+h1, h2, h3 { text-wrap: balance; margin: 0; }
+p { margin: 0; }
+a { color: var(--carbon); text-underline-offset: 2px; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--carbon); outline-offset: 2px; border-radius: 3px; }
+.mono { font-family: var(--f-mono); font-size: var(--t-xs); letter-spacing: .04em; text-transform: uppercase; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---------- top strip ---------- */
+.bar {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20;
+  background: var(--bar); color: var(--bar-ink);
+}
+.bar-in {
+  max-width: 1320px; margin: 0 auto; display: flex; align-items: center; gap: 16px;
+  padding-block: 10px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.mark {
+  all: unset; cursor: pointer; font-family: var(--f-display); font-weight: 800;
+  text-transform: uppercase; letter-spacing: .02em; line-height: .95; font-size: 1.15rem;
+}
+.mark span { display: block; color: var(--bar-dim); font-weight: 600; font-size: .8rem; letter-spacing: .12em; }
+.mark:focus-visible { outline: 3px solid var(--bar-ink); outline-offset: 4px; }
+.bar-mid { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.bar-mid .mono { color: var(--bar-dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bar-mid strong { font-family: var(--f-display); font-weight: 600; font-size: 1.2rem; letter-spacing: .02em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bar-tools { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
+.tool {
+  border: 1px solid color-mix(in srgb, var(--bar-ink) 22%, transparent); background: transparent;
+  color: var(--bar-ink); border-radius: 999px; padding: 5px 12px; font-size: var(--t-sm); cursor: pointer;
+  display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;
+}
+.tool:hover { background: color-mix(in srgb, var(--bar-ink) 10%, transparent); }
+.tool[aria-pressed="true"] { background: var(--bar-ink); color: var(--bar); border-color: var(--bar-ink); }
+.tool:focus-visible { outline-color: var(--bar-ink); }
+.timer { font-family: var(--f-mono); font-weight: 500; min-width: 5.2em; justify-content: center; }
+.timer.low { color: var(--stamp); border-color: var(--stamp); }
+.timer.done { background: var(--stamp); color: var(--sheet); border-color: var(--stamp); }
+@media (prefers-reduced-motion: no-preference) { .timer.done { animation: blink 1s steps(2) 4; } }
+@keyframes blink { 50% { opacity: .35; } }
+.progress { display: flex; gap: 3px; max-width: 1320px; margin: 0 auto; padding-bottom: 8px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.progress i { flex: 1; height: 4px; border-radius: 2px; background: color-mix(in srgb, var(--bar-ink) 18%, transparent); }
+.progress i.done { background: var(--bar-dim); }
+.progress i.now { background: var(--stamp); }
+@media (max-width: 720px) {
+  .bar-in { flex-wrap: wrap; row-gap: 8px; }
+  .bar-mid { order: 3; flex-basis: 100%; }
+  .bar-tools { margin-left: auto; }
+  .tool .long { display: none; }
+}
+
+/* ---------- page shell ---------- */
+.shell {
+  max-width: 1320px; margin: 0 auto;
+  padding-block: 28px 120px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.stack { display: flex; flex-direction: column; gap: 16px; }
+.eyebrow { font-family: var(--f-mono); font-size: var(--t-xs); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-2); }
+.sheet { background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--radius); box-shadow: var(--shadow); }
+.btn {
+  border: 1px solid var(--rule); background: var(--sheet); color: var(--ink); border-radius: var(--radius);
+  padding: 10px 16px; font-weight: 600; cursor: pointer; display: inline-flex; gap: 8px; align-items: center; justify-content: center;
+}
+.btn:hover { border-color: var(--ink-2); }
+.btn.primary { background: var(--carbon); color: var(--carbon-ink); border-color: var(--carbon); }
+.btn.primary:hover { filter: brightness(1.08); }
+.btn.danger { color: var(--stamp); border-color: var(--stamp); }
+.btn:disabled { opacity: .45; cursor: not-allowed; filter: none; }
+.btn.big { padding: 14px 22px; font-size: var(--t-lg); }
+.row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+
+/* ---------- home ---------- */
+.hero { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 32px; align-items: end; padding-block: 12px 36px; border-bottom: 2px solid var(--ink); }
+.hero h1 { font-family: var(--f-display); font-weight: 800; font-size: clamp(2.75rem, 7vw, var(--t-4xl)); line-height: .92; text-transform: uppercase; letter-spacing: .005em; margin-top: 10px; }
+.hero h1 em { font-style: normal; color: var(--stamp); }
+.hero .lede { font-size: var(--t-lg); color: var(--ink-2); max-width: 36em; }
+.hero-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; border: 1px solid var(--rule); border-radius: var(--radius); background: var(--sheet); }
+.hero-facts div { padding: 12px 14px; border-left: 1px solid var(--rule); }
+.hero-facts div:first-child { border-left: 0; }
+.hero-facts b { display: block; font-family: var(--f-display); font-size: var(--t-2xl); line-height: 1; font-weight: 800; }
+.hero-facts span { font-size: var(--t-sm); color: var(--ink-2); }
+@media (max-width: 860px) { .hero { grid-template-columns: 1fr; gap: 20px; } }
+
+.section-h { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin: 36px 0 14px; flex-wrap: wrap; }
+.section-h h2 { font-family: var(--f-display); font-weight: 800; text-transform: uppercase; font-size: var(--t-2xl); letter-spacing: .01em; }
+.cases { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 16px; }
+.case {
+  position: relative; text-align: left; cursor: pointer; padding: 0; display: flex; flex-direction: column;
+  background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--radius); box-shadow: var(--shadow);
+}
+.case:hover { border-color: var(--ink-2); }
+.case[aria-pressed="true"] { border-color: var(--carbon); box-shadow: 0 0 0 2px var(--carbon), var(--shadow); }
+.case-tab { display: flex; justify-content: space-between; gap: 8px; padding: 9px 16px; border-bottom: 1px dashed var(--rule); color: var(--ink-2); }
+.case[aria-pressed="true"] .case-tab { color: var(--carbon); }
+.case-body { padding: 16px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.case h3 { font-family: var(--f-display); font-size: var(--t-3xl); font-weight: 800; line-height: .95; text-transform: uppercase; }
+.case .focus { font-weight: 600; }
+.case .desc { color: var(--ink-2); font-size: var(--t-sm); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 6px; }
+.chip { font-size: var(--t-xs); border: 1px solid var(--rule); border-radius: 999px; padding: 2px 9px; color: var(--ink-2); background: var(--paper); }
+.check { position: absolute; top: 8px; right: 10px; }
+
+.setup { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 16px; }
+.panel { padding: 18px; display: flex; flex-direction: column; gap: 12px; }
+.panel h3 { font-size: var(--t-md); }
+.panel .hint { font-size: var(--t-sm); color: var(--ink-2); }
+.seg { display: flex; border: 1px solid var(--rule); border-radius: var(--radius); overflow: hidden; flex-wrap: wrap; }
+.seg button { flex: 1; border: 0; background: transparent; padding: 9px 10px; cursor: pointer; font-weight: 600; font-size: var(--t-sm); border-left: 1px solid var(--rule); min-width: 4.5em; }
+.seg button:first-child { border-left: 0; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--sheet); }
+.names { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.names label { display: flex; flex-direction: column; gap: 3px; font-size: var(--t-xs); color: var(--ink-2); }
+.names input { font: inherit; font-size: var(--t-sm); color: var(--ink); background: var(--paper); border: 1px solid var(--rule); border-radius: 4px; padding: 7px 9px; width: 100%; min-width: 0; }
+.stepper { display: flex; align-items: center; gap: 10px; }
+.stepper button { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--rule); background: var(--paper); cursor: pointer; font-size: 1.2rem; line-height: 1; }
+.stepper output { font-family: var(--f-display); font-size: var(--t-2xl); font-weight: 800; min-width: 1.4em; text-align: center; }
+.start-row { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; margin-top: 20px; padding: 18px; border: 2px solid var(--ink); border-radius: var(--radius); background: var(--sheet); }
+.start-row p { color: var(--ink-2); max-width: 46em; }
+.resume { display: flex; gap: 16px; align-items: center; justify-content: space-between; flex-wrap: wrap; padding: 14px 18px; margin-top: 24px; border-left: 4px solid var(--stamp); }
+.disclaimer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--ink-2); font-size: var(--t-sm); max-width: 70em; }
+
+/* ---------- briefing ---------- */
+.two { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 24px; align-items: start; }
+@media (max-width: 980px) { .two { grid-template-columns: minmax(0, 1fr); } }
+.doc { padding: clamp(18px, 3.5vw, 40px); display: flex; flex-direction: column; gap: 18px; min-width: 0; }
+.doc-head { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; color: var(--ink-2); padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
+.doc-head .phase { color: var(--stamp); }
+.doc h1 { font-family: var(--f-display); font-weight: 800; text-transform: uppercase; font-size: clamp(2.2rem, 5vw, var(--t-3xl)); line-height: .95; }
+.doc .prose { display: flex; flex-direction: column; gap: 12px; max-width: 68ch; font-size: var(--t-lg); }
+.doc h2.sub { font-size: var(--t-xs); font-family: var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-2); font-weight: 500; margin-top: 8px; }
+.form { display: grid; grid-template-columns: 9.5em minmax(0, 1fr); border: 1px solid var(--rule); border-radius: 4px; margin: 0; }
+.form dt, .form dd { margin: 0; padding: 9px 12px; border-top: 1px solid var(--rule); }
+.form dt:first-of-type, .form dt:first-of-type + dd { border-top: 0; }
+.form dt { font-family: var(--f-mono); font-size: var(--t-xs); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); background: var(--paper); border-right: 1px solid var(--rule); }
+@media (max-width: 560px) { .form { grid-template-columns: 1fr; } .form dt { border-right: 0; } .form dd { border-top: 0; } }
+.list { margin: 0; padding-left: 1.2em; display: flex; flex-direction: column; gap: 6px; max-width: 68ch; }
+.meter-key { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 10px; }
+.meter-key div { border: 1px solid var(--rule); border-radius: 4px; padding: 10px 12px; }
+.meter-key b { display: block; font-family: var(--f-display); font-size: var(--t-xl); text-transform: uppercase; line-height: 1.1; }
+.meter-key span { font-size: var(--t-sm); color: var(--ink-2); }
+.grade-key { display: flex; flex-wrap: wrap; gap: 8px; }
+
+/* ---------- injects ---------- */
+.inject { border-radius: 4px; position: relative; max-width: 72ch; }
+.inject .stampmark {
+  position: absolute; top: -12px; right: 14px; font-family: var(--f-display); font-weight: 800; text-transform: uppercase;
+  letter-spacing: .08em; font-size: .95rem; color: var(--stamp); border: 2px solid var(--stamp); padding: 0 8px;
+  background: var(--sheet); transform: rotate(-3deg); border-radius: 3px;
+}
+.inj-mail { border: 1px solid var(--rule); background: var(--paper); }
+.inj-mail .hdr { display: grid; grid-template-columns: 5em minmax(0, 1fr); gap: 2px 10px; padding: 12px 16px; border-bottom: 1px solid var(--rule); font-size: var(--t-sm); }
+.inj-mail .hdr span:nth-child(odd) { color: var(--ink-2); font-family: var(--f-mono); font-size: var(--t-xs); text-transform: uppercase; padding-top: 2px; }
+.inj-mail .hdr span { overflow-wrap: anywhere; }
+.inj-body { padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; }
+.inj-memo { border: 1px solid var(--rule); background: var(--sheet); padding: 18px 20px; }
+.inj-memo .memo-h { font-family: var(--f-display); font-weight: 800; font-size: var(--t-xl); letter-spacing: .2em; text-transform: uppercase; border-bottom: 3px double var(--ink); padding-bottom: 6px; margin-bottom: 8px; }
+.inj-memo .hdr { display: grid; grid-template-columns: 4.5em minmax(0, 1fr); gap: 2px 10px; font-size: var(--t-sm); padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
+.inj-memo .hdr span:nth-child(odd) { font-family: var(--f-mono); font-size: var(--t-xs); text-transform: uppercase; color: var(--ink-2); padding-top: 2px; }
+.inj-memo .inj-body { padding: 12px 0 0; }
+.inj-phone { background: var(--slip); color: var(--ink); border: 1px solid var(--slip-rule); padding: 16px 18px; max-width: 34rem; }
+.inj-phone .slip-h { font-family: var(--f-display); font-weight: 800; text-transform: uppercase; font-size: var(--t-xl); color: var(--slip-ink); letter-spacing: .06em; border-bottom: 2px solid var(--slip-ink); margin-bottom: 8px; }
+.inj-phone .line { display: grid; grid-template-columns: 4.5em minmax(0, 1fr); gap: 8px; border-bottom: 1px solid var(--slip-rule); padding: 4px 0; font-size: var(--t-sm); }
+.inj-phone .line span:first-child { font-family: var(--f-mono); font-size: var(--t-xs); text-transform: uppercase; color: var(--slip-ink); padding-top: 2px; }
+.inj-phone .boxes { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: var(--t-xs); font-family: var(--f-mono); text-transform: uppercase; color: var(--slip-ink); padding: 8px 0; }
+.inj-phone .boxes span::before { content: ""; display: inline-block; width: .8em; height: .8em; border: 1.5px solid var(--slip-ink); margin-right: 5px; vertical-align: -1px; }
+.inj-phone .boxes span.x::before { background: var(--slip-ink); }
+.inj-phone .msg { font-style: italic; padding-top: 6px; display: flex; flex-direction: column; gap: 8px; }
+.inj-letter { border: 1px solid var(--rule); background: var(--sheet); padding: 20px 22px; }
+.inj-letter .lh { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; border-bottom: 1px solid var(--ink); padding-bottom: 8px; margin-bottom: 12px; }
+.inj-letter .lh b { font-family: var(--f-display); font-size: var(--t-xl); text-transform: uppercase; letter-spacing: .04em; }
+.inj-letter .re { font-weight: 700; }
+.inj-letter .inj-body { padding: 10px 0 0; }
+.inj-news { border-top: 3px solid var(--ink); border-bottom: 1px solid var(--ink); padding: 12px 0; background: transparent; }
+.inj-news .masthead { font-family: var(--f-mono); font-size: var(--t-xs); text-transform: uppercase; letter-spacing: .1em; color: var(--ink-2); display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.inj-news h3 { font-family: var(--f-display); font-weight: 800; font-size: var(--t-2xl); line-height: 1; margin: 8px 0; text-transform: none; }
+.inj-news .inj-body { padding: 0; column-width: 22em; column-gap: 24px; display: block; }
+.inj-news .inj-body p + p { margin-top: 8px; }
+.inj-text { display: flex; flex-direction: column; gap: 8px; max-width: 30rem; padding: 14px; border: 1px solid var(--rule); border-radius: 18px; background: var(--paper); }
+.inj-text .who { font-family: var(--f-mono); font-size: var(--t-xs); color: var(--ink-2); text-transform: uppercase; text-align: center; }
+.inj-text .bubble { align-self: flex-start; background: var(--sheet); border: 1px solid var(--rule); border-radius: 16px 16px 16px 4px; padding: 8px 12px; max-width: 88%; }
+
+/* ---------- decision ---------- */
+.question { font-family: var(--f-display); font-weight: 800; font-size: var(--t-2xl); text-transform: uppercase; line-height: 1; padding-top: 14px; border-top: 2px solid var(--ink); }
+.options { display: flex; flex-direction: column; gap: 10px; }
+.opt {
+  display: grid; grid-template-columns: 3rem minmax(0, 1fr); gap: 4px 14px; align-items: start;
+  border: 1px solid var(--rule); border-radius: var(--radius); background: var(--sheet); padding: 14px 16px; text-align: left; width: 100%;
+}
+button.opt { cursor: pointer; }
+button.opt:hover { border-color: var(--ink-2); }
+.opt[aria-pressed="true"] { border-color: var(--carbon); box-shadow: 0 0 0 2px var(--carbon); }
+.opt .letter { font-family: var(--f-display); font-weight: 800; font-size: 2.4rem; line-height: .85; color: var(--carbon); grid-row: span 3; text-align: center; }
+.opt .otext { font-size: var(--t-lg); }
+.opt .meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.opt .outcome { font-size: var(--t-md); color: var(--ink); border-top: 1px dashed var(--rule); padding-top: 8px; margin-top: 4px; }
+.opt.revealed { background: var(--sheet); }
+.opt.revealed.g-best { border-color: var(--ok); }
+.opt.revealed.g-violation { border-color: color-mix(in srgb, var(--stamp) 55%, var(--rule)); }
+.badge { display: inline-flex; align-items: center; gap: 5px; font-size: var(--t-xs); font-weight: 700; letter-spacing: .04em; text-transform: uppercase; border-radius: 3px; padding: 2px 7px; border: 1px solid currentColor; }
+.g-best .badge.grade, .badge.g-best { color: var(--ok); background: var(--ok-wash); }
+.g-sound .badge.grade, .badge.g-sound { color: var(--carbon); background: var(--carbon-wash); }
+.g-risky .badge.grade, .badge.g-risky { color: var(--warn); background: var(--warn-wash); }
+.g-violation .badge.grade, .badge.g-violation { color: var(--stamp); background: var(--stamp-wash); }
+.pickchip { font-size: var(--t-xs); font-weight: 600; border-radius: 999px; padding: 2px 9px; background: var(--ink); color: var(--sheet); }
+.delta { font-family: var(--f-mono); font-size: var(--t-xs); padding: 1px 6px; border-radius: 3px; white-space: nowrap; }
+.delta.up { color: var(--ok); background: var(--ok-wash); }
+.delta.down { color: var(--stamp); background: var(--stamp-wash); }
+.delta.flat { color: var(--ink-2); background: var(--paper); }
+
+/* ---------- notes, rules, consequences ---------- */
+.notes { border: 2px dashed var(--carbon); border-radius: var(--radius); padding: 16px 18px; display: flex; flex-direction: column; gap: 10px; background: var(--carbon-wash); }
+.notes h3 { font-family: var(--f-mono); font-size: var(--t-xs); letter-spacing: .12em; text-transform: uppercase; color: var(--carbon); font-weight: 500; }
+.notes .red { border-left: 3px solid var(--stamp); padding-left: 10px; font-style: italic; }
+.notes .red b { font-style: normal; color: var(--stamp); font-family: var(--f-mono); font-size: var(--t-xs); text-transform: uppercase; letter-spacing: .06em; display: block; }
+.reveal-h { font-family: var(--f-display); font-weight: 800; font-size: var(--t-2xl); text-transform: uppercase; line-height: 1; padding-top: 14px; border-top: 2px solid var(--ink); }
+.good { border: 1px solid var(--ok); background: var(--ok-wash); border-radius: var(--radius); padding: 14px 16px; }
+.good b { display: block; font-family: var(--f-mono); font-size: var(--t-xs); text-transform: uppercase; letter-spacing: .08em; color: var(--ok); margin-bottom: 4px; font-weight: 500; }
+.carry { display: flex; flex-direction: column; gap: 8px; }
+.carry-item { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 12px; border: 1px solid var(--rule); border-left: 4px solid var(--warn); border-radius: 4px; padding: 10px 12px; background: var(--sheet); }
+.carry-item.good-news { border-left-color: var(--ok); }
+.carry-item .who { font-weight: 700; }
+.carry-item .fx { display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }
+.carry-item p { grid-column: 1 / -1; color: var(--ink-2); }
+.rules { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 10px; }
+.rule { border: 1px solid var(--rule); border-radius: 4px; padding: 12px 14px; background: var(--paper); display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.rule .cite { font-family: var(--f-mono); font-size: var(--t-xs); color: var(--carbon); letter-spacing: .02em; overflow-wrap: anywhere; }
+.rule h4 { margin: 0; font-size: var(--t-md); }
+.rule p { font-size: var(--t-sm); color: var(--ink-2); }
+.rule a { font-size: var(--t-sm); overflow-wrap: anywhere; }
+.rule .practice { font-family: var(--f-mono); font-size: var(--t-xs); color: var(--ink-2); }
+
+/* ---------- ledger ---------- */
+.ledger { display: flex; flex-direction: column; gap: 12px; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 92px); min-width: 0;
+  max-height: calc(100vh - 190px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px)); overflow-y: auto; overscroll-behavior: contain; padding: 2px; margin: -2px; }
+@media (max-width: 980px) { .ledger { position: static; max-height: none; overflow: visible; } }
+.ledger-h { display: flex; justify-content: space-between; align-items: baseline; }
+.ledger-h h2 { font-family: var(--f-display); font-weight: 800; text-transform: uppercase; font-size: var(--t-xl); }
+.team { padding: 12px 14px; display: flex; flex-direction: column; gap: 8px; }
+.team.need { border-color: var(--warn); }
+.team-top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.team-top b { font-family: var(--f-display); font-size: var(--t-xl); text-transform: uppercase; letter-spacing: .02em; line-height: 1; overflow-wrap: anywhere; }
+.team-top .score { font-family: var(--f-display); font-weight: 800; font-size: var(--t-xl); line-height: 1; }
+.meters { display: grid; grid-template-columns: 6.6em minmax(0, 1fr) 2.2em auto; gap: 4px 8px; align-items: center; font-size: var(--t-xs); }
+.meters .lbl { color: var(--ink-2); font-family: var(--f-mono); text-transform: uppercase; letter-spacing: .03em; }
+.meters .track { height: 7px; background: var(--paper); border-radius: 4px; overflow: hidden; border: 1px solid var(--rule); }
+.meters .fill { display: block; height: 100%; background: var(--carbon); border-radius: 4px; transition: width .5s ease; }
+.meters .fill.hi { background: var(--ok); }
+.meters .fill.lo { background: var(--stamp); }
+.meters .val { text-align: right; font-family: var(--f-mono); font-weight: 500; }
+.meters .delta { justify-self: start; }
+.sched { font-family: var(--f-mono); font-size: var(--t-xs); color: var(--ink-2); display: flex; justify-content: space-between; gap: 8px; }
+.sched .late { color: var(--stamp); }
+.picks { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+.picks button { border: 1px solid var(--rule); background: var(--paper); border-radius: 4px; padding: 6px 0; font-family: var(--f-display); font-weight: 800; font-size: var(--t-xl); line-height: 1; cursor: pointer; color: var(--ink); }
+.picks button:hover { border-color: var(--ink-2); }
+.picks button[aria-pressed="true"] { background: var(--carbon); color: var(--carbon-ink); border-color: var(--carbon); }
+.picked { font-size: var(--t-sm); color: var(--ink-2); }
+.picked b { color: var(--ink); }
+@media (prefers-reduced-motion: reduce) { .meters .fill { transition: none; } }
+
+/* ---------- action bar ---------- */
+.actions {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 15;
+  background: color-mix(in srgb, var(--sheet) 94%, transparent); border-top: 1px solid var(--rule);
+  backdrop-filter: blur(6px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+.actions-in { max-width: 1320px; margin: 0 auto; display: flex; gap: 10px; justify-content: flex-end; align-items: center; flex-wrap: wrap;
+  padding-block: 12px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.actions-in .status { margin-right: auto; font-size: var(--t-sm); color: var(--ink-2); min-width: 0; }
+.kbd { font-family: var(--f-mono); font-size: var(--t-xs); border: 1px solid var(--rule); border-bottom-width: 2px; border-radius: 3px; padding: 0 5px; color: var(--ink-2); }
+
+/* ---------- after-action report ---------- */
+.aar-h h1 { font-family: var(--f-display); font-weight: 800; text-transform: uppercase; font-size: clamp(2.4rem, 6vw, var(--t-4xl)); line-height: .92; }
+.table-wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: var(--radius); background: var(--sheet); }
+table { border-collapse: collapse; width: 100%; font-size: var(--t-sm); }
+th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-family: var(--f-mono); font-size: var(--t-xs); text-transform: uppercase; letter-spacing: .06em; color: var(--ink-2); font-weight: 500; background: var(--paper); white-space: nowrap; }
+td.num { font-family: var(--f-mono); text-align: right; white-space: nowrap; }
+th.num { text-align: right; }
+tr:last-child td { border-bottom: 0; }
+.rank { font-family: var(--f-display); font-weight: 800; font-size: var(--t-xl); line-height: 1; }
+.rating { display: inline-block; font-weight: 700; font-size: var(--t-xs); text-transform: uppercase; letter-spacing: .05em; padding: 3px 8px; border-radius: 3px; border: 1px solid currentColor; white-space: nowrap; }
+.r-a { color: var(--ok); background: var(--ok-wash); }
+.r-b { color: var(--carbon); background: var(--carbon-wash); }
+.r-c { color: var(--warn); background: var(--warn-wash); }
+.r-d { color: var(--stamp); background: var(--stamp-wash); }
+.teamfile { padding: 16px 18px; display: flex; flex-direction: column; gap: 10px; }
+.teamfile h3 { font-family: var(--f-display); font-size: var(--t-2xl); text-transform: uppercase; line-height: 1; }
+.flaglist { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-size: var(--t-sm); }
+.flaglist li { padding-left: 18px; position: relative; }
+.flaglist li::before { content: ""; position: absolute; left: 2px; top: .5em; width: 8px; height: 8px; border-radius: 50%; background: var(--stamp); }
+.flaglist li.ok::before { background: var(--ok); }
+.files { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 14px; }
+.copybox { width: 100%; min-height: 220px; font-family: var(--f-mono); font-size: var(--t-xs); background: var(--paper); color: var(--ink); border: 1px solid var(--rule); border-radius: 4px; padding: 10px; }
+
+/* ---------- rulebook dialog ---------- */
+dialog { border: 1px solid var(--rule); border-radius: var(--radius); background: var(--sheet); color: var(--ink); padding: 0; width: min(860px, calc(100vw - 32px)); max-height: calc(100vh - 48px); box-shadow: var(--shadow); }
+dialog::backdrop { background: color-mix(in srgb, var(--bar) 60%, transparent); }
+.dlg-h { position: sticky; top: 0; background: var(--sheet); display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 18px; border-bottom: 1px solid var(--rule); z-index: 1; }
+.dlg-h h2 { font-family: var(--f-display); font-weight: 800; text-transform: uppercase; font-size: var(--t-2xl); }
+.dlg-b { padding: 16px 18px 22px; display: flex; flex-direction: column; gap: 14px; }
+.dlg-b input[type="search"] { font: inherit; padding: 9px 12px; border: 1px solid var(--rule); border-radius: 4px; background: var(--paper); color: var(--ink); width: 100%; }
+
+.toast { position: fixed; left: 50%; bottom: calc(84px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--ink); color: var(--sheet); padding: 9px 16px; border-radius: 999px; font-size: var(--t-sm); z-index: 40; }
+
+@media print {
+  .bar, .actions, .no-print, body::before { display: none !important; }
+  body, .sheet, .table-wrap { background: #fff !important; color: #000 !important; box-shadow: none !important; }
+  .shell { padding: 0; }
+}
+</style>
+</head>
+<body>
+<div id="app" aria-live="off"></div>
+<div id="announce" class="sr" aria-live="polite"></div>
+
+<dialog id="rulebook" aria-labelledby="rb-title">
+  <div class="dlg-h">
+    <h2 id="rb-title">Rulebook</h2>
+    <button class="btn" type="button" data-act="close-rules">Close</button>
+  </div>
+  <div class="dlg-b">
+    <p class="hint" id="rb-note"></p>
+    <label class="sr" for="rb-search">Filter rules</label>
+    <input id="rb-search" type="search" placeholder="Filter: emergency, gift, protest, 20-30…" autocomplete="off">
+    <div class="rules" id="rb-list"></div>
+  </div>
+</dialog>
+
+<script src="scenarios.js"></script>
+<script>
+(function () {
+  'use strict';
+  var D = window.WARGAME;
+  var app = document.getElementById('app');
+  if (!D || !D.scenarios) {
+    app.innerHTML = '<div class="shell"><p>The scenario file (scenarios.js) did not load. Keep it in the same folder as this page.</p></div>';
+    return;
+  }
+
+  /* ------------------------------------------------------------------ helpers */
+  var METERS = D.meters;
+  var GRADES = D.grades;
+  var STORE = 'il-procurement-wargame-v1';
+  var DEFAULT_NAMES = ['Springfield', 'Peoria', 'Rockford', 'Champaign', 'Joliet', 'Carbondale'];
+  var LETTERS = ['A', 'B', 'C', 'D'];
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+  // Content may use **bold** and *italic*; everything else is escaped.
+  function rich(s) {
+    return esc(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/\*(.+?)\*/g, '<em>$1</em>');
+  }
+  function paras(list) { return (list || []).map(function (p) { return '<p>' + rich(p) + '</p>'; }).join(''); }
+  function clamp(n) { return Math.max(0, Math.min(100, Math.round(n))); }
+  function clone(o) { return JSON.parse(JSON.stringify(o)); }
+  function scenarioById(id) { return D.scenarios.filter(function (s) { return s.id === id; })[0] || D.scenarios[0]; }
+  function hasFlag(team, cond) {
+    if (!cond) return false;
+    var list = Array.isArray(cond) ? cond : [cond];
+    return list.some(function (f) { return team.flags.indexOf(f) !== -1; });
+  }
+  function overall(team) {
+    var sum = 0;
+    METERS.forEach(function (m) { sum += team.m[m.key]; });
+    return Math.round(sum / METERS.length);
+  }
+  function fmtDays(n) { return (n > 0 ? '+' : n < 0 ? '−' : '') + Math.abs(n); }
+  function sumFx(fx) { var s = 0; for (var k in fx) s += fx[k]; return s; }
+  function fxChips(fx, onlyNonZero) {
+    return METERS.map(function (m) {
+      var v = (fx && fx[m.key]) || 0;
+      if (onlyNonZero && !v) return '';
+      var cls = v > 0 ? 'up' : v < 0 ? 'down' : 'flat';
+      return '<span class="delta ' + cls + '" title="' + esc(m.label) + '">' + esc(m.short) + ' ' + (v > 0 ? '+' : v < 0 ? '−' : '±') + Math.abs(v) + '</span>';
+    }).join('');
+  }
+
+  /* ------------------------------------------------------------------ state */
+  function freshState() {
+    return {
+      v: 1, screen: 'home', scenarioId: D.scenarios[0].id, mode: 'teams', teamCount: 3,
+      teamNames: DEFAULT_NAMES.slice(), timerSec: 300, notes: false, room: false, game: null
+    };
+  }
+  function load() {
+    try {
+      var raw = localStorage.getItem(STORE);
+      if (!raw) return null;
+      var s = JSON.parse(raw);
+      return s && s.v === 1 ? s : null;
+    } catch (e) { return null; }
+  }
+  function save() {
+    try { localStorage.setItem(STORE, JSON.stringify(state)); } catch (e) { /* storage blocked: play continues in memory */ }
+  }
+
+  var state;
+  var timer = { left: 0, running: false, id: null, done: false };
+  var restartArmed = false;
+
+  function newGame() {
+    var sc = scenarioById(state.scenarioId);
+    var n = state.mode === 'solo' ? 1 : state.teamCount;
+    var teams = [];
+    for (var i = 0; i < n; i++) {
+      var name = state.mode === 'solo' ? 'Your file' : (state.teamNames[i] || DEFAULT_NAMES[i] || ('Team ' + (i + 1))).trim() || ('Team ' + (i + 1));
+      teams.push({ name: name, m: clone(sc.start), days: 0, flags: [], log: [] });
+    }
+    state.game = { scenarioId: sc.id, mode: state.mode, teams: teams, turn: 0, picks: {}, revealed: false, before: null, finished: false, startedAt: new Date().toISOString() };
+  }
+
+  /* ------------------------------------------------------------------ engine */
+  function resolveTurn() {
+    var g = state.game, sc = scenarioById(g.scenarioId), turn = sc.turns[g.turn];
+    g.before = clone(g.teams);
+    g.teams.forEach(function (team, ti) {
+      var key = g.picks[ti];
+      var opt = turn.options.filter(function (o) { return o.key === key; })[0];
+      var fx = {}; METERS.forEach(function (m) { fx[m.key] = 0; });
+      function add(src) { for (var k in src) fx[k] = (fx[k] || 0) + src[k]; }
+      add(opt.fx || {});
+      var notes = [], extraDays = 0;
+      // Consequences of earlier decisions land now (evaluated before this turn's flags are added).
+      (turn.carry || []).concat(opt.carry || []).forEach(function (c) {
+        if (hasFlag(team, c.if) && !hasFlag(team, c.unless)) {
+          add(c.fx || {});
+          extraDays += c.days || 0;
+          notes.push({ text: c.text, fx: c.fx || {}, days: c.days || 0 });
+        }
+      });
+      METERS.forEach(function (m) { team.m[m.key] = clamp(team.m[m.key] + fx[m.key]); });
+      team.days += (opt.days || 0) + extraDays;
+      (opt.set || []).forEach(function (f) { if (team.flags.indexOf(f) === -1) team.flags.push(f); });
+      team.log.push({ turn: turn.id, key: opt.key, grade: opt.grade, fx: fx, notes: notes, days: (opt.days || 0) + extraDays });
+    });
+    g.revealed = true;
+  }
+  function undoReveal() {
+    var g = state.game;
+    if (!g.before) return;
+    g.teams = g.before; g.before = null; g.revealed = false;
+  }
+  function finishGame() {
+    var g = state.game, sc = scenarioById(g.scenarioId);
+    if (g.finished) return;
+    g.teams.forEach(function (t) {
+      t.late = Math.max(0, t.days - sc.slackDays);
+      if (t.late > 0) {
+        var pen = Math.min(15, 5 + Math.floor(t.late / 10) * 5);
+        t.schedulePenalty = pen;
+        t.m.m = clamp(t.m.m - pen);
+      }
+    });
+    g.finished = true;
+  }
+  function rating(score) {
+    for (var i = 0; i < D.ratings.length; i++) if (score >= D.ratings[i].min) return D.ratings[i];
+    return D.ratings[D.ratings.length - 1];
+  }
+
+  /* ------------------------------------------------------------------ timer */
+  function timerLabel() {
+    var s = Math.max(0, timer.left);
+    return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+  }
+  function paintTimer() {
+    var el = document.getElementById('timer');
+    if (!el) return;
+    el.querySelector('.t').textContent = timer.done ? 'Time' : timerLabel();
+    el.classList.toggle('low', !timer.done && timer.running && timer.left <= 30);
+    el.classList.toggle('done', timer.done);
+    el.setAttribute('aria-label', (timer.running ? 'Pause' : 'Start') + ' discussion timer, ' + timerLabel() + ' left');
+  }
+  function resetTimer() {
+    clearInterval(timer.id); timer.id = null; timer.running = false; timer.done = false; timer.left = state.timerSec;
+    paintTimer();
+  }
+  function beep() {
+    try {
+      var Ctx = window.AudioContext || window.webkitAudioContext; if (!Ctx) return;
+      var ctx = new Ctx(), o = ctx.createOscillator(), gn = ctx.createGain();
+      o.type = 'sine'; o.frequency.value = 660; gn.gain.value = 0.08;
+      o.connect(gn); gn.connect(ctx.destination); o.start(); o.stop(ctx.currentTime + 0.35);
+    } catch (e) { /* no audio */ }
+  }
+  function toggleTimer() {
+    if (!state.timerSec) return;
+    if (timer.done) { resetTimer(); return; }
+    if (timer.running) { clearInterval(timer.id); timer.running = false; paintTimer(); return; }
+    timer.running = true;
+    timer.id = setInterval(function () {
+      timer.left -= 1;
+      if (timer.left <= 0) {
+        clearInterval(timer.id); timer.running = false; timer.done = true; timer.left = 0;
+        beep(); say('Discussion time is up.');
+      }
+      paintTimer();
+    }, 1000);
+    paintTimer();
+  }
+
+  function say(msg) { var a = document.getElementById('announce'); a.textContent = ''; setTimeout(function () { a.textContent = msg; }, 30); }
+  function toast(msg) {
+    var t = document.createElement('div'); t.className = 'toast'; t.setAttribute('role', 'status'); t.textContent = msg;
+    document.body.appendChild(t); setTimeout(function () { t.remove(); }, 2200);
+  }
+
+  /* ------------------------------------------------------------------ views */
+  function viewBar() {
+    var g = state.game, sc = g ? scenarioById(g.scenarioId) : null;
+    var inGame = g && (state.screen === 'turn' || state.screen === 'brief' || state.screen === 'aar');
+    var mid = '';
+    if (inGame) {
+      var t = sc.turns[g.turn];
+      var where = state.screen === 'brief' ? 'Briefing' : state.screen === 'aar' ? 'After-action report' : 'Turn ' + (g.turn + 1) + ' of ' + sc.turns.length + ' · ' + t.phase;
+      mid = '<span class="mono">File ' + esc(sc.file) + ' · ' + esc(where) + '</span><strong>' + esc(sc.title) + '</strong>';
+    }
+    var tools = '';
+    if (inGame && state.screen === 'turn' && state.timerSec && g.mode === 'teams' && !g.revealed) {
+      tools += '<button class="tool timer" id="timer" type="button" data-act="timer"><span class="t">' + timerLabel() + '</span></button>' +
+        '<button class="tool" type="button" data-act="timer-reset" aria-label="Reset timer" title="Reset timer (R)">↺</button>';
+    }
+    if (inGame && state.screen === 'turn') {
+      tools += '<button class="tool" type="button" data-act="notes" aria-pressed="' + state.notes + '" title="Facilitator notes (F)">Notes<span class="long">&nbsp;for facilitator</span></button>';
+    }
+    tools += '<button class="tool" type="button" data-act="rules">Rulebook</button>' +
+      '<button class="tool" type="button" data-act="room" aria-pressed="' + state.room + '" title="Bigger type for a projector">Room<span class="long">&nbsp;view</span></button>';
+    var prog = '';
+    if (inGame) {
+      prog = '<div class="progress" aria-hidden="true">' + sc.turns.map(function (_, i) {
+        var cls = state.screen === 'aar' || i < g.turn || (i === g.turn && g.revealed) ? 'done' : (state.screen === 'turn' && i === g.turn ? 'now' : '');
+        return '<i class="' + cls + '"></i>';
+      }).join('') + '</div>';
+    }
+    return '<header class="bar"><div class="bar-in">' +
+      '<button class="mark" type="button" data-act="home" title="Back to scenario select">Procurement Wargame<span>Illinois · Training</span></button>' +
+      '<div class="bar-mid">' + mid + '</div><div class="bar-tools">' + tools + '</div></div>' + prog + '</header>';
+  }
+
+  function viewHome() {
+    var totalTurns = D.scenarios.reduce(function (a, s) { return a + s.turns.length; }, 0);
+    var g = state.game;
+    var resume = '';
+    if (g && g.finished) {
+      var fs = scenarioById(g.scenarioId);
+      resume = '<div class="sheet resume"><div><div class="eyebrow">Last game</div><strong>' + esc(fs.title) + '</strong>, closed with ' + g.teams.length + (g.teams.length === 1 ? ' file' : ' teams') + '</div>' +
+        '<div class="row"><button class="btn" type="button" data-act="resume">View its after-action report</button></div></div>';
+    } else if (g) {
+      var gs = scenarioById(g.scenarioId);
+      resume = '<div class="sheet resume"><div><div class="eyebrow">Game in progress</div><strong>' + esc(gs.title) + '</strong> — turn ' + (g.turn + 1) + ' of ' + gs.turns.length + ', ' + g.teams.length + (g.teams.length === 1 ? ' file' : ' teams') + '</div>' +
+        '<div class="row"><button class="btn primary" type="button" data-act="resume">Resume game</button></div></div>';
+    }
+    var cases = D.scenarios.map(function (s) {
+      var on = s.id === state.scenarioId;
+      return '<button class="case" type="button" data-act="pick-scenario" data-id="' + esc(s.id) + '" aria-pressed="' + on + '">' +
+        '<div class="case-tab mono"><span>File ' + esc(s.file) + '</span><span>' + s.turns.length + ' turns · ~' + s.minutes + ' min</span></div>' +
+        '<div class="case-body"><h3>' + esc(s.title) + '</h3><p class="focus">' + esc(s.focus) + '</p><p class="desc">' + esc(s.blurb) + '</p>' +
+        '<div class="chips">' + s.topics.map(function (t) { return '<span class="chip">' + esc(t) + '</span>'; }).join('') + '</div></div></button>';
+    }).join('');
+
+    var teams = state.mode === 'teams';
+    var names = '';
+    for (var i = 0; i < state.teamCount; i++) {
+      names += '<label for="tn' + i + '">Team ' + (i + 1) + '<input id="tn' + i + '" data-name="' + i + '" value="' + esc(state.teamNames[i] || '') + '" maxlength="28" autocomplete="off"></label>';
+    }
+    var timerOpts = [[0, 'Off'], [180, '3 min'], [300, '5 min'], [480, '8 min'], [600, '10 min']].map(function (o) {
+      return '<button type="button" data-act="timer-preset" data-sec="' + o[0] + '" aria-pressed="' + (state.timerSec === o[0]) + '">' + o[1] + '</button>';
+    }).join('');
+    var sc = scenarioById(state.scenarioId);
+
+    return '<main class="shell">' +
+      '<section class="hero"><div class="stack">' +
+      '<p class="eyebrow">Tabletop exercise · Illinois Procurement Code</p>' +
+      '<h1>Every decision goes <em>in the file.</em></h1>' +
+      '<p class="lede">A facilitated wargame for State of Illinois procurement staff. Teams work a procurement from the first phone call to the audit. Injects arrive, the clock runs, and the shortcut you took in turn two comes back in turn six.</p>' +
+      '</div><div class="hero-facts" role="list">' +
+      '<div role="listitem"><b>' + D.scenarios.length + '</b><span>scenarios</span></div>' +
+      '<div role="listitem"><b>' + totalTurns + '</b><span>decision turns</span></div>' +
+      '<div role="listitem"><b>1–6</b><span>teams per room</span></div>' +
+      '</div></section>' + resume +
+      '<div class="section-h"><h2>Pick a case file</h2><span class="eyebrow">All agencies, people and vendors are fictional</span></div>' +
+      '<div class="cases">' + cases + '</div>' +
+      '<div class="section-h"><h2>Set up the room</h2></div>' +
+      '<div class="setup">' +
+      '<div class="sheet panel"><h3>How are you playing?</h3><div class="seg" role="group" aria-label="Play mode">' +
+      '<button type="button" data-act="mode" data-mode="teams" aria-pressed="' + teams + '">Facilitated teams</button>' +
+      '<button type="button" data-act="mode" data-mode="solo" aria-pressed="' + !teams + '">Solo, self-paced</button></div>' +
+      '<p class="hint">' + (teams ? 'One screen at the front of the room. Teams debate each turn, then the facilitator enters every team\'s choice and reveals the outcomes side by side.' : 'Play alone at your own pace. Choose an option, lock it in, and read the outcome and the rule behind it.') + '</p></div>' +
+      (teams ? '<div class="sheet panel"><h3>Teams</h3><div class="stepper"><button type="button" data-act="teams" data-d="-1" aria-label="Fewer teams">−</button><output aria-live="polite">' + state.teamCount + '</output><button type="button" data-act="teams" data-d="1" aria-label="More teams">+</button><span class="hint">3–5 people per team works best</span></div><div class="names">' + names + '</div></div>' : '') +
+      (teams ? '<div class="sheet panel"><h3>Discussion timer</h3><div class="seg" role="group" aria-label="Discussion time per turn">' + timerOpts + '</div><p class="hint">Runs in the top bar each turn. Press <span class="kbd">T</span> to start or pause and <span class="kbd">F</span> to show facilitator notes.</p></div>' : '') +
+      '</div>' +
+      '<div class="start-row"><p><strong>' + esc(sc.title) + '</strong>: ' + sc.turns.length + ' turns, about ' + sc.minutes + ' minutes' + (teams ? ' with ' + state.teamCount + (state.teamCount === 1 ? ' team' : ' teams') : '') + '. ' + esc(sc.focus) + '.</p>' +
+      '<button class="btn primary big" type="button" data-act="start">Open the case file</button></div>' +
+      '<footer class="disclaimer">' + rich(D.disclaimer) + ' Rule summaries checked ' + esc(D.checked) + '.</footer>' +
+      '</main>';
+  }
+
+  function viewMeters(team, fx) {
+    return '<div class="meters">' + METERS.map(function (m) {
+      var v = team.m[m.key], cls = v >= 70 ? 'hi' : v < 40 ? 'lo' : '';
+      var d = fx ? fx[m.key] || 0 : null;
+      var dHtml = d === null ? '<span></span>' : '<span class="delta ' + (d > 0 ? 'up' : d < 0 ? 'down' : 'flat') + '">' + (d > 0 ? '+' : d < 0 ? '−' : '±') + Math.abs(d) + '</span>';
+      return '<span class="lbl">' + esc(m.label) + '</span><span class="track" role="meter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + v + '" aria-label="' + esc(m.label) + '"><span class="fill ' + cls + '" style="width:' + v + '%"></span></span><span class="val">' + v + '</span>' + dHtml;
+    }).join('') + '</div>';
+  }
+
+  function viewBrief() {
+    var g = state.game, sc = scenarioById(g.scenarioId);
+    var s = sc.setting;
+    return '<main class="shell"><div class="two"><article class="sheet doc">' +
+      '<div class="doc-head mono"><span>File ' + esc(sc.file) + ' · Training exercise</span><span class="phase">Briefing</span></div>' +
+      '<h1>' + esc(sc.title) + '</h1>' +
+      '<dl class="form"><dt>Agency</dt><dd>' + rich(s.agency) + '</dd><dt>Where</dt><dd>' + rich(s.where) + '</dd><dt>Your role</dt><dd>' + rich(s.role) + '</dd><dt>On the line</dt><dd>' + rich(s.stakes) + '</dd></dl>' +
+      '<div class="prose">' + paras(sc.briefing) + '</div>' +
+      '<h2 class="sub">Your objectives</h2><ul class="list">' + sc.objectives.map(function (o) { return '<li>' + rich(o) + '</li>'; }).join('') + '</ul>' +
+      '<h2 class="sub">How you are scored</h2><div class="meter-key">' + METERS.map(function (m) { return '<div><b>' + esc(m.label) + '</b><span>' + esc(m.hint) + '</span></div>'; }).join('') + '</div>' +
+      '<p class="hint">Every file starts at ' + sc.start.c + ' on each meter. Some options also cost calendar days; the plan has ' + sc.slackDays + ' days of slack, and running past it costs Mission points at the end. Shortcuts can look free when you take them; the bill may arrive several turns later.</p>' +
+      '<div class="grade-key">' + Object.keys(GRADES).map(function (k) { return '<span class="badge g-' + k + '">' + esc(GRADES[k].label) + '</span>'; }).join('') + '</div>' +
+      '<h2 class="sub">How a turn runs</h2><ol class="list">' +
+      (g.mode === 'teams'
+        ? '<li>The facilitator reads the situation and the inject aloud.</li><li>Teams discuss while the timer runs. A facilitator or volunteer can play the vendor or official in the inject (the "red cell") using the notes.</li><li>Each team commits to one option, A to D. Enter the picks in the ledger.</li><li>Reveal. Walk through the outcomes, the rule behind each one, and what good looks like.</li>'
+        : '<li>Read the situation and the inject.</li><li>Decide what you would actually do at your desk, then choose the option closest to it.</li><li>Lock it in and read what happened, the rule behind it, and what good looks like.</li>') +
+      '</ol>' +
+      '<div class="row"><button class="btn primary big" type="button" data-act="begin">Start turn 1</button><button class="btn" type="button" data-act="home">Back</button></div>' +
+      '</article>' +
+      '<aside class="ledger"><div class="ledger-h"><h2>' + (g.mode === 'solo' ? 'Your file' : 'Teams') + '</h2><span class="eyebrow">Starting position</span></div>' +
+      g.teams.map(function (t) { return '<div class="sheet team"><div class="team-top"><b>' + esc(t.name) + '</b><span class="score">' + overall(t) + '</span></div>' + viewMeters(t) + '</div>'; }).join('') +
+      '</aside></div></main>';
+  }
+
+  function viewInject(inj) {
+    if (!inj) return '';
+    var stamp = inj.stamp ? '<span class="stampmark" aria-hidden="true">' + esc(inj.stamp) + '</span>' : '';
+    var body = '<div class="inj-body">' + paras(inj.body) + '</div>';
+    var label = '<span class="sr">Inject: </span>';
+    switch (inj.kind) {
+      case 'email':
+        return '<figure class="inject inj-mail" style="margin:0">' + label + stamp + '<div class="hdr"><span>From</span><span>' + esc(inj.from) + '</span><span>To</span><span>' + esc(inj.to) + '</span><span>Sent</span><span>' + esc(inj.when) + '</span><span>Subject</span><span><strong>' + esc(inj.subject) + '</strong></span></div>' + body + '</figure>';
+      case 'memo':
+        return '<figure class="inject inj-memo" style="margin:0">' + label + stamp + '<div class="memo-h">Memorandum</div><div class="hdr"><span>To</span><span>' + esc(inj.to) + '</span><span>From</span><span>' + esc(inj.from) + '</span><span>Date</span><span>' + esc(inj.when) + '</span><span>Re</span><span><strong>' + esc(inj.subject) + '</strong></span></div>' + body + '</figure>';
+      case 'phone':
+        var boxes = ['Telephoned', 'Please call', 'Will call again', 'Urgent'].map(function (b) {
+          return '<span class="' + ((inj.checks || []).indexOf(b) !== -1 ? 'x' : '') + '">' + b + '</span>';
+        }).join('');
+        return '<figure class="inject inj-phone" style="margin:0">' + label + stamp + '<div class="slip-h">While you were out</div>' +
+          '<div class="line"><span>For</span><span>' + esc(inj.to) + '</span></div><div class="line"><span>From</span><span>' + esc(inj.from) + '</span></div>' +
+          '<div class="line"><span>Of</span><span>' + esc(inj.org) + '</span></div><div class="line"><span>When</span><span>' + esc(inj.when) + '</span></div>' +
+          '<div class="boxes">' + boxes + '</div><div class="msg">' + paras(inj.body) + '</div></figure>';
+      case 'letter':
+        return '<figure class="inject inj-letter" style="margin:0">' + label + stamp + '<div class="lh"><b>' + esc(inj.from) + '</b><span class="mono">' + esc(inj.when) + '</span></div><p class="mono" style="color:var(--ink-2)">To: ' + esc(inj.to) + '</p><p class="re">Re: ' + esc(inj.subject) + '</p>' + body + '</figure>';
+      case 'news':
+        return '<figure class="inject inj-news" style="margin:0">' + label + '<div class="masthead"><span>' + esc(inj.from) + '</span><span>' + esc(inj.when) + '</span></div><h3>' + esc(inj.subject) + '</h3>' + body + '</figure>';
+      case 'text':
+        return '<figure class="inject inj-text" style="margin:0">' + label + '<div class="who">' + esc(inj.from) + ' · ' + esc(inj.when) + '</div>' + (inj.body || []).map(function (b) { return '<div class="bubble">' + rich(b) + '</div>'; }).join('') + '</figure>';
+      default:
+        return '<figure class="inject inj-memo" style="margin:0">' + body + '</figure>';
+    }
+  }
+
+  function ruleCard(key) {
+    var r = D.rules[key];
+    if (!r) return '';
+    return '<div class="rule"><span class="cite">' + esc(r.cite) + '</span><h4>' + esc(r.title) + '</h4><p>' + rich(r.text) + '</p>' +
+      (r.url ? '<a href="' + esc(r.url) + '" target="_blank" rel="noopener">Read the source</a>' : '<span class="practice">Good practice; check your agency policy</span>') + '</div>';
+  }
+
+  function viewTurn() {
+    var g = state.game, sc = scenarioById(g.scenarioId), turn = sc.turns[g.turn];
+    var solo = g.teams.length === 1;
+    var whoPicked = {};
+    g.teams.forEach(function (t, ti) { var k = g.picks[ti]; if (k) (whoPicked[k] = whoPicked[k] || []).push(t.name); });
+
+    var opts = turn.options.map(function (o) {
+      var pressed = solo && g.picks[0] === o.key;
+      var inner = '<span class="letter" aria-hidden="true">' + o.key + '</span><span class="otext">' + rich(o.text) + '</span>';
+      if (g.revealed) {
+        var picked = (whoPicked[o.key] || []).map(function (n) { return '<span class="pickchip">' + esc(n) + '</span>'; }).join('');
+        inner += '<span class="meta"><span class="badge grade">' + esc(GRADES[o.grade].label) + '</span>' + fxChips(o.fx, true) + (o.days ? '<span class="delta ' + (o.days > 0 ? 'down' : 'up') + '">' + fmtDays(o.days) + ' days</span>' : '') + picked + '</span>' +
+          '<span class="outcome">' + rich(o.outcome) + '</span>';
+        return '<div class="opt revealed g-' + o.grade + '"><span class="sr">Option ' + o.key + '. </span>' + inner + '</div>';
+      }
+      if (solo) return '<button class="opt" type="button" data-act="pick" data-team="0" data-key="' + o.key + '" aria-pressed="' + pressed + '"><span class="sr">Option ' + o.key + '. </span>' + inner + '</button>';
+      return '<div class="opt"><span class="sr">Option ' + o.key + '. </span>' + inner + '</div>';
+    }).join('');
+
+    var notes = '';
+    if (state.notes && turn.notes) {
+      notes = '<section class="notes" aria-label="Facilitator notes"><h3>Facilitator notes' + (solo && !g.revealed ? ' (contains hints)' : '') + '</h3>' +
+        (turn.notes.red ? '<p class="red"><b>Red cell — play this role if teams ask questions</b>' + rich(turn.notes.red) + '</p>' : '') +
+        (turn.notes.ask ? '<div><strong>Ask the room</strong><ul class="list">' + turn.notes.ask.map(function (q) { return '<li>' + rich(q) + '</li>'; }).join('') + '</ul></div>' : '') +
+        (!g.revealed && turn.notes.good ? '<p><strong>Steer toward:</strong> ' + rich(turn.notes.good) + '</p>' : '') +
+        '</section>';
+    }
+
+    var reveal = '';
+    if (g.revealed) {
+      var carryHtml = '';
+      g.teams.forEach(function (t) {
+        var entry = t.log[t.log.length - 1];
+        (entry.notes || []).forEach(function (n) {
+          var good = sumFx(n.fx) > 0;
+          carryHtml += '<div class="carry-item' + (good ? ' good-news' : '') + '"><span class="who">' + esc(t.name) + '</span><span class="fx">' + fxChips(n.fx, true) + (n.days ? '<span class="delta ' + (n.days > 0 ? 'down' : 'up') + '">' + fmtDays(n.days) + ' days</span>' : '') + '</span><p>' + rich(n.text) + '</p></div>';
+        });
+      });
+      var ruleKeys = [];
+      (turn.rules || []).concat.apply(turn.rules || [], turn.options.map(function (o) { return o.rules || []; })).forEach(function (k) { if (ruleKeys.indexOf(k) === -1) ruleKeys.push(k); });
+      reveal = (carryHtml ? '<h2 class="reveal-h">Earlier decisions come due</h2><div class="carry">' + carryHtml + '</div>' : '') +
+        (turn.notes && turn.notes.good ? '<div class="good"><b>What good looks like</b>' + rich(turn.notes.good) + '</div>' : '') +
+        '<h2 class="reveal-h">Rules in play</h2><div class="rules">' + ruleKeys.map(ruleCard).join('') + '</div>';
+    }
+
+    var ledger = g.teams.map(function (t, ti) {
+      var entry = g.revealed ? t.log[t.log.length - 1] : null;
+      var pick = g.picks[ti];
+      var picks = '';
+      if (!g.revealed) {
+        picks = '<div class="picks" role="group" aria-label="' + esc(t.name) + ' choice">' + turn.options.map(function (o) {
+          return '<button type="button" data-act="pick" data-team="' + ti + '" data-key="' + o.key + '" aria-pressed="' + (pick === o.key) + '" aria-label="' + esc(t.name) + ' chooses ' + o.key + '">' + o.key + '</button>';
+        }).join('') + '</div>';
+      } else {
+        picks = '<p class="picked">Chose <b>' + entry.key + '</b> · <span class="badge g-' + entry.grade + '">' + esc(GRADES[entry.grade].label) + '</span></p>';
+      }
+      var late = t.days > sc.slackDays;
+      return '<div class="sheet team' + (!g.revealed && !pick && !solo ? ' need' : '') + '"><div class="team-top"><b>' + esc(t.name) + '</b><span class="score" title="Overall">' + overall(t) + '</span></div>' +
+        viewMeters(t, entry ? entry.fx : null) +
+        '<div class="sched"><span>Schedule</span><span class="' + (late ? 'late' : '') + '">' + fmtDays(t.days) + ' days · slack ' + sc.slackDays + (entry && entry.days ? ' (' + fmtDays(entry.days) + ' this turn)' : '') + '</span></div>' +
+        (solo && !g.revealed ? '' : picks) + '</div>';
+    }).join('');
+
+    return '<main class="shell"><div class="two"><article class="sheet doc">' +
+      '<div class="doc-head mono"><span class="phase">Turn ' + (g.turn + 1) + ' · ' + esc(turn.phase) + '</span><span>' + esc(turn.clock) + '</span></div>' +
+      '<h1>' + esc(turn.title) + '</h1>' +
+      '<div class="prose">' + paras(turn.situation) + '</div>' +
+      viewInject(turn.inject) +
+      '<h2 class="question">' + esc(turn.question) + '</h2>' +
+      '<div class="options">' + opts + '</div>' + notes + reveal +
+      '</article><aside class="ledger" aria-label="Team ledger"><div class="ledger-h"><h2>' + (solo ? 'Your file' : 'Ledger') + '</h2><span class="eyebrow">' + (g.revealed ? 'After turn ' + (g.turn + 1) : 'Enter each team\'s pick') + '</span></div>' + ledger + '</aside></div></main>';
+  }
+
+  function viewActions() {
+    var g = state.game;
+    if (state.screen !== 'turn' || !g) return '';
+    var sc = scenarioById(g.scenarioId);
+    var solo = g.teams.length === 1;
+    var count = Object.keys(g.picks).length, need = g.teams.length;
+    var last = g.turn === sc.turns.length - 1;
+    var html;
+    if (!g.revealed) {
+      var status = solo ? (g.picks[0] ? 'Option ' + g.picks[0] + ' selected.' : 'Choose an option.') : count + ' of ' + need + ' teams have picked.';
+      html = '<span class="status">' + status + ' <span class="kbd">F</span> notes' + (state.timerSec && !solo ? ' · <span class="kbd">T</span> timer' : '') + '</span>' +
+        '<button class="btn primary big" type="button" data-act="reveal"' + (count < need ? ' disabled' : '') + '>' + (solo ? 'Lock it in' : 'Reveal outcomes') + '</button>';
+    } else {
+      html = '<span class="status">Debrief, then move on. <span class="kbd">N</span> next</span>' +
+        '<button class="btn" type="button" data-act="undo">Change picks</button>' +
+        '<button class="btn primary big" type="button" data-act="next">' + (last ? 'Close the file: after-action report' : 'Next turn') + '</button>';
+    }
+    return '<div class="actions no-print"><div class="actions-in">' + html + '</div></div>';
+  }
+
+  function viewAAR() {
+    var g = state.game, sc = scenarioById(g.scenarioId);
+    var ranked = g.teams.map(function (t, i) { return { t: t, i: i, score: overall(t) }; }).sort(function (a, b) { return b.score - a.score; });
+    var played = g.teams[0].log.length;
+    var standings = '<div class="table-wrap"><table><thead><tr><th>#</th><th>' + (g.teams.length === 1 ? 'File' : 'Team') + '</th>' +
+      METERS.map(function (m) { return '<th class="num">' + esc(m.label) + '</th>'; }).join('') +
+      '<th class="num">Schedule</th><th class="num">Overall</th><th>Rating</th></tr></thead><tbody>' +
+      ranked.map(function (r, n) {
+        var t = r.t, rt = rating(r.score);
+        return '<tr><td class="rank">' + (n + 1) + '</td><td><strong>' + esc(t.name) + '</strong></td>' +
+          METERS.map(function (m) { return '<td class="num">' + t.m[m.key] + '</td>'; }).join('') +
+          '<td class="num">' + (t.late ? '<span style="color:var(--stamp)">' + t.late + (t.late === 1 ? ' day' : ' days') + ' late</span>' : 'On time') + '</td>' +
+          '<td class="num"><strong>' + r.score + '</strong></td><td><span class="rating r-' + rt.cls + '">' + esc(rt.label) + '</span></td></tr>';
+      }).join('') + '</tbody></table></div>';
+
+    var files = ranked.map(function (r) {
+      var t = r.t, rt = rating(r.score);
+      var bad = t.flags.filter(function (f) { return sc.flags[f] && sc.flags[f].tone === 'bad'; });
+      var good = t.flags.filter(function (f) { return sc.flags[f] && sc.flags[f].tone === 'good'; });
+      var counts = { best: 0, sound: 0, risky: 0, violation: 0 };
+      t.log.forEach(function (e) { counts[e.grade]++; });
+      return '<div class="sheet teamfile"><div class="row" style="justify-content:space-between"><h3>' + esc(t.name) + '</h3><span class="rating r-' + rt.cls + '">' + esc(rt.label) + '</span></div>' +
+        '<p class="hint">' + esc(rt.text) + '</p>' +
+        '<div class="row">' + Object.keys(counts).map(function (k) { return '<span class="badge g-' + k + '">' + counts[k] + ' ' + esc(GRADES[k].label) + '</span>'; }).join('') + '</div>' +
+        (bad.length ? '<div><strong>Open issues in the file</strong><ul class="flaglist">' + bad.map(function (f) { return '<li>' + rich(sc.flags[f].label) + '</li>'; }).join('') + '</ul></div>' : '') +
+        (good.length ? '<div><strong>What will hold up</strong><ul class="flaglist">' + good.map(function (f) { return '<li class="ok">' + rich(sc.flags[f].label) + '</li>'; }).join('') + '</ul></div>' : '') +
+        (t.schedulePenalty ? '<p class="hint">Finished ' + t.late + (t.late === 1 ? ' day' : ' days') + ' past the plan: −' + t.schedulePenalty + ' Mission.</p>' : '') +
+        '</div>';
+    }).join('');
+
+    var log = '<div class="table-wrap"><table><thead><tr><th>Turn</th><th>Decision</th><th>Best</th>' + g.teams.map(function (t) { return '<th>' + esc(t.name) + '</th>'; }).join('') + '</tr></thead><tbody>' +
+      sc.turns.slice(0, played).map(function (turn, i) {
+        var best = turn.options.filter(function (o) { return o.grade === 'best'; }).map(function (o) { return o.key; }).join(', ');
+        return '<tr><td class="num">' + (i + 1) + '</td><td>' + esc(turn.title) + '</td><td><strong>' + best + '</strong></td>' + g.teams.map(function (t) {
+          var e = t.log[i];
+          return '<td>' + (e ? '<strong>' + e.key + '</strong> <span class="badge g-' + e.grade + '">' + esc(GRADES[e.grade].label) + '</span>' : '—') + '</td>';
+        }).join('') + '</tr>';
+      }).join('') + '</tbody></table></div>';
+
+    var ruleKeys = [];
+    sc.turns.slice(0, played).forEach(function (turn) {
+      (turn.rules || []).forEach(function (k) { if (ruleKeys.indexOf(k) === -1) ruleKeys.push(k); });
+      turn.options.forEach(function (o) { (o.rules || []).forEach(function (k) { if (ruleKeys.indexOf(k) === -1) ruleKeys.push(k); }); });
+    });
+
+    var canPrint = !('claude' in window);
+    return '<main class="shell stack">' +
+      '<div class="aar-h stack"><p class="eyebrow">File ' + esc(sc.file) + ' · Closed after ' + played + ' of ' + sc.turns.length + ' turns · ' + new Date(g.startedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) + '</p>' +
+      '<h1>After-action report: ' + esc(sc.title) + '</h1></div>' +
+      '<div class="section-h"><h2>Final standings</h2></div>' + standings +
+      '<div class="section-h"><h2>Where each file stands</h2></div><div class="files">' + files + '</div>' +
+      '<div class="section-h"><h2>Decision log</h2></div>' + log +
+      '<div class="section-h"><h2>Hotwash</h2><span class="eyebrow">15-minute group debrief</span></div>' +
+      '<div class="sheet doc"><ol class="list">' + sc.hotwash.map(function (q) { return '<li>' + rich(q) + '</li>'; }).join('') + '</ol></div>' +
+      '<div class="section-h"><h2>Rules in play</h2></div><div class="rules">' + ruleKeys.map(ruleCard).join('') + '</div>' +
+      '<div class="sheet panel no-print"><h3>Keep a record</h3><p class="hint">Copy the report as plain text to paste into an email, a training log or a document.</p>' +
+      '<div class="row"><button class="btn primary" type="button" data-act="copy">Copy report as text</button>' + (canPrint ? '<button class="btn" type="button" data-act="print">Print or save as PDF</button>' : '') +
+      '<button class="btn" type="button" data-act="replay">Play this scenario again</button><button class="btn" type="button" data-act="home">Choose another scenario</button></div>' +
+      '<textarea class="copybox" id="copybox" readonly hidden aria-label="Report text"></textarea></div>' +
+      '<footer class="disclaimer">' + rich(D.disclaimer) + '</footer></main>';
+  }
+
+  function aarText() {
+    var g = state.game, sc = scenarioById(g.scenarioId);
+    var L = [];
+    L.push('AFTER-ACTION REPORT: ' + sc.title.toUpperCase() + ' (File ' + sc.file + ')');
+    L.push('Illinois Procurement Wargame · ' + new Date(g.startedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }));
+    L.push('');
+    L.push('FINAL STANDINGS');
+    g.teams.map(function (t) { return { t: t, s: overall(t) }; }).sort(function (a, b) { return b.s - a.s; }).forEach(function (r, n) {
+      L.push((n + 1) + '. ' + r.t.name + ': ' + r.s + ' overall (' + rating(r.s).label + ') — ' + METERS.map(function (m) { return m.label + ' ' + r.t.m[m.key]; }).join(', ') + (r.t.late ? ', ' + r.t.late + (r.t.late === 1 ? ' day' : ' days') + ' late' : ''));
+      r.t.flags.filter(function (f) { return sc.flags[f] && sc.flags[f].tone === 'bad'; }).forEach(function (f) { L.push('   Open issue: ' + sc.flags[f].label.replace(/\*/g, '')); });
+    });
+    L.push('');
+    L.push('DECISION LOG');
+    sc.turns.slice(0, g.teams[0].log.length).forEach(function (turn, i) {
+      var best = turn.options.filter(function (o) { return o.grade === 'best'; }).map(function (o) { return o.key; }).join(', ');
+      L.push('Turn ' + (i + 1) + ' — ' + turn.title + ' (best: ' + best + ')');
+      g.teams.forEach(function (t) { var e = t.log[i]; if (e) L.push('   ' + t.name + ': ' + e.key + ' (' + GRADES[e.grade].label + ')'); });
+    });
+    L.push('');
+    L.push('HOTWASH QUESTIONS');
+    sc.hotwash.forEach(function (q, i) { L.push((i + 1) + '. ' + q.replace(/\*/g, '')); });
+    L.push('');
+    L.push(D.disclaimer.replace(/\*/g, ''));
+    return L.join('\n');
+  }
+
+  /* ------------------------------------------------------------------ render */
+  function render() {
+    document.documentElement.classList.toggle('room', !!state.room);
+    var body;
+    if (state.screen === 'brief' && state.game) body = viewBrief();
+    else if (state.screen === 'turn' && state.game) body = viewTurn();
+    else if (state.screen === 'aar' && state.game) body = viewAAR();
+    else { state.screen = 'home'; body = viewHome(); }
+    app.innerHTML = viewBar() + body + viewActions();
+    paintTimer();
+    save();
+  }
+  function go(screen) {
+    state.screen = screen;
+    if (state.game && screen !== 'home') state.game.at = screen;
+    render(); window.scrollTo({ top: 0, behavior: 'auto' });
+  }
+
+  /* ------------------------------------------------------------------ rulebook */
+  var rb = document.getElementById('rulebook');
+  function paintRulebook(q) {
+    q = (q || '').toLowerCase().trim();
+    var keys = Object.keys(D.rules).filter(function (k) {
+      if (!q) return true;
+      var r = D.rules[k];
+      return (r.cite + ' ' + r.title + ' ' + r.text).toLowerCase().indexOf(q) !== -1;
+    });
+    document.getElementById('rb-list').innerHTML = keys.length ? keys.map(ruleCard).join('') : '<p>No rule matches that filter.</p>';
+  }
+  document.getElementById('rb-note').textContent = 'Plain-English summaries of the rules the scenarios turn on, with links to the source text. Summaries are simplified for discussion; checked ' + D.checked + '.';
+  document.getElementById('rb-search').addEventListener('input', function (e) { paintRulebook(e.target.value); });
+  function openRules() {
+    paintRulebook(document.getElementById('rb-search').value);
+    if (typeof rb.showModal === 'function') rb.showModal(); else rb.setAttribute('open', '');
+  }
+
+  /* ------------------------------------------------------------------ events */
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest('[data-act]');
+    if (!el) return;
+    var act = el.getAttribute('data-act');
+    var g = state.game;
+    switch (act) {
+      case 'home': restartArmed = false; go('home'); break;
+      case 'pick-scenario': state.scenarioId = el.getAttribute('data-id'); render(); break;
+      case 'mode': state.mode = el.getAttribute('data-mode'); render(); break;
+      case 'teams':
+        state.teamCount = Math.max(1, Math.min(6, state.teamCount + Number(el.getAttribute('data-d'))));
+        render();
+        break;
+      case 'timer-preset': state.timerSec = Number(el.getAttribute('data-sec')); render(); break;
+      case 'start': newGame(); resetTimer(); go('brief'); break;
+      case 'resume': go(g.at || 'brief'); break;
+      case 'begin': state.game.turn = 0; resetTimer(); go('turn'); break;
+      case 'pick':
+        if (!g || g.revealed) break;
+        var ti = el.getAttribute('data-team'), key = el.getAttribute('data-key');
+        if (g.picks[ti] === key) delete g.picks[ti]; else g.picks[ti] = key;
+        render();
+        break;
+      case 'reveal':
+        if (Object.keys(g.picks).length < g.teams.length) break;
+        resolveTurn(); clearInterval(timer.id); timer.running = false;
+        render(); say('Outcomes revealed.');
+        var first = document.querySelector('.opt.revealed');
+        if (first) first.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        break;
+      case 'undo': undoReveal(); render(); break;
+      case 'next':
+        var sc = scenarioById(g.scenarioId);
+        if (g.turn >= sc.turns.length - 1) { finishGame(); go('aar'); }
+        else { g.turn += 1; g.picks = {}; g.revealed = false; g.before = null; resetTimer(); go('turn'); }
+        break;
+      case 'notes': state.notes = !state.notes; render(); break;
+      case 'room': state.room = !state.room; render(); break;
+      case 'rules': openRules(); break;
+      case 'close-rules': rb.close(); break;
+      case 'timer': toggleTimer(); break;
+      case 'timer-reset': resetTimer(); break;
+      case 'copy':
+        var text = aarText();
+        var box = document.getElementById('copybox');
+        var fallback = function () { box.hidden = false; box.value = text; box.focus(); box.select(); toast('Select all and copy the text below'); };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(function () { toast('Report copied'); }, fallback);
+        } else fallback();
+        break;
+      case 'print': window.print(); break;
+      case 'replay':
+        state.scenarioId = g.scenarioId; state.mode = g.mode;
+        if (g.mode === 'teams') { state.teamCount = g.teams.length; state.teamNames = g.teams.map(function (t) { return t.name; }).concat(DEFAULT_NAMES.slice(g.teams.length)); }
+        newGame(); resetTimer(); go('brief');
+        break;
+    }
+  });
+  document.addEventListener('input', function (e) {
+    var i = e.target.getAttribute && e.target.getAttribute('data-name');
+    if (i !== null && i !== undefined) { state.teamNames[Number(i)] = e.target.value; save(); }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var tag = (e.target.tagName || '').toLowerCase();
+    if (tag === 'input' || tag === 'textarea' || rb.open) return;
+    var g = state.game;
+    if (state.screen !== 'turn' || !g) return;
+    var k = e.key.toLowerCase();
+    if (k === 'f') { state.notes = !state.notes; render(); }
+    else if (k === 't' && !g.revealed) toggleTimer();
+    else if (k === 'r' && !g.revealed) resetTimer();
+    else if (k === 'n' && g.revealed) { var b = document.querySelector('[data-act="next"]'); if (b) b.click(); }
+    else if (g.teams.length === 1 && !g.revealed && LETTERS.indexOf(e.key.toUpperCase()) !== -1) {
+      g.picks[0] = e.key.toUpperCase(); render();
+    }
+  });
+
+  /* ------------------------------------------------------------------ boot */
+  function start(hotData) {
+    state = (hotData && hotData.state) || load() || freshState();
+    // Facilitators reopen to the start screen; the game in progress is offered as "Resume".
+    if (!(hotData && hotData.state)) state.screen = 'home';
+    timer.left = state.timerSec;
+    render();
+  }
+  if (window.claude && window.claude.hot && typeof window.claude.hot.snapshot === 'function') {
+    window.claude.hot.snapshot(function () { return { state: state }; });
+  }
+  if (window.claude && window.claude.hot && window.claude.hot.ready) window.claude.hot.ready(start);
+  else start((window.claude && window.claude.hot && window.claude.hot.data) || {});
+})();
+</script>
+</body>
+</html>

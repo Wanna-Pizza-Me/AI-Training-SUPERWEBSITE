@@ -20,12 +20,12 @@
       "permanent": true
     },
     {
-      "source": "/:page(jobs/[a-z0-9-]+|mercor|dataannotation|turing|meridial|micro1|afterquery)/index.html",
+      "source": "/:page(jobs/[a-z0-9-]+|mercor|dataannotation|turing|meridial|micro1|afterquery|procurement-wargame)/index.html",
       "destination": "/:page/",
       "permanent": true
     },
     {
-      "source": "/:page(jobs/[a-z0-9-]+|mercor|dataannotation|turing|meridial|micro1|afterquery)",
+      "source": "/:page(jobs/[a-z0-9-]+|mercor|dataannotation|turing|meridial|micro1|afterquery|procurement-wargame)",
       "destination": "/:page/",
       "permanent": true
     }
